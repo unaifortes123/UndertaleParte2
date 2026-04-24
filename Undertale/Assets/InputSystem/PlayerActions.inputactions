@@ -1,0 +1,76 @@
+{
+    "name": "PlayerActions",
+    "maps": [
+        {
+            "name": "Movement",
+            "id": "f8064f51-63f2-4f1e-8e00-db8daf3e523f",
+            "actions": [
+                {
+                    "name": "Forward",
+                    "type": "Value",
+                    "id": "e4ac98a9-ed28-417d-8e9f-faf0225a24e3",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Up",
+                    "type": "Value",
+                    "id": "b922a40c-aee6-4c54-8187-6d171c7b11ea",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5ae1dbe3-0cef-4d66-8b77-1b4237f6eb83",
+                    "path": "<Keyboard>/#(D)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Forward",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f474cf12-f0d1-4e3f-9154-8ab611d7b5e4",
+                    "path": "<Keyboard>/#(A)",
+                    "interactions": "",
+                    "processors": "Invert",
+                    "groups": "",
+                    "action": "Forward",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "94c37e22-1196-4a4b-8f41-bea52aa508db",
+                    "path": "<Keyboard>/#(W)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Up",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cfc37b64-40f4-44d9-bb35-073758ceae56",
+                    "path": "<Keyboard>/#(S)",
+                    "interactions": "",
+                    "processors": "Invert",
+                    "groups": "",
+                    "action": "Up",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

@@ -1,0 +1,552 @@
+@font-face {
+    font-family: "UndertaleFont";
+    src: url("FuenteUndertale/PixelOperator-Bold.ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #000;
+}
+::-webkit-scrollbar-thumb {
+    background: white;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: yellow;
+}
+
+body {
+    margin: 0;
+    font-family: "UndertaleFont", monospace;
+    background-color: black;
+    color: white;
+    -moz-osx-font-smoothing: grayscale;
+    image-rendering: pixelated;
+    -webkit-font-smoothing: none;
+    background-image: url("img/fondo4.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 0, 0, 0.07) 2px,
+        rgba(0, 0, 0, 0.07) 4px
+    );
+    pointer-events: none;
+    z-index: 9999;
+}
+
+#capcalera {
+    background-color: #111111;
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+    border-bottom: 2px solid white;
+    /* Doble borde estilo Undertale */
+    outline: 4px solid black;
+    outline-offset: -8px;
+}
+
+.titolPrincipal {
+    margin: 0;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(255, 255, 0, 0.15);
+}
+
+.subtitol {
+    margin-top: 1em;
+    font-size: 1.4em;
+}
+
+.menu {
+    margin-top: 30px;
+}
+
+.llistaMenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.llistaMenu li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.llistaMenu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.llistaMenu a::before {
+    content: "♥";
+    color: red;
+    margin-right: 6px;
+    font-size: 0.9em;
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+.llistaMenu a:hover::before {
+    opacity: 1;
+    animation: blink 0.7s step-start infinite;
+}
+
+.llistaMenu a:hover {
+    color: yellow;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1) rotate(-45deg); }
+    15%       { transform: scale(1.3) rotate(-45deg); }
+    30%       { transform: scale(1) rotate(-45deg); }
+    45%       { transform: scale(1.15) rotate(-45deg); }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animacioEsquerra {
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: all 1s ease;
+}
+
+.animacioDreta {
+    opacity: 0;
+    transform: translateX(80px);
+    transition: all 1s ease;
+}
+
+.animacioCentre {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
+
+.selectorIdioma {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.textoIdioma {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.botonIdioma {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-family: "UndertaleFont", monospace;
+    transition: all 0.15s;
+}
+
+.botonIdioma:hover {
+    background-color: white;
+    color: black;
+}
+
+.contingut {
+    width: 85%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.seccio,
+.seccioHero {
+    background-color: #111111;
+    border: 2px solid white;
+    outline: 4px solid #111111;
+    outline-offset: -6px;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: border-color 0.3s, outline-color 0.3s;
+}
+
+.seccio:hover,
+.seccioHero:hover {
+    border-color: yellow;
+    outline-color: #111111;
+}
+
+.titolSeccio {
+    margin-top: 0;
+    color: yellow;
+    font-size: 24px;
+    text-shadow: 1px 1px 0px rgba(255, 200, 0, 0.2);
+}
+
+.textSeccio {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.corDetermination {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    transform: rotate(-45deg);
+    margin: 24px auto 0 auto;
+    position: relative;
+    animation: heartbeat 1.5s ease infinite;
+}
+
+.corDetermination::before,
+.corDetermination::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.corDetermination::before {
+    top: -10px;
+    left: 0;
+}
+
+.corDetermination::after {
+    left: 10px;
+    top: 0;
+}
+
+.llistaZones {
+    padding-left: 20px;
+    line-height: 1.8em;
+}
+
+.llistaZones a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.llistaZones a:hover {
+    color: yellow;
+}
+
+.contenidorImatges {
+    text-align: center;
+}
+
+.imatgeGaleria {
+    max-width: 100%;
+    width: 250px;
+    height: auto;
+    margin: 10px;
+    border: 2px solid white;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.imatgeGaleria:hover {
+    border-color: yellow;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.25);
+}
+
+.imatgeZona {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto 0 auto;
+    border: 2px solid white;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.imatgeZona:hover {
+    border-color: yellow;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.2);
+}
+
+#personatges {
+    margin-top: 80px;
+}
+
+.contenidorPersonatges {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.targetaPersonatge {
+    width: 300px;
+    background-color: #1a1a1a;
+    border: 2px solid white;
+    outline: 3px solid #1a1a1a;
+    outline-offset: -5px;
+    padding: 15px;
+    text-align: center;
+    transition: border-color 0.3s, box-shadow 0.3s, outline-color 0.3s, transform 0.2s;
+}
+
+.targetaPersonatge:hover {
+    border-color: yellow;
+    outline-color: #1a1a1a;
+    box-shadow: 0 0 14px rgba(255, 255, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.marcImatgePersonatge {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.imatgePersonatge {
+    display: block;
+    max-width: 100%;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid white;
+    transition: border-color 0.3s;
+}
+
+.targetaPersonatge:hover .imatgePersonatge {
+    border-color: yellow;
+}
+
+.nomPersonatge {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: yellow;
+    font-size: 1.8em;
+}
+
+.descripcioPersonatge {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.footerWeb {
+    text-align: center;
+    background-color: #111111;
+    border-top: 2px solid white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.textFooter {
+    margin: 0;
+}
+
+/* Estils per a dispositius mòbils (Estoy pensando en quitarlo) */
+
+@media (max-width: 768px) {
+    .targetaPersonatge {
+        width: 100%;
+    }
+
+    .selectorIdioma {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #capcalera {
+        text-align: center;
+        min-height: auto;
+        padding: 35px 20px 45px 20px;
+    }
+
+    .titolPrincipal {
+        font-size: 2.6em;
+    }
+
+    .subtitol {
+        font-size: 1.2em;
+    }
+
+    .contingut {
+        width: 95%;
+    }
+
+    .llistaMenu li {
+        display: block;
+        margin: 12px 0;
+    }
+}
+
+.decoracio-superior {
+    color: rgba(255, 255, 255, 0.15);
+    letter-spacing: 12px;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.enllac-inici {
+    margin-top: 40px;
+    font-size: 1.4em;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.etiquetaSeccio {
+    display: inline-block;
+    margin-bottom: 34px;
+    padding: 6px 14px;
+    border: 2px solid #5d5d00;
+    color: #afaf00;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.textFooter::before,
+.textFooter::after {
+    content: "✦";
+    margin: 0 16px;
+    color: rgba(255, 255, 255, 0.28);
+}
+
+#capcalera {
+    background-color: #111111;
+    text-align: center;
+    padding: 45px 20px 70px 20px;
+    position: relative;
+    border-bottom: 2px solid white;
+    min-height: 420px;
+    outline: none;
+}
+
+#capcalera::before,
+#capcalera::after {
+    content: "✶ ✶ ✶ ✶\A\A✶     ✶\A\A✶     ✶\A\A✶ ✶ ✶ ✶";
+    white-space: pre;
+    position: absolute;
+    top: 18px;
+    color: rgba(255, 255, 255, 0.18);
+    font-size: 20px;
+    line-height: 1.25;
+    pointer-events: none;
+}
+
+#capcalera::before {
+    left: 18px;
+}
+
+#capcalera::after {
+    right: 18px;
+}
+
+.decoracio-superior {
+    color: rgba(255, 255, 255, 0.18);
+    letter-spacing: 12px;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.titolPrincipal {
+    margin: 0;
+    font-size: 4.2em;
+    letter-spacing: 4px;
+    text-shadow: none;
+}
+
+.subtitol {
+    margin-top: 30px;
+    font-size: 1.6em;
+}
+
+.enllac-inici {
+    margin-top: 38px;
+    font-size: 1.3em;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.menu {
+    margin-top: 55px;
+}
+
+.llistaMenu li {
+    display: inline-block;
+    margin: 0 45px;
+}
+
+.llistaMenu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25em;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.llistaMenu a::before {
+    content: none;
+}
+
+.llistaMenu a:hover {
+    color: white;
+}
+
+.corDetermination {
+    width: 34px;
+    height: 34px;
+    background-color: red;
+    transform: rotate(-45deg);
+    margin: 45px auto 0 auto;
+    position: relative;
+    animation: heartbeat 1.5s ease infinite;
+}
+
+.corDetermination::before,
+.corDetermination::after {
+    content: "";
+    width: 34px;
+    height: 34px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.corDetermination::before {
+    top: -17px;
+    left: 0;
+}
+
+.corDetermination::after {
+    top: 0;
+    left: 17px;
+}

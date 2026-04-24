@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inici_Undertale</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header id="capcalera" class="capcaleraWeb">
+        <h1 class="titolPrincipal">Undertale</h1>
+        <p class="subtitol">SUBTITULO</p>
+
+        <nav id="menuNavegacio" class="menu">
+            <ul class="llistaMenu">
+                <li><a href="#historia">Història</a></li>
+                <li><a href="#personatges">Personatges</a></li>
+                <li><a href="#zones">Zones</a></li>
+            </ul>
+        </nav>
+
+        <div id="selectorIdioma" class="selectorIdioma">
+        <span class="textoIdioma" data-i18n="idioma">Idioma:</span>
+        <button class="botonIdioma" onclick="cambiarIdioma('ca')">CAT</button>
+        <button class="botonIdioma" onclick="cambiarIdioma('es')">ES</button>
+        <button class="botonIdioma" onclick="cambiarIdioma('en')">EN</button>
+</div>
+    </header>
+
+    <main id="contingutPrincipal" class="contingut">
+
+        <section id="historia" class="seccio">
+            <h2 class="titolSeccio">Història</h2>
+            <p class="textSeccio">
+                Undertale és una aventura RPG on un humà cau en un món subterrani habitat per monstres. 
+                Per poder trobar el camí de tornada, haurà de recórrer llocs desconeguts, conèixer personatges molt diferents entre si i prendre decisions que marcaran la seva experiència. 
+                Amb una història original, moments emocionants i un estil únic, el joc convida el jugador a descobrir que no tot és el que sembla.
+            </p>
+        </section>
+
+
+        <section id="personatges" class="seccio">
+            <h2 class="titolSeccio">Personatges</h2>
+
+            <div class="contenidorPersonatges">
+                <article class="targetaPersonatge">
+                    <img src="img/papyrus.png" alt="Papyrus" class="imatgePersonatge">
+                    <h3 class="nomPersonatge">Papyrus</h3>
+                    <p class="descripcioPersonatge">
+                        Papyrus és un esquelet molt enèrgic, divertit i amb molta confiança en si mateix. 
+                        Somia amb ser membre de la Guàrdia Reial i destaca per la seva personalitat exagerada, simpàtica i molt carismàtica.
+                    </p>
+                </article>
+
+                <article class="targetaPersonatge">
+                    <img src="img/sans.png" alt="Sans" class="imatgePersonatge">
+                    <h3 class="nomPersonatge">Sans</h3>
+                    <p class="descripcioPersonatge"> Sans és el germà major de Papyrus. 
+                        Apareix a l'inici del bosc de Snowdin, situat als afores del poble de Snowdin, donant una petita sorpresa al jugador degut als sons que fa quan s'acosta a aquest. 
+                        És un dels personatges principals en Undertale i, depenent de les eleccions del jugador, pot ser tant un personatge amigable i un aliat, com un antagonista heroic.
+                    </p>
+                </article>
+
+                <article class="targetaPersonatge">
+                    <img src="img/friks.png" alt="Friks" class="imatgePersonatge">
+                    <h3 class="nomPersonatge">Friks</h3>
+                    <p class="descripcioPersonatge"> Frisk és un personatge jugable i protagonista principal del videojoc. Després que Frisk cau al Subsol, s'embarca en un viatge per a tornar a la superfície. 
+                        Frisk és l'últim humà a caure al Subsol després de viatjar al Mont Ebott. 
+                        Frisk no és l' "humà caigut" a qui el jugador nomena el començament del joc. 
+                        El seu nom només es revela en la Ruta Pacifista Veritable.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="zones" class="seccio">
+            <h2 class="titolSeccio">Zona del joc</h2>
+            <ul class="llistaZones">
+                <li><a href="Snowdin_Forest.html">Snowdin Forest</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer id="peuPagina" class="footerWeb">
+        <p class="textFooter">Pàgina web Projecte Undertale</p>
+    </footer>
+
+</body>
+</html>
