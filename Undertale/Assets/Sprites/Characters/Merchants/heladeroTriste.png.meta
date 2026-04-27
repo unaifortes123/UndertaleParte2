@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2949334cdb8a99b459de2b7554e5f6a9
+guid: 52b02cf44fca28d44aaac9f6a7fd01fc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 80
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -149,13 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1ArbolNevado_0
+      name: heladeroTriste_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 433
-        width: 200
-        height: 200
+        x: 17
+        y: 14
+        width: 296
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d35064e926201ee4ab9efec4c2918a78
-      internalID: -371138451
+      spriteID: 044d7c192d486954d825337026753d70
+      internalID: -583404967
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1ArbolNevado_1
+      name: heladeroTriste_2
       rect:
         serializedVersion: 2
-        x: 222
-        y: 433
-        width: 200
-        height: 200
+        x: 333
+        y: 14
+        width: 296
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5cbeae425ad11340a61004294c08d76
-      internalID: -588981859
+      spriteID: 21ab05bce4b32a749bb98c0188247024
+      internalID: -1335220223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1ArbolNevado_2
+      name: heladeroTriste_3
       rect:
         serializedVersion: 2
-        x: 432
-        y: 433
-        width: 200
-        height: 200
+        x: 649
+        y: 14
+        width: 296
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f2a24bcadea4a84babb16f4a2d8ed6c
-      internalID: 1163210329
+      spriteID: dd6eb7bed24466f48b0f9880be7c1712
+      internalID: 1330997735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1ArbolNevado_3
+      name: heladeroTriste_4
       rect:
         serializedVersion: 2
-        x: 12
-        y: 223
-        width: 200
-        height: 200
+        x: 965
+        y: 14
+        width: 296
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,113 +226,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc7f06c3e6d5be046a9e4853c9fc01e0
-      internalID: 1843301792
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1ArbolNevado_4
-      rect:
-        serializedVersion: 2
-        x: 222
-        y: 223
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f5e3c6bae1005e4393be236061abb0a
-      internalID: 1698154605
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1ArbolNevado_5
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 223
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a2276ba79a63f94bbe552092b45e9c9
-      internalID: 513659805
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1ArbolNevado_6
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 13
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 956ee36ccc568264bbab6c9274460d47
-      internalID: -2115030031
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1ArbolNevado_7
-      rect:
-        serializedVersion: 2
-        x: 222
-        y: 13
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 067a3e9039b75cb488c2550ebec0d525
-      internalID: -1336457416
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1ArbolNevado_8
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 13
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 114c20513f22d274ea9ef2dd54679492
-      internalID: 1569893469
+      spriteID: ed13cd8bc1b33364ab39982ea3cb77bf
+      internalID: -1713376206
       vertices: []
       indices: 
       edges: []
@@ -348,15 +243,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      1ArbolNevado_0: -371138451
-      1ArbolNevado_1: -588981859
-      1ArbolNevado_2: 1163210329
-      1ArbolNevado_3: 1843301792
-      1ArbolNevado_4: 1698154605
-      1ArbolNevado_5: 513659805
-      1ArbolNevado_6: -2115030031
-      1ArbolNevado_7: -1336457416
-      1ArbolNevado_8: 1569893469
+      heladeroTriste_0: -583404967
+      heladeroTriste_1: 1479195094
+      heladeroTriste_2: -1335220223
+      heladeroTriste_3: 1330997735
+      heladeroTriste_4: -1713376206
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
