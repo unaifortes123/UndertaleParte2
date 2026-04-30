@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4709030a2db07604ba90884f4b235059
+guid: 7e47593293b028a46b9e452356e401a0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 340
+  spritePixelsToUnits: 280
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -149,64 +149,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tablonesPuente_0
+      name: barandillaPuente_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
-        width: 340
-        height: 340
+        x: 11
+        y: 321
+        width: 280
+        height: 140
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b8f92b59eb33b747ba795fc7d146e75
-      internalID: 1117447872
+      spriteID: 51fbcf98fae58f149b7ef08f682bc23c
+      internalID: -1661845995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tablonesPuente_1
+      name: barandillaPuente_1
       rect:
         serializedVersion: 2
-        x: 373
-        y: 16
-        width: 340
-        height: 340
+        x: 305
+        y: 321
+        width: 280
+        height: 140
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac64b3c1538cfda4cb1a841896010569
-      internalID: -706087134
+      spriteID: 4342f46c1e53558438f8c1db799e5e59
+      internalID: -179368691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tablonesPuente_2
+      name: barandillaPuente_2
       rect:
         serializedVersion: 2
-        x: 730
-        y: 16
-        width: 340
-        height: 340
+        x: 599
+        y: 321
+        width: 280
+        height: 140
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c6da280d146aa540a917e57d7446425
-      internalID: 211662989
+      spriteID: 7f0db2eea2f066d46be17e4a5991f51d
+      internalID: -778329910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barandillaPuente_3
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 13
+        width: 280
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9de649ef4d2bd94e92c22c12c3e64b8
+      internalID: -1909169415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barandillaPuente_4
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 13
+        width: 280
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06bf81e6d801a494b982d73292e7c464
+      internalID: -566311869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barandillaPuente_5
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 13
+        width: 280
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4f26616635199449b87baf5c8701f5
+      internalID: -697066623
       vertices: []
       indices: 
       edges: []
@@ -222,9 +285,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tablonesPuente_0: 1117447872
-      tablonesPuente_1: -706087134
-      tablonesPuente_2: 211662989
+      barandillaPuente_0: -1661845995
+      barandillaPuente_1: -179368691
+      barandillaPuente_2: -778329910
+      barandillaPuente_3: -1909169415
+      barandillaPuente_4: -566311869
+      barandillaPuente_5: -697066623
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
