@@ -1,15 +1,17 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject PanelPause;
-    private bool isPaused = false;
+
+    public GameObject PauseOptions;
+    public GameObject volumeMenu;
 
     void Start()
     {
-        PanelPause.SetActive(false);
+        PauseOptions.SetActive(false);
+        volumeMenu.SetActive(false);
         Time.timeScale = 1f;
     }
 
@@ -17,26 +19,55 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (isPaused)
+            // Si estás en volumen → volver al menú principal
+            if (volumeMenu.activeSelf)
+            {
+                BackMain();
+            }
+            // Si estás en pausa → volver al juego
+            else if (PauseOptions.activeSelf)
+            {
                 Continue();
+            }
+            // Si estás jugando → abrir pausa
             else
+            {
                 Pause();
+            }
         }
     }
 
+    // 🔹 Abrir pausa
     public void Pause()
     {
-        PanelPause.SetActive(true);
+        PauseOptions.SetActive(true);
+        volumeMenu.SetActive(false);
         Time.timeScale = 0f;
-        isPaused = true;
     }
 
+    // 🔹 Volver al juego
     public void Continue()
     {
-        PanelPause.SetActive(false);
+        PauseOptions.SetActive(false);
+        volumeMenu.SetActive(false);
         Time.timeScale = 1f;
-        isPaused = false;
     }
+
+    // 🔹 Abrir volumen
+    public void OpenVolume()
+    {
+        PauseOptions.SetActive(false);
+        volumeMenu.SetActive(true);
+    }
+
+    // 🔹 Volver al menú principal
+    public void BackMain()
+    {
+        PauseOptions.SetActive(true);
+        volumeMenu.SetActive(false);
+    }
+
+    // 🔹 Salir del juego
     public void Quit()
     {
         Debug.Log("QUIT PRESSED");
@@ -44,7 +75,7 @@ public class PauseMenu : MonoBehaviour
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
-    Application.Quit();
+        Application.Quit();
 #endif
     }
 }
