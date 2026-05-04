@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e67a5b6389e20284997be0ae7d112753
+guid: 058a68e874b275c4c97938e9687702fe
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,69 +93,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PeterVomito_0
+      name: PeterVomito_bueno_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 237
-        height: 307
+        x: 20
+        y: 26
+        width: 171
+        height: 203
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 218fab62db67b674a93ac6a0f522bbdb
-      internalID: -1419435678
+      spriteID: f0b269601c2dc9243b12283d03f2cdd4
+      internalID: -1205922651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PeterVomito_1
+      name: PeterVomito_bueno_1
       rect:
         serializedVersion: 2
-        x: 237
-        y: 0
-        width: 238
-        height: 307
+        x: 205
+        y: 18
+        width: 197
+        height: 219
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a057dad0b06b1de4b9948948767330d8
-      internalID: -1581570191
+      spriteID: 0871f2f5c39296a43a0d960c8a378ad3
+      internalID: -774183861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PeterVomito_2
+      name: PeterVomito_bueno_2
       rect:
         serializedVersion: 2
-        x: 475
-        y: 0
-        width: 298
-        height: 307
+        x: 416
+        y: 22
+        width: 248
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5d536aca5364a743b6bdaa01066e335
-      internalID: 471965416
+      spriteID: b056ad35188ec654187b8bf43bdf02bc
+      internalID: 750214520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PeterVomito_3
+      name: PeterVomito_bueno_3
       rect:
         serializedVersion: 2
-        x: 772
-        y: 0
-        width: 274
-        height: 307
+        x: 667
+        y: 25
+        width: 266
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,8 +174,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bd1e71b40b25764f97c02d240187846
-      internalID: 335655250
+      spriteID: 4a5b33071e06e8c42ba834990aad78fd
+      internalID: 59259655
       vertices: []
       indices: 
       edges: []
@@ -243,10 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PeterVomito_0: -1419435678
-      PeterVomito_1: -1581570191
-      PeterVomito_2: 471965416
-      PeterVomito_3: 335655250
+      PeterVomito_bueno_0: -1205922651
+      PeterVomito_bueno_1: -774183861
+      PeterVomito_bueno_2: 750214520
+      PeterVomito_bueno_3: 59259655
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

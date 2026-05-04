@@ -23,4 +23,12 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector3(xMovement * speed, yMovement * speed);
 
     }
+
+    void OnDisable()
+    {
+        if (rb != null)
+        {
+            rb.velocity = Vector2.zero;
+        }
+    }
 }

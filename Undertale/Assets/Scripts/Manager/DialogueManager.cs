@@ -2,10 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.Timeline.Actions;
 using UnityEngine;
-using static System.Collections.Specialized.BitVector32;
+
 public class DialogueManager : MonoBehaviour
 {
     [HideInInspector]
@@ -19,121 +17,201 @@ public class DialogueManager : MonoBehaviour
     public AudioClip enemyClip;
     private GameObject audioHolder;
     private List<AudioSource> sources;
-    public bool done = false;
-    private bool canNarrate;
+    private Coroutine talkingRoutine;
+    public bool done = true;
+    private bool canNarrate = true;
     public float talkingSpeed = 0.1f;
     [HideInInspector]
     public static DialogueManager instance;
+
     void Awake() => instance = this;
 
+    // Esta funcion empieza un dialogo nuevo.
     public void Talking(Action talkAction)
     {
-        if (canNarrate)
+        EnsureReady();
+
+        if (talkingRoutine != null)
         {
-            StartCoroutine(StartTalking(talkAction));
+            StopCoroutine(talkingRoutine);
         }
 
+        ClearAudioSources();
+        talkingRoutine = StartCoroutine(DialogueRoutine(talkAction));
     }
+
     void Start()
     {
-        sources = new List<AudioSource>();
-        audioHolder = new GameObject("Audio Holder");
-        audioHolder.transform.parent = transform;
-        canNarrate = true;
-        StartCoroutine(StartTalking(null));
-    }
-    IEnumerator StartTalking(Action action)
-    {
-        done = false;
-        canNarrate = false;
-        char[] chars = dialogueTxt.ToCharArray();
-        text.text = "";
-        for (int i = 0; i < chars.Length; i++)
-        {
-            AudioSource s = audioHolder.AddComponent<AudioSource>();
-            text.text += chars[i];
-            s.clip = clip;
-            s.pitch = UnityEngine.Random.Range(0.99f, 1);
-            s.Play();
-            sources.Add(s);
-            yield return new WaitForSeconds(talkingSpeed);
-
-        }
-
-        int playingSources = 0;
-        do
-        {
-            playingSources = 0;
-
-            for (int i = 0; i < sources.Count; i++)
-            {
-                if (!sources[i].isPlaying)
-                {
-                    Destroy(sources[i]);
-                    sources.RemoveAt(i);
-                    i--;
-                }
-                else
-                    playingSources++;
-            }
-            yield return null;
-        }
-        while (playingSources > 0);
-        if (shouldTalk)
-        {
-            StartCoroutine(EnemyTalking(action));
-            text.text = "";
-        }
-        else
-        {
-            done = true;
-            canNarrate = true;
-            enemyTextBackground.SetActive(false);
-            action?.Invoke();
-        }
-
-    }
-
-    IEnumerator EnemyTalking(Action action)
-    {
-        done = false;
-        canNarrate = false;
-        enemyTextBackground.SetActive(true);
-        char[] chars = enemyTxt.ToCharArray();
-        textEnemy.text = "";
-        for (int i = 0; i < chars.Length; i++)
-        {
-            AudioSource s = audioHolder.AddComponent<AudioSource>();
-            textEnemy.text += chars[i];
-            s.clip = clip;
-            s.pitch = UnityEngine.Random.Range(0.99f, 1);
-            s.Play();
-            sources.Add(s);
-            yield return new WaitForSeconds(talkingSpeed);
-
-        }
-        int playingSources = 0;
-        do
-        {
-            playingSources = 0;
-
-            for (int i = 0; i < sources.Count; i++)
-            {
-                if (!sources[i].isPlaying)
-                {
-                    Destroy(sources[i]);
-                    sources.RemoveAt(i);
-                    i--;
-                }
-                else
-                    playingSources++;
-            }
-            yield return null;
-        }
-        while (playingSources > 0);
+        EnsureReady();
         done = true;
         canNarrate = true;
-        enemyTextBackground.SetActive(false);
+
+        if (!string.IsNullOrWhiteSpace(dialogueTxt))
+        {
+            Talking(null);
+        }
+    }
+
+    IEnumerator DialogueRoutine(Action action)
+    {
+        done = false;
+        canNarrate = false;
+
+        yield return TypeText(text, dialogueTxt, clip);
+        yield return WaitForAudioSources();
+
+        if (shouldTalk)
+        {
+            if (text != null)
+            {
+                text.text = "";
+            }
+
+            yield return EnemyTalking();
+        }
+        else if (enemyTextBackground != null)
+        {
+            enemyTextBackground.SetActive(false);
+        }
+
+        done = true;
+        canNarrate = true;
+        talkingRoutine = null;
         action?.Invoke();
+    }
+
+    IEnumerator EnemyTalking()
+    {
+        Renderer enemyBackgroundRenderer;
+        Renderer enemyTextRenderer;
+
+        if (enemyTextBackground != null)
+        {
+            enemyTextBackground.SetActive(true);
+
+            enemyBackgroundRenderer = enemyTextBackground.GetComponent<Renderer>();
+
+            if (enemyBackgroundRenderer != null)
+            {
+                enemyBackgroundRenderer.sortingOrder = 60;
+            }
+        }
+
+        if (textEnemy != null)
+        {
+            textEnemy.color = Color.black;
+            enemyTextRenderer = textEnemy.GetComponent<Renderer>();
+
+            if (enemyTextRenderer != null)
+            {
+                enemyTextRenderer.sortingOrder = 61;
+            }
+        }
+
+        yield return TypeText(textEnemy, enemyTxt, enemyClip != null ? enemyClip : clip);
+        yield return WaitForAudioSources();
+
+        if (enemyTextBackground != null)
+        {
+            enemyTextBackground.SetActive(false);
+        }
+    }
+
+    IEnumerator TypeText(TextMeshPro targetText, string message, AudioClip textClip)
+    {
+        char[] chars;
+
+        if (targetText == null)
+        {
+            yield break;
+        }
+
+        if (string.IsNullOrWhiteSpace(message))
+        {
+            message = "* ...";
+        }
+
+        chars = message.ToCharArray();
+        targetText.text = "";
+
+        for (int i = 0; i < chars.Length; i++)
+        {
+            AudioSource s = audioHolder.AddComponent<AudioSource>();
+            targetText.text += chars[i];
+            s.clip = textClip;
+            s.pitch = UnityEngine.Random.Range(0.99f, 1f);
+
+            if (s.clip != null)
+            {
+                s.Play();
+            }
+
+            sources.Add(s);
+            yield return new WaitForSeconds(talkingSpeed);
+        }
+    }
+
+    IEnumerator WaitForAudioSources()
+    {
+        int playingSources;
+
+        do
+        {
+            playingSources = 0;
+
+            for (int i = 0; i < sources.Count; i++)
+            {
+                if (sources[i] == null || !sources[i].isPlaying)
+                {
+                    if (sources[i] != null)
+                    {
+                        Destroy(sources[i]);
+                    }
+
+                    sources.RemoveAt(i);
+                    i--;
+                }
+                else
+                {
+                    playingSources++;
+                }
+            }
+
+            yield return null;
+        }
+        while (playingSources > 0);
+    }
+
+    void ClearAudioSources()
+    {
+        if (sources == null)
+        {
+            sources = new List<AudioSource>();
+            return;
+        }
+
+        for (int i = 0; i < sources.Count; i++)
+        {
+            if (sources[i] != null)
+            {
+                Destroy(sources[i]);
+            }
+        }
+
+        sources.Clear();
+    }
+
+    void EnsureReady()
+    {
+        if (sources == null)
+        {
+            sources = new List<AudioSource>();
+        }
+
+        if (audioHolder == null)
+        {
+            audioHolder = new GameObject("Audio Holder");
+            audioHolder.transform.parent = transform;
+        }
     }
 }

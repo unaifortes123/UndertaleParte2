@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/PruebaEntradaEnCombate.unity
+    guid: fa5c00baebef32c48a3152ed9cbba51c
+  - enabled: 1
+    path: Assets/Scenes/Combat2.unity
+    guid: 2beeec8f53c4ba8428146fb33e3c437b
+  - enabled: 1
+    path: Assets/Scenes/Fights/HatsuneMiku2.unity
+    guid: 1c08f7fc7a5554d4a85106dfc80318a8
   m_configObjects: {}

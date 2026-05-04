@@ -28,6 +28,8 @@ public class Attacking : MonoBehaviour
     public TextMeshPro damageTxt;
     public Color missColor;
     public Color damageColor;
+    private EnemyVars stats;
+    private PlayerVars statsPl;
 
 
     void Start()
@@ -67,6 +69,7 @@ public class Attacking : MonoBehaviour
                 }
             }
         }
+
     }
     public void StartAttacking(float playerDmg)
     {
@@ -121,7 +124,7 @@ public class Attacking : MonoBehaviour
 
             yield return new WaitForSeconds(0.1f);
         }
-        pointerObject.GetComponent<SpriteRenderer>().sprite = original; // Default pointer
+        pointerObject.GetComponent<SpriteRenderer>().sprite = original;
         finished = true;
     }
 }
