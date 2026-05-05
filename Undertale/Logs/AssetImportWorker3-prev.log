@@ -1,0 +1,1032 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.45f1 (a13dfa44d684) revision 10567162'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) 64bit Core' Language: 'en' Physical Memory: 48975 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.45f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+F:/Users/UNAI/Documents/GitHub/UndertaleParte2/Undertale
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+57634
+Successfully changed project path to: F:/Users/UNAI/Documents/GitHub/UndertaleParte2/Undertale
+F:/Users/UNAI/Documents/GitHub/UndertaleParte2/Undertale
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [34280]  Target information:
+
+Player connection [34280]  * "[IP] 192.168.1.11 [Port] 0 [Flags] 2 [Guid] 2058753994 [EditorId] 2058753994 [Version] 1048832 [Id] WindowsEditor(7,PC_UNAI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [34280]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2058753994 [EditorId] 2058753994 [Version] 1048832 [Id] WindowsEditor(7,PC_UNAI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [34280]  * "[IP] 10.134.156.126 [Port] 0 [Flags] 2 [Guid] 2058753994 [EditorId] 2058753994 [Version] 1048832 [Id] WindowsEditor(7,PC_UNAI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [34280] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [34280] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+Refreshing native plugins compatible for Editor in 24.08 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.45f1 (a13dfa44d684)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/Users/UNAI/Documents/GitHub/UndertaleParte2/Undertale/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4070 Ti (ID=0x2782)
+    Vendor:   NVIDIA
+    VRAM:     11996 MB
+    Driver:   32.0.15.9144
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56772
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007168 seconds.
+- Loaded All Assemblies, in  0.394 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.293 seconds
+Domain Reload Profiling: 686ms
+	BeginReloadAssembly (112ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (160ms)
+		LoadAssemblies (110ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (158ms)
+			TypeCache.Refresh (157ms)
+				TypeCache.ScanAssembly (140ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (294ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (239ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (170ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.007 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.930 seconds
+Domain Reload Profiling: 1934ms
+	BeginReloadAssembly (156ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (52ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (58ms)
+	LoadAllAssembliesAndSetupDomain (720ms)
+		LoadAssemblies (456ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (360ms)
+			TypeCache.Refresh (312ms)
+				TypeCache.ScanAssembly (286ms)
+			ScanForSourceGeneratedMonoScriptInfo (33ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (931ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (737ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (107ms)
+			ProcessInitializeOnLoadAttributes (521ms)
+			ProcessInitializeOnLoadMethodAttributes (89ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 4.43 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6576 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 46 unused Assets / (353.3 KB). Loaded Objects now: 7039.
+Memory consumption went from 247.4 MB to 247.0 MB.
+Total: 6.661800 ms (FindLiveObjects: 0.316100 ms CreateObjectMapping: 0.521200 ms MarkObjects: 5.585000 ms  DeleteObjects: 0.238100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.020 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.856 seconds
+Domain Reload Profiling: 1876ms
+	BeginReloadAssembly (592ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (416ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (328ms)
+		LoadAssemblies (354ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (69ms)
+			TypeCache.Refresh (19ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (35ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (856ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (624ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (101ms)
+			ProcessInitializeOnLoadAttributes (423ms)
+			ProcessInitializeOnLoadMethodAttributes (79ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Refreshing native plugins compatible for Editor in 7.24 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6410 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (322.2 KB). Loaded Objects now: 7046.
+Memory consumption went from 217.7 MB to 217.4 MB.
+Total: 6.299500 ms (FindLiveObjects: 0.444100 ms CreateObjectMapping: 0.560700 ms MarkObjects: 5.158200 ms  DeleteObjects: 0.135200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/ConnexioDB.cs: 92405ab6a1180bcbccd7a4149ecf5b77 -> cfb461297aec93130b8bc7af12f912e2
+  custom:scripting/monoscript/fileName/ActVars.cs: 248e20ba6b03352484add9bf5bc672f5 -> 6b781fd79618a9db0e4f070db80c3fbd
+  custom:scripting/monoscript/fileName/CameraCrop.cs: 871586eb86e143d9304c014fa71ec12c -> 25884a9d6b9654b949e81b2240046dfe
+  custom:scripting/monoscript/fileName/SkewTextExample.cs: f96859e31fd6dde308d9dc2a2488dcff -> c142d02d70a129e0533975f7c2f96956
+  custom:scripting/monoscript/fileName/Snowdrake.cs: eee78eae92542aef0503e3014f9ceadc -> 1001b5bfb3c7a33f907125e25c312924
+  custom:scripting/monoscript/fileName/MikuAttacks.cs: dce5fc2860a8667804fb9f9f8f9bd488 -> 29c3febd77accfae0162c3a01ba4d698
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/TMP_TextEventHandler.cs: d0f86a17d6fd3e9995db934eaaf34f18 -> f5cd9d5a43bfefc8f4fec80e6de896a4
+  custom:scripting/monoscript/fileName/EnemyVars.cs: 6b6d4e8e63c7f046afaf820bab5803a3 -> 99450783fa4fb752110dd0dfb212b116
+  custom:scripting/monoscript/fileName/AudioManager.cs: 0aef3caba4c1c1b0bc8bd1dca2fef31d -> e8310be4479956b7ccf5d41d9f0f6e53
+  custom:scripting/monoscript/fileName/TMP_ExampleScript_01.cs: 59997facf165601d8c6263ace2a973a5 -> a9d4be556104ff54e7d240529b3e01dc
+  custom:scripting/monoscript/fileName/IFightObject.cs: 6f7b579c7011c590a46f45b65b23fb72 -> 6310865a399931657fa201081841430e
+  custom:scripting/monoscript/fileName/TxtHealthEnemic.cs: b84c93c2e99a48c3025d38b810917318 -> 5f988285f9a08b9efd0f825c9b3364a2
+  custom:scripting/monoscript/fileName/Benchmark01.cs: 1fef48c763f4be76a973f061699dd041 -> 2d3e2cd961730ab95f139a49a673bace
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/Attacking.cs: acc1a921405aa66b110b50ea55796aa9 -> bdf4cd0ee69b40c9f9dc8dae730dea53
+  custom:scripting/monoscript/fileName/MercyTransition.cs: 70a17313c50c651e53223a811152cc66 -> 739f1cc3cc7338e467415d498c937014
+  custom:scripting/monoscript/fileName/PlayerController.cs: 5b090d859ab09be631dc3b0f203f9571 -> d93a52a180fbbe603a59e9aa6da73c83
+  custom:scripting/monoscript/fileName/TextMeshSpawner.cs: c0f20e5855e88374db1098a5acc68df4 -> 76f28e2ddb031571e6ec62b018f65fa8
+  custom:scripting/monoscript/fileName/ItemManager.cs: 0ec2e06f8f1aca92908fe036f9c52d1f -> 1b76008a5c24d6f014835c0b38a112ff
+  custom:scripting/monoscript/fileName/ActingButtons.cs: 957c62d70f5e80fee1185cda06978941 -> e63e2764fd0d289c037e776b2b141007
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/TMP_PhoneNumberValidator.cs: b4c1c54136dffeb4e2962027ebaa6b1f -> 7c3049f481e464c6a9a15dee56c3126f
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/ShaderPropAnimator.cs: 88b70bc5bbc15375387323f48f0661cf -> 55ce425812446482e623ff2695c94cb2
+  custom:scripting/monoscript/fileName/SimpleScript.cs: dcd92cf7399b0d08e25e4a66ab57e91e -> 454caab0c6c050f29b39d82e1d66d0fa
+  custom:scripting/monoscript/fileName/DialogueManager.cs: e31a1628c50f77a0cc2f2d3c9dbc831b -> 2dcb33d5ca63a35e90533ce3223d831c
+  custom:scripting/monoscript/fileName/ObjectSpin.cs: b34dd4d17018731600f920d50ca840f7 -> 2b96bb2079dd7fa5108d981627a28e1e
+  custom:scripting/monoscript/fileName/BattleManager.cs: 0b5716d733cca21529aec092482b3f1f -> 8c9783be6ecb9e38dfddf6110572283c
+  custom:scripting/monoscript/fileName/TMP_TextSelector_A.cs: 088357b4acdc1e6288d897936d29c8d3 -> 347309a09d56e367b188a6978f75b424
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/VertexJitter.cs: 6330f950b41eff6e5970f129864ecd6c -> d27eb5498e48714a66aece98da065133
+  custom:scripting/monoscript/fileName/Name_Input.cs: 9f5f9c665c082f953512b715c1063bc4 -> 11c0d8909f481074918043b6d265061d
+  custom:scripting/monoscript/fileName/TextConsoleSimulator.cs: f2c8898b26c0cf2b0a1c7d12d99e6769 -> 33fc311abb20b5b0ed8f00e4d86b574e
+  custom:scripting/monoscript/fileName/VertexColorCycler.cs: 135fb0ebdaf256193ccc08218c426c64 -> 5f984ca91cf3609293aecc6bc5641572
+  custom:scripting/monoscript/fileName/TMP_FrameRateCounter.cs: 8afeb6f0251e063dcfff2bd827f92c62 -> 46f655df8cb483ac5958307137b1585a
+  custom:scripting/monoscript/fileName/VertexShakeB.cs: 587e5b2aecc39120c2c9ff69742ce897 -> a6f78c4fcda1a29a1a1c1baefedba9e7
+  custom:scripting/monoscript/fileName/TMP_UiFrameRateCounter.cs: 8fa3bcf761bb5076fd90d0361518d59c -> b01021aea19247f14a98ab338907956a
+  custom:scripting/monoscript/fileName/TMPro_InstructionOverlay.cs: 194f3617683541355a9c6c8193e87b1c -> b626d2270e6ebd5c4311585c18b58d8d
+  custom:scripting/monoscript/fileName/Backspace.cs: 2c3c68d750e3e5625c027add594ccaa1 -> 1a73238b475dc42b6d927d3f9e08b721
+  custom:scripting/monoscript/fileName/TMP_DigitValidator.cs: 4e5cde653ae28b90ab257e866c94dfce -> ac02af96215ae3951a3cce9e1a8c6085
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Benchmark01_UGUI.cs: 52a24b07fcdd062ef495404efdb65870 -> 6148cfe2627b7708298f301788144139
+  custom:scripting/monoscript/fileName/ActingManager.cs: e8191878e45aa91979c711d8e031f5ee -> e60acee3c3f79edb9a46833dfc86b95a
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: cda54451bb05786019d8c5b9cf5f962b -> cfa9b9ce06e1a163889f3603dcc1a12a
+  custom:scripting/monoscript/fileName/GameOverManager.cs: f897b8ef9f53958916b63ff9625d6bfb -> 0f56a8035be897d9d4312b932cf2e84a
+  custom:scripting/monoscript/fileName/Save.cs: b4f71b91d286e9e8271bad9838a11e2e -> 237892e19e092729c0067a04d3385815
+  custom:scripting/monoscript/fileName/TextMeshProFloatingText.cs: 5a37842f75734e7729f89af9a8145a1a -> 92608fa4a6315cd0786d82205e77b697
+  custom:scripting/monoscript/fileName/PeterAttacks.cs: 2bbcf1f477feb58bf99a3113b85eecc1 -> 0ff28b0b935f875b948526a7d14e452d
+  custom:scripting/monoscript/fileName/VertexZoom.cs: 2da4737d79388c0362c64482e9ee50d2 -> 650ab1e81d40126e3edcf737cce646e4
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/VertexShakeA.cs: 16900906a98712c9660b9823af1f2500 -> 63ec564c588058369499638dd899e05b
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/PeterCombat.cs: e505f1a2581bd13c9cf15d0b0122d841 -> b97d86534841511674c658bbfc51882d
+  custom:scripting/monoscript/fileName/TMP_TextEventCheck.cs: 7ee93fce990cec7a5b67b504d0259dce -> 13505d917eab5868c435e0c2986dadfa
+  custom:scripting/monoscript/fileName/SaveController.cs: f8b652b7464fc76ce276231c75fd3561 -> 8152ceb99e63933d311b8308549cc4c0
+  custom:scripting/monoscript/fileName/TMP_TextSelector_B.cs: c0db108de9ffc9b6f619f3d00162b1c2 -> ba2be21a7486d37b1011342977a2e49d
+  custom:scripting/monoscript/fileName/Benchmark02.cs: 92dcd0c0a469d0c0690d8ca0bfe95e6f -> 5640963252ce70910e726415f869ced6
+  custom:scripting/monoscript/fileName/DropdownSample.cs: b4fe7efb027fdd4854f643ad764daa8c -> 0a92251794e5f10400149f96c3c59e5d
+  custom:scripting/monoscript/fileName/WarpTextExample.cs: c5431dac938081648a3a3ac553c1029b -> 2663459c266363641981c7d17b698d7f
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SnowAttack.cs: 50e62012e9353bccef86237f1c291d80 -> 3e3074741fff10361d93e44c19b5bb40
+  custom:scripting/monoscript/fileName/ChatController.cs: ff21b89493e3dffcbe018a2cc5a10bae -> 876d5ccae6e345dd5d9450eb0a748f16
+  custom:scripting/monoscript/fileName/TeleType.cs: c18e16db35615314900dbe198d0144e7 -> 31fa97821c4c70f157ec81d507aa6b62
+  custom:scripting/monoscript/fileName/Buttons.cs: 62cbb112f5c68cfe2da22701a621aa77 -> e2aacc9d1751c7c0f3072c5591a0448a
+  custom:scripting/monoscript/fileName/Benchmark04.cs: 86dfb70824307c4cf164687df2489226 -> 32220b148620e52aa81c13a114862bf4
+  custom:scripting/monoscript/fileName/Pellet.cs: 9a7bbb68c1df028fe015e86c544a92ef -> 6d050f074c4101dcc12c86d0a0a0dbb1
+  custom:scripting/monoscript/fileName/EntryEnemy.cs: a5d3c57f207f4ef3849e2877a93c7380 -> 1bd782715230a105b1950cb7b5754f3f
+  custom:scripting/monoscript/fileName/EnvMapAnimator.cs: 08e040d459cd881082c0dd5daba5f85c -> 1b4f61c17e4b7283c3ac351aacff9d26
+  custom:scripting/monoscript/fileName/PruebaRecogidaDeDatos.cs: 87c82ff88c3051d5938c7dfe03218dbd -> e9c33a9569074deaf364622b96e0c6cf
+  custom:scripting/monoscript/fileName/Quit.cs: 82bef9f942a4fd6d57092c9b524773b2 -> 473d9e78903cd01a3973adc8d63b17e4
+  custom:scripting/monoscript/fileName/Continue.cs: e78ef24f1fca3a5f1bec22c2f8f9c850 -> 6af3f412e5573c403c9885a2a7394b16
+  custom:scripting/monoscript/fileName/CameraController.cs: 410dad91edfab559fef754bf8e9970a6 -> 1daac0040b3fce2177f6ca4f90eb8c5b
+  custom:scripting/monoscript/fileName/TMP_TextInfoDebugTool.cs: 7aad42023b6f5112c90650ae13bd6dd8 -> 3f1709cfb2cc628169113a35b5e9be3f
+  custom:scripting/monoscript/fileName/CountMovement.cs: fd746a31a27e66d387380466a5606af9 -> 32d5e63174c1dad2f1246f48fb8b398e
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/ChangeName.cs: 5893a077233054023743bc30cfa18f8a -> f11d08423a5a6a4fa62a1ff55869e171
+  custom:scripting/monoscript/fileName/Attacks.cs: 081aeb8f235686c7914671277bccd193 -> ceb2ecebd90772df76f0b61cff591596
+  custom:scripting/monoscript/fileName/PlayerVars.cs: 4bb92c4ab779560b5e065db1b46cba78 -> a5e8a58d7ce6208b04073958b23bc884
+  custom:scripting/monoscript/fileName/BattleManager2.cs: 2100ece277b4249859db27f151a9c79c -> 0c63891bdb39f255743a4ae26166b081
+  custom:scripting/monoscript/fileName/ProjectileLogic.cs: 084e41e25a69a03df27d245c633b1baf -> 5f2355d0503b64b13a9573e9c06ec275
+  custom:scripting/monoscript/fileName/DialogueHolder.cs: 3ba9226a22f795268f14dcaac1e334db -> c107a362a9f9f6f5af4cc01f6bfdfa31
+  custom:scripting/monoscript/fileName/AttackManager.cs: 3c5578c78b60e990403342eaec03c9c2 -> 5a808bac03afb4f580fc6de4c415bbfc
+  custom:scripting/monoscript/fileName/UIBattle.cs: c06ea5ab984ac3a467b5cf2b648df0b3 -> 0fa3943548df4e29e8dbf6c62f6e253a
+  custom:scripting/monoscript/fileName/PlayerMovement.cs: 5c1499cfc43e291157e191fb54bb34f9 -> 42480eed24e61f9d7e7e895933644f96
+  custom:scripting/monoscript/fileName/ItemButtons.cs: 92fedcf07b7d5dfce4ff570b7f6817e4 -> 1682475bcf701c3f6067866798117b31
+  custom:scripting/monoscript/fileName/Benchmark03.cs: 520976d641c2b7cf395e30b045f5a45d -> 17cc87e0529ac71d909a946afb47a274
+========================================================================
+Received Import Request.
+  Time since last request: 9353.027267 seconds.
+  path: Assets/Scripts/EntryEnemy.cs
+  artifactKey: Guid(fa40a8ca8e8ec39499e8bcafdf5359f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/EntryEnemy.cs using Guid(fa40a8ca8e8ec39499e8bcafdf5359f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: 'f6eb91bbaa90c7e89056ed8ab83a0c04') in 0.006444 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.552 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.289 seconds
+Domain Reload Profiling: 1838ms
+	BeginReloadAssembly (157ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (302ms)
+		LoadAssemblies (318ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (67ms)
+			TypeCache.Refresh (18ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (33ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1289ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (572ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (97ms)
+			ProcessInitializeOnLoadAttributes (382ms)
+			ProcessInitializeOnLoadMethodAttributes (73ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 4.63 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6410 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (322.3 KB). Loaded Objects now: 7052.
+Memory consumption went from 217.7 MB to 217.4 MB.
+Total: 5.311000 ms (FindLiveObjects: 0.311700 ms CreateObjectMapping: 0.137800 ms MarkObjects: 4.786800 ms  DeleteObjects: 0.073400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/ConnexioDB.cs: 92405ab6a1180bcbccd7a4149ecf5b77 -> cfb461297aec93130b8bc7af12f912e2
+  custom:scripting/monoscript/fileName/ActVars.cs: 248e20ba6b03352484add9bf5bc672f5 -> 6b781fd79618a9db0e4f070db80c3fbd
+  custom:scripting/monoscript/fileName/CameraCrop.cs: 871586eb86e143d9304c014fa71ec12c -> 25884a9d6b9654b949e81b2240046dfe
+  custom:scripting/monoscript/fileName/SkewTextExample.cs: f96859e31fd6dde308d9dc2a2488dcff -> c142d02d70a129e0533975f7c2f96956
+  custom:scripting/monoscript/fileName/Snowdrake.cs: eee78eae92542aef0503e3014f9ceadc -> 1001b5bfb3c7a33f907125e25c312924
+  custom:scripting/monoscript/fileName/MikuAttacks.cs: dce5fc2860a8667804fb9f9f8f9bd488 -> 29c3febd77accfae0162c3a01ba4d698
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/TMP_TextEventHandler.cs: d0f86a17d6fd3e9995db934eaaf34f18 -> f5cd9d5a43bfefc8f4fec80e6de896a4
+  custom:scripting/monoscript/fileName/EnemyVars.cs: 6b6d4e8e63c7f046afaf820bab5803a3 -> 99450783fa4fb752110dd0dfb212b116
+  custom:scripting/monoscript/fileName/AudioManager.cs: 0aef3caba4c1c1b0bc8bd1dca2fef31d -> e8310be4479956b7ccf5d41d9f0f6e53
+  custom:scripting/monoscript/fileName/TMP_ExampleScript_01.cs: 59997facf165601d8c6263ace2a973a5 -> a9d4be556104ff54e7d240529b3e01dc
+  custom:scripting/monoscript/fileName/IFightObject.cs: 6f7b579c7011c590a46f45b65b23fb72 -> 6310865a399931657fa201081841430e
+  custom:scripting/monoscript/fileName/TxtHealthEnemic.cs: b84c93c2e99a48c3025d38b810917318 -> 5f988285f9a08b9efd0f825c9b3364a2
+  custom:scripting/monoscript/fileName/Benchmark01.cs: 1fef48c763f4be76a973f061699dd041 -> 2d3e2cd961730ab95f139a49a673bace
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/Attacking.cs: acc1a921405aa66b110b50ea55796aa9 -> bdf4cd0ee69b40c9f9dc8dae730dea53
+  custom:scripting/monoscript/fileName/MercyTransition.cs: 70a17313c50c651e53223a811152cc66 -> 739f1cc3cc7338e467415d498c937014
+  custom:scripting/monoscript/fileName/PlayerController.cs: 5b090d859ab09be631dc3b0f203f9571 -> d93a52a180fbbe603a59e9aa6da73c83
+  custom:scripting/monoscript/fileName/TextMeshSpawner.cs: c0f20e5855e88374db1098a5acc68df4 -> 76f28e2ddb031571e6ec62b018f65fa8
+  custom:scripting/monoscript/fileName/ItemManager.cs: 0ec2e06f8f1aca92908fe036f9c52d1f -> 1b76008a5c24d6f014835c0b38a112ff
+  custom:scripting/monoscript/fileName/ActingButtons.cs: 957c62d70f5e80fee1185cda06978941 -> e63e2764fd0d289c037e776b2b141007
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/TMP_PhoneNumberValidator.cs: b4c1c54136dffeb4e2962027ebaa6b1f -> 7c3049f481e464c6a9a15dee56c3126f
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/ShaderPropAnimator.cs: 88b70bc5bbc15375387323f48f0661cf -> 55ce425812446482e623ff2695c94cb2
+  custom:scripting/monoscript/fileName/SimpleScript.cs: dcd92cf7399b0d08e25e4a66ab57e91e -> 454caab0c6c050f29b39d82e1d66d0fa
+  custom:scripting/monoscript/fileName/DialogueManager.cs: e31a1628c50f77a0cc2f2d3c9dbc831b -> 2dcb33d5ca63a35e90533ce3223d831c
+  custom:scripting/monoscript/fileName/ObjectSpin.cs: b34dd4d17018731600f920d50ca840f7 -> 2b96bb2079dd7fa5108d981627a28e1e
+  custom:scripting/monoscript/fileName/BattleManager.cs: 0b5716d733cca21529aec092482b3f1f -> 8c9783be6ecb9e38dfddf6110572283c
+  custom:scripting/monoscript/fileName/TMP_TextSelector_A.cs: 088357b4acdc1e6288d897936d29c8d3 -> 347309a09d56e367b188a6978f75b424
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/VertexJitter.cs: 6330f950b41eff6e5970f129864ecd6c -> d27eb5498e48714a66aece98da065133
+  custom:scripting/monoscript/fileName/Name_Input.cs: 9f5f9c665c082f953512b715c1063bc4 -> 11c0d8909f481074918043b6d265061d
+  custom:scripting/monoscript/fileName/TextConsoleSimulator.cs: f2c8898b26c0cf2b0a1c7d12d99e6769 -> 33fc311abb20b5b0ed8f00e4d86b574e
+  custom:scripting/monoscript/fileName/VertexColorCycler.cs: 135fb0ebdaf256193ccc08218c426c64 -> 5f984ca91cf3609293aecc6bc5641572
+  custom:scripting/monoscript/fileName/TMP_FrameRateCounter.cs: 8afeb6f0251e063dcfff2bd827f92c62 -> 46f655df8cb483ac5958307137b1585a
+  custom:scripting/monoscript/fileName/VertexShakeB.cs: 587e5b2aecc39120c2c9ff69742ce897 -> a6f78c4fcda1a29a1a1c1baefedba9e7
+  custom:scripting/monoscript/fileName/TMP_UiFrameRateCounter.cs: 8fa3bcf761bb5076fd90d0361518d59c -> b01021aea19247f14a98ab338907956a
+  custom:scripting/monoscript/fileName/TMPro_InstructionOverlay.cs: 194f3617683541355a9c6c8193e87b1c -> b626d2270e6ebd5c4311585c18b58d8d
+  custom:scripting/monoscript/fileName/Backspace.cs: 2c3c68d750e3e5625c027add594ccaa1 -> 1a73238b475dc42b6d927d3f9e08b721
+  custom:scripting/monoscript/fileName/TMP_DigitValidator.cs: 4e5cde653ae28b90ab257e866c94dfce -> ac02af96215ae3951a3cce9e1a8c6085
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Benchmark01_UGUI.cs: 52a24b07fcdd062ef495404efdb65870 -> 6148cfe2627b7708298f301788144139
+  custom:scripting/monoscript/fileName/ActingManager.cs: e8191878e45aa91979c711d8e031f5ee -> e60acee3c3f79edb9a46833dfc86b95a
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: d15e646100799e9825477e556f7bccb8 -> cfa9b9ce06e1a163889f3603dcc1a12a
+  custom:scripting/monoscript/fileName/GameOverManager.cs: f897b8ef9f53958916b63ff9625d6bfb -> 0f56a8035be897d9d4312b932cf2e84a
+  custom:scripting/monoscript/fileName/Save.cs: b4f71b91d286e9e8271bad9838a11e2e -> 237892e19e092729c0067a04d3385815
+  custom:scripting/monoscript/fileName/TextMeshProFloatingText.cs: 5a37842f75734e7729f89af9a8145a1a -> 92608fa4a6315cd0786d82205e77b697
+  custom:scripting/monoscript/fileName/PeterAttacks.cs: 2bbcf1f477feb58bf99a3113b85eecc1 -> 0ff28b0b935f875b948526a7d14e452d
+  custom:scripting/monoscript/fileName/VertexZoom.cs: 2da4737d79388c0362c64482e9ee50d2 -> 650ab1e81d40126e3edcf737cce646e4
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/VertexShakeA.cs: 16900906a98712c9660b9823af1f2500 -> 63ec564c588058369499638dd899e05b
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/PeterCombat.cs: e505f1a2581bd13c9cf15d0b0122d841 -> b97d86534841511674c658bbfc51882d
+  custom:scripting/monoscript/fileName/TMP_TextEventCheck.cs: 7ee93fce990cec7a5b67b504d0259dce -> 13505d917eab5868c435e0c2986dadfa
+  custom:scripting/monoscript/fileName/SaveController.cs: f8b652b7464fc76ce276231c75fd3561 -> 8152ceb99e63933d311b8308549cc4c0
+  custom:scripting/monoscript/fileName/TMP_TextSelector_B.cs: c0db108de9ffc9b6f619f3d00162b1c2 -> ba2be21a7486d37b1011342977a2e49d
+  custom:scripting/monoscript/fileName/Benchmark02.cs: 92dcd0c0a469d0c0690d8ca0bfe95e6f -> 5640963252ce70910e726415f869ced6
+  custom:scripting/monoscript/fileName/DropdownSample.cs: b4fe7efb027fdd4854f643ad764daa8c -> 0a92251794e5f10400149f96c3c59e5d
+  custom:scripting/monoscript/fileName/WarpTextExample.cs: c5431dac938081648a3a3ac553c1029b -> 2663459c266363641981c7d17b698d7f
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SnowAttack.cs: 50e62012e9353bccef86237f1c291d80 -> 3e3074741fff10361d93e44c19b5bb40
+  custom:scripting/monoscript/fileName/ChatController.cs: ff21b89493e3dffcbe018a2cc5a10bae -> 876d5ccae6e345dd5d9450eb0a748f16
+  custom:scripting/monoscript/fileName/TeleType.cs: c18e16db35615314900dbe198d0144e7 -> 31fa97821c4c70f157ec81d507aa6b62
+  custom:scripting/monoscript/fileName/Buttons.cs: 62cbb112f5c68cfe2da22701a621aa77 -> e2aacc9d1751c7c0f3072c5591a0448a
+  custom:scripting/monoscript/fileName/Benchmark04.cs: 86dfb70824307c4cf164687df2489226 -> 32220b148620e52aa81c13a114862bf4
+  custom:scripting/monoscript/fileName/Pellet.cs: 9a7bbb68c1df028fe015e86c544a92ef -> 6d050f074c4101dcc12c86d0a0a0dbb1
+  custom:scripting/monoscript/fileName/EntryEnemy.cs: a5d3c57f207f4ef3849e2877a93c7380 -> 1bd782715230a105b1950cb7b5754f3f
+  custom:scripting/monoscript/fileName/EnvMapAnimator.cs: 08e040d459cd881082c0dd5daba5f85c -> 1b4f61c17e4b7283c3ac351aacff9d26
+  custom:scripting/monoscript/fileName/PruebaRecogidaDeDatos.cs: 87c82ff88c3051d5938c7dfe03218dbd -> e9c33a9569074deaf364622b96e0c6cf
+  custom:scripting/monoscript/fileName/Quit.cs: 82bef9f942a4fd6d57092c9b524773b2 -> 473d9e78903cd01a3973adc8d63b17e4
+  custom:scripting/monoscript/fileName/Continue.cs: e78ef24f1fca3a5f1bec22c2f8f9c850 -> 6af3f412e5573c403c9885a2a7394b16
+  custom:scripting/monoscript/fileName/CameraController.cs: 410dad91edfab559fef754bf8e9970a6 -> 1daac0040b3fce2177f6ca4f90eb8c5b
+  custom:scripting/monoscript/fileName/TMP_TextInfoDebugTool.cs: 7aad42023b6f5112c90650ae13bd6dd8 -> 3f1709cfb2cc628169113a35b5e9be3f
+  custom:scripting/monoscript/fileName/CountMovement.cs: fd746a31a27e66d387380466a5606af9 -> 32d5e63174c1dad2f1246f48fb8b398e
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/ChangeName.cs: 5893a077233054023743bc30cfa18f8a -> f11d08423a5a6a4fa62a1ff55869e171
+  custom:scripting/monoscript/fileName/Attacks.cs: 081aeb8f235686c7914671277bccd193 -> ceb2ecebd90772df76f0b61cff591596
+  custom:scripting/monoscript/fileName/PlayerVars.cs: 4bb92c4ab779560b5e065db1b46cba78 -> a5e8a58d7ce6208b04073958b23bc884
+  custom:scripting/monoscript/fileName/BattleManager2.cs: 2100ece277b4249859db27f151a9c79c -> 0c63891bdb39f255743a4ae26166b081
+  custom:scripting/monoscript/fileName/ProjectileLogic.cs: 084e41e25a69a03df27d245c633b1baf -> 5f2355d0503b64b13a9573e9c06ec275
+  custom:scripting/monoscript/fileName/DialogueHolder.cs: 3ba9226a22f795268f14dcaac1e334db -> c107a362a9f9f6f5af4cc01f6bfdfa31
+  custom:scripting/monoscript/fileName/AttackManager.cs: 3c5578c78b60e990403342eaec03c9c2 -> 5a808bac03afb4f580fc6de4c415bbfc
+  custom:scripting/monoscript/fileName/UIBattle.cs: c06ea5ab984ac3a467b5cf2b648df0b3 -> 0fa3943548df4e29e8dbf6c62f6e253a
+  custom:scripting/monoscript/fileName/PlayerMovement.cs: 5c1499cfc43e291157e191fb54bb34f9 -> 42480eed24e61f9d7e7e895933644f96
+  custom:scripting/monoscript/fileName/ItemButtons.cs: 92fedcf07b7d5dfce4ff570b7f6817e4 -> 1682475bcf701c3f6067866798117b31
+  custom:scripting/monoscript/fileName/Benchmark03.cs: 520976d641c2b7cf395e30b045f5a45d -> 17cc87e0529ac71d909a946afb47a274
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.507 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.393 seconds
+Domain Reload Profiling: 1898ms
+	BeginReloadAssembly (157ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (256ms)
+		LoadAssemblies (309ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (30ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1394ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (707ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (117ms)
+			ProcessInitializeOnLoadAttributes (468ms)
+			ProcessInitializeOnLoadMethodAttributes (99ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 5.65 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6410 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (322.2 KB). Loaded Objects now: 7058.
+Memory consumption went from 217.7 MB to 217.4 MB.
+Total: 5.376200 ms (FindLiveObjects: 0.304300 ms CreateObjectMapping: 0.129400 ms MarkObjects: 4.867700 ms  DeleteObjects: 0.074200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/ConnexioDB.cs: 92405ab6a1180bcbccd7a4149ecf5b77 -> cfb461297aec93130b8bc7af12f912e2
+  custom:scripting/monoscript/fileName/ActVars.cs: 248e20ba6b03352484add9bf5bc672f5 -> 6b781fd79618a9db0e4f070db80c3fbd
+  custom:scripting/monoscript/fileName/CameraCrop.cs: 871586eb86e143d9304c014fa71ec12c -> 25884a9d6b9654b949e81b2240046dfe
+  custom:scripting/monoscript/fileName/SkewTextExample.cs: f96859e31fd6dde308d9dc2a2488dcff -> c142d02d70a129e0533975f7c2f96956
+  custom:scripting/monoscript/fileName/Snowdrake.cs: eee78eae92542aef0503e3014f9ceadc -> 1001b5bfb3c7a33f907125e25c312924
+  custom:scripting/monoscript/fileName/MikuAttacks.cs: dce5fc2860a8667804fb9f9f8f9bd488 -> 29c3febd77accfae0162c3a01ba4d698
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/TMP_TextEventHandler.cs: d0f86a17d6fd3e9995db934eaaf34f18 -> f5cd9d5a43bfefc8f4fec80e6de896a4
+  custom:scripting/monoscript/fileName/EnemyVars.cs: 6b6d4e8e63c7f046afaf820bab5803a3 -> 99450783fa4fb752110dd0dfb212b116
+  custom:scripting/monoscript/fileName/AudioManager.cs: 0aef3caba4c1c1b0bc8bd1dca2fef31d -> e8310be4479956b7ccf5d41d9f0f6e53
+  custom:scripting/monoscript/fileName/TMP_ExampleScript_01.cs: 59997facf165601d8c6263ace2a973a5 -> a9d4be556104ff54e7d240529b3e01dc
+  custom:scripting/monoscript/fileName/IFightObject.cs: 6f7b579c7011c590a46f45b65b23fb72 -> 6310865a399931657fa201081841430e
+  custom:scripting/monoscript/fileName/TxtHealthEnemic.cs: b84c93c2e99a48c3025d38b810917318 -> 5f988285f9a08b9efd0f825c9b3364a2
+  custom:scripting/monoscript/fileName/Benchmark01.cs: 1fef48c763f4be76a973f061699dd041 -> 2d3e2cd961730ab95f139a49a673bace
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/Attacking.cs: acc1a921405aa66b110b50ea55796aa9 -> bdf4cd0ee69b40c9f9dc8dae730dea53
+  custom:scripting/monoscript/fileName/MercyTransition.cs: 70a17313c50c651e53223a811152cc66 -> 739f1cc3cc7338e467415d498c937014
+  custom:scripting/monoscript/fileName/PlayerController.cs: 5b090d859ab09be631dc3b0f203f9571 -> d93a52a180fbbe603a59e9aa6da73c83
+  custom:scripting/monoscript/fileName/TextMeshSpawner.cs: c0f20e5855e88374db1098a5acc68df4 -> 76f28e2ddb031571e6ec62b018f65fa8
+  custom:scripting/monoscript/fileName/ItemManager.cs: 0ec2e06f8f1aca92908fe036f9c52d1f -> 1b76008a5c24d6f014835c0b38a112ff
+  custom:scripting/monoscript/fileName/ActingButtons.cs: 957c62d70f5e80fee1185cda06978941 -> e63e2764fd0d289c037e776b2b141007
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/TMP_PhoneNumberValidator.cs: b4c1c54136dffeb4e2962027ebaa6b1f -> 7c3049f481e464c6a9a15dee56c3126f
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/ShaderPropAnimator.cs: 88b70bc5bbc15375387323f48f0661cf -> 55ce425812446482e623ff2695c94cb2
+  custom:scripting/monoscript/fileName/SimpleScript.cs: dcd92cf7399b0d08e25e4a66ab57e91e -> 454caab0c6c050f29b39d82e1d66d0fa
+  custom:scripting/monoscript/fileName/DialogueManager.cs: e31a1628c50f77a0cc2f2d3c9dbc831b -> 2dcb33d5ca63a35e90533ce3223d831c
+  custom:scripting/monoscript/fileName/ObjectSpin.cs: b34dd4d17018731600f920d50ca840f7 -> 2b96bb2079dd7fa5108d981627a28e1e
+  custom:scripting/monoscript/fileName/BattleManager.cs: 0b5716d733cca21529aec092482b3f1f -> 8c9783be6ecb9e38dfddf6110572283c
+  custom:scripting/monoscript/fileName/TMP_TextSelector_A.cs: 088357b4acdc1e6288d897936d29c8d3 -> 347309a09d56e367b188a6978f75b424
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/VertexJitter.cs: 6330f950b41eff6e5970f129864ecd6c -> d27eb5498e48714a66aece98da065133
+  custom:scripting/monoscript/fileName/Name_Input.cs: 9f5f9c665c082f953512b715c1063bc4 -> 11c0d8909f481074918043b6d265061d
+  custom:scripting/monoscript/fileName/TextConsoleSimulator.cs: f2c8898b26c0cf2b0a1c7d12d99e6769 -> 33fc311abb20b5b0ed8f00e4d86b574e
+  custom:scripting/monoscript/fileName/VertexColorCycler.cs: 135fb0ebdaf256193ccc08218c426c64 -> 5f984ca91cf3609293aecc6bc5641572
+  custom:scripting/monoscript/fileName/TMP_FrameRateCounter.cs: 8afeb6f0251e063dcfff2bd827f92c62 -> 46f655df8cb483ac5958307137b1585a
+  custom:scripting/monoscript/fileName/VertexShakeB.cs: 587e5b2aecc39120c2c9ff69742ce897 -> a6f78c4fcda1a29a1a1c1baefedba9e7
+  custom:scripting/monoscript/fileName/TMP_UiFrameRateCounter.cs: 8fa3bcf761bb5076fd90d0361518d59c -> b01021aea19247f14a98ab338907956a
+  custom:scripting/monoscript/fileName/TMPro_InstructionOverlay.cs: 194f3617683541355a9c6c8193e87b1c -> b626d2270e6ebd5c4311585c18b58d8d
+  custom:scripting/monoscript/fileName/Backspace.cs: 2c3c68d750e3e5625c027add594ccaa1 -> 1a73238b475dc42b6d927d3f9e08b721
+  custom:scripting/monoscript/fileName/TMP_DigitValidator.cs: 4e5cde653ae28b90ab257e866c94dfce -> ac02af96215ae3951a3cce9e1a8c6085
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Benchmark01_UGUI.cs: 52a24b07fcdd062ef495404efdb65870 -> 6148cfe2627b7708298f301788144139
+  custom:scripting/monoscript/fileName/ActingManager.cs: e8191878e45aa91979c711d8e031f5ee -> e60acee3c3f79edb9a46833dfc86b95a
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: d15e646100799e9825477e556f7bccb8 -> cfa9b9ce06e1a163889f3603dcc1a12a
+  custom:scripting/monoscript/fileName/GameOverManager.cs: f897b8ef9f53958916b63ff9625d6bfb -> 0f56a8035be897d9d4312b932cf2e84a
+  custom:scripting/monoscript/fileName/Save.cs: b4f71b91d286e9e8271bad9838a11e2e -> 237892e19e092729c0067a04d3385815
+  custom:scripting/monoscript/fileName/TextMeshProFloatingText.cs: 5a37842f75734e7729f89af9a8145a1a -> 92608fa4a6315cd0786d82205e77b697
+  custom:scripting/monoscript/fileName/PeterAttacks.cs: 2bbcf1f477feb58bf99a3113b85eecc1 -> 0ff28b0b935f875b948526a7d14e452d
+  custom:scripting/monoscript/fileName/VertexZoom.cs: 2da4737d79388c0362c64482e9ee50d2 -> 650ab1e81d40126e3edcf737cce646e4
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/VertexShakeA.cs: 16900906a98712c9660b9823af1f2500 -> 63ec564c588058369499638dd899e05b
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/PeterCombat.cs: e505f1a2581bd13c9cf15d0b0122d841 -> b97d86534841511674c658bbfc51882d
+  custom:scripting/monoscript/fileName/TMP_TextEventCheck.cs: 7ee93fce990cec7a5b67b504d0259dce -> 13505d917eab5868c435e0c2986dadfa
+  custom:scripting/monoscript/fileName/SaveController.cs: f8b652b7464fc76ce276231c75fd3561 -> 8152ceb99e63933d311b8308549cc4c0
+  custom:scripting/monoscript/fileName/TMP_TextSelector_B.cs: c0db108de9ffc9b6f619f3d00162b1c2 -> ba2be21a7486d37b1011342977a2e49d
+  custom:scripting/monoscript/fileName/Benchmark02.cs: 92dcd0c0a469d0c0690d8ca0bfe95e6f -> 5640963252ce70910e726415f869ced6
+  custom:scripting/monoscript/fileName/DropdownSample.cs: b4fe7efb027fdd4854f643ad764daa8c -> 0a92251794e5f10400149f96c3c59e5d
+  custom:scripting/monoscript/fileName/WarpTextExample.cs: c5431dac938081648a3a3ac553c1029b -> 2663459c266363641981c7d17b698d7f
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SnowAttack.cs: 50e62012e9353bccef86237f1c291d80 -> 3e3074741fff10361d93e44c19b5bb40
+  custom:scripting/monoscript/fileName/ChatController.cs: ff21b89493e3dffcbe018a2cc5a10bae -> 876d5ccae6e345dd5d9450eb0a748f16
+  custom:scripting/monoscript/fileName/TeleType.cs: c18e16db35615314900dbe198d0144e7 -> 31fa97821c4c70f157ec81d507aa6b62
+  custom:scripting/monoscript/fileName/Buttons.cs: 62cbb112f5c68cfe2da22701a621aa77 -> e2aacc9d1751c7c0f3072c5591a0448a
+  custom:scripting/monoscript/fileName/Benchmark04.cs: 86dfb70824307c4cf164687df2489226 -> 32220b148620e52aa81c13a114862bf4
+  custom:scripting/monoscript/fileName/Pellet.cs: 9a7bbb68c1df028fe015e86c544a92ef -> 6d050f074c4101dcc12c86d0a0a0dbb1
+  custom:scripting/monoscript/fileName/EntryEnemy.cs: a5d3c57f207f4ef3849e2877a93c7380 -> 1bd782715230a105b1950cb7b5754f3f
+  custom:scripting/monoscript/fileName/EnvMapAnimator.cs: 08e040d459cd881082c0dd5daba5f85c -> 1b4f61c17e4b7283c3ac351aacff9d26
+  custom:scripting/monoscript/fileName/PruebaRecogidaDeDatos.cs: 87c82ff88c3051d5938c7dfe03218dbd -> e9c33a9569074deaf364622b96e0c6cf
+  custom:scripting/monoscript/fileName/Quit.cs: 82bef9f942a4fd6d57092c9b524773b2 -> 473d9e78903cd01a3973adc8d63b17e4
+  custom:scripting/monoscript/fileName/Continue.cs: e78ef24f1fca3a5f1bec22c2f8f9c850 -> 6af3f412e5573c403c9885a2a7394b16
+  custom:scripting/monoscript/fileName/CameraController.cs: 410dad91edfab559fef754bf8e9970a6 -> 1daac0040b3fce2177f6ca4f90eb8c5b
+  custom:scripting/monoscript/fileName/TMP_TextInfoDebugTool.cs: 7aad42023b6f5112c90650ae13bd6dd8 -> 3f1709cfb2cc628169113a35b5e9be3f
+  custom:scripting/monoscript/fileName/CountMovement.cs: fd746a31a27e66d387380466a5606af9 -> 32d5e63174c1dad2f1246f48fb8b398e
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/ChangeName.cs: 5893a077233054023743bc30cfa18f8a -> f11d08423a5a6a4fa62a1ff55869e171
+  custom:scripting/monoscript/fileName/Attacks.cs: 081aeb8f235686c7914671277bccd193 -> ceb2ecebd90772df76f0b61cff591596
+  custom:scripting/monoscript/fileName/PlayerVars.cs: 4bb92c4ab779560b5e065db1b46cba78 -> a5e8a58d7ce6208b04073958b23bc884
+  custom:scripting/monoscript/fileName/BattleManager2.cs: 2100ece277b4249859db27f151a9c79c -> 0c63891bdb39f255743a4ae26166b081
+  custom:scripting/monoscript/fileName/ProjectileLogic.cs: 084e41e25a69a03df27d245c633b1baf -> 5f2355d0503b64b13a9573e9c06ec275
+  custom:scripting/monoscript/fileName/DialogueHolder.cs: 3ba9226a22f795268f14dcaac1e334db -> c107a362a9f9f6f5af4cc01f6bfdfa31
+  custom:scripting/monoscript/fileName/AttackManager.cs: 3c5578c78b60e990403342eaec03c9c2 -> 5a808bac03afb4f580fc6de4c415bbfc
+  custom:scripting/monoscript/fileName/UIBattle.cs: c06ea5ab984ac3a467b5cf2b648df0b3 -> 0fa3943548df4e29e8dbf6c62f6e253a
+  custom:scripting/monoscript/fileName/PlayerMovement.cs: 5c1499cfc43e291157e191fb54bb34f9 -> 42480eed24e61f9d7e7e895933644f96
+  custom:scripting/monoscript/fileName/ItemButtons.cs: 92fedcf07b7d5dfce4ff570b7f6817e4 -> 1682475bcf701c3f6067866798117b31
+  custom:scripting/monoscript/fileName/Benchmark03.cs: 520976d641c2b7cf395e30b045f5a45d -> 17cc87e0529ac71d909a946afb47a274
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.512 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.415 seconds
+Domain Reload Profiling: 1925ms
+	BeginReloadAssembly (156ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (263ms)
+		LoadAssemblies (316ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (29ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1415ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (705ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (116ms)
+			ProcessInitializeOnLoadAttributes (479ms)
+			ProcessInitializeOnLoadMethodAttributes (87ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 6.55 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6410 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (322.3 KB). Loaded Objects now: 7064.
+Memory consumption went from 217.7 MB to 217.4 MB.
+Total: 5.339700 ms (FindLiveObjects: 0.308700 ms CreateObjectMapping: 0.121700 ms MarkObjects: 4.834300 ms  DeleteObjects: 0.074400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/ConnexioDB.cs: 92405ab6a1180bcbccd7a4149ecf5b77 -> cfb461297aec93130b8bc7af12f912e2
+  custom:scripting/monoscript/fileName/ActVars.cs: 248e20ba6b03352484add9bf5bc672f5 -> 6b781fd79618a9db0e4f070db80c3fbd
+  custom:scripting/monoscript/fileName/CameraCrop.cs: 871586eb86e143d9304c014fa71ec12c -> 25884a9d6b9654b949e81b2240046dfe
+  custom:scripting/monoscript/fileName/SkewTextExample.cs: f96859e31fd6dde308d9dc2a2488dcff -> c142d02d70a129e0533975f7c2f96956
+  custom:scripting/monoscript/fileName/Snowdrake.cs: eee78eae92542aef0503e3014f9ceadc -> 1001b5bfb3c7a33f907125e25c312924
+  custom:scripting/monoscript/fileName/MikuAttacks.cs: dce5fc2860a8667804fb9f9f8f9bd488 -> 29c3febd77accfae0162c3a01ba4d698
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/TMP_TextEventHandler.cs: d0f86a17d6fd3e9995db934eaaf34f18 -> f5cd9d5a43bfefc8f4fec80e6de896a4
+  custom:scripting/monoscript/fileName/EnemyVars.cs: 6b6d4e8e63c7f046afaf820bab5803a3 -> 99450783fa4fb752110dd0dfb212b116
+  custom:scripting/monoscript/fileName/AudioManager.cs: 0aef3caba4c1c1b0bc8bd1dca2fef31d -> e8310be4479956b7ccf5d41d9f0f6e53
+  custom:scripting/monoscript/fileName/TMP_ExampleScript_01.cs: 59997facf165601d8c6263ace2a973a5 -> a9d4be556104ff54e7d240529b3e01dc
+  custom:scripting/monoscript/fileName/IFightObject.cs: 6f7b579c7011c590a46f45b65b23fb72 -> 6310865a399931657fa201081841430e
+  custom:scripting/monoscript/fileName/TxtHealthEnemic.cs: b84c93c2e99a48c3025d38b810917318 -> 5f988285f9a08b9efd0f825c9b3364a2
+  custom:scripting/monoscript/fileName/Benchmark01.cs: 1fef48c763f4be76a973f061699dd041 -> 2d3e2cd961730ab95f139a49a673bace
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/Attacking.cs: acc1a921405aa66b110b50ea55796aa9 -> bdf4cd0ee69b40c9f9dc8dae730dea53
+  custom:scripting/monoscript/fileName/MercyTransition.cs: 70a17313c50c651e53223a811152cc66 -> 739f1cc3cc7338e467415d498c937014
+  custom:scripting/monoscript/fileName/PlayerController.cs: 5b090d859ab09be631dc3b0f203f9571 -> d93a52a180fbbe603a59e9aa6da73c83
+  custom:scripting/monoscript/fileName/TextMeshSpawner.cs: c0f20e5855e88374db1098a5acc68df4 -> 76f28e2ddb031571e6ec62b018f65fa8
+  custom:scripting/monoscript/fileName/ItemManager.cs: 0ec2e06f8f1aca92908fe036f9c52d1f -> 1b76008a5c24d6f014835c0b38a112ff
+  custom:scripting/monoscript/fileName/ActingButtons.cs: 957c62d70f5e80fee1185cda06978941 -> e63e2764fd0d289c037e776b2b141007
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/TMP_PhoneNumberValidator.cs: b4c1c54136dffeb4e2962027ebaa6b1f -> 7c3049f481e464c6a9a15dee56c3126f
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/ShaderPropAnimator.cs: 88b70bc5bbc15375387323f48f0661cf -> 55ce425812446482e623ff2695c94cb2
+  custom:scripting/monoscript/fileName/SimpleScript.cs: dcd92cf7399b0d08e25e4a66ab57e91e -> 454caab0c6c050f29b39d82e1d66d0fa
+  custom:scripting/monoscript/fileName/DialogueManager.cs: e31a1628c50f77a0cc2f2d3c9dbc831b -> 2dcb33d5ca63a35e90533ce3223d831c
+  custom:scripting/monoscript/fileName/ObjectSpin.cs: b34dd4d17018731600f920d50ca840f7 -> 2b96bb2079dd7fa5108d981627a28e1e
+  custom:scripting/monoscript/fileName/BattleManager.cs: 0b5716d733cca21529aec092482b3f1f -> 8c9783be6ecb9e38dfddf6110572283c
+  custom:scripting/monoscript/fileName/TMP_TextSelector_A.cs: 088357b4acdc1e6288d897936d29c8d3 -> 347309a09d56e367b188a6978f75b424
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/VertexJitter.cs: 6330f950b41eff6e5970f129864ecd6c -> d27eb5498e48714a66aece98da065133
+  custom:scripting/monoscript/fileName/Name_Input.cs: 9f5f9c665c082f953512b715c1063bc4 -> 11c0d8909f481074918043b6d265061d
+  custom:scripting/monoscript/fileName/TextConsoleSimulator.cs: f2c8898b26c0cf2b0a1c7d12d99e6769 -> 33fc311abb20b5b0ed8f00e4d86b574e
+  custom:scripting/monoscript/fileName/VertexColorCycler.cs: 135fb0ebdaf256193ccc08218c426c64 -> 5f984ca91cf3609293aecc6bc5641572
+  custom:scripting/monoscript/fileName/TMP_FrameRateCounter.cs: 8afeb6f0251e063dcfff2bd827f92c62 -> 46f655df8cb483ac5958307137b1585a
+  custom:scripting/monoscript/fileName/VertexShakeB.cs: 587e5b2aecc39120c2c9ff69742ce897 -> a6f78c4fcda1a29a1a1c1baefedba9e7
+  custom:scripting/monoscript/fileName/TMP_UiFrameRateCounter.cs: 8fa3bcf761bb5076fd90d0361518d59c -> b01021aea19247f14a98ab338907956a
+  custom:scripting/monoscript/fileName/TMPro_InstructionOverlay.cs: 194f3617683541355a9c6c8193e87b1c -> b626d2270e6ebd5c4311585c18b58d8d
+  custom:scripting/monoscript/fileName/Backspace.cs: 2c3c68d750e3e5625c027add594ccaa1 -> 1a73238b475dc42b6d927d3f9e08b721
+  custom:scripting/monoscript/fileName/TMP_DigitValidator.cs: 4e5cde653ae28b90ab257e866c94dfce -> ac02af96215ae3951a3cce9e1a8c6085
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Benchmark01_UGUI.cs: 52a24b07fcdd062ef495404efdb65870 -> 6148cfe2627b7708298f301788144139
+  custom:scripting/monoscript/fileName/ActingManager.cs: e8191878e45aa91979c711d8e031f5ee -> e60acee3c3f79edb9a46833dfc86b95a
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: d15e646100799e9825477e556f7bccb8 -> cfa9b9ce06e1a163889f3603dcc1a12a
+  custom:scripting/monoscript/fileName/GameOverManager.cs: f897b8ef9f53958916b63ff9625d6bfb -> 0f56a8035be897d9d4312b932cf2e84a
+  custom:scripting/monoscript/fileName/Save.cs: b4f71b91d286e9e8271bad9838a11e2e -> 237892e19e092729c0067a04d3385815
+  custom:scripting/monoscript/fileName/TextMeshProFloatingText.cs: 5a37842f75734e7729f89af9a8145a1a -> 92608fa4a6315cd0786d82205e77b697
+  custom:scripting/monoscript/fileName/PeterAttacks.cs: 2bbcf1f477feb58bf99a3113b85eecc1 -> 0ff28b0b935f875b948526a7d14e452d
+  custom:scripting/monoscript/fileName/VertexZoom.cs: 2da4737d79388c0362c64482e9ee50d2 -> 650ab1e81d40126e3edcf737cce646e4
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/VertexShakeA.cs: 16900906a98712c9660b9823af1f2500 -> 63ec564c588058369499638dd899e05b
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/PeterCombat.cs: e505f1a2581bd13c9cf15d0b0122d841 -> b97d86534841511674c658bbfc51882d
+  custom:scripting/monoscript/fileName/TMP_TextEventCheck.cs: 7ee93fce990cec7a5b67b504d0259dce -> 13505d917eab5868c435e0c2986dadfa
+  custom:scripting/monoscript/fileName/SaveController.cs: f8b652b7464fc76ce276231c75fd3561 -> 8152ceb99e63933d311b8308549cc4c0
+  custom:scripting/monoscript/fileName/TMP_TextSelector_B.cs: c0db108de9ffc9b6f619f3d00162b1c2 -> ba2be21a7486d37b1011342977a2e49d
+  custom:scripting/monoscript/fileName/Benchmark02.cs: 92dcd0c0a469d0c0690d8ca0bfe95e6f -> 5640963252ce70910e726415f869ced6
+  custom:scripting/monoscript/fileName/DropdownSample.cs: b4fe7efb027fdd4854f643ad764daa8c -> 0a92251794e5f10400149f96c3c59e5d
+  custom:scripting/monoscript/fileName/WarpTextExample.cs: c5431dac938081648a3a3ac553c1029b -> 2663459c266363641981c7d17b698d7f
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SnowAttack.cs: 50e62012e9353bccef86237f1c291d80 -> 3e3074741fff10361d93e44c19b5bb40
+  custom:scripting/monoscript/fileName/ChatController.cs: ff21b89493e3dffcbe018a2cc5a10bae -> 876d5ccae6e345dd5d9450eb0a748f16
+  custom:scripting/monoscript/fileName/TeleType.cs: c18e16db35615314900dbe198d0144e7 -> 31fa97821c4c70f157ec81d507aa6b62
+  custom:scripting/monoscript/fileName/Buttons.cs: 62cbb112f5c68cfe2da22701a621aa77 -> e2aacc9d1751c7c0f3072c5591a0448a
+  custom:scripting/monoscript/fileName/Benchmark04.cs: 86dfb70824307c4cf164687df2489226 -> 32220b148620e52aa81c13a114862bf4
+  custom:scripting/monoscript/fileName/Pellet.cs: 9a7bbb68c1df028fe015e86c544a92ef -> 6d050f074c4101dcc12c86d0a0a0dbb1
+  custom:scripting/monoscript/fileName/EntryEnemy.cs: a5d3c57f207f4ef3849e2877a93c7380 -> 1bd782715230a105b1950cb7b5754f3f
+  custom:scripting/monoscript/fileName/EnvMapAnimator.cs: 08e040d459cd881082c0dd5daba5f85c -> 1b4f61c17e4b7283c3ac351aacff9d26
+  custom:scripting/monoscript/fileName/PruebaRecogidaDeDatos.cs: 87c82ff88c3051d5938c7dfe03218dbd -> e9c33a9569074deaf364622b96e0c6cf
+  custom:scripting/monoscript/fileName/Quit.cs: 82bef9f942a4fd6d57092c9b524773b2 -> 473d9e78903cd01a3973adc8d63b17e4
+  custom:scripting/monoscript/fileName/Continue.cs: e78ef24f1fca3a5f1bec22c2f8f9c850 -> 6af3f412e5573c403c9885a2a7394b16
+  custom:scripting/monoscript/fileName/CameraController.cs: 410dad91edfab559fef754bf8e9970a6 -> 1daac0040b3fce2177f6ca4f90eb8c5b
+  custom:scripting/monoscript/fileName/TMP_TextInfoDebugTool.cs: 7aad42023b6f5112c90650ae13bd6dd8 -> 3f1709cfb2cc628169113a35b5e9be3f
+  custom:scripting/monoscript/fileName/CountMovement.cs: fd746a31a27e66d387380466a5606af9 -> 32d5e63174c1dad2f1246f48fb8b398e
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/ChangeName.cs: 5893a077233054023743bc30cfa18f8a -> f11d08423a5a6a4fa62a1ff55869e171
+  custom:scripting/monoscript/fileName/Attacks.cs: 081aeb8f235686c7914671277bccd193 -> ceb2ecebd90772df76f0b61cff591596
+  custom:scripting/monoscript/fileName/PlayerVars.cs: 4bb92c4ab779560b5e065db1b46cba78 -> a5e8a58d7ce6208b04073958b23bc884
+  custom:scripting/monoscript/fileName/BattleManager2.cs: 2100ece277b4249859db27f151a9c79c -> 0c63891bdb39f255743a4ae26166b081
+  custom:scripting/monoscript/fileName/ProjectileLogic.cs: 084e41e25a69a03df27d245c633b1baf -> 5f2355d0503b64b13a9573e9c06ec275
+  custom:scripting/monoscript/fileName/DialogueHolder.cs: 3ba9226a22f795268f14dcaac1e334db -> c107a362a9f9f6f5af4cc01f6bfdfa31
+  custom:scripting/monoscript/fileName/AttackManager.cs: 3c5578c78b60e990403342eaec03c9c2 -> 5a808bac03afb4f580fc6de4c415bbfc
+  custom:scripting/monoscript/fileName/UIBattle.cs: c06ea5ab984ac3a467b5cf2b648df0b3 -> 0fa3943548df4e29e8dbf6c62f6e253a
+  custom:scripting/monoscript/fileName/PlayerMovement.cs: 5c1499cfc43e291157e191fb54bb34f9 -> 42480eed24e61f9d7e7e895933644f96
+  custom:scripting/monoscript/fileName/ItemButtons.cs: 92fedcf07b7d5dfce4ff570b7f6817e4 -> 1682475bcf701c3f6067866798117b31
+  custom:scripting/monoscript/fileName/Benchmark03.cs: 520976d641c2b7cf395e30b045f5a45d -> 17cc87e0529ac71d909a946afb47a274
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.547 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.277 seconds
+Domain Reload Profiling: 1822ms
+	BeginReloadAssembly (156ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (299ms)
+		LoadAssemblies (315ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (67ms)
+			TypeCache.Refresh (20ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (32ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1277ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (574ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (97ms)
+			ProcessInitializeOnLoadAttributes (383ms)
+			ProcessInitializeOnLoadMethodAttributes (75ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 4.34 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6410 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (322.3 KB). Loaded Objects now: 7070.
+Memory consumption went from 217.7 MB to 217.4 MB.
+Total: 4.909800 ms (FindLiveObjects: 0.309600 ms CreateObjectMapping: 0.120900 ms MarkObjects: 4.408600 ms  DeleteObjects: 0.069500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/ConnexioDB.cs: 92405ab6a1180bcbccd7a4149ecf5b77 -> cfb461297aec93130b8bc7af12f912e2
+  custom:scripting/monoscript/fileName/ActVars.cs: 248e20ba6b03352484add9bf5bc672f5 -> 6b781fd79618a9db0e4f070db80c3fbd
+  custom:scripting/monoscript/fileName/CameraCrop.cs: 871586eb86e143d9304c014fa71ec12c -> 25884a9d6b9654b949e81b2240046dfe
+  custom:scripting/monoscript/fileName/SkewTextExample.cs: f96859e31fd6dde308d9dc2a2488dcff -> c142d02d70a129e0533975f7c2f96956
+  custom:scripting/monoscript/fileName/Snowdrake.cs: eee78eae92542aef0503e3014f9ceadc -> 1001b5bfb3c7a33f907125e25c312924
+  custom:scripting/monoscript/fileName/MikuAttacks.cs: dce5fc2860a8667804fb9f9f8f9bd488 -> 29c3febd77accfae0162c3a01ba4d698
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/TMP_TextEventHandler.cs: d0f86a17d6fd3e9995db934eaaf34f18 -> f5cd9d5a43bfefc8f4fec80e6de896a4
+  custom:scripting/monoscript/fileName/EnemyVars.cs: 6b6d4e8e63c7f046afaf820bab5803a3 -> 99450783fa4fb752110dd0dfb212b116
+  custom:scripting/monoscript/fileName/AudioManager.cs: 0aef3caba4c1c1b0bc8bd1dca2fef31d -> e8310be4479956b7ccf5d41d9f0f6e53
+  custom:scripting/monoscript/fileName/TMP_ExampleScript_01.cs: 59997facf165601d8c6263ace2a973a5 -> a9d4be556104ff54e7d240529b3e01dc
+  custom:scripting/monoscript/fileName/IFightObject.cs: 6f7b579c7011c590a46f45b65b23fb72 -> 6310865a399931657fa201081841430e
+  custom:scripting/monoscript/fileName/TxtHealthEnemic.cs: b84c93c2e99a48c3025d38b810917318 -> 5f988285f9a08b9efd0f825c9b3364a2
+  custom:scripting/monoscript/fileName/Benchmark01.cs: 1fef48c763f4be76a973f061699dd041 -> 2d3e2cd961730ab95f139a49a673bace
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/Attacking.cs: acc1a921405aa66b110b50ea55796aa9 -> bdf4cd0ee69b40c9f9dc8dae730dea53
+  custom:scripting/monoscript/fileName/MercyTransition.cs: 70a17313c50c651e53223a811152cc66 -> 739f1cc3cc7338e467415d498c937014
+  custom:scripting/monoscript/fileName/PlayerController.cs: 5b090d859ab09be631dc3b0f203f9571 -> d93a52a180fbbe603a59e9aa6da73c83
+  custom:scripting/monoscript/fileName/TextMeshSpawner.cs: c0f20e5855e88374db1098a5acc68df4 -> 76f28e2ddb031571e6ec62b018f65fa8
+  custom:scripting/monoscript/fileName/ItemManager.cs: 0ec2e06f8f1aca92908fe036f9c52d1f -> 1b76008a5c24d6f014835c0b38a112ff
+  custom:scripting/monoscript/fileName/ActingButtons.cs: 957c62d70f5e80fee1185cda06978941 -> e63e2764fd0d289c037e776b2b141007
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/TMP_PhoneNumberValidator.cs: b4c1c54136dffeb4e2962027ebaa6b1f -> 7c3049f481e464c6a9a15dee56c3126f
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/ShaderPropAnimator.cs: 88b70bc5bbc15375387323f48f0661cf -> 55ce425812446482e623ff2695c94cb2
+  custom:scripting/monoscript/fileName/SimpleScript.cs: dcd92cf7399b0d08e25e4a66ab57e91e -> 454caab0c6c050f29b39d82e1d66d0fa
+  custom:scripting/monoscript/fileName/DialogueManager.cs: e31a1628c50f77a0cc2f2d3c9dbc831b -> 2dcb33d5ca63a35e90533ce3223d831c
+  custom:scripting/monoscript/fileName/ObjectSpin.cs: b34dd4d17018731600f920d50ca840f7 -> 2b96bb2079dd7fa5108d981627a28e1e
+  custom:scripting/monoscript/fileName/BattleManager.cs: 0b5716d733cca21529aec092482b3f1f -> 8c9783be6ecb9e38dfddf6110572283c
+  custom:scripting/monoscript/fileName/TMP_TextSelector_A.cs: 088357b4acdc1e6288d897936d29c8d3 -> 347309a09d56e367b188a6978f75b424
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/VertexJitter.cs: 6330f950b41eff6e5970f129864ecd6c -> d27eb5498e48714a66aece98da065133
+  custom:scripting/monoscript/fileName/Name_Input.cs: 9f5f9c665c082f953512b715c1063bc4 -> 11c0d8909f481074918043b6d265061d
+  custom:scripting/monoscript/fileName/TextConsoleSimulator.cs: f2c8898b26c0cf2b0a1c7d12d99e6769 -> 33fc311abb20b5b0ed8f00e4d86b574e
+  custom:scripting/monoscript/fileName/VertexColorCycler.cs: 135fb0ebdaf256193ccc08218c426c64 -> 5f984ca91cf3609293aecc6bc5641572
+  custom:scripting/monoscript/fileName/TMP_FrameRateCounter.cs: 8afeb6f0251e063dcfff2bd827f92c62 -> 46f655df8cb483ac5958307137b1585a
+  custom:scripting/monoscript/fileName/VertexShakeB.cs: 587e5b2aecc39120c2c9ff69742ce897 -> a6f78c4fcda1a29a1a1c1baefedba9e7
+  custom:scripting/monoscript/fileName/TMP_UiFrameRateCounter.cs: 8fa3bcf761bb5076fd90d0361518d59c -> b01021aea19247f14a98ab338907956a
+  custom:scripting/monoscript/fileName/TMPro_InstructionOverlay.cs: 194f3617683541355a9c6c8193e87b1c -> b626d2270e6ebd5c4311585c18b58d8d
+  custom:scripting/monoscript/fileName/Backspace.cs: 2c3c68d750e3e5625c027add594ccaa1 -> 1a73238b475dc42b6d927d3f9e08b721
+  custom:scripting/monoscript/fileName/TMP_DigitValidator.cs: 4e5cde653ae28b90ab257e866c94dfce -> ac02af96215ae3951a3cce9e1a8c6085
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Benchmark01_UGUI.cs: 52a24b07fcdd062ef495404efdb65870 -> 6148cfe2627b7708298f301788144139
+  custom:scripting/monoscript/fileName/ActingManager.cs: e8191878e45aa91979c711d8e031f5ee -> e60acee3c3f79edb9a46833dfc86b95a
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: d8a90d9d15cb470e7b0aac384f891ac1 -> cfa9b9ce06e1a163889f3603dcc1a12a
+  custom:scripting/monoscript/fileName/GameOverManager.cs: f897b8ef9f53958916b63ff9625d6bfb -> 0f56a8035be897d9d4312b932cf2e84a
+  custom:scripting/monoscript/fileName/Save.cs: b4f71b91d286e9e8271bad9838a11e2e -> 237892e19e092729c0067a04d3385815
+  custom:scripting/monoscript/fileName/TextMeshProFloatingText.cs: 5a37842f75734e7729f89af9a8145a1a -> 92608fa4a6315cd0786d82205e77b697
+  custom:scripting/monoscript/fileName/PeterAttacks.cs: 2bbcf1f477feb58bf99a3113b85eecc1 -> 0ff28b0b935f875b948526a7d14e452d
+  custom:scripting/monoscript/fileName/VertexZoom.cs: 2da4737d79388c0362c64482e9ee50d2 -> 650ab1e81d40126e3edcf737cce646e4
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/VertexShakeA.cs: 16900906a98712c9660b9823af1f2500 -> 63ec564c588058369499638dd899e05b
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/PeterCombat.cs: e505f1a2581bd13c9cf15d0b0122d841 -> b97d86534841511674c658bbfc51882d
+  custom:scripting/monoscript/fileName/TMP_TextEventCheck.cs: 7ee93fce990cec7a5b67b504d0259dce -> 13505d917eab5868c435e0c2986dadfa
+  custom:scripting/monoscript/fileName/SaveController.cs: f8b652b7464fc76ce276231c75fd3561 -> 8152ceb99e63933d311b8308549cc4c0
+  custom:scripting/monoscript/fileName/TMP_TextSelector_B.cs: c0db108de9ffc9b6f619f3d00162b1c2 -> ba2be21a7486d37b1011342977a2e49d
+  custom:scripting/monoscript/fileName/Benchmark02.cs: 92dcd0c0a469d0c0690d8ca0bfe95e6f -> 5640963252ce70910e726415f869ced6
+  custom:scripting/monoscript/fileName/DropdownSample.cs: b4fe7efb027fdd4854f643ad764daa8c -> 0a92251794e5f10400149f96c3c59e5d
+  custom:scripting/monoscript/fileName/WarpTextExample.cs: c5431dac938081648a3a3ac553c1029b -> 2663459c266363641981c7d17b698d7f
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SnowAttack.cs: 50e62012e9353bccef86237f1c291d80 -> 3e3074741fff10361d93e44c19b5bb40
+  custom:scripting/monoscript/fileName/ChatController.cs: ff21b89493e3dffcbe018a2cc5a10bae -> 876d5ccae6e345dd5d9450eb0a748f16
+  custom:scripting/monoscript/fileName/TeleType.cs: c18e16db35615314900dbe198d0144e7 -> 31fa97821c4c70f157ec81d507aa6b62
+  custom:scripting/monoscript/fileName/Buttons.cs: 62cbb112f5c68cfe2da22701a621aa77 -> e2aacc9d1751c7c0f3072c5591a0448a
+  custom:scripting/monoscript/fileName/Benchmark04.cs: 86dfb70824307c4cf164687df2489226 -> 32220b148620e52aa81c13a114862bf4
+  custom:scripting/monoscript/fileName/Pellet.cs: 9a7bbb68c1df028fe015e86c544a92ef -> 6d050f074c4101dcc12c86d0a0a0dbb1
+  custom:scripting/monoscript/fileName/EntryEnemy.cs: a5d3c57f207f4ef3849e2877a93c7380 -> 1bd782715230a105b1950cb7b5754f3f
+  custom:scripting/monoscript/fileName/EnvMapAnimator.cs: 08e040d459cd881082c0dd5daba5f85c -> 1b4f61c17e4b7283c3ac351aacff9d26
+  custom:scripting/monoscript/fileName/PruebaRecogidaDeDatos.cs: 87c82ff88c3051d5938c7dfe03218dbd -> e9c33a9569074deaf364622b96e0c6cf
+  custom:scripting/monoscript/fileName/Quit.cs: 82bef9f942a4fd6d57092c9b524773b2 -> 473d9e78903cd01a3973adc8d63b17e4
+  custom:scripting/monoscript/fileName/Continue.cs: e78ef24f1fca3a5f1bec22c2f8f9c850 -> 6af3f412e5573c403c9885a2a7394b16
+  custom:scripting/monoscript/fileName/CameraController.cs: 410dad91edfab559fef754bf8e9970a6 -> 1daac0040b3fce2177f6ca4f90eb8c5b
+  custom:scripting/monoscript/fileName/TMP_TextInfoDebugTool.cs: 7aad42023b6f5112c90650ae13bd6dd8 -> 3f1709cfb2cc628169113a35b5e9be3f
+  custom:scripting/monoscript/fileName/CountMovement.cs: fd746a31a27e66d387380466a5606af9 -> 32d5e63174c1dad2f1246f48fb8b398e
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/ChangeName.cs: 5893a077233054023743bc30cfa18f8a -> f11d08423a5a6a4fa62a1ff55869e171
+  custom:scripting/monoscript/fileName/Attacks.cs: 081aeb8f235686c7914671277bccd193 -> ceb2ecebd90772df76f0b61cff591596
+  custom:scripting/monoscript/fileName/PlayerVars.cs: 4bb92c4ab779560b5e065db1b46cba78 -> a5e8a58d7ce6208b04073958b23bc884
+  custom:scripting/monoscript/fileName/BattleManager2.cs: 2100ece277b4249859db27f151a9c79c -> 0c63891bdb39f255743a4ae26166b081
+  custom:scripting/monoscript/fileName/ProjectileLogic.cs: 084e41e25a69a03df27d245c633b1baf -> 5f2355d0503b64b13a9573e9c06ec275
+  custom:scripting/monoscript/fileName/DialogueHolder.cs: 3ba9226a22f795268f14dcaac1e334db -> c107a362a9f9f6f5af4cc01f6bfdfa31
+  custom:scripting/monoscript/fileName/AttackManager.cs: 3c5578c78b60e990403342eaec03c9c2 -> 5a808bac03afb4f580fc6de4c415bbfc
+  custom:scripting/monoscript/fileName/UIBattle.cs: c06ea5ab984ac3a467b5cf2b648df0b3 -> 0fa3943548df4e29e8dbf6c62f6e253a
+  custom:scripting/monoscript/fileName/PlayerMovement.cs: 5c1499cfc43e291157e191fb54bb34f9 -> 42480eed24e61f9d7e7e895933644f96
+  custom:scripting/monoscript/fileName/ItemButtons.cs: 92fedcf07b7d5dfce4ff570b7f6817e4 -> 1682475bcf701c3f6067866798117b31
+  custom:scripting/monoscript/fileName/Benchmark03.cs: 520976d641c2b7cf395e30b045f5a45d -> 17cc87e0529ac71d909a946afb47a274
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.497 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.396 seconds
+Domain Reload Profiling: 1889ms
+	BeginReloadAssembly (155ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (249ms)
+		LoadAssemblies (301ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (30ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1396ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (696ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (114ms)
+			ProcessInitializeOnLoadAttributes (462ms)
+			ProcessInitializeOnLoadMethodAttributes (95ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 5.35 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6410 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (322.3 KB). Loaded Objects now: 7076.
+Memory consumption went from 217.7 MB to 217.4 MB.
+Total: 5.291000 ms (FindLiveObjects: 0.321200 ms CreateObjectMapping: 0.124700 ms MarkObjects: 4.770000 ms  DeleteObjects: 0.074300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/ConnexioDB.cs: 92405ab6a1180bcbccd7a4149ecf5b77 -> cfb461297aec93130b8bc7af12f912e2
+  custom:scripting/monoscript/fileName/ActVars.cs: 248e20ba6b03352484add9bf5bc672f5 -> 6b781fd79618a9db0e4f070db80c3fbd
+  custom:scripting/monoscript/fileName/CameraCrop.cs: 871586eb86e143d9304c014fa71ec12c -> 25884a9d6b9654b949e81b2240046dfe
+  custom:scripting/monoscript/fileName/SkewTextExample.cs: f96859e31fd6dde308d9dc2a2488dcff -> c142d02d70a129e0533975f7c2f96956
+  custom:scripting/monoscript/fileName/Snowdrake.cs: eee78eae92542aef0503e3014f9ceadc -> 1001b5bfb3c7a33f907125e25c312924
+  custom:scripting/monoscript/fileName/MikuAttacks.cs: dce5fc2860a8667804fb9f9f8f9bd488 -> 29c3febd77accfae0162c3a01ba4d698
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/TMP_TextEventHandler.cs: d0f86a17d6fd3e9995db934eaaf34f18 -> f5cd9d5a43bfefc8f4fec80e6de896a4
+  custom:scripting/monoscript/fileName/EnemyVars.cs: 6b6d4e8e63c7f046afaf820bab5803a3 -> 99450783fa4fb752110dd0dfb212b116
+  custom:scripting/monoscript/fileName/AudioManager.cs: 0aef3caba4c1c1b0bc8bd1dca2fef31d -> e8310be4479956b7ccf5d41d9f0f6e53
+  custom:scripting/monoscript/fileName/TMP_ExampleScript_01.cs: 59997facf165601d8c6263ace2a973a5 -> a9d4be556104ff54e7d240529b3e01dc
+  custom:scripting/monoscript/fileName/IFightObject.cs: 6f7b579c7011c590a46f45b65b23fb72 -> 6310865a399931657fa201081841430e
+  custom:scripting/monoscript/fileName/TxtHealthEnemic.cs: b84c93c2e99a48c3025d38b810917318 -> 5f988285f9a08b9efd0f825c9b3364a2
+  custom:scripting/monoscript/fileName/Benchmark01.cs: 1fef48c763f4be76a973f061699dd041 -> 2d3e2cd961730ab95f139a49a673bace
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/Attacking.cs: acc1a921405aa66b110b50ea55796aa9 -> bdf4cd0ee69b40c9f9dc8dae730dea53
+  custom:scripting/monoscript/fileName/MercyTransition.cs: 70a17313c50c651e53223a811152cc66 -> 739f1cc3cc7338e467415d498c937014
+  custom:scripting/monoscript/fileName/PlayerController.cs: 5b090d859ab09be631dc3b0f203f9571 -> d93a52a180fbbe603a59e9aa6da73c83
+  custom:scripting/monoscript/fileName/TextMeshSpawner.cs: c0f20e5855e88374db1098a5acc68df4 -> 76f28e2ddb031571e6ec62b018f65fa8
+  custom:scripting/monoscript/fileName/ItemManager.cs: 0ec2e06f8f1aca92908fe036f9c52d1f -> 1b76008a5c24d6f014835c0b38a112ff
+  custom:scripting/monoscript/fileName/ActingButtons.cs: 957c62d70f5e80fee1185cda06978941 -> e63e2764fd0d289c037e776b2b141007
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/TMP_PhoneNumberValidator.cs: b4c1c54136dffeb4e2962027ebaa6b1f -> 7c3049f481e464c6a9a15dee56c3126f
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/ShaderPropAnimator.cs: 88b70bc5bbc15375387323f48f0661cf -> 55ce425812446482e623ff2695c94cb2
+  custom:scripting/monoscript/fileName/SimpleScript.cs: dcd92cf7399b0d08e25e4a66ab57e91e -> 454caab0c6c050f29b39d82e1d66d0fa
+  custom:scripting/monoscript/fileName/DialogueManager.cs: e31a1628c50f77a0cc2f2d3c9dbc831b -> 2dcb33d5ca63a35e90533ce3223d831c
+  custom:scripting/monoscript/fileName/ObjectSpin.cs: b34dd4d17018731600f920d50ca840f7 -> 2b96bb2079dd7fa5108d981627a28e1e
+  custom:scripting/monoscript/fileName/BattleManager.cs: 0b5716d733cca21529aec092482b3f1f -> 8c9783be6ecb9e38dfddf6110572283c
+  custom:scripting/monoscript/fileName/TMP_TextSelector_A.cs: 088357b4acdc1e6288d897936d29c8d3 -> 347309a09d56e367b188a6978f75b424
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/VertexJitter.cs: 6330f950b41eff6e5970f129864ecd6c -> d27eb5498e48714a66aece98da065133
+  custom:scripting/monoscript/fileName/Name_Input.cs: 9f5f9c665c082f953512b715c1063bc4 -> 11c0d8909f481074918043b6d265061d
+  custom:scripting/monoscript/fileName/TextConsoleSimulator.cs: f2c8898b26c0cf2b0a1c7d12d99e6769 -> 33fc311abb20b5b0ed8f00e4d86b574e
+  custom:scripting/monoscript/fileName/VertexColorCycler.cs: 135fb0ebdaf256193ccc08218c426c64 -> 5f984ca91cf3609293aecc6bc5641572
+  custom:scripting/monoscript/fileName/TMP_FrameRateCounter.cs: 8afeb6f0251e063dcfff2bd827f92c62 -> 46f655df8cb483ac5958307137b1585a
+  custom:scripting/monoscript/fileName/VertexShakeB.cs: 587e5b2aecc39120c2c9ff69742ce897 -> a6f78c4fcda1a29a1a1c1baefedba9e7
+  custom:scripting/monoscript/fileName/TMP_UiFrameRateCounter.cs: 8fa3bcf761bb5076fd90d0361518d59c -> b01021aea19247f14a98ab338907956a
+  custom:scripting/monoscript/fileName/TMPro_InstructionOverlay.cs: 194f3617683541355a9c6c8193e87b1c -> b626d2270e6ebd5c4311585c18b58d8d
+  custom:scripting/monoscript/fileName/Backspace.cs: 2c3c68d750e3e5625c027add594ccaa1 -> 1a73238b475dc42b6d927d3f9e08b721
+  custom:scripting/monoscript/fileName/TMP_DigitValidator.cs: 4e5cde653ae28b90ab257e866c94dfce -> ac02af96215ae3951a3cce9e1a8c6085
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Benchmark01_UGUI.cs: 52a24b07fcdd062ef495404efdb65870 -> 6148cfe2627b7708298f301788144139
+  custom:scripting/monoscript/fileName/ActingManager.cs: e8191878e45aa91979c711d8e031f5ee -> e60acee3c3f79edb9a46833dfc86b95a
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: d8a90d9d15cb470e7b0aac384f891ac1 -> cfa9b9ce06e1a163889f3603dcc1a12a
+  custom:scripting/monoscript/fileName/GameOverManager.cs: f897b8ef9f53958916b63ff9625d6bfb -> 0f56a8035be897d9d4312b932cf2e84a
+  custom:scripting/monoscript/fileName/Save.cs: b4f71b91d286e9e8271bad9838a11e2e -> 237892e19e092729c0067a04d3385815
+  custom:scripting/monoscript/fileName/TextMeshProFloatingText.cs: 5a37842f75734e7729f89af9a8145a1a -> 92608fa4a6315cd0786d82205e77b697
+  custom:scripting/monoscript/fileName/PeterAttacks.cs: 2bbcf1f477feb58bf99a3113b85eecc1 -> 0ff28b0b935f875b948526a7d14e452d
+  custom:scripting/monoscript/fileName/VertexZoom.cs: 2da4737d79388c0362c64482e9ee50d2 -> 650ab1e81d40126e3edcf737cce646e4
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/VertexShakeA.cs: 16900906a98712c9660b9823af1f2500 -> 63ec564c588058369499638dd899e05b
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/PeterCombat.cs: e505f1a2581bd13c9cf15d0b0122d841 -> b97d86534841511674c658bbfc51882d
+  custom:scripting/monoscript/fileName/TMP_TextEventCheck.cs: 7ee93fce990cec7a5b67b504d0259dce -> 13505d917eab5868c435e0c2986dadfa
+  custom:scripting/monoscript/fileName/SaveController.cs: f8b652b7464fc76ce276231c75fd3561 -> 8152ceb99e63933d311b8308549cc4c0
+  custom:scripting/monoscript/fileName/TMP_TextSelector_B.cs: c0db108de9ffc9b6f619f3d00162b1c2 -> ba2be21a7486d37b1011342977a2e49d
+  custom:scripting/monoscript/fileName/Benchmark02.cs: 92dcd0c0a469d0c0690d8ca0bfe95e6f -> 5640963252ce70910e726415f869ced6
+  custom:scripting/monoscript/fileName/DropdownSample.cs: b4fe7efb027fdd4854f643ad764daa8c -> 0a92251794e5f10400149f96c3c59e5d
+  custom:scripting/monoscript/fileName/WarpTextExample.cs: c5431dac938081648a3a3ac553c1029b -> 2663459c266363641981c7d17b698d7f
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SnowAttack.cs: 50e62012e9353bccef86237f1c291d80 -> 3e3074741fff10361d93e44c19b5bb40
+  custom:scripting/monoscript/fileName/ChatController.cs: ff21b89493e3dffcbe018a2cc5a10bae -> 876d5ccae6e345dd5d9450eb0a748f16
+  custom:scripting/monoscript/fileName/TeleType.cs: c18e16db35615314900dbe198d0144e7 -> 31fa97821c4c70f157ec81d507aa6b62
+  custom:scripting/monoscript/fileName/Buttons.cs: 62cbb112f5c68cfe2da22701a621aa77 -> e2aacc9d1751c7c0f3072c5591a0448a
+  custom:scripting/monoscript/fileName/Benchmark04.cs: 86dfb70824307c4cf164687df2489226 -> 32220b148620e52aa81c13a114862bf4
+  custom:scripting/monoscript/fileName/Pellet.cs: 9a7bbb68c1df028fe015e86c544a92ef -> 6d050f074c4101dcc12c86d0a0a0dbb1
+  custom:scripting/monoscript/fileName/EntryEnemy.cs: a5d3c57f207f4ef3849e2877a93c7380 -> 1bd782715230a105b1950cb7b5754f3f
+  custom:scripting/monoscript/fileName/EnvMapAnimator.cs: 08e040d459cd881082c0dd5daba5f85c -> 1b4f61c17e4b7283c3ac351aacff9d26
+  custom:scripting/monoscript/fileName/PruebaRecogidaDeDatos.cs: 87c82ff88c3051d5938c7dfe03218dbd -> e9c33a9569074deaf364622b96e0c6cf
+  custom:scripting/monoscript/fileName/Quit.cs: 82bef9f942a4fd6d57092c9b524773b2 -> 473d9e78903cd01a3973adc8d63b17e4
+  custom:scripting/monoscript/fileName/Continue.cs: e78ef24f1fca3a5f1bec22c2f8f9c850 -> 6af3f412e5573c403c9885a2a7394b16
+  custom:scripting/monoscript/fileName/CameraController.cs: 410dad91edfab559fef754bf8e9970a6 -> 1daac0040b3fce2177f6ca4f90eb8c5b
+  custom:scripting/monoscript/fileName/TMP_TextInfoDebugTool.cs: 7aad42023b6f5112c90650ae13bd6dd8 -> 3f1709cfb2cc628169113a35b5e9be3f
+  custom:scripting/monoscript/fileName/CountMovement.cs: fd746a31a27e66d387380466a5606af9 -> 32d5e63174c1dad2f1246f48fb8b398e
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/ChangeName.cs: 5893a077233054023743bc30cfa18f8a -> f11d08423a5a6a4fa62a1ff55869e171
+  custom:scripting/monoscript/fileName/Attacks.cs: 081aeb8f235686c7914671277bccd193 -> ceb2ecebd90772df76f0b61cff591596
+  custom:scripting/monoscript/fileName/PlayerVars.cs: 4bb92c4ab779560b5e065db1b46cba78 -> a5e8a58d7ce6208b04073958b23bc884
+  custom:scripting/monoscript/fileName/BattleManager2.cs: 2100ece277b4249859db27f151a9c79c -> 0c63891bdb39f255743a4ae26166b081
+  custom:scripting/monoscript/fileName/ProjectileLogic.cs: 084e41e25a69a03df27d245c633b1baf -> 5f2355d0503b64b13a9573e9c06ec275
+  custom:scripting/monoscript/fileName/DialogueHolder.cs: 3ba9226a22f795268f14dcaac1e334db -> c107a362a9f9f6f5af4cc01f6bfdfa31
+  custom:scripting/monoscript/fileName/AttackManager.cs: 3c5578c78b60e990403342eaec03c9c2 -> 5a808bac03afb4f580fc6de4c415bbfc
+  custom:scripting/monoscript/fileName/UIBattle.cs: c06ea5ab984ac3a467b5cf2b648df0b3 -> 0fa3943548df4e29e8dbf6c62f6e253a
+  custom:scripting/monoscript/fileName/PlayerMovement.cs: 5c1499cfc43e291157e191fb54bb34f9 -> 42480eed24e61f9d7e7e895933644f96
+  custom:scripting/monoscript/fileName/ItemButtons.cs: 92fedcf07b7d5dfce4ff570b7f6817e4 -> 1682475bcf701c3f6067866798117b31
+  custom:scripting/monoscript/fileName/Benchmark03.cs: 520976d641c2b7cf395e30b045f5a45d -> 17cc87e0529ac71d909a946afb47a274
