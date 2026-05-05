@@ -1,0 +1,1618 @@
+fileFormatVersion: 2
+guid: cd6b7f4009f3c2b42ab5a86bcc99ebe3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 80
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 423
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a96dd78673ec5c340933801a836826de
+      internalID: 211062341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 423
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2ec7673252f4040b9f8d76b9678b03
+      internalID: 1079410533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_2
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 423
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea801a25043fc4408b1c2f93f209e90
+      internalID: 2040734410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 423
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ebbaa921da459a4d99f1253fe46a0e5
+      internalID: 191834534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_4
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 423
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7679a02d25c3abe43953b8272a8bb955
+      internalID: -534092372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_5
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 423
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1beaffee7b2ee31469f69220721edb6c
+      internalID: -1475219997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_6
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 423
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b3c95121c7168a4895297db3a3cdb4a
+      internalID: -814116606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_7
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 423
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84659ea6477bc3c449a0f9a86bcf458f
+      internalID: -1008321810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_8
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 423
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f532f1ad1154d547be51bd934a8db46
+      internalID: -193451690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_9
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 423
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ef093c1e313ee4fa52f3abf6c4c957
+      internalID: 1042257269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_10
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 423
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb53e4f44330c64885f81b7e2647e5d
+      internalID: -1639179744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_11
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 339
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f713cbc00fd16934e8e6e68068f02f23
+      internalID: 486607379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_12
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 339
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33bd1b4090f40d74ca930fedeca42c0f
+      internalID: -1517162004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_13
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 339
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f114c10f2acfdcb498c165f6eef0a3a0
+      internalID: 238005898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_14
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 339
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef9c9cb197aada409a92b452004a4ad
+      internalID: -798366395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_15
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 339
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181dcd49e43c1d144b9f3fc6b8c49223
+      internalID: -54300612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_16
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 339
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9280f84faf2c3fd468689021b8d0d08c
+      internalID: -1604926614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_17
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 339
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4970844fa923c4496387979c2d6bba
+      internalID: -246227324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_18
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 339
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a132fd67033644ca9be4730070c138
+      internalID: -550101726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_19
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 339
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c9a49cc124d2d448f01df1e99a0e1e
+      internalID: 1828125657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_20
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 339
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be813951a7939c4d84bff9836215574
+      internalID: 639606245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_21
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 339
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45e08412c06c2a42a08a68932b299d3
+      internalID: -506254198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_22
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 255
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6016f9329f18bfe43a48a34a23f4d6d7
+      internalID: -1381591942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_23
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 255
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9f6c7e188fbab439e4e29f1a3ef2c8
+      internalID: 1710129128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_24
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 255
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483f86ba59c041148a1af590121f94c8
+      internalID: 1077995616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_25
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 255
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f36b85048fa009547b84945f7412195b
+      internalID: 1953908959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_26
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 255
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac632a6cd7ee294180148f6b2a4cb7b
+      internalID: -1203324602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_27
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 255
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00713bb18139054fb6f6f6d06c01e6d
+      internalID: -1001066453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_28
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 255
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780e10c0da823a4469e7119888e088da
+      internalID: 51739968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_29
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 255
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab17a22b2bdc7834dbbd27d78170a680
+      internalID: 67697857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_30
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 255
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f2eb497e5fad140a1d84b6edd36046
+      internalID: -67164827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_31
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 255
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34540d5fa4a46634ba644b7eefc2c3e1
+      internalID: -2094665084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_32
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 255
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bdfc3bf08f5c9d48997e5d1623115a3
+      internalID: 1842104113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_33
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 171
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4fbaf60311de764aa684ec9d5384308
+      internalID: 167661551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_34
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 171
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb0505a58032654f8e958fa0be59c28
+      internalID: 2066915856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_35
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 171
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6c349d560686240b79d6de33016bd7
+      internalID: -309845265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_36
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 171
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4afc23b8fb6aadd4dbc63b8d1082a0a5
+      internalID: 1441103019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_37
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 171
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b025a3f6fa4c63042878ef772ad3825b
+      internalID: -883176808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_38
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 171
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba61d7358a991624ea8a75c5370842a7
+      internalID: -2008887678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_39
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 171
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5496e07254c79d458090c0c0e0864a2
+      internalID: 1679635425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_40
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 171
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be5f318b58be3c4a917ce8e781d73bf
+      internalID: -385813109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_41
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 171
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a71b2ab5230e4147af333c723a961ee
+      internalID: 1164528668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_42
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 171
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96708dabab9a5a9468e71c7ec3105b88
+      internalID: 1755428061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_43
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 170
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef0efbc98e4ec4e40a18ca456d5dddc7
+      internalID: 1867415752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_44
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 87
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feecf192d56e3ec4baf05f79a3db5e13
+      internalID: 443636307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_45
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 87
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30679f7e83b80df4bab4d7a301990d68
+      internalID: 1260220360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_46
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 87
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60670648e257819478553e59236bd4ec
+      internalID: -143583095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_47
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 87
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f99a257d8935b2488f441e7edd365ae
+      internalID: -1718741363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_48
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 87
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef3943f01cff4f42951925b64d46a34
+      internalID: 141857067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_49
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 87
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd67e3a4c2116fa4a9cd0fb44df32bc8
+      internalID: 1382318854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_50
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 87
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9de8ce01603ad4d9fb022157b16230
+      internalID: 25506738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_51
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 87
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68acec29ae89ea44492b7b331ea6a708
+      internalID: -305298527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_52
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 87
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6894fb19e850f0a4f8e612f500952758
+      internalID: -1629348349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_53
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 87
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b364ed91ff03154f84f0438de0146b2
+      internalID: 774065390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_54
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 87
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5a8bb0eb332c54bbd06d44a7f4844b
+      internalID: -2067308999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_55
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4530029370a07ff45a65517b768b767e
+      internalID: -1432992195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_56
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 3
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605446d1711ea924ab0097889e516108
+      internalID: 1039227098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_57
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 3
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8876da83ebd22b44c8599080aa5e22a9
+      internalID: 116609024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_58
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 3
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0dbfc20ab688f4291b4ae2f896b015
+      internalID: -784007701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_59
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 3
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9e1d52d232a0e4f8515df7fac957e2
+      internalID: -896062779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_60
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 3
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7a89f6f295b11489f60408bad42946
+      internalID: -1422857285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_61
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 3
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97c64fc52ef23b4892d3d476adda4f2
+      internalID: 703401476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_62
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 3
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9727727601fd4e4291411da32f30e60
+      internalID: 129686536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_63
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 3
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af7a42e9d8b36304fb19f5a6cba03b08
+      internalID: -233970912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_64
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 3
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d38d1713ba8cc4e99537b4f7ab637a
+      internalID: 1753917695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasBoresOscuro_65
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 3
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906de4576bee4414695347bf793a541d
+      internalID: -1643967574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PlataformasBoresOscuro_0: 211062341
+      PlataformasBoresOscuro_1: 1079410533
+      PlataformasBoresOscuro_10: -1639179744
+      PlataformasBoresOscuro_11: 486607379
+      PlataformasBoresOscuro_12: -1517162004
+      PlataformasBoresOscuro_13: 238005898
+      PlataformasBoresOscuro_14: -798366395
+      PlataformasBoresOscuro_15: -54300612
+      PlataformasBoresOscuro_16: -1604926614
+      PlataformasBoresOscuro_17: -246227324
+      PlataformasBoresOscuro_18: -550101726
+      PlataformasBoresOscuro_19: 1828125657
+      PlataformasBoresOscuro_2: 2040734410
+      PlataformasBoresOscuro_20: 639606245
+      PlataformasBoresOscuro_21: -506254198
+      PlataformasBoresOscuro_22: -1381591942
+      PlataformasBoresOscuro_23: 1710129128
+      PlataformasBoresOscuro_24: 1077995616
+      PlataformasBoresOscuro_25: 1953908959
+      PlataformasBoresOscuro_26: -1203324602
+      PlataformasBoresOscuro_27: -1001066453
+      PlataformasBoresOscuro_28: 51739968
+      PlataformasBoresOscuro_29: 67697857
+      PlataformasBoresOscuro_3: 191834534
+      PlataformasBoresOscuro_30: -67164827
+      PlataformasBoresOscuro_31: -2094665084
+      PlataformasBoresOscuro_32: 1842104113
+      PlataformasBoresOscuro_33: 167661551
+      PlataformasBoresOscuro_34: 2066915856
+      PlataformasBoresOscuro_35: -309845265
+      PlataformasBoresOscuro_36: 1441103019
+      PlataformasBoresOscuro_37: -883176808
+      PlataformasBoresOscuro_38: -2008887678
+      PlataformasBoresOscuro_39: 1679635425
+      PlataformasBoresOscuro_4: -534092372
+      PlataformasBoresOscuro_40: -385813109
+      PlataformasBoresOscuro_41: 1164528668
+      PlataformasBoresOscuro_42: 1755428061
+      PlataformasBoresOscuro_43: 1867415752
+      PlataformasBoresOscuro_44: 443636307
+      PlataformasBoresOscuro_45: 1260220360
+      PlataformasBoresOscuro_46: -143583095
+      PlataformasBoresOscuro_47: -1718741363
+      PlataformasBoresOscuro_48: 141857067
+      PlataformasBoresOscuro_49: 1382318854
+      PlataformasBoresOscuro_5: -1475219997
+      PlataformasBoresOscuro_50: 25506738
+      PlataformasBoresOscuro_51: -305298527
+      PlataformasBoresOscuro_52: -1629348349
+      PlataformasBoresOscuro_53: 774065390
+      PlataformasBoresOscuro_54: -2067308999
+      PlataformasBoresOscuro_55: -1432992195
+      PlataformasBoresOscuro_56: 1039227098
+      PlataformasBoresOscuro_57: 116609024
+      PlataformasBoresOscuro_58: -784007701
+      PlataformasBoresOscuro_59: -896062779
+      PlataformasBoresOscuro_6: -814116606
+      PlataformasBoresOscuro_60: -1422857285
+      PlataformasBoresOscuro_61: 703401476
+      PlataformasBoresOscuro_62: 129686536
+      PlataformasBoresOscuro_63: -233970912
+      PlataformasBoresOscuro_64: 1753917695
+      PlataformasBoresOscuro_65: -1643967574
+      PlataformasBoresOscuro_7: -1008321810
+      PlataformasBoresOscuro_8: -193451690
+      PlataformasBoresOscuro_9: 1042257269
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
