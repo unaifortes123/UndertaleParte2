@@ -9,7 +9,11 @@ public class ItemManager : MonoBehaviour
     public List<ItemButtons> buttons;
     [HideInInspector]
     public static ItemManager instance;
-    void Awake() => instance = this;
+    // Esta funcion guarda este manager de items para los demas scripts.
+    void Awake()
+    {
+        instance = this;
+    }
     int maxSelectionInt;
     int minSelectionInt;
     public int selectionInt;
@@ -20,15 +24,30 @@ public class ItemManager : MonoBehaviour
     public float time;
     public bool isMenu;
     public bool canAct = true;
+    private PlayerVars playerStats;
+
+    // Esta funcion prepara los limites del menu ITEMS.
     void Start()
     {
         isFighting = BattleManager.battleInstance.isFighting;
-        maxSelectionInt = 3;
+        maxSelectionInt = buttons.Count - 1;
         minSelectionInt = 0;
+        playerStats = PlayerVars.instance;
     }
 
+    // Esta funcion mueve el menu ITEMS y detecta Enter.
     void Update()
     {
+        if (BattleManager.battleInstance != null)
+        {
+            isFighting = BattleManager.battleInstance.isFighting;
+        }
+
+        if (playerStats == null)
+        {
+            playerStats = PlayerVars.instance;
+        }
+
         if (!isFighting && isMenu)
         {
             if (selectionInt > maxSelectionInt)
@@ -37,7 +56,7 @@ public class ItemManager : MonoBehaviour
             }
             if (selectionInt < minSelectionInt)
             {
-                selectionInt = 3;
+                selectionInt = maxSelectionInt;
             }
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
@@ -75,17 +94,32 @@ public class ItemManager : MonoBehaviour
 
     }
 
+    // Esta funcion pone el corazon al lado del item marcado.
     void Selecting(int selectedInt)
     {
+        Vector3 fallbackPosition;
+
+        RefreshSoulReference();
+
+        if (soul == null) return;
+        if (buttons == null || buttons.Count <= selectedInt) return;
+        if (buttons[selectedInt] == null) return;
+
         if (buttons[selectedInt].selected)
         {
-            soul.transform.position = buttons[selectedInt].soulPosition.position;
+            fallbackPosition = buttons[selectedInt].transform.position + Vector3.left * 1.6f;
+            ShowSoul(GetSoulPosition(buttons[selectedInt].soulPosition, buttons[selectedInt].transform, fallbackPosition));
         }
     }
+    // Esta funcion quita la marca de un item.
     void Deselecting(int deselectionInt)
     {
+        if (buttons == null || buttons.Count <= deselectionInt) return;
+        if (buttons[deselectionInt] == null) return;
+
         buttons[deselectionInt].selected = false;
     }
+    // Esta funcion actualiza que item esta marcado.
     void Selection()
     {
 
@@ -127,83 +161,143 @@ public class ItemManager : MonoBehaviour
         }
     }
 
+    // Esta funcion abre el menu de objetos.
+    public void OpenMenu()
+    {
+        if (buttons == null || buttons.Count == 0)
+        {
+            return;
+        }
+
+        maxSelectionInt = buttons.Count - 1;
+        selectionInt = 0;
+        time = 0;
+        canAct = true;
+        isMenu = true;
+        itemObjects.SetActive(true);
+        useText.gameObject.SetActive(false);
+        RefreshSoulReference();
+
+        if (soul != null)
+        {
+            soul.enabled = true;
+        }
+
+        Selection();
+    }
+
+    // Esta funcion usa el item seleccionado.
     void Selected()
     {
-        Action dialogue = () =>
-        {
-            DialogueManager.instance.shouldTalk = false;
-            StartCoroutine(BattleManager.battleInstance.ItemSequence());
-        };
-        if (selectionInt == 0)
-        {
-            if (PlayerVars.instance.health < 20)
-            {
-                PlayerVars.instance.health += buttons[0].itemHeal;
-            }
-            soul.enabled = false;
-            DialogueManager.instance.dialogueTxt = "*You Ate The " + buttons[0].itemName + ", You Healed " + buttons[0].itemHeal + " HP.";
-            DialogueManager.instance.text.gameObject.SetActive(true);
-            DialogueManager.instance.enemyTxt = BattleManager.battleInstance.enemyDialogue[UnityEngine.Random.Range(0, BattleManager.battleInstance.enemyDialogue.Count)];
-            DialogueManager.instance.shouldTalk = true;
-            DialogueManager.instance.Talking(dialogue);
-            itemObjects.SetActive(false);
-        }
-        if (selectionInt == 1)
-        {
-            if (PlayerVars.instance.health < 20)
-            {
-                PlayerVars.instance.health += buttons[1].itemHeal;
-            }
-            if (PlayerVars.instance.health > 20)
-            {
-                PlayerVars.instance.health = 20;
-            }
-            soul.enabled = false;
-            DialogueManager.instance.dialogueTxt = "*You Ate The " + buttons[1].itemName + ", You Healed " + buttons[1].itemHeal + " HP.";
-            DialogueManager.instance.text.gameObject.SetActive(true);
-            DialogueManager.instance.enemyTxt = BattleManager.battleInstance.enemyDialogue[UnityEngine.Random.Range(0, BattleManager.battleInstance.enemyDialogue.Count)];
-            DialogueManager.instance.shouldTalk = true;
-            DialogueManager.instance.Talking(dialogue);
-            itemObjects.SetActive(false);
-        }
-        if (selectionInt == 2)
-        {
-            if (PlayerVars.instance.health < 20)
-            {
-                PlayerVars.instance.health += buttons[2].itemHeal;
-            }
-            if (PlayerVars.instance.health > 20)
-            {
-                PlayerVars.instance.health = 20;
-            }
-            soul.enabled = false;
-            DialogueManager.instance.dialogueTxt = "*You Ate The " + buttons[2].itemName + ", You Healed " + buttons[2].itemHeal + " HP.";
-            DialogueManager.instance.text.gameObject.SetActive(true);
-            DialogueManager.instance.enemyTxt = BattleManager.battleInstance.enemyDialogue[UnityEngine.Random.Range(0, BattleManager.battleInstance.enemyDialogue.Count)];
-            DialogueManager.instance.shouldTalk = true;
-            DialogueManager.instance.Talking(dialogue);
-            itemObjects.SetActive(false);
-        }
-        if (selectionInt == 3)
-        {
-            if (PlayerVars.instance.health < 20)
-            {
-                PlayerVars.instance.health += buttons[3].itemHeal;
-            }
-            if (PlayerVars.instance.health > 20)
-            {
-                PlayerVars.instance.health = 20;
-            }
-            soul.enabled = false;
-            DialogueManager.instance.dialogueTxt = "*You Ate The " + buttons[3].itemName + ", You Healed " + buttons[3].itemHeal + " HP.";
-            DialogueManager.instance.text.gameObject.SetActive(true);
-            DialogueManager.instance.enemyTxt = BattleManager.battleInstance.enemyDialogue[UnityEngine.Random.Range(0, BattleManager.battleInstance.enemyDialogue.Count)];
-            DialogueManager.instance.shouldTalk = true;
-            DialogueManager.instance.Talking(dialogue);
-            itemObjects.SetActive(false);
+        ItemButtons selectedButton;
 
-
+        if (buttons == null || buttons.Count <= selectionInt || buttons[selectionInt] == null)
+        {
+            return;
         }
 
+        selectedButton = buttons[selectionInt];
+        isMenu = false;
+        canAct = false;
+
+        if (itemObjects != null)
+        {
+            itemObjects.SetActive(false);
+        }
+
+        HideSoul();
+
+        if (playerStats == null)
+        {
+            playerStats = PlayerVars.instance;
+        }
+
+        if (playerStats != null)
+        {
+            playerStats.playerData.health += selectedButton.itemHeal;
+
+            if (playerStats.playerData.health > 20)
+            {
+                playerStats.playerData.health = 20;
+            }
+        }
+
+        DialogueManager.instance.dialogueTxt = GetItemText(selectedButton);
+
+        if (DialogueManager.instance.text != null)
+        {
+            DialogueManager.instance.text.gameObject.SetActive(true);
+        }
+
+        DialogueManager.instance.enemyTxt = BattleManager.battleInstance.GetRandomEnemyDialogue();
+        DialogueManager.instance.shouldTalk = true;
+        DialogueManager.instance.Talking(FinishItemDialogue);
+    }
+
+    // Esta funcion pasa de ITEMS al ataque del enemigo.
+    void FinishItemDialogue()
+    {
+        DialogueManager.instance.shouldTalk = false;
+        StartCoroutine(BattleManager.battleInstance.ItemSequence());
+    }
+
+    // Esta funcion crea el texto que sale al usar un item.
+    string GetItemText(ItemButtons selectedButton)
+    {
+        string itemName;
+
+        itemName = string.IsNullOrWhiteSpace(selectedButton.itemName) ? "item" : selectedButton.itemName;
+        return "*You used the " + itemName + ". You healed " + selectedButton.itemHeal + " HP.";
+    }
+
+    // Esta funcion calcula donde va el corazon en ITEMS.
+    Vector3 GetSoulPosition(Transform soulPosition, Transform optionTransform, Vector3 fallbackPosition)
+    {
+        if (soulPosition != null && soulPosition.IsChildOf(optionTransform))
+        {
+            return soulPosition.position;
+        }
+
+        return fallbackPosition;
+    }
+
+    // Esta funcion muestra el corazon en la posicion indicada.
+    void ShowSoul(Vector3 position)
+    {
+        if (BattleManager.battleInstance != null)
+        {
+            BattleManager.battleInstance.ShowSoulInMenu(position);
+            return;
+        }
+
+        if (soul != null)
+        {
+            soul.transform.position = position;
+            soul.enabled = true;
+        }
+    }
+
+    // Esta funcion esconde el corazon en ITEMS.
+    void HideSoul()
+    {
+        if (BattleManager.battleInstance != null)
+        {
+            BattleManager.battleInstance.HideSoulForMenu();
+            return;
+        }
+
+        if (soul != null)
+        {
+            soul.enabled = false;
+        }
+    }
+
+    // Esta funcion recupera el corazon desde el BattleManager.
+    void RefreshSoulReference()
+    {
+        if (soul == null && BattleManager.battleInstance != null)
+        {
+            soul = BattleManager.battleInstance.soul;
+        }
     }
 }

@@ -1,4 +1,9 @@
 {
+    "health": 20.0,
+    "score": 200.0,
     "playerName": "",
-    "hp": 20
+    "completedFights": [
+        "HatsuneMiku",
+        "PeterCombat"
+    ]
 }

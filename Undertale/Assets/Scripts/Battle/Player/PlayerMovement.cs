@@ -8,13 +8,14 @@ public class PlayerMovement : MonoBehaviour
     float xMovement;
     float yMovement;
     Rigidbody2D rb;
-    // Start is called before the first frame update
+
+    // Esta funcion guarda el Rigidbody del corazon.
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+    // Esta funcion mueve el corazon con las flechas.
     void Update()
     {
         xMovement = Input.GetAxisRaw("Horizontal");
@@ -22,5 +23,14 @@ public class PlayerMovement : MonoBehaviour
 
         rb.velocity = new Vector3(xMovement * speed, yMovement * speed);
 
+    }
+
+    // Esta funcion para el corazon cuando se desactiva el movimiento.
+    void OnDisable()
+    {
+        if (rb != null)
+        {
+            rb.velocity = Vector2.zero;
+        }
     }
 }

@@ -7,50 +7,106 @@ using UnityEngine;
 public class AttackManager : MonoBehaviour
 {
     public static AttackManager instance;
-    void Awake() => instance = this;
     public Pellet[] pelletPrefab;
     public Attacks attacksScriptable;
     public bool attackFinished;
 
-    List<IFightObject> attackObject = new();
+    List<IFightObject> attackObject = new List<IFightObject>();
 
+    // Esta funcion guarda este manager para poder llamarlo desde otros scripts.
+    void Awake()
+    {
+        instance = this;
+    }
+
+    // Esta funcion pide al ScriptableObject cual ataque toca.
+    public IEnumerator GetAttack()
+    {
+        IEnumerator attack;
+
+        attack = EmptyAttack();
+
+        if (attacksScriptable == null)
+        {
+            Debug.LogError("No attack scriptable assigned.");
+        }
+        else
+        {
+            attack = attacksScriptable.GetAttack();
+        }
+
+        return attack;
+    }
+
+    // Esta funcion empieza el ataque del enemigo.
     public void StartAttack(IEnumerator attack, Action onFinish)
     {
         attackFinished = false;
         StartCoroutine(StartAttackEnumerator(attack, onFinish));
     }
 
+    // Esta funcion actualiza todas las balas activas.
     void Update()
     {
-        for (int i = 0; i < attackObject.Count; i++)
+        int i;
+        IFightObject curObject;
+
+        for (i = 0; i < attackObject.Count; i++)
         {
-            IFightObject curObject = attackObject[i];
+            curObject = attackObject[i];
+
             if (curObject == null)
+            {
                 Debug.LogWarning($"THE ATTACK OBJECT AT {i} IS NULL!!!!");
+            }
             else
+            {
                 curObject.Tick();
+            }
         }
 
     }
+
+    // Esta funcion crea una bala del enemigo.
     public void SpawnPellet(Vector2 position, PelletType type, int pelletType)
     {
-        Pellet newPellet = Instantiate(pelletPrefab[pelletType], position, Quaternion.identity).GetComponent<Pellet>();
+        Pellet newPellet;
+        IFightObject pelletAsObj;
 
+        newPellet = Instantiate(pelletPrefab[pelletType], position, Quaternion.identity).GetComponent<Pellet>();
         newPellet.type = type;
-        IFightObject pelletAsObj = (IFightObject)newPellet;
+
+        pelletAsObj = (IFightObject)newPellet;
         pelletAsObj.Spawn();
         attackObject.Add(pelletAsObj);
     }
+
+    // Esta funcion evita errores si no hay ataque asignado.
+    IEnumerator EmptyAttack()
+    {
+        yield return null;
+    }
+
+    // Esta funcion espera a que acabe el ataque y limpia las balas.
     IEnumerator StartAttackEnumerator(IEnumerator attack, Action onFinish)
     {
+        int i;
+
         while (attack.MoveNext())
         {
             yield return attack.Current;
         }
 
-        onFinish?.Invoke();
-        for (int i = 0; i < attackObject.Count; i++)
+        if (onFinish != null)
+        {
+            onFinish();
+        }
+
+        for (i = 0; i < attackObject.Count; i++)
+        {
             attackObject[i].Remove();
+        }
+
         attackObject.Clear();
     }
 }
