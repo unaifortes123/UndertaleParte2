@@ -25,6 +25,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     int health = 20;
 
+    
+
+
+
     [System.Serializable]
     public class PlayerData
     {
@@ -106,6 +110,8 @@ public class PlayerController : MonoBehaviour
         // Vector2 moveInput = new Vector2 (foward, up);
         // rb.MovePosition(rb.position + moveInput * speed * Time.deltaTime
 
+
+
     }
 
     public float GetUp() // Funcion que devuelve el valor que coge del input del movimiento vertical.
@@ -121,5 +127,6 @@ public class PlayerController : MonoBehaviour
     }
 
 
+    
 
 }
