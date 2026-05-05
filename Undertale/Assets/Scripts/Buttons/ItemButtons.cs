@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ItemButtons : MonoBehaviour
 {
+    // Este script guarda los datos de cada objeto del menu ITEMS.
     [HideInInspector]
     public GameObject instance;
     [HideInInspector]

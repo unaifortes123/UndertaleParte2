@@ -6,9 +6,9 @@ public class ChangeName : MonoBehaviour
 
     public TextMeshPro miTextoTMP;
 
+    // Esta funcion pone el nombre del player en pantalla.
     void Start()
     {
-        // Le pone el texto del nombre del player.
         miTextoTMP.text = Name_Input.playerName;
     }
 }

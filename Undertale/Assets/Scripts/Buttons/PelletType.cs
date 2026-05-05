@@ -2,5 +2,6 @@ public enum PelletType
 {
     FollowDirect,
     FallFollowDirect,
-    JumpDirect
+    JumpDirect,
+    SideRain
 }

@@ -24,7 +24,11 @@ public class DialogueManager : MonoBehaviour
     [HideInInspector]
     public static DialogueManager instance;
 
-    void Awake() => instance = this;
+    // Esta funcion guarda este manager de dialogos para los demas scripts.
+    void Awake()
+    {
+        instance = this;
+    }
 
     // Esta funcion empieza un dialogo nuevo.
     public void Talking(Action talkAction)
@@ -40,6 +44,7 @@ public class DialogueManager : MonoBehaviour
         talkingRoutine = StartCoroutine(DialogueRoutine(talkAction));
     }
 
+    // Esta funcion prepara el texto inicial de la escena.
     void Start()
     {
         EnsureReady();
@@ -52,6 +57,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    // Esta funcion escribe el dialogo del player y luego el del enemigo si toca.
     IEnumerator DialogueRoutine(Action action)
     {
         done = false;
@@ -77,9 +83,13 @@ public class DialogueManager : MonoBehaviour
         done = true;
         canNarrate = true;
         talkingRoutine = null;
-        action?.Invoke();
+        if (action != null)
+        {
+            action();
+        }
     }
 
+    // Esta funcion muestra la caja blanca del enemigo y escribe su texto.
     IEnumerator EnemyTalking()
     {
         Renderer enemyBackgroundRenderer;
@@ -117,6 +127,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    // Esta funcion escribe el texto letra por letra.
     IEnumerator TypeText(TextMeshPro targetText, string message, AudioClip textClip)
     {
         char[] chars;
@@ -151,6 +162,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    // Esta funcion espera a que terminen los sonidos de las letras.
     IEnumerator WaitForAudioSources()
     {
         int playingSources;
@@ -182,6 +194,7 @@ public class DialogueManager : MonoBehaviour
         while (playingSources > 0);
     }
 
+    // Esta funcion limpia los sonidos antiguos del dialogo.
     void ClearAudioSources()
     {
         if (sources == null)
@@ -201,6 +214,7 @@ public class DialogueManager : MonoBehaviour
         sources.Clear();
     }
 
+    // Esta funcion crea lo que necesita el sistema de dialogos.
     void EnsureReady()
     {
         if (sources == null)

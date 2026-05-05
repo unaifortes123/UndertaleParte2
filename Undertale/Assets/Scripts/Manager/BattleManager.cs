@@ -47,17 +47,19 @@ public class BattleManager : MonoBehaviour
     private bool enemyCombatConfigured;
     private float damage;
     private bool battleEnding;
+    private string currentFightName;
     private PlayerMovement soulMovement;
     private Rigidbody2D soulRigidbody;
     private bool menuInputLocked;
     private const int SOUL_SORTING_ORDER = 50;
 
+    // Esta funcion guarda este manager para que los demas scripts lo encuentren.
     void Awake()
     {
         battleInstance = this;
     }
 
-
+    // Esta funcion empieza la opcion FIGHT.
     public void Attacking()
     {
         if (!isFighting)
@@ -69,9 +71,8 @@ public class BattleManager : MonoBehaviour
         }
 
     }
-    /// <summary>
-    /// The acting method, gets called when the player selects the act button, responsible for initiating acts
-    /// </summary>
+
+    // Esta funcion abre la opcion ACT.
     public void Acting()
     {
         if (actingMgr == null)
@@ -83,9 +84,8 @@ public class BattleManager : MonoBehaviour
         menuInputLocked = true;
         audioMgr.Selecting();
     }
-    /// <summary>
-    /// The item method, does nothing so far
-    /// </summary>
+
+    // Esta funcion abre la opcion ITEMS.
     public void Item()
     {
         if (ItemManager.instance == null)
@@ -99,7 +99,7 @@ public class BattleManager : MonoBehaviour
         audioMgr.Selecting();
     }
 
-    // Es la funcion del Mercy, se encargara de la ruta pacifista.
+    // Esta funcion intenta perdonar al enemigo.
     public void Mercy()
     {
         if (actingMgr.totalMercy >= actingMgr.totalMercyMax)
@@ -110,7 +110,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Se executara al principi.
+    // Esta funcion prepara el combate al empezar.
     void Start()
     {
         selectionInt = 0;
@@ -121,93 +121,66 @@ public class BattleManager : MonoBehaviour
         enemyStats = FindObjectOfType<EnemyVars>();
         playerVariables = PlayerVars.instance;
         saveManager = SaveManager.instance;
+        currentFightName = SceneManager.GetActiveScene().name;
         ConfigureEnemyCombat();
         ConfigureSoulReferences();
 
         Selection();
     }
 
+    // Esta funcion busca los botones en la escena si hace falta.
     void GetButtonsFromScene()
     {
-        GameObject fightButton;
-        GameObject actButton;
-        GameObject itemButton;
-        GameObject mercyButton;
-
         Buttons fightButtons;
         Buttons actButtons;
         Buttons itemButtons;
         Buttons mercyButtons;
 
-        fightButton = GameObject.Find("Fight Btn");
-        actButton = GameObject.Find("Act Btn");
-        itemButton = GameObject.Find("Item Btn");
-        mercyButton = GameObject.Find("Mercy Btn");
+        fightButtons = GetButtonFromScene("Fight Btn");
+        actButtons = GetButtonFromScene("Act Btn");
+        itemButtons = GetButtonFromScene("Item Btn");
+        mercyButtons = GetButtonFromScene("Mercy Btn");
 
-        // Todos estos if, son para saber por consola si no encuntra los GameObjects (o no estan).
-        if (fightButton == null)
+        if (fightButtons != null && actButtons != null && itemButtons != null && mercyButtons != null)
         {
-            Debug.LogError("No se ha encontrado Fight Btn");
-            return;
+            buttons = new List<Buttons>();
+
+            buttons.Add(fightButtons);
+            buttons.Add(actButtons);
+            buttons.Add(itemButtons);
+            buttons.Add(mercyButtons);
+
+            Debug.Log("BOTONES CARGADOS DESDE LA ESCENA");
         }
-
-        if (actButton == null)
-        {
-            Debug.LogError("No se ha encontrado Act Btn");
-            return;
-        }
-
-        if (itemButton == null)
-        {
-            Debug.LogError("No se ha encontrado Item Btn");
-            return;
-        }
-
-        if (mercyButton == null)
-        {
-            Debug.LogError("No se ha encontrado Mercy Btn");
-            return;
-        }
-
-        fightButtons = fightButton.GetComponent<Buttons>();
-        actButtons = actButton.GetComponent<Buttons>();
-        itemButtons = itemButton.GetComponent<Buttons>();
-        mercyButtons = mercyButton.GetComponent<Buttons>();
-
-        if (fightButtons == null)
-        {
-            Debug.LogError("Fight Btn no tiene el script Buttons");
-            return;
-        }
-
-        if (actButtons == null)
-        {
-            Debug.LogError("Act Btn no tiene el script Buttons");
-            return;
-        }
-
-        if (itemButtons == null)
-        {
-            Debug.LogError("Item Btn no tiene el script Buttons");
-            return;
-        }
-
-        if (mercyButtons == null)
-        {
-            Debug.LogError("Mercy Btn no tiene el script Buttons");
-            return;
-        }
-
-        buttons = new List<Buttons>();
-
-        buttons.Add(fightButtons);
-        buttons.Add(actButtons);
-        buttons.Add(itemButtons);
-        buttons.Add(mercyButtons);
-
-        Debug.Log("BOTONES CARGADOS DESDE LA ESCENA");
     }
 
+    // Esta funcion busca un boton y avisa si falta algo.
+    Buttons GetButtonFromScene(string buttonName)
+    {
+        GameObject buttonObject;
+        Buttons buttonScript;
+
+        buttonScript = null;
+        buttonObject = GameObject.Find(buttonName);
+
+        if (buttonObject == null)
+        {
+            Debug.LogError("No se ha encontrado " + buttonName);
+        }
+        else
+        {
+            buttonScript = buttonObject.GetComponent<Buttons>();
+
+            if (buttonScript == null)
+            {
+                Debug.LogError(buttonName + " no tiene el script Buttons");
+            }
+        }
+
+        return buttonScript;
+    }
+
+    // Esta funcion controla el menu principal y actualiza la vida.
     void Update()
     {
         if (playerVariables == null)
@@ -282,6 +255,7 @@ public class BattleManager : MonoBehaviour
             
     }
 
+    // Esta funcion evita que la seleccion se salga de los botones.
     void CheckSelectionLimits()
     {
         if (selectionInt > maxSelectionInt)
@@ -295,6 +269,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
+    // Esta funcion esconde el corazon y le quita movimiento.
     void HideSoul()
     {
         if (soul != null)
@@ -305,6 +280,7 @@ public class BattleManager : MonoBehaviour
         SetSoulMovement(false);
     }
 
+    // Esta funcion dice si ahora se puede mover el menu principal.
     bool CanReadMainMenuInput()
     {
         bool dialogueReady;
@@ -313,16 +289,19 @@ public class BattleManager : MonoBehaviour
         return !menuInputLocked && dialogueReady && !isFighting && !actingMgr.isActing && !ItemManager.instance.isMenu;
     }
 
+    // Esta funcion bloquea el menu para que no se mueva mientras hay texto.
     public void LockMenuInput()
     {
         menuInputLocked = true;
     }
 
+    // Esta funcion vuelve a dejar usar el menu.
     public void UnlockMenuInput()
     {
         menuInputLocked = false;
     }
 
+    // Esta funcion pone el corazon dentro de la caja de batalla.
     void ShowSoulInBattleBox()
     {
         if (soul != null && battleBox != null)
@@ -333,6 +312,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
+    // Esta funcion pone el corazon al lado de una opcion del menu.
     public void ShowSoulInMenu(Vector3 position)
     {
         if (soul == null)
@@ -345,11 +325,13 @@ public class BattleManager : MonoBehaviour
         SetSoulMovement(false);
     }
 
+    // Esta funcion esconde el corazon cuando se cierra un menu.
     public void HideSoulForMenu()
     {
         HideSoul();
     }
 
+    // Esta funcion prepara las referencias del corazon.
     void ConfigureSoulReferences()
     {
         if (soul == null)
@@ -370,6 +352,7 @@ public class BattleManager : MonoBehaviour
         soul.sortingOrder = SOUL_SORTING_ORDER;
     }
 
+    // Esta funcion activa o desactiva el movimiento del corazon.
     void SetSoulMovement(bool canMove)
     {
         ConfigureSoulReferences();
@@ -385,6 +368,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
+    // Esta funcion carga en los managers los datos del enemigo actual.
     void ConfigureEnemyCombat()
     {
         bool canConfigure;
@@ -411,103 +395,117 @@ public class BattleManager : MonoBehaviour
         }
     }
 
+    // Esta funcion devuelve un dialogo aleatorio del enemigo.
     public string GetRandomEnemyDialogue()
     {
         string dialogue;
 
         dialogue = GetRandomNotEmptyText(enemyDialogue);
 
-        if (!string.IsNullOrWhiteSpace(dialogue))
+        if (string.IsNullOrWhiteSpace(dialogue))
         {
-            return dialogue;
+            dialogue = "*" + GetEnemyDisplayName() + " no dice nada por un momento.";
         }
 
-        return "*Peter se queda callado por un momento.";
+        return dialogue;
     }
 
+    // Esta funcion devuelve el texto que sale despues del turno.
     public string GetPostTurnText()
     {
         string dialogue;
 
+        dialogue = "";
+
         if (actingMgr != null && actingMgr.totalMercy >= actingMgr.totalMercyMax && !string.IsNullOrWhiteSpace(actingMgr.spareMessage))
         {
-            return actingMgr.spareMessage;
+            dialogue = actingMgr.spareMessage;
         }
 
-        dialogue = actingMgr != null ? GetRandomNotEmptyText(actingMgr.flavorText) : "";
-
-        if (!string.IsNullOrWhiteSpace(dialogue))
+        if (string.IsNullOrWhiteSpace(dialogue) && actingMgr != null)
         {
-            return dialogue;
+            dialogue = GetRandomNotEmptyText(actingMgr.flavorText);
         }
 
-        return "*Peter espera tu siguiente movimiento.";
+        if (string.IsNullOrWhiteSpace(dialogue))
+        {
+            dialogue = "*" + GetEnemyDisplayName() + " espera tu siguiente movimiento.";
+        }
+
+        return dialogue;
     }
 
+    // Esta funcion escoge un texto que no este vacio.
     string GetRandomNotEmptyText(List<string> texts)
     {
         List<string> validTexts;
+        string text;
+        int i;
 
+        text = "";
         if (texts == null || texts.Count == 0)
         {
-            return "";
+            validTexts = new List<string>();
         }
-
-        validTexts = texts.FindAll(textValue => !string.IsNullOrWhiteSpace(textValue));
-
-        if (validTexts.Count == 0)
+        else
         {
-            return "";
+            validTexts = new List<string>();
+
+            for (i = 0; i < texts.Count; i++)
+            {
+                if (!string.IsNullOrWhiteSpace(texts[i]))
+                {
+                    validTexts.Add(texts[i]);
+                }
+            }
         }
 
-        return validTexts[UnityEngine.Random.Range(0, validTexts.Count)];
+        if (validTexts.Count > 0)
+        {
+            text = validTexts[UnityEngine.Random.Range(0, validTexts.Count)];
+        }
+
+        return text;
     }
 
-    /// <summary>
-    /// The method responsible for selecting, when a method is selected the soul will be positioned on the selected button.
-    /// </summary>
-    /// <param name="selectedInt"></param>
+    // Esta funcion coge el nombre del enemigo para los textos de emergencia.
+    string GetEnemyDisplayName()
+    {
+        string enemyDisplayName;
 
+        enemyDisplayName = "El enemigo";
+        if (enemyStats != null && !string.IsNullOrWhiteSpace(enemyStats.enemyName))
+        {
+            enemyDisplayName = enemyStats.enemyName;
+        }
+
+        return enemyDisplayName;
+    }
+
+    // Esta funcion selecciona un boton y mueve el corazon a su lado.
     void Selecting(int selectedInt)
     {
-        if (buttons == null || buttons.Count <= selectedInt)
+        if (buttons != null && buttons.Count > selectedInt && buttons[selectedInt] != null)
         {
-            return;
-        }
+            if (soul != null && buttons[selectedInt].soulPosition != null)
+            {
+                ShowSoulInMenu(buttons[selectedInt].soulPosition.position);
+            }
 
-        if (buttons[selectedInt] == null)
-        {
-            return;
+            buttons[selectedInt].SelectButton();
         }
-
-        if (soul != null && buttons[selectedInt].soulPosition != null)
-        {
-            ShowSoulInMenu(buttons[selectedInt].soulPosition.position);
-        }
-
-        buttons[selectedInt].SelectButton();
     }
 
-    /// <summary>
-    /// The method responsible for deSelecting
-    /// </summary>
-    /// <param name="deselectionInt"></param>
+    // Esta funcion quita la seleccion de un boton.
     void Deselecting(int deselectionInt)
     {
-        if (buttons == null || buttons.Count <= deselectionInt)
+        if (buttons != null && buttons.Count > deselectionInt && buttons[deselectionInt] != null)
         {
-            return;
+            buttons[deselectionInt].DeselectButton();
         }
-
-        if (buttons[deselectionInt] == null)
-        {
-            return;
-        }
-
-        buttons[deselectionInt].DeselectButton();
     }
 
-    // Esta funcion se encarga de volver al 
+    // Esta funcion actualiza cual boton esta seleccionado.
     void Selection()
     {
         int i;
@@ -531,7 +529,7 @@ public class BattleManager : MonoBehaviour
     }
 
 
-    // Esta funcion, llama a los metodos en el inicio para iniciar cada accion respectiva de cada boton.
+    // Esta funcion ejecuta la opcion marcada del menu.
     void Selected()
     {
         Debug.Log("SELECTION INT: " + selectionInt);
@@ -557,27 +555,13 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Esta funcion se encarga de iniciar la secuencia de ataque.
+    // Esta funcion inicia la secuencia de ataque del player y luego la del enemigo.
     IEnumerator AttackSequence()
     {
         isFighting = true;
 
         HideSoul();
-
-        Action onBoxFinish = () =>
-        {
-            actingMgr.actingText.gameObject.SetActive(true);
-        };
-
-        isFinished = () =>
-        {
-            HideSoul();
-
-            StartCoroutine(ResizeBattleBox(new Vector2(11.5f, 3), onBoxFinish));
-            attackMgr.attackFinished = !attackMgr.attackFinished;
-            isFighting = false;
-            UnlockMenuInput();
-        };
+        isFinished = FinishAttackSequence;
 
         attackingSys.StartAttacking(playerVariables.atkValue);
 
@@ -591,34 +575,17 @@ public class BattleManager : MonoBehaviour
         attackMgr.StartAttack(attackMgr.GetAttack(), isFinished);
     }
 
+    // Esta funcion cierra ACT y empieza el turno del enemigo.
     public IEnumerator ActingSequence()
     {
-        Action boxAction = () =>
-        {
-            DialogueManager.instance.dialogueTxt = GetPostTurnText();
-        };
-
         HideSoul();
-
-        isFinished = () =>
-        {
-            HideSoul();
-
-            StartCoroutine(ResizeBattleBox(new Vector2(11.5f, 3f), boxAction));
-            actingMgr.isActing = false;
-            isFighting = false;
-            actingMgr.actingText.gameObject.SetActive(true);
-            DialogueManager.instance.Talking(null);
-            actingMgr.actObjects.SetActive(false);
-            actingMgr.canAct = true;
-            UnlockMenuInput();
-        };
+        isFinished = FinishActingSequence;
 
         yield return new WaitForSeconds(1);
 
         ShowSoulInBattleBox();
 
-        StartCoroutine(ResizeBattleBox(new Vector2(3, 3), boxAction));
+        StartCoroutine(ResizeBattleBox(new Vector2(3, 3), SetPostTurnText));
         actingMgr.actingText.gameObject.SetActive(false);
         actingMgr.isActing = false;
         isFighting = true;
@@ -627,28 +594,11 @@ public class BattleManager : MonoBehaviour
         attackMgr.StartAttack(attackMgr.GetAttack(), isFinished);
     }
 
+    // Esta funcion cierra ITEMS y empieza el turno del enemigo.
     public IEnumerator ItemSequence()
     {
         HideSoul();
-
-        isFinished = () =>
-        {
-            DialogueManager.instance.dialogueTxt = GetPostTurnText();
-
-            ItemManager.instance.time = 0;
-
-            HideSoul();
-
-            StartCoroutine(ResizeBattleBox(new Vector2(11.5f, 3f), null));
-            actingMgr.isActing = false;
-            isFighting = false;
-            actingMgr.actingText.gameObject.SetActive(true);
-            DialogueManager.instance.Talking(null);
-            actingMgr.actObjects.SetActive(false);
-            ItemManager.instance.itemObjects.SetActive(false);
-            actingMgr.canAct = true;
-            UnlockMenuInput();
-        };
+        isFinished = FinishItemSequence;
 
         yield return new WaitForSeconds(1);
 
@@ -664,7 +614,60 @@ public class BattleManager : MonoBehaviour
         attackMgr.StartAttack(attackMgr.GetAttack(), isFinished);
     }
 
+    // Esta funcion vuelve al menu despues del ataque FIGHT.
+    void FinishAttackSequence()
+    {
+        HideSoul();
+        StartCoroutine(ResizeBattleBox(new Vector2(11.5f, 3), ShowActingText));
+        attackMgr.attackFinished = !attackMgr.attackFinished;
+        isFighting = false;
+        UnlockMenuInput();
+    }
 
+    // Esta funcion vuelve al menu despues de ACT.
+    void FinishActingSequence()
+    {
+        HideSoul();
+        StartCoroutine(ResizeBattleBox(new Vector2(11.5f, 3f), SetPostTurnText));
+        actingMgr.isActing = false;
+        isFighting = false;
+        actingMgr.actingText.gameObject.SetActive(true);
+        DialogueManager.instance.Talking(null);
+        actingMgr.actObjects.SetActive(false);
+        actingMgr.canAct = true;
+        UnlockMenuInput();
+    }
+
+    // Esta funcion vuelve al menu despues de usar un item.
+    void FinishItemSequence()
+    {
+        DialogueManager.instance.dialogueTxt = GetPostTurnText();
+        ItemManager.instance.time = 0;
+        HideSoul();
+        StartCoroutine(ResizeBattleBox(new Vector2(11.5f, 3f), null));
+        actingMgr.isActing = false;
+        isFighting = false;
+        actingMgr.actingText.gameObject.SetActive(true);
+        DialogueManager.instance.Talking(null);
+        actingMgr.actObjects.SetActive(false);
+        ItemManager.instance.itemObjects.SetActive(false);
+        actingMgr.canAct = true;
+        UnlockMenuInput();
+    }
+
+    // Esta funcion vuelve a ensenar el texto principal.
+    void ShowActingText()
+    {
+        actingMgr.actingText.gameObject.SetActive(true);
+    }
+
+    // Esta funcion prepara el texto despues del turno.
+    void SetPostTurnText()
+    {
+        DialogueManager.instance.dialogueTxt = GetPostTurnText();
+    }
+
+    // Esta funcion cambia el tamano de la caja de batalla.
     IEnumerator ResizeBattleBox(Vector2 targetSize, Action onFinish)
     {
         Vector2 startSize = battleBox.size;
@@ -689,12 +692,17 @@ public class BattleManager : MonoBehaviour
             battleBox.size = size;
             yield return null;
         }
-        onFinish?.Invoke();
+        if (onFinish != null)
+        {
+            onFinish();
+        }
 
     }
 
-    public void EndBattle() // Funcion que hace que salgas del combate.
+    // Esta funcion termina el combate, guarda y vuelve al mapa.
+    public void EndBattle()
     {
+        bool canEndBattle;
 
         Debug.Log("ENDING BATTLE...");
         battleEnding = true;
@@ -710,44 +718,52 @@ public class BattleManager : MonoBehaviour
             saveManager = SaveManager.instance;
         }
 
+        canEndBattle = playerVariables != null && saveManager != null;
+
         if (playerVariables == null)
         {
             Debug.LogError("playerVariables is null");
-            return;
         }
 
         if (saveManager == null)
         {
             Debug.LogError("saveManager is null");
-            return;
         }
 
-
-        isFighting = false;
-
-        playerVariables.playerData.health = 20;
-        playerVariables.playerData.score += 100;
-
-        if (!playerVariables.playerData.completedFights.Contains("Combat2"))
+        if (canEndBattle)
         {
-            playerVariables.playerData.completedFights.Add("Combat2");
-        }
+            isFighting = false;
 
-        json = JsonUtility.ToJson(playerVariables.playerData, true);
-        saveManager.SaveGame(json);
+            playerVariables.playerData.health = 20;
+            playerVariables.playerData.score += 100;
 
-        Debug.Log(json);
+            if (string.IsNullOrWhiteSpace(currentFightName))
+            {
+                currentFightName = SceneManager.GetActiveScene().name;
+            }
+
+            if (!playerVariables.playerData.completedFights.Contains(currentFightName))
+            {
+                playerVariables.playerData.completedFights.Add(currentFightName);
+            }
+
+            json = JsonUtility.ToJson(playerVariables.playerData, true);
+            saveManager.SaveGame(json);
+
+            Debug.Log(json);
         
-        DialogueManager.instance.enemyTxt = "";
-        DialogueManager.instance.Talking(null);
+            DialogueManager.instance.enemyTxt = "";
+            DialogueManager.instance.Talking(null);
 
-        playerVariables.ClearSoulSprite();
+            playerVariables.ClearSoulSprite();
 
 
-        SceneManager.LoadScene("PruebaEntradaEnCombate");
+            SceneManager.LoadScene("PruebaEntradaEnCombate");
+        }
 
     }
 
+    // Esta funcion limpia el sprite del corazon al salir de la escena.
     void OnDestroy()
     {
         if (playerVariables != null)
