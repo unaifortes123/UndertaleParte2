@@ -3,17 +3,20 @@ using UnityEngine;
 
 public class PeterCombat : EnemyVars
 {
+    // Esta funcion prepara los valores del enemigo antes de empezar.
     protected override void Awake()
     {
         ApplyDefaultValues();
         base.Awake();
     }
 
+    // Esta funcion rellena los valores cuando reinicias el componente en Unity.
     void Reset()
     {
         ApplyDefaultValues();
     }
 
+    // Esta funcion pone valores por defecto si faltan en la escena.
     void ApplyDefaultValues()
     {
         if (string.IsNullOrWhiteSpace(enemyName))

@@ -17,6 +17,7 @@ public class EnemyVars : MonoBehaviour
     public string spareMessage;
     public List<string> flavorText = new List<string>();
 
+    // Esta funcion pone la vida actual al maximo si estaba vacia.
     protected virtual void Awake()
     {
         if (maxHP > 0 && curHP <= 0)
@@ -25,6 +26,7 @@ public class EnemyVars : MonoBehaviour
         }
     }
 
+    // Esta funcion pasa los datos del enemigo a los managers del combate.
     public virtual void ApplyCombatSetup(BattleManager battleManager, AttackManager attackManager, ActingManager actingManager)
     {
         if (maxHP > 0 && curHP <= 0)

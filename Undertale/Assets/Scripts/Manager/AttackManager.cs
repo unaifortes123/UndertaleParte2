@@ -13,11 +13,13 @@ public class AttackManager : MonoBehaviour
 
     List<IFightObject> attackObject = new List<IFightObject>();
 
+    // Esta funcion guarda este manager para poder llamarlo desde otros scripts.
     void Awake()
     {
         instance = this;
     }
 
+    // Esta funcion pide al ScriptableObject cual ataque toca.
     public IEnumerator GetAttack()
     {
         IEnumerator attack;
@@ -36,12 +38,14 @@ public class AttackManager : MonoBehaviour
         return attack;
     }
 
+    // Esta funcion empieza el ataque del enemigo.
     public void StartAttack(IEnumerator attack, Action onFinish)
     {
         attackFinished = false;
         StartCoroutine(StartAttackEnumerator(attack, onFinish));
     }
 
+    // Esta funcion actualiza todas las balas activas.
     void Update()
     {
         int i;
@@ -63,6 +67,7 @@ public class AttackManager : MonoBehaviour
 
     }
 
+    // Esta funcion crea una bala del enemigo.
     public void SpawnPellet(Vector2 position, PelletType type, int pelletType)
     {
         Pellet newPellet;
@@ -76,11 +81,13 @@ public class AttackManager : MonoBehaviour
         attackObject.Add(pelletAsObj);
     }
 
+    // Esta funcion evita errores si no hay ataque asignado.
     IEnumerator EmptyAttack()
     {
         yield return null;
     }
 
+    // Esta funcion espera a que acabe el ataque y limpia las balas.
     IEnumerator StartAttackEnumerator(IEnumerator attack, Action onFinish)
     {
         int i;
@@ -90,7 +97,11 @@ public class AttackManager : MonoBehaviour
             yield return attack.Current;
         }
 
-        onFinish?.Invoke();
+        if (onFinish != null)
+        {
+            onFinish();
+        }
+
         for (i = 0; i < attackObject.Count; i++)
         {
             attackObject[i].Remove();

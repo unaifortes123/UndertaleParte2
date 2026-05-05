@@ -42,31 +42,27 @@ public class EntryEnemy : MonoBehaviour
         {
             if (gameObject.name == "SpawnHatsune")
             {
-                if (!playerStats.playerData.completedFights.Contains("HatsuneMiku2"))
-                {
-                    SceneManager.LoadScene("HatsuneMiku2");
-                }
-                else
-                {
-                    Debug.Log("COMBATE YA COMPLETADO");
-                }
-
+                TryLoadFight("HatsuneMiku");
             }
 
             if (gameObject.name == "SpawnPeter")
             {
-                if (!playerStats.playerData.completedFights.Contains("Combat2"))
-                {
-                    Debug.Log("ENTRANDO EN COMBATE...");
-                    SceneManager.LoadScene("Combat2");
-                }
-                else
-                {
-                    Debug.Log("COMBATE YA COMPLETADO");
-                }
-
+                TryLoadFight("PeterCombat");
             }
+        }
+    }
 
+    // Esta funcion entra al combate si no esta completado.
+    void TryLoadFight(string fightName)
+    {
+        if (!playerStats.playerData.completedFights.Contains(fightName))
+        {
+            Debug.Log("ENTRANDO EN COMBATE...");
+            SceneManager.LoadScene(fightName);
+        }
+        else
+        {
+            Debug.Log("COMBATE YA COMPLETADO");
         }
     }
 
@@ -96,18 +92,29 @@ public class EntryEnemy : MonoBehaviour
     {
         PlayerVars.PlayerData savedData;
 
-        if (saveManager == null || playerStats == null)
+        if (saveManager != null && playerStats != null)
         {
-            return;
+            savedData = saveManager.ReadSavedPlayerData();
+
+            if (savedData != null)
+            {
+                NormalizeOldFightNames(savedData);
+                playerStats.playerData = savedData;
+            }
+        }
+    }
+
+    // Esta funcion convierte nombres viejos del save a los nuevos.
+    void NormalizeOldFightNames(PlayerVars.PlayerData savedData)
+    {
+        if (savedData.completedFights == null)
+        {
+            savedData.completedFights = new List<string>();
         }
 
-        savedData = saveManager.ReadSavedPlayerData();
-
-        if (savedData == null)
+        if (savedData.completedFights.Contains("Combat2") && !savedData.completedFights.Contains("PeterCombat"))
         {
-            return;
+            savedData.completedFights.Add("PeterCombat");
         }
-
-        playerStats.playerData = savedData;
     }
 }

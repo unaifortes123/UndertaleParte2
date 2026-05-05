@@ -66,8 +66,7 @@ public class Name_Input : MonoBehaviour
             char letter = letters[i];
             //Obtiene el component button del prefab
             Button btn = obj.GetComponent<Button>();
-            //cuando se haga click añadira la letra al nombre
-            // btn.onClick.AddListener(() => AddLetter(letter));
+            //cuando se haga click anadira la letra al nombre.
 
             //guardamos boton
             buttons.Add(btn);

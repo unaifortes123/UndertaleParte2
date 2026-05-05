@@ -52,7 +52,7 @@ public class GameOverManager : MonoBehaviour
         }
     }
 
-    // Esta funcion reproduce la muerte y devuelve al ultimo guardado.
+    // Esta funcion reproduce la muerte y vuelve al ultimo guardado.
     IEnumerator DeathSequence()
     {
         if (player == null) yield break;

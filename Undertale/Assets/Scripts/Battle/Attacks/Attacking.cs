@@ -6,7 +6,11 @@ using UnityEngine;
 public class Attacking : MonoBehaviour
 {
     public static Attacking instance;
-    void Awake() => instance = this;
+    // Esta funcion guarda este ataque para que otros scripts puedan usarlo.
+    void Awake()
+    {
+        instance = this;
+    }
     float time;
     public float maxTime;
     float progress;
@@ -31,17 +35,19 @@ public class Attacking : MonoBehaviour
     private EnemyVars stats;
     private PlayerVars statsPl;
 
-
+    // Esta funcion busca los datos del enemigo.
     void Start()
     {
         enemy = FindObjectOfType<EnemyVars>();
     }
+
+    // Esta funcion calcula cuanto dano hace segun donde paras la barra.
     float PointerProgressToAttackMultiplier(float progress)
     {
         return Mathf.Min(progress * (playerDamage * 2), (1 - progress) * (playerDamage * 2));
     }
 
-
+    // Esta funcion mueve la barra de ataque y detecta cuando pulsas Enter.
     void Update()
     {
         damageDealt = Mathf.Round(PointerProgressToAttackMultiplier(progress)) - enemy.defendValue;
@@ -71,6 +77,8 @@ public class Attacking : MonoBehaviour
         }
 
     }
+
+    // Esta funcion empieza el minijuego de atacar.
     public void StartAttacking(float playerDmg)
     {
         isAttacking = true;
@@ -79,7 +87,7 @@ public class Attacking : MonoBehaviour
         pointerObject.gameObject.SetActive(true);
     }
 
-
+    // Esta funcion ensena el dano o MISS encima del enemigo.
     IEnumerator Damage()
     {
         normal.SetActive(false);
@@ -101,6 +109,7 @@ public class Attacking : MonoBehaviour
         damageTxt.color = damageColor;
     }
 
+    // Esta funcion aplica el dano y cierra la barra de ataque.
     IEnumerator AfterAttack()
     {
         if (damageDealt > 0)
@@ -115,6 +124,8 @@ public class Attacking : MonoBehaviour
         leftPos.x = leftPos.x * -1;
         rightPos.x = rightPos.x * -1;
     }
+
+    // Esta funcion hace parpadear el puntero despues de atacar.
     IEnumerator Flashing()
     {
         while (curTime < 0.75f)

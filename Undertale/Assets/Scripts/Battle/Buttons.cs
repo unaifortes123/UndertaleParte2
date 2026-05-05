@@ -11,27 +11,27 @@ public class Buttons : MonoBehaviour
 
     private SpriteRenderer buttonSprite;
 
-     // Se ejecuta antes del Start(), y coge la referencia del SpriteRendere para el buttonSprite
-
+    // Esta funcion guarda el sprite del boton.
     void Awake()
     {
         buttonSprite = GetComponent<SpriteRenderer>();
     }
 
-
-    // Funcio 
+    // Esta funcion marca el boton como seleccionado.
     public void SelectButton()
     {
         selected = true;
         ChangeSprite(buttonSelected);
     }
 
+    // Esta funcion marca el boton como no seleccionado.
     public void DeselectButton()
     {
         selected = false;
         ChangeSprite(buttonDeselected);
     }
 
+    // Esta funcion cambia el dibujo del boton.
     void ChangeSprite(Sprite newSprite)
     {
         if (buttonSprite == null)
