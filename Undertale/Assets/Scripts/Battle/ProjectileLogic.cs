@@ -24,8 +24,12 @@ public class ProjectileLogic : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            player = collision.gameObject.GetComponent<PlayerVars>();
-            player.TakeDamage(enemy.attackValue - player.defValue);
+            player = PlayerVars.instance;
+
+            if (player != null)
+            {
+                player.TakeDamage(enemy.attackValue - player.defValue);
+            }
         }
     }
 }

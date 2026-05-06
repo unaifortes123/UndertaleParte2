@@ -6,7 +6,7 @@ public class SaveSystem
     public static void main(String[] args)
     {
         String json;
-        File jarFile;
+        String base;
         File folder;
         File saveFile;
         FileWriter writer;
@@ -21,8 +21,17 @@ public class SaveSystem
 
         try
         {
-            jarFile = new File(SaveSystem.class.getProtectionDomain().getCodeSource().getLocation().toURI()); // Obtiene la ruta del archivo jar.
-            folder = new File(jarFile.getParentFile().getParentFile(), "Save"); // Lo que hace es obtener la ruta del padre del archivo jar, para crear la carpeta "Save" en esa ruta.
+            base = System.getProperty("user.home");
+
+            File jarFile = new File(
+                SaveSystem.class
+                    .getProtectionDomain()
+                    .getCodeSource()
+                    .getLocation()
+                    .toURI()
+            );
+
+            folder = new File(jarFile.getParentFile().getParentFile(), "Save");
 
             if (!folder.exists()) // Esto verifica si la carpeta esta o no
             {

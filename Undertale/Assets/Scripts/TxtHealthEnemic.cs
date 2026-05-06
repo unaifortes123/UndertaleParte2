@@ -9,16 +9,16 @@ public class TxtHealthEnemic : MonoBehaviour
     public EnemyVars statsEnemy;
     public TextMeshPro miTextoTMP;
 
-    // Start is called before the first frame update
+    // Esta funcion pone la vida maxima del enemigo al empezar.
     void Start()
     {
-        miTextoTMP.text = statsEnemy.maxHP.ToString(); // Damos el texto de la vida al maximo.
+        miTextoTMP.text = statsEnemy.maxHP.ToString();
 
     }
 
-    // Update is called once per frame
+    // Esta funcion actualiza el texto con la vida actual del enemigo.
     void Update()
     {
-        miTextoTMP.text = statsEnemy.curHP.ToString(); // Se actualiza cada frame.
+        miTextoTMP.text = statsEnemy.curHP.ToString();
     }
 }

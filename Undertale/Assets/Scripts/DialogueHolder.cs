@@ -7,6 +7,9 @@ public class DialogueHolder : MonoBehaviour
     [HideInInspector]
     public static DialogueHolder instance;
     public string[] dialogue;
-    void Awake () => instance = this;
+    void Awake()
+    {
+        instance = this;
+    }
 
 }

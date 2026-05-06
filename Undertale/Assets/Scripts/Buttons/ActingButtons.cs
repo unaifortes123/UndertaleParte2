@@ -11,7 +11,7 @@ public class ActingButtons : MonoBehaviour
     public Transform soulPosition;
     [HideInInspector]
     public ActVars actVars;
-
+    // Esta funcion guarda las referencias de esta opcion de ACT.
     void Awake()
     {
         instance = this.gameObject;

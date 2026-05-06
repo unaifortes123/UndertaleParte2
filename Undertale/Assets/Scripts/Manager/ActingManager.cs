@@ -22,14 +22,18 @@ public class ActingManager : MonoBehaviour
     public List<string> flavorText;
     public float time;
     public bool canAct = true;
+    // Esta funcion prepara los limites del menu ACT.
     void Start()
     {
-        isFighting = BattleManager.battleInstance.isFighting;
-        maxSelectionInt = 3;
+        maxSelectionInt = buttons.Count - 1;
         minSelectionInt = 0;
     }
+
+    // Esta funcion mueve el menu ACT y detecta Enter.
     void Update()
     {
+        isFighting = BattleManager.battleInstance.isFighting;
+
         if (!isFighting && isActing)
         {
             if (selectionInt > maxSelectionInt)
@@ -38,55 +42,72 @@ public class ActingManager : MonoBehaviour
             }
             if (selectionInt < minSelectionInt)
             {
-                selectionInt = 3;
+                selectionInt = maxSelectionInt;
             }
+
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 selectionInt--;
+                time = 0;
             }
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 selectionInt++;
+                time = 0;
             }
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 selectionInt -= 2;
+                time = 0;
             }
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
                 selectionInt += 2;
+                time = 0;
             }
+
             Selection();
+
             time += Time.deltaTime;
+
             if (time > 0.25f)
             {
-                if (canAct)
+                if (canAct && Input.GetKeyDown(KeyCode.Return))
                 {
-                    if (Input.GetKeyDown(KeyCode.Return))
-                    {
-                        canAct = false;
-                        Selected();
-                    }
+                    canAct = false;
+                    Selected();
                 }
-
-
             }
-
         }
-
     }
 
+    // Esta funcion pone el corazon al lado de la opcion ACT marcada.
     void Selecting(int selectedInt)
     {
+        Vector3 fallbackPosition;
+
+        RefreshSoulReference();
+
+        if (soul == null) return;
+        if (buttons == null || buttons.Count <= selectedInt) return;
+        if (buttons[selectedInt] == null) return;
+
         if (buttons[selectedInt].selected)
         {
-            soul.transform.position = buttons[selectedInt].soulPosition.position;
+            fallbackPosition = buttons[selectedInt].transform.position + Vector3.left * 1.6f;
+            ShowSoul(GetSoulPosition(buttons[selectedInt].soulPosition, buttons[selectedInt].transform, fallbackPosition));
         }
     }
+
+    // Esta funcion quita la marca de una opcion ACT.
     void Deselecting(int deselectionInt)
     {
+        if (buttons == null || buttons.Count <= deselectionInt) return;
+        if (buttons[deselectionInt] == null) return;
+
         buttons[deselectionInt].selected = false;
     }
+    // Esta funcion actualiza que opcion ACT esta marcada.
     void Selection()
     {
 
@@ -128,11 +149,11 @@ public class ActingManager : MonoBehaviour
         }
     }
 
+    // Esta funcion ejecuta la opcion ACT elegida.
     void Selected()
     {
         if (selectionInt == 0)
         {
-            OnActing(0);
             OnActing(0);
             totalMercy += buttons[0].actVars.curMercy;
         }
@@ -155,32 +176,140 @@ public class ActingManager : MonoBehaviour
             totalMercyMax += buttons[3].actVars.mercyMax;
         }
     }
+
+    // Esta funcion abre el menu de ACT.
+    public void OpenMenu()
+    {
+        if (buttons == null || buttons.Count == 0)
+        {
+            return;
+        }
+
+        maxSelectionInt = buttons.Count - 1;
+        selectionInt = 0;
+        time = 0;
+        canAct = true;
+        isActing = true;
+        actObjects.SetActive(true);
+        actingText.gameObject.SetActive(false);
+        RefreshSoulReference();
+
+        if (soul != null)
+        {
+            soul.enabled = true;
+        }
+
+        Selection();
+    }
+    // Esta funcion muestra el texto de ACT y prepara el turno del enemigo.
     public void OnActing(int selectedInt)
     {
+        isActing = false;
         canAct = false;
-        buttons[selectedInt].actVars.curMercy += buttons[selectedInt].actVars.mercyValue[0];
-        actingText.gameObject.SetActive(true);
-        DialogueManager.instance.dialogueTxt = buttons[selectedInt].actVars.actTxt[0];
-        Action doneTalking = () =>
+
+        HideSoul();
+
+        if (buttons[selectedInt].actVars.mercyValue != null && buttons[selectedInt].actVars.mercyValue.Count > 0)
         {
-            Debug.Log("action initiated");
-            DialogueManager.instance.shouldTalk = false;
-            StartCoroutine(BattleManager.battleInstance.ActingSequence());
-        };
-        DialogueManager.instance.enemyTxt = BattleManager.battleInstance.enemyDialogue[UnityEngine.Random.Range(0, BattleManager.battleInstance.enemyDialogue.Count)];
-        DialogueManager.instance.shouldTalk = true;
-        DialogueManager.instance.Talking(doneTalking);
-        actObjects.SetActive(false);
-        if (buttons[selectedInt].actVars.actTxt.Count <= 2 || buttons[selectedInt].actVars.mercyValue.Count <= 2)
-        {
-            Debug.Log("We added");
-            buttons[selectedInt].actVars.actTxt.Add(buttons[selectedInt].actVars.actTxt[0]);
-            buttons[selectedInt].actVars.mercyValue.Add(buttons[selectedInt].actVars.mercyValue[0]);
+            buttons[selectedInt].actVars.curMercy += buttons[selectedInt].actVars.mercyValue[0];
         }
-        else
+        actingText.gameObject.SetActive(true);
+        DialogueManager.instance.dialogueTxt = GetActText(selectedInt);
+        DialogueManager.instance.enemyTxt = BattleManager.battleInstance.GetRandomEnemyDialogue();
+        DialogueManager.instance.shouldTalk = true;
+        DialogueManager.instance.Talking(FinishActDialogue);
+        actObjects.SetActive(false);
+
+        if (buttons[selectedInt].actVars.actTxt.Count > 0 && buttons[selectedInt].actVars.mercyValue.Count > 0)
         {
-            buttons[selectedInt].actVars.actTxt.RemoveAt(0);
-            buttons[selectedInt].actVars.mercyValue.RemoveAt(0);
+            if (buttons[selectedInt].actVars.actTxt.Count <= 2 || buttons[selectedInt].actVars.mercyValue.Count <= 2)
+            {
+                Debug.Log("We added");
+                buttons[selectedInt].actVars.actTxt.Add(buttons[selectedInt].actVars.actTxt[0]);
+                buttons[selectedInt].actVars.mercyValue.Add(buttons[selectedInt].actVars.mercyValue[0]);
+            }
+            else
+            {
+                buttons[selectedInt].actVars.actTxt.RemoveAt(0);
+                buttons[selectedInt].actVars.mercyValue.RemoveAt(0);
+            }
+        }
+    }
+
+    // Esta funcion pasa de ACT al ataque del enemigo.
+    void FinishActDialogue()
+    {
+        Debug.Log("action initiated");
+        DialogueManager.instance.shouldTalk = false;
+        StartCoroutine(BattleManager.battleInstance.ActingSequence());
+    }
+
+    // Esta funcion consigue el texto de la opcion ACT.
+    string GetActText(int selectedInt)
+    {
+        string optionName;
+
+        optionName = buttons[selectedInt].gameObject.name;
+
+        if (buttons[selectedInt].actVars != null && buttons[selectedInt].actVars.actTxt != null && buttons[selectedInt].actVars.actTxt.Count > 0)
+        {
+            if (!string.IsNullOrWhiteSpace(buttons[selectedInt].actVars.actTxt[0]))
+            {
+                return buttons[selectedInt].actVars.actTxt[0];
+            }
+        }
+
+        return "*You used " + optionName + ".";
+    }
+
+    // Esta funcion calcula donde va el corazon en el menu ACT.
+    Vector3 GetSoulPosition(Transform soulPosition, Transform optionTransform, Vector3 fallbackPosition)
+    {
+        if (soulPosition != null && soulPosition.IsChildOf(optionTransform))
+        {
+            return soulPosition.position;
+        }
+
+        return fallbackPosition;
+    }
+
+    // Esta funcion muestra el corazon en la posicion indicada.
+    void ShowSoul(Vector3 position)
+    {
+        if (BattleManager.battleInstance != null)
+        {
+            BattleManager.battleInstance.ShowSoulInMenu(position);
+            return;
+        }
+
+        if (soul != null)
+        {
+            soul.transform.position = position;
+            soul.enabled = true;
+        }
+    }
+
+    // Esta funcion esconde el corazon en ACT.
+    void HideSoul()
+    {
+        if (BattleManager.battleInstance != null)
+        {
+            BattleManager.battleInstance.HideSoulForMenu();
+            return;
+        }
+
+        if (soul != null)
+        {
+            soul.enabled = false;
+        }
+    }
+
+    // Esta funcion recupera el corazon desde el BattleManager.
+    void RefreshSoulReference()
+    {
+        if (soul == null && BattleManager.battleInstance != null)
+        {
+            soul = BattleManager.battleInstance.soul;
         }
     }
 

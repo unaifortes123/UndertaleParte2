@@ -22,48 +22,6 @@ public class PlayerController : MonoBehaviour
 
     Animator animator;
 
-    [SerializeField]
-    int health = 20;
-
-    [System.Serializable]
-    public class PlayerData
-    {
-        public string playerName;
-        public int hp;
-
-        public override string ToString()
-        {
-            return "Name: " + playerName + "HP:" + hp;
-        }
-
-        public int GetHealth()
-        {
-            return hp;
-        }
-
-        public void SetHealth(int hp)
-        {
-            this.hp = hp;
-        }
-
-        public string GetPlayerName()
-        {
-            return playerName;
-        }
-
-        public void SetPlayerName(string playerName)
-        {
-            this.playerName = playerName;
-        }
-
-        public void getMaxhealth()
-        {
-            this.hp = 20;
-        }
-
-    }
-
-    public PlayerData playerData = new PlayerData();
 
     void Start()
     {
@@ -72,8 +30,6 @@ public class PlayerController : MonoBehaviour
         up_action = actions.FindActionMap("Movement").FindAction("Up");
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-
-        playerData.SetHealth(health);
     }
 
 
