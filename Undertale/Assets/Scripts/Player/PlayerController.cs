@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
 
     Animator animator;
 
+    private bool canMove = true;
 
     void Start()
     {
@@ -40,10 +41,12 @@ public class PlayerController : MonoBehaviour
 
         float foward = forward_action.ReadValue<float>();
         float up = up_action.ReadValue<float>();
-
-        Vector2 movement_force = new Vector2(foward * horizontalSpeed, up * verticalSpeed);
-        rb.AddForce(movement_force);
-
+        if (canMove == true)
+        {
+            Vector2 movement_force = new Vector2(foward * horizontalSpeed, up * verticalSpeed);
+            rb.AddForce(movement_force);
+        }
+        
         int animationValueX = 0;
 
         if (foward != 0)
@@ -74,6 +77,10 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Valor FORWARD :" + forward_action.ReadValue<float>());
         return forward_action.ReadValue<float>();
+    }
+    public void SetCanMove(bool newCanMove)
+    {
+        canMove = newCanMove;
     }
 
 
