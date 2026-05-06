@@ -6,7 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 6aea82004b0fd2e489d71b9e39a841ae
   - enabled: 1
@@ -22,10 +21,10 @@ EditorBuildSettings:
     path: Assets/Scenes/PruebaEntradaEnCombate.unity
     guid: fa5c00baebef32c48a3152ed9cbba51c
   - enabled: 1
-    path: Assets/Scenes/PeterCombat.unity
+    path: Assets/Scenes/Fights/PeterCombat.unity
     guid: 2beeec8f53c4ba8428146fb33e3c437b
   - enabled: 1
     path: Assets/Scenes/Fights/HatsuneMiku.unity
-    guid: fa08fc7a5554d4a85106dfc80318a8
+    guid: 1c08f7fc7a5554d4a85106dfc80318a8
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 2bb550f68cd0e864d9cfefb51804bff7, type: 2}

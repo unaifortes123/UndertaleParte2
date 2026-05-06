@@ -49,6 +49,11 @@ public class EntryEnemy : MonoBehaviour
             {
                 TryLoadFight("PeterCombat");
             }
+
+            if (gameObject.name == "SpawnPapyrus")
+            {
+                TryLoadFight("PapyrusCombat");
+            }
         }
     }
 

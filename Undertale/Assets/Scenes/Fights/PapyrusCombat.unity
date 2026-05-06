@@ -554,7 +554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actTxt:
-  - '*You checked Miku.'
+  - '*You checked Papyrus.'
   - 
   - 
   - 
@@ -1045,7 +1045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actTxt:
-  - '*You insulted Miku.'
+  - '*You insulted Papyrus.'
   - 
   - 
   - 
@@ -1452,7 +1452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actTxt:
-  - '*You threatened Miku.'
+  - '*You threatened Papyrus.'
   - 
   - 
   - 
@@ -1643,10 +1643,10 @@ MonoBehaviour:
   mercyMenu: {fileID: 425935644}
   damageSprite: {fileID: 1370586744}
   enemyDialogue:
-  - '*Miku hums a bright melody.'
-  - '*Miku twirls her leek like a mic.'
-  - '*Miku prepares another note.'
-  - '*Miku waits for your move.'
+  - '*Papyrus strikes a dramatic pose.'
+  - '*Papyrus is radiating cool energy.'
+  - '*Papyrus prepares a truly special attack.'
+  - '*Papyrus waits for your admiration.'
   attackingSys: {fileID: 330492460}
   healthMeter: {fileID: 757082759}
   healthTxt: {fileID: 1044763039}
@@ -3001,7 +3001,7 @@ MonoBehaviour:
   text: {fileID: 995533013}
   enemyTextBackground: {fileID: 1656214341}
   textEnemy: {fileID: 1313317707}
-  dialogueTxt: '*Hatsune Miku stepped onto the stage!'
+  dialogueTxt: '*Papyrus blocks the way!'
   enemyTxt: 
   clip: {fileID: 8300000, guid: 6aaa9ee372fae9b42844e3e017bb0b6a, type: 3}
   enemyClip: {fileID: 8300000, guid: 6aaa9ee372fae9b42844e3e017bb0b6a, type: 3}
@@ -8561,7 +8561,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '*Hatsune Miku stepped onto the stage!'
+  m_text: '*Papyrus blocks the way!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f3a38403648d114468205c8f9dece175, type: 2}
   m_sharedMaterial: {fileID: 6743905584012141782, guid: f3a38403648d114468205c8f9dece175, type: 2}
@@ -10303,7 +10303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectionInt: 0
-  spareMessage: '*Miku seems ready to stop singing at you.'
+  spareMessage: '*Papyrus is willing to accept your mercy.'
   buttons:
   - {fileID: 108116589}
   - {fileID: 288941104}
@@ -10316,13 +10316,13 @@ MonoBehaviour:
   totalMercy: 0
   totalMercyMax: 1
   flavorText:
-  - '*Miku catches her breath.'
-  - '*Miku watches you carefully.'
-  - '*Miku adjusts her headset.'
-  - '*Miku keeps the rhythm going.'
-  - '*Miku shifts nervously.'
-  - '*Miku waits for your next move.'
-  - '*Miku keeps fighting.'
+  - '*Papyrus is considering his next puzzle.'
+  - '*Papyrus adjusts his scarf with pride.'
+  - '*Papyrus beams with confidence.'
+  - '*Papyrus believes in his own greatness.'
+  - '*Papyrus is trying hard to look intimidating.'
+  - '*Papyrus eagerly awaits your next move.'
+  - '*Papyrus refuses to stop being fabulous.'
   time: 0
   canAct: 1
 --- !u!1 &1532415807
@@ -11080,7 +11080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actTxt:
-  - '*You complimented Miku.'
+  - '*You complimented Papyrus.'
   - 
   - 
   - 
@@ -11867,25 +11867,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 2125741403}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 089b3731f7e64c88b517d84c02fa2dfc, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a0d3a1f3bd6474eb0b1f0d6a6f2b8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 30
-  curHP: 30
+  maxHP: 60
+  curHP: 60
   attackValue: 5
   defendValue: 2
-  enemyName: Miku
-  attacksScriptable: {fileID: 11400000, guid: d908618a228490445b86e4f1ac9b744f, type: 2}
+  enemyName: Papyrus
+  attacksScriptable: {fileID: 11400000, guid: 6f0f87fd0b754c66b4ec9c2b2679d4ab, type: 2}
   enemyDialogue:
-  - '*Miku hums a bright melody.'
-  - '*Miku twirls her leek like a mic.'
-  - '*Miku keeps the rhythm going.'
-  - '*Miku prepares another note.'
-  spareMessage: '*Miku seems ready to stop singing at you.'
+  - '*Papyrus strikes a dramatic pose.'
+  - '*Papyrus raises his chin proudly.'
+  - '*Papyrus is absolutely brimming with confidence.'
+  - '*Papyrus prepares a truly special attack.'
+  spareMessage: '*Papyrus is willing to accept your mercy.'
   flavorText:
-  - '*Miku catches her breath.'
-  - '*Miku adjusts her headset.'
-  - '*Miku watches you carefully.'
+  - '*Papyrus polishes his battle body.'
+  - '*Papyrus adjusts his scarf dramatically.'
+  - '*Papyrus watches you with sparkling confidence.'
 --- !u!114 &2125741406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11901,8 +11901,8 @@ MonoBehaviour:
   pelletPrefab:
   - {fileID: 7340314925905264317, guid: e2c83323f06f05349be51ea1160f30fe, type: 3}
   - {fileID: 4133584927210783087, guid: 5391acc9629343849bfcbbbc5cf61931, type: 3}
-  - {fileID: 3303728401479361034, guid: 1d7f0fe1b3d84d4d9f363cf9128c2a7a, type: 3}
-  attacksScriptable: {fileID: 11400000, guid: d908618a228490445b86e4f1ac9b744f, type: 2}
+  - {fileID: -5074346817611904223, guid: 791825329620b844a9a5b3e92a2d88f8, type: 3}
+  attacksScriptable: {fileID: 11400000, guid: 6f0f87fd0b754c66b4ec9c2b2679d4ab, type: 2}
   attackFinished: 1
 --- !u!4 &2125741407
 Transform:

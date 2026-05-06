@@ -55,13 +55,6 @@ public class Name_Input : MonoBehaviour
             btn.onClick.AddListener(() => AddLetter(letter));
 
             buttons.Add(btn);
-
-            Button btn = obj.GetComponent<Button>();
-
-            char letter = letters[i];
-            btn.onClick.AddListener(() => AddLetter(letter));
-
-            buttons.Add(btn);
         }
     }
 
