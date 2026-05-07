@@ -9,6 +9,7 @@ TagManager:
   - PuzzleCruz1
   - PuzzleCruz2
   - PuzzleFormas
+  - Wall
   layers:
   - Default
   - TransparentFX
