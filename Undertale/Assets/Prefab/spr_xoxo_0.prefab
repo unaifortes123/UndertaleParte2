@@ -101,6 +101,7 @@ MonoBehaviour:
   manager: {fileID: 0}
   cruz: {fileID: 21300000, guid: e1b4f6def722d5640aeae4d609e36d5b, type: 3}
   circuloRojo: {fileID: 21300000, guid: 049ce0eaa170a6c479cd46264c33da4d, type: 3}
+  circuloVerde: {fileID: 21300000, guid: 7d103b1b0e28fc34b82c6dc5e12e3673, type: 3}
 --- !u!61 &201763254439114260
 BoxCollider2D:
   m_ObjectHideFlags: 0

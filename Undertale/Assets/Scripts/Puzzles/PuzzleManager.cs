@@ -4,10 +4,13 @@ public class PuzzleManager : MonoBehaviour
 {
     public GameObject botonFinal;
 
+    public string puzzleTag; // 👈 ID del puzzle
+
     private TileXOXO[] tiles;
 
     void Start()
     {
+        // cogemos solo las tiles del mismo tag
         tiles = FindObjectsOfType<TileXOXO>();
 
         if (botonFinal != null)
@@ -18,11 +21,13 @@ public class PuzzleManager : MonoBehaviour
     {
         foreach (var tile in tiles)
         {
+            if (!tile.CompareTag(puzzleTag))
+                continue;
+
             if (!tile.EstaRojo())
-                return; // aún no todas en rojo
+                return;
         }
 
-        // todas están en rojo
         if (botonFinal != null)
             botonFinal.SetActive(true);
     }
@@ -31,8 +36,8 @@ public class PuzzleManager : MonoBehaviour
     {
         foreach (var tile in tiles)
         {
-            // poner todas en verde o estado final
-            tile.GetComponent<SpriteRenderer>().color = Color.green;
+            if (tile.CompareTag(puzzleTag))
+                tile.PonerVerde();
         }
     }
 }
