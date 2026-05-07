@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 16d80fa2ee89ad44a846c571c925aa2e
+guid: 8e9ea988c14fe194fa01b286a603e98a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 65
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -149,13 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Papyrus_TopWalk_0
+      name: PapyrusLeftWalk_0
       rect:
         serializedVersion: 2
-        x: 148
-        y: 57
-        width: 50
-        height: 84
+        x: 35
+        y: 120
+        width: 48
+        height: 135
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1783119831f141a46bb49d97bba984d1
-      internalID: -259332645
+      spriteID: 3b8ad3284689965479c3c24035a1f8a5
+      internalID: -1016119789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Papyrus_TopWalk_1
+      name: PapyrusLeftWalk_1
       rect:
         serializedVersion: 2
-        x: 212
-        y: 57
-        width: 50
-        height: 82
+        x: 125
+        y: 120
+        width: 64
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8c37da85fd2d464eaf83c401bed2bbf
-      internalID: 315257771
+      spriteID: 0ed69d02b46d7da40a638b2029f1ec09
+      internalID: 688871121
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Papyrus_TopWalk_2
+      name: PapyrusLeftWalk_2
       rect:
         serializedVersion: 2
-        x: 276
-        y: 57
-        width: 50
-        height: 84
+        x: 240
+        y: 120
+        width: 48
+        height: 135
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d21ecf717e3a33429f759c289d4d1b6
-      internalID: 1456107096
+      spriteID: 6f6b39ed2c1480c43b32c4edff194c2b
+      internalID: 1351306828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Papyrus_TopWalk_3
+      name: PapyrusLeftWalk_3
       rect:
         serializedVersion: 2
-        x: 340
-        y: 57
-        width: 50
-        height: 82
+        x: 330
+        y: 120
+        width: 74
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,8 +226,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f2ebf1145be9dd41ae5afbaf3bb63f9
-      internalID: 2115372405
+      spriteID: 318a95a620f01e24798bda8ac72c79a2
+      internalID: 1624950226
       vertices: []
       indices: 
       edges: []
@@ -243,10 +243,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Papyrus_TopWalk_0: -259332645
-      Papyrus_TopWalk_1: 315257771
-      Papyrus_TopWalk_2: 1456107096
-      Papyrus_TopWalk_3: 2115372405
+      PapyrusLeftWalk_0: -1016119789
+      PapyrusLeftWalk_1: 688871121
+      PapyrusLeftWalk_2: 1351306828
+      PapyrusLeftWalk_3: 1624950226
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
