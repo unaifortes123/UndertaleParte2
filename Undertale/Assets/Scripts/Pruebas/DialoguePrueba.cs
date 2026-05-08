@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DialoguePrueba : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class DialoguePrueba : MonoBehaviour
     //comprobar si esta escribiendo
 
     private float typingTime = 0.05f;
+
+    public UnityEvent onFinishDialogue;
 
     private void Update()
     {
@@ -52,7 +55,7 @@ public class DialoguePrueba : MonoBehaviour
     {//método que usaremos donde definimos cuales estan en true cuando comienza el dialogo
         didDialogueStart = true;
         dialoguePanel.SetActive(true);
-        portrait.SetActive(true );
+        portrait.SetActive(true);
 
         lineIndex = 0;
         StartCoroutine(ShowLine());
@@ -90,11 +93,12 @@ public class DialoguePrueba : MonoBehaviour
         isTyping = false;//terminar de escribir
     }
 
-    private void EndDialogue()
+    private void EndDialogue() // Esto le puedo meter lo que quiera, por ejemplo cuando termina la chapa, puedo hacer que arranque la timeline
     {//método para cuando termine el dialogo, ponemos todo en false
+        onFinishDialogue.Invoke();
         didDialogueStart = false;
         dialoguePanel.SetActive(false);
-        portrait.SetActive(false );
+        portrait.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
