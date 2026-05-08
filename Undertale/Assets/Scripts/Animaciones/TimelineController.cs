@@ -10,6 +10,7 @@ public class TimelineController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         timeline.Play();
     }
 }
