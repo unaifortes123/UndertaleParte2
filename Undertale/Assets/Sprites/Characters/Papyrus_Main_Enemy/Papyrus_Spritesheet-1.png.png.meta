@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 16d80fa2ee89ad44a846c571c925aa2e
+guid: dfb0d3102554b9f48a964f7298eeeb3f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -147,91 +147,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Papyrus_TopWalk_0
-      rect:
-        serializedVersion: 2
-        x: 148
-        y: 57
-        width: 50
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1783119831f141a46bb49d97bba984d1
-      internalID: -259332645
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Papyrus_TopWalk_1
-      rect:
-        serializedVersion: 2
-        x: 212
-        y: 57
-        width: 50
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8c37da85fd2d464eaf83c401bed2bbf
-      internalID: 315257771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Papyrus_TopWalk_2
-      rect:
-        serializedVersion: 2
-        x: 276
-        y: 57
-        width: 50
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d21ecf717e3a33429f759c289d4d1b6
-      internalID: 1456107096
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Papyrus_TopWalk_3
-      rect:
-        serializedVersion: 2
-        x: 340
-        y: 57
-        width: 50
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f2ebf1145be9dd41ae5afbaf3bb63f9
-      internalID: 2115372405
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -242,11 +158,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Papyrus_TopWalk_0: -259332645
-      Papyrus_TopWalk_1: 315257771
-      Papyrus_TopWalk_2: 1456107096
-      Papyrus_TopWalk_3: 2115372405
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 16d80fa2ee89ad44a846c571c925aa2e
+guid: c5836e0366929ee46a27ced1bbf5d0f9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -149,13 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Papyrus_TopWalk_0
+      name: PapyrusEnfadado_0
       rect:
         serializedVersion: 2
-        x: 148
-        y: 57
-        width: 50
-        height: 84
+        x: 37
+        y: 22
+        width: 131
+        height: 204
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1783119831f141a46bb49d97bba984d1
-      internalID: -259332645
+      spriteID: cd55d5653796cd6429a3f802200f1693
+      internalID: -1164535985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Papyrus_TopWalk_1
+      name: PapyrusEnfadado_1
       rect:
         serializedVersion: 2
-        x: 212
-        y: 57
-        width: 50
-        height: 82
+        x: 192
+        y: 22
+        width: 131
+        height: 204
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8c37da85fd2d464eaf83c401bed2bbf
-      internalID: 315257771
+      spriteID: e1e2e4fe3822dd64382d3364ea7e9e60
+      internalID: 247760628
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Papyrus_TopWalk_2
+      name: PapyrusEnfadado_2
       rect:
         serializedVersion: 2
-        x: 276
-        y: 57
-        width: 50
-        height: 84
+        x: 348
+        y: 22
+        width: 131
+        height: 204
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d21ecf717e3a33429f759c289d4d1b6
-      internalID: 1456107096
+      spriteID: 3b97fb77f57bcf74393a77011c9e8380
+      internalID: 1811809342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Papyrus_TopWalk_3
+      name: PapyrusEnfadado_3
       rect:
         serializedVersion: 2
-        x: 340
-        y: 57
-        width: 50
-        height: 82
+        x: 527
+        y: 22
+        width: 131
+        height: 204
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,8 +226,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f2ebf1145be9dd41ae5afbaf3bb63f9
-      internalID: 2115372405
+      spriteID: be206fd686badc349b02c6b5e9fa75c7
+      internalID: 1671086436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PapyrusEnfadado_4
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 22
+        width: 131
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0e7c5b1672c7f4598c63f0f4383517
+      internalID: -81993939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PapyrusEnfadado_5
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 22
+        width: 131
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96bb799f0cd1e34e8954639f0ba2898
+      internalID: -18668791
       vertices: []
       indices: 
       edges: []
@@ -243,10 +285,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Papyrus_TopWalk_0: -259332645
-      Papyrus_TopWalk_1: 315257771
-      Papyrus_TopWalk_2: 1456107096
-      Papyrus_TopWalk_3: 2115372405
+      PapyrusEnfadado_0: -1164535985
+      PapyrusEnfadado_1: 247760628
+      PapyrusEnfadado_2: 1811809342
+      PapyrusEnfadado_3: 1671086436
+      PapyrusEnfadado_4: -81993939
+      PapyrusEnfadado_5: -18668791
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

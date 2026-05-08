@@ -7,21 +7,29 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField]
-    float horizontalSpeed;
-    [SerializeField]
-    float verticalSpeed;
-    //[SerializeField]
-    //float speed; // segunda manerade hacerlo
-    [SerializeField]
+    float speed; //Velocidad del personaje
+    
+
+
+    // este vector es el de movimiento, tenemos foward (derecha izquierda) y up (arriba y abajo)
+    float foward;
+    float up;
+    Vector2 movement; //vector del movimiento
+
+
+	//[SerializeField]
+	//float speed; // segunda manerade hacerlo
+	[SerializeField]
     InputActionAsset actions;
 
     InputAction up_action;
     InputAction forward_action;
 
-    Rigidbody2D rb;
+    Rigidbody2D rb; //pillamos el rigidbody del personaje
 
     Animator animator;
 
+    private bool canMove = true;
 
     void Start()
     {
@@ -38,13 +46,25 @@ public class PlayerController : MonoBehaviour
         //Debug.Log("forwardddd " + forward_action.ReadValue<float>());
         //Debug.Log("forwardddd " + up_action.ReadValue<float>());
 
-        float foward = forward_action.ReadValue<float>();
-        float up = up_action.ReadValue<float>();
+        //Movimiento
+        foward = forward_action.ReadValue<float>();
+        up = up_action.ReadValue<float>();
+		movement = new Vector2(foward, up);
+		movement = movement.normalized; //esto es para que cuando vas en diagonal el personaje no corra mas
 
-        Vector2 movement_force = new Vector2(foward * horizontalSpeed, up * verticalSpeed);
-        rb.AddForce(movement_force);
 
-        int animationValueX = 0;
+		if (canMove == true)
+        {
+			rb.velocity = movement * speed; 
+
+		}
+        else
+        {
+			rb.velocity = Vector2.zero;
+		}
+
+            // Animación
+            int animationValueX = 0;
 
         if (foward != 0)
         {
@@ -74,6 +94,10 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Valor FORWARD :" + forward_action.ReadValue<float>());
         return forward_action.ReadValue<float>();
+    }
+    public void SetCanMove(bool newCanMove)
+    {
+        canMove = newCanMove;
     }
 
 

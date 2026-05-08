@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 16d80fa2ee89ad44a846c571c925aa2e
+guid: 92ca1431a21e95f49848c5ec80265ee9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -149,13 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Papyrus_TopWalk_0
+      name: PapyrusHablando_0
       rect:
         serializedVersion: 2
-        x: 148
-        y: 57
-        width: 50
-        height: 84
+        x: 34
+        y: 27
+        width: 57
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1783119831f141a46bb49d97bba984d1
-      internalID: -259332645
+      spriteID: 21f620e5cfe5c5949bc00c195192c61f
+      internalID: 410882542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Papyrus_TopWalk_1
+      name: PapyrusHablando_1
       rect:
         serializedVersion: 2
-        x: 212
-        y: 57
-        width: 50
-        height: 82
+        x: 156
+        y: 27
+        width: 57
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8c37da85fd2d464eaf83c401bed2bbf
-      internalID: 315257771
+      spriteID: 6c507757e89c7554cb7f578e6e42378d
+      internalID: 2004992490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Papyrus_TopWalk_2
+      name: PapyrusHablando_2
       rect:
         serializedVersion: 2
-        x: 276
-        y: 57
-        width: 50
-        height: 84
+        x: 297
+        y: 27
+        width: 57
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d21ecf717e3a33429f759c289d4d1b6
-      internalID: 1456107096
+      spriteID: bca2df4e05b409445a3513f2282b2492
+      internalID: 1540566844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Papyrus_TopWalk_3
+      name: PapyrusHablando_3
       rect:
         serializedVersion: 2
-        x: 340
-        y: 57
-        width: 50
-        height: 82
+        x: 404
+        y: 27
+        width: 76
+        height: 157
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,8 +226,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f2ebf1145be9dd41ae5afbaf3bb63f9
-      internalID: 2115372405
+      spriteID: f6e660654b9d43d4485d8e54a2ec0d3f
+      internalID: 1554789705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PapyrusHablando_4
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 27
+        width: 57
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b222db778fb4b343ba32df8d93d4be7
+      internalID: 543367293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PapyrusHablando_5
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 27
+        width: 88
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73633991c4092b74aadffb69daf672d8
+      internalID: -1125686128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PapyrusHablando_6
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 27
+        width: 58
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378360f7a61edc44fa1dc9e4d75a3cb7
+      internalID: 125803203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PapyrusHablando_7
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 27
+        width: 57
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d842ee7f20ad5e5428dff4b2ee450b08
+      internalID: -1956280153
       vertices: []
       indices: 
       edges: []
@@ -243,10 +327,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Papyrus_TopWalk_0: -259332645
-      Papyrus_TopWalk_1: 315257771
-      Papyrus_TopWalk_2: 1456107096
-      Papyrus_TopWalk_3: 2115372405
+      PapyrusHablando_0: 410882542
+      PapyrusHablando_1: 2004992490
+      PapyrusHablando_2: 1540566844
+      PapyrusHablando_3: 1554789705
+      PapyrusHablando_4: 543367293
+      PapyrusHablando_5: -1125686128
+      PapyrusHablando_6: 125803203
+      PapyrusHablando_7: -1956280153
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
