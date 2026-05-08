@@ -2,8 +2,10 @@
 
 public class BotonFormas : MonoBehaviour
 {
+    //manager para el puzzle de formas
     public PuzzleManagerFormas manager;
 
+    //sprite del boton normal y el bajado
     public Sprite botonNormal;
     public Sprite botonCorrecto;
 
