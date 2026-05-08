@@ -3,7 +3,7 @@
 public class PuzzleManager : MonoBehaviour
 {
     public GameObject botonFinal;
-
+    public PinchosManager pinchosManejador;
     public string puzzleTag; // 👈 ID del puzzle
 
     private TileXOXO[] tiles;
@@ -38,6 +38,7 @@ public class PuzzleManager : MonoBehaviour
         {
             if (tile.CompareTag(puzzleTag))
                 tile.PonerVerde();
+            pinchosManejador.BajarTodos();
         }
     }
 }
