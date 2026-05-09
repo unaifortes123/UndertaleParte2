@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class CameraTargetController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public Transform player;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	void Update()
+	{
+		transform.position = player.position;
+	}
 }
