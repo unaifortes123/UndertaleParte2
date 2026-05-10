@@ -1,0 +1,5681 @@
+fileFormatVersion: 2
+guid: 58ebfb1f7bfbcab4b9afa81e73c72790
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 816
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79e93f8586aa084ab25826df4430c9e
+      internalID: 15686715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 816
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3b7a53cf9d90b499d406423339c09d
+      internalID: 2018704086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_2
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 816
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c06f59572f72c4d92149d60fa147fc
+      internalID: -1796658106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_3
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 816
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685db832caaf5e84ab26fcc8f48d7a2d
+      internalID: -958731761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_4
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 816
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb5520d94b908046aa88a9cd917d16d
+      internalID: 1822354083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_5
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 816
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2be41c705061f6409842c9c4b17dda8
+      internalID: 380338726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_6
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 816
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235d547da65bbcb49a6a248732c39789
+      internalID: -1969172586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_7
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 813
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568a70be77d382f4f933bf0afb6e539c
+      internalID: 1833979250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_8
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 816
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bbbaba086724424f969306953fe16e6
+      internalID: -794547336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_9
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 816
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473d1940c71189e41914b10b711084fc
+      internalID: 416493442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 816
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f719df200c4baf4ca22db7edede5eda
+      internalID: 1349240751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_11
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 816
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933d6ee743718154abd9d70d2d275fcc
+      internalID: -946227543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_12
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 816
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f7eb9957dc60f4e9c5280b8234907a
+      internalID: 1005680305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_13
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 816
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd20210eabc63548a69c5d7c36f15d0
+      internalID: 214224406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_14
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 816
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de09ebae08291f4eab452d02b6acdda
+      internalID: -1567302598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_15
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 816
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e56742ec077855489e6042301bc2fcc
+      internalID: 305726782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 704
+        width: 74
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387ad19c3ba2b0848a4ed5b35636ede4
+      internalID: -1308465575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_17
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 704
+        width: 74
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 818258ca6cd24d14b95d6b9c23866ffd
+      internalID: -223672853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_18
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 704
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b3a52e92350494797620ad5ff768f3
+      internalID: -433602042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 689
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634fc29023aa48942b6c06b3320dc0e1
+      internalID: -24657419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_21
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 689
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b7e6ae86a9cd446be7bccccb4d03db
+      internalID: -869137782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_22
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 689
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2378d1f9cce83a4bbafb7f3991cc8ff
+      internalID: 1776232156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_23
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 689
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97c7da1124de1b4ea5cf09496b916bf
+      internalID: -912947785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_24
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 689
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2586dd523eead444ac46484dd3b95e8
+      internalID: -818983294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_25
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 689
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0cd7a942e4edb4aa71d6cd0e28b350
+      internalID: -1017918998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_26
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 689
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef20dfca69b7e14a9e04cf45a58820d
+      internalID: 864251440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_27
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 686
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d348ea617c3424d9d9e32c27d45f57
+      internalID: -1081700560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_28
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 614
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556e7f66b09f65c4ba80c195a2bac9a1
+      internalID: -427146289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_29
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 620
+        width: 38
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec079c31c2a538a4fa503c21ad83dd25
+      internalID: 286784323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_30
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 598
+        width: 13
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee9f2d20bc5cba4bb4aeb6c1a8b0ea6
+      internalID: 1571769212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_31
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 637
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb391336a2468a48b84b73f8f5e7085
+      internalID: 496088918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_32
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 565
+        width: 71
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8afbbfca03adf46a262ca0e696900a
+      internalID: -423096666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_33
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 565
+        width: 74
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5089ae82033da01468aa901d99576465
+      internalID: 1594429414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_34
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 565
+        width: 71
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4044b8ccd3d6674aa84994f496f7da9
+      internalID: -2014634884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_35
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 565
+        width: 68
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59229fb9d4b854841a36e0fb734912d6
+      internalID: 1408818974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_36
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 612
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a12eaff026c7624c8b130124d163c74
+      internalID: 127204557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_37
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 620
+        width: 38
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84704cdc09b1fb1439d52890718b31d2
+      internalID: -489491880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_38
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 628
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4db9356ab2f3d46be0695c16e17117
+      internalID: -1683855372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_39
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 637
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f173b4e7fce89cb469dd40fdb92ccef6
+      internalID: 761773545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_40
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 616
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a38d12c7aef4f41b91745ea3b52325
+      internalID: -1985597910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_41
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 636
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45876580fc674043b9b971f8a9586f2
+      internalID: -1116672964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_42
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 621
+        width: 4
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df058600369a1174d967cc59336c8b9f
+      internalID: -1226405360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_43
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 620
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8b841c2ee8cca47a94f806241f9ced
+      internalID: 859580015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_44
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 628
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb4cbd32bef55f7478416d1c7321e4c3
+      internalID: 1634971152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_45
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 637
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd85b40447d6c9241a3762200517aeb4
+      internalID: 790006776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_46
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 565
+        width: 71
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a45c13a694543499c9580b42087de2
+      internalID: 1400076174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_47
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 565
+        width: 74
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a096df18ad0cffb419fd55f70fc8f91b
+      internalID: -1045554011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_48
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 607
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca28fa0aae826dc49ad2b4528a8f4a1f
+      internalID: 2100650915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_49
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 612
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec880edf6c036b4e92e1afcaafeeba8
+      internalID: 903482582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_50
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 607
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219c8351f4b986c4f9f37f4ab5fcfa3b
+      internalID: 635752253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_51
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 617
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83bb4db50926a254db7ac9fae4562c5f
+      internalID: 305429727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_52
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 611
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4311f96f1e57bc40a1ea1a45e70135f
+      internalID: -457916802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_53
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 607
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec29118294802a942a2abd5478f143ed
+      internalID: 442091994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_54
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 602
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66cc5278b31c98642850463d6903c4ff
+      internalID: 1646387169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_55
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 586
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66806437168539042ba9a0b8ac8a9cf0
+      internalID: -1035209417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_56
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 586
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283608d9afad75a4493ede698760cf2d
+      internalID: 278667932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_57
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 586
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a342625774605994f84663a56100dca3
+      internalID: -801888464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_58
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 593
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05b18d056fd2854594a60b689bc0c00
+      internalID: 599330126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_59
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 589
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b240f157b56b6041b59776d20edce20
+      internalID: -439283992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_60
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 566
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf8364297dcd79f4f8701ed1cbebfe8f
+      internalID: -679162196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_61
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 566
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97cedd5a6b542d240950fa90a711018e
+      internalID: -1910214335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_62
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 566
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07196a2a185f4f4e920f88ef255f3e5
+      internalID: 803078252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_63
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 566
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557aced6d7fecf94ebf4fafe9a29e00e
+      internalID: -781117005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_64
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 566
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6e23eeca9318b4597431289e96795f
+      internalID: 1275251225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_65
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 566
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9202e928e3fa484aa83c573becda8df
+      internalID: 1166714234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_66
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 550
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ce32c29da56e241b8a311f98178695
+      internalID: -906988164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_67
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 550
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2222fd63b8cea42936b367aed039ba
+      internalID: -1063848517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_68
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 550
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db1246cac92f324a98412da1aa7e6d3
+      internalID: -654776854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_69
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 550
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8886aaeb1d147b458e41f0b2fb9e14b
+      internalID: -1205442255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_70
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 550
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e681a9a56168f4c977c1f2281f9270
+      internalID: 975036123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_71
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 550
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27ef6cf0bca47c4ba35c54babcae66f
+      internalID: 698021111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_72
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 550
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab8a437ca681df48b5ad22e80f65308
+      internalID: 579410197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_73
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 526
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713a5179cfed32f41a0be265068dfc6f
+      internalID: -483681118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_74
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 526
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1ced2c7221d6e49b13b4fe1a59b74e
+      internalID: 1210614467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_75
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 526
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b9ef53c2dda7141aaa2bb806ef8ded
+      internalID: 2003869291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_76
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 511
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a5309ce5fa4934eb51ee451e26bb0d
+      internalID: 769042596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_77
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 511
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa6add3b2879b7419a1049b17e05f53
+      internalID: 1695685751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_78
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 511
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b25d0f6add1a4f4b9481571c0795d67
+      internalID: 569682389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_79
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 511
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cbee727e85bf8a44939797376eb8127
+      internalID: 1049702391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_80
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 511
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a090d88e69e039b42b58d2cd6b86db98
+      internalID: -971798904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_81
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 511
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a71304353c635a648bd8167d5d26666a
+      internalID: 847712532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_82
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 511
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b5cf6fd08297f49993f5d508d2f090
+      internalID: -1063600900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_83
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 511
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb49093027cf0ac47b1209dcf274d0c1
+      internalID: -1813032023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_84
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 511
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80cdfeae1029d7b4fa855a3cc6014bb5
+      internalID: 1469856094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_85
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 511
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb0b89144d452c4a8e00ca2fe4c7f0e
+      internalID: 846115894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_86
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 511
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 096379550ac86d64baaecbc1a5bec998
+      internalID: 1239712773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_87
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 511
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6438bc70b1a82f142835c4105c5e1a9f
+      internalID: 426947378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_88
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 511
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a44f12638b0eee4f820a84b0726b772
+      internalID: 312603620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_89
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 511
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92a3fb8bb8c42b4a86594cf83ba34dc
+      internalID: 1465643048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_90
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 511
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d7f248c6396e84f841f37f989c61cd
+      internalID: 1280910282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_91
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 511
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75534819183d4f4a92b90242f375111
+      internalID: 1870566294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_92
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 511
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f70cf5571660d4796155bb06030d10
+      internalID: -1173038697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_93
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 511
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77cf1ddb7ebb8de4eb79e3ad0c7dc04a
+      internalID: 109298202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_94
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 511
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e86405ab9b0b2c43b88e9fb4a358c04
+      internalID: 1401676176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_95
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 393
+        width: 80
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d25725b5ca5184439614538a06e9582
+      internalID: -94624113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_96
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 393
+        width: 80
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bfa31c6495ecbd43a3508f675b97808
+      internalID: -2088029299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_97
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 393
+        width: 80
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f06ec872feec149979e775d07381f4
+      internalID: -700554301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_98
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 393
+        width: 80
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ba759b6ed8c7f4c8937341c3166062
+      internalID: -1056805529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_99
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 393
+        width: 80
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ebf6e860fa575c4497889f0e28023b9
+      internalID: -1409089362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_100
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 393
+        width: 80
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05cc9aeffe3a51f4b82138b67b6ce424
+      internalID: 1562000943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_101
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 393
+        width: 80
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44b4f2b90ee12a408c214adfeb1c5d5
+      internalID: -2107035121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_102
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 393
+        width: 80
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a3a7e7750f1e9419905b6d1153ce49
+      internalID: -887680486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_103
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 378
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6faa7f3d59a3ea34da855bda4012275c
+      internalID: 2044665054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_104
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 378
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3b19251d4abf04e9069c1ebf8d1401
+      internalID: 1237337126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_105
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 378
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90971fff334e35f488d6cdb43b52082a
+      internalID: -1101218179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_106
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 378
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a947f7878bd8c844ea31bc3a1ed5c580
+      internalID: -1937011267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_107
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 378
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d0cb6345236e244a4de725ce1ff8ea
+      internalID: 479293018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_108
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 378
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264327a077e5bb04592f8c04b79e6596
+      internalID: -1877787785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_109
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 378
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0de2c575c464e46a95b1b4855dcdb0
+      internalID: 792315945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_110
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 378
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb2598eb1837fc4a926b617c1c2fba5
+      internalID: 1006535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_111
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 378
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8a7bea6280b664da76d4354c2ea9d4
+      internalID: -1434006891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_112
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 378
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8d30df0fb3aef45ad6cc2acc0d0099
+      internalID: -379659242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_113
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 378
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330c7e481d0752a4c916eeb7b0b1eda4
+      internalID: -790043039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_114
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 378
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416c8269c24df9f418d714e68284bd4a
+      internalID: 1635848797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_115
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 378
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c39f593b317ec4aa9457c700435a5a
+      internalID: 681028810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_116
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 378
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5728f543eed4145aaae6029da6c06f
+      internalID: 1603635675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_117
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 378
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af37677a3b06884295230d12ed5c754
+      internalID: 2112586503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_118
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 378
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05396bd45228924d957806e312e45e5
+      internalID: -1894555219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_119
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 378
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c149cd28a59bb7b4da480945365ac4a3
+      internalID: 298625812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_120
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 375
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8514cc9674dd6f42899765ff1f32dc2
+      internalID: -877718812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_121
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 378
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1b6873a76be3542966c86f30667174
+      internalID: 1210536139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_122
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 378
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98dc245b21f3b246bc0d33295875f5f
+      internalID: -721038667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_123
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 378
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729d1c4b705ff5c4981227f3b63571a9
+      internalID: 1650876906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_124
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 378
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c0af9b349a9aca4c97272312a31d555
+      internalID: -1732777871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_125
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 378
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d70a71a43dcc404f8c751ea7312ad0f
+      internalID: -1975726270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_126
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 378
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd8e4f9525cf9a4b80e7dc73fae1028
+      internalID: -1154528403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_127
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 378
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d07014464231dd4295f528b68b843cf
+      internalID: -1870236189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_128
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 378
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba5e9bc4d8e5b548b20038544631e38
+      internalID: -1030710033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_129
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 378
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0655226b509f6e4d90eaee82f200b7d
+      internalID: 1337189239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_130
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 378
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221df17fe32af154bbacc80721667afb
+      internalID: -2058581423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_131
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 378
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd23ad7c3baec6479cccf72ce0baf24
+      internalID: 91384407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_132
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 375
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8becaf141024dbf4fb28b1f54eb453d4
+      internalID: 1448331926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_133
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 378
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509ca7f6fde09e94883cccc3b716862b
+      internalID: 1385510349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_134
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 378
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68849b556221c854180e906032bf7dec
+      internalID: -1201815018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_135
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 378
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3eb271d1eeb0e4aa6d3e14038f6fb0
+      internalID: 500770473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_136
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 378
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190034fcf4ba12d4183f572d91fb6796
+      internalID: -1545930378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_137
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 378
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51a09dfd94481343b5fbb94d8613eb0
+      internalID: 278679931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_138
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 337
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2650e411f165b384ba3b7e97ef3429c4
+      internalID: -1335280644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_139
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 337
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e050617a78e074540a95c2e1a2215236
+      internalID: -1125322733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_140
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 337
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729caf9be87417e42b9986bb52bc0fe8
+      internalID: -1061040958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_141
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 337
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec6a271a0f1399468007299e455e695
+      internalID: -1447761194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_142
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 337
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1f3ad9c7e070c488cc3ab9c3755433
+      internalID: 426743702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_143
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 337
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3297ca52cb038514d911aa742468559b
+      internalID: 1883478648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_144
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 337
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda58796457461d4eb8922ab8860a3d1
+      internalID: 896602563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_145
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 337
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3bba2a1f7984942b9cf48ef2ff1ca1
+      internalID: -1330010067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_146
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 337
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51b7d782afa8294183b7597df132be2
+      internalID: -83358223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_147
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 337
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee4894e049b7464486314d80d0e7f7b
+      internalID: -1284350869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_148
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 337
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca29620a9c06474b8d7e8ce2235a062
+      internalID: 351605089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_149
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 337
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db89dfeac0ae684687b52b6f940d906
+      internalID: 39641622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_150
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 337
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b0457967ae1d1942af6a5fc9cf3011b
+      internalID: -413653338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_151
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 337
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465df2671989858419c807fe26cf05f6
+      internalID: -429746958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_152
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 337
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2cbefeb8b0510f4eaf940b366024c33
+      internalID: -963479525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_153
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 337
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5724e1d9b65b2148bf1f0fcfb83b0a4
+      internalID: -1369075216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_154
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 337
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3625f2d914572d49a1c3f85c6914ffd
+      internalID: 1854575971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_155
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 336
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45aa91cc786f104195a8cb566cc0bd5
+      internalID: -1173496549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_156
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 337
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b69ced3cb753a0498bf3d0519dae8b4
+      internalID: 311819372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_157
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 337
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2805d082bdfcbba40a3192a7b2b6d1ac
+      internalID: -1930171102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_158
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 321
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf48e62d0a2083448c4dc7506156beb
+      internalID: -1847210977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_159
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 321
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075488f2c70051941a7d8daa82592a3e
+      internalID: -845767567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_160
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 321
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14759d0b1bdb5a4ea35b5187d6a00d5
+      internalID: 1598428552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_161
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 321
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b71594c5282be44bc6a0c8e10d8bb0
+      internalID: 2090354874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_162
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 321
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 728454b779a39b44f953ad2cc0d7a18c
+      internalID: -1165092213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_163
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 321
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f4f3c31a08816408a2db560f07fa50
+      internalID: 2090022502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_164
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 321
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b705a171bb27fe648920d70c5f4fae59
+      internalID: 306425417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_165
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 321
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69f25b93a7f86d4ba177540124885b8
+      internalID: -1699132615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_166
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 321
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232118e1ee7f93441ac20ad5a3fd3f90
+      internalID: -1816626037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_167
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 321
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1752ca386be5e9c4aa175b730ba2801b
+      internalID: -1357910063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_168
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 321
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d91bedc5a7e8b4c953cf01074ff0cd
+      internalID: 1446401326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_169
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 321
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372a44ea2e177ea4dbd020de6e90fb69
+      internalID: 663287674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_170
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 321
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acdf1920e8c7a5d43b49553d6c7b7953
+      internalID: -1636550811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_171
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 321
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b168eaa851a53134daedaafa82cb0b40
+      internalID: 852337291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_172
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 321
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54e74c3f91868241ae46398df58bc16
+      internalID: 1780796329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_173
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 321
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8170009f3ab98454ca0efadcdc7115b4
+      internalID: -1312109542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_174
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 321
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16308ce514cfa294398d207d48d52e5d
+      internalID: -1119610393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_175
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 321
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6d7c5e8d1770645b6970f346bddf3d
+      internalID: 1583380388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_176
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 321
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9fd7a747bfa9d4e9b8bcbfb9aa4141
+      internalID: 2106618722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_177
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 321
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d36c002b73fe5d48afe62772a8b22db
+      internalID: 1257650173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_178
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 321
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad031c2aa9b34c48ac546f97efe27c9
+      internalID: -237008098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_179
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 321
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8fdc51bd846b74793935ebad9c2954
+      internalID: 1302789269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_180
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 321
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ceec0e94e376b48a0657df28f01633
+      internalID: -1770130371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_181
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 321
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f4bd3ca2073654a862309a06c10d92
+      internalID: -201657082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_182
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 321
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b710e360732f7f4b81716aa2474a3be
+      internalID: 816689253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_183
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 321
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ced1f368bdf6846a0fa0a6b1cdd547
+      internalID: -863963895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_184
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 321
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d1b3130feb93a488d1423599b7e625
+      internalID: 1386403541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_185
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 318
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f1db00736908754e93a4225bd8bc6e4
+      internalID: 377088547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_186
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 280
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96333919b90def47973a2bf71c3e9ad
+      internalID: 1604820082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_187
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 280
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606c93d148d985d459536bd8d7b68a47
+      internalID: 1475110934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_188
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 280
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0c09a92615a784ca92ce79aa8120cf
+      internalID: 2073360642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_189
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 280
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16078821365624459a8097a33395c5b
+      internalID: -211788780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_190
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 280
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9632be20c8882634ebcb82f4af1ad08a
+      internalID: -466104059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_191
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 280
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d2bec5f365b3a43b96c7f2d04d2cf0
+      internalID: -1014139412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_192
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 280
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b21530c31eb6fe140b407e6992270a2e
+      internalID: 1507415719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_193
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 280
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24533347f9fcdd4096e034c39849e91
+      internalID: 402182317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_194
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 280
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a76d771d5144e047bc8b953c182df67
+      internalID: -460452281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_195
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 280
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b02f701cb5d8ed458969554180d8d04
+      internalID: -500218367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_196
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 280
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0873d607be05d754fab027f5da462b0a
+      internalID: 796355821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_197
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 280
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1708d8c9d86ddf54586f81d097ccb455
+      internalID: 1167642632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_198
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 280
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2477e0a638a4624980892bc9ef44373
+      internalID: 159698240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_199
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 280
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac366558e7dae274d8b0819b957759c8
+      internalID: -609638828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_200
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 280
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b6370949ba972449b913893db1d327
+      internalID: -1778285702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_201
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 265
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3add06b8097ea364da9146f424534065
+      internalID: 1466348748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_202
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 265
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7642495da37e48428aa9d1d5aa564a2
+      internalID: -619038767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_203
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 265
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcbaaae7ce34c4f49bbf971e46f800f5
+      internalID: 2079776642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_204
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 262
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef04a3fc93bdc5a449a50ce2037217ea
+      internalID: -1190456277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_205
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 262
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8faaff476df984984cf1687fcc5673
+      internalID: 1842570087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_206
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 265
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5452f72f84e68b45a32e8a421559a7f
+      internalID: 755419107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_207
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 265
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6148285c01e6f46b4e92ac893d0805
+      internalID: 235555134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_208
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 265
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb7c5ed23447934a8fe9129c66c5447
+      internalID: -1863580797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_209
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 262
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37751735f0d84ac4db5a4652252f43aa
+      internalID: 1177974995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_210
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 144
+        width: 71
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0496ca3a9bc4f374ab09bb68b3412d51
+      internalID: -49913688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_211
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 213
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4d2935be372ed49b64da53ee764cee
+      internalID: -1290376550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_212
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 195
+        width: 14
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9222e4afc10d87543927736a9ee1f813
+      internalID: 384523591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_213
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 224
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafc628b615a5184da721e4ab43d31ba
+      internalID: 1742963559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_214
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 224
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c155573d8629a640925a70f66e7af79
+      internalID: -871398150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_215
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 224
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25395f43c3d16b54cb9e2925f903ac09
+      internalID: 1853793189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_216
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 7
+        width: 52
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fbf667880ba68b4381ba42edf39c126
+      internalID: 338933902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_217
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 164
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99914e2600ee9884396f53e9ef229cb2
+      internalID: 1330703764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_218
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 134
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce04b2f26796dec49bbd9c7be4184dd1
+      internalID: -163905615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_219
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 120
+        width: 19
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f21860c53564344ba75dd0daf5bffe9
+      internalID: -460693886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_220
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 133
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5feb7368021bfed4fa2d33cd557cf0c5
+      internalID: 921658719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_221
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 103
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7aef569704eba4ab8416a2a9429eb6
+      internalID: -1166202799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_222
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 103
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3197dba031f39a48aeec2cad1cf9044
+      internalID: -47278557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_223
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 103
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72051c4ed66d934aac220c2f17d888b
+      internalID: 392937880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_224
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 103
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a099386dde6e6924180c4703cd268ed3
+      internalID: -1323197466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_225
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 103
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26dd83631957b414bbce31597f28f7d8
+      internalID: -2049186125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_226
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 103
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab34acdbfa32bb4da697468d75a8bad
+      internalID: 304794359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_227
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 103
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b984fed1b6c2394586a246f9dad6c05
+      internalID: 582502999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_228
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 85
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8058174fdeaf245b78210ce47e4826
+      internalID: -1759258356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_229
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 85
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913fc47c6deccb14897824b7ce6da169
+      internalID: 250797903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_230
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 70
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faadc192b03d14b439381f6d90bcbe70
+      internalID: 766857366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_231
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 70
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc08739cb5790b4eb8621e5f9228c04
+      internalID: 259088480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_232
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 6
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9a4116a4fdf0a40993d7763cf2f76c
+      internalID: 2027099475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_233
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 45
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad98e56b825a5a4b8a9eda14a16f626
+      internalID: -1835054628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_234
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 7
+        width: 13
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9acfdcdf423c4d438e19b34afa21e9a
+      internalID: 1804062792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_235
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 26
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8293c25ddd65b934fb0fb66c219df574
+      internalID: 1026857220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_236
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 6
+        width: 66
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff30314e359ad94490ca91842706569
+      internalID: -427988648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_237
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 14
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171f821a24c75674baa51a16fc799e6c
+      internalID: 917334455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_238
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 6
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ad0f41cd9b86f4cb941d2d53187de5
+      internalID: 1073577203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_239
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 7
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355a70a183e9077439b20c5b15fd34bd
+      internalID: -818027455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_240
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 7
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0b7ffdaa6ea364aa4645175b15b6a7
+      internalID: 383861356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_241
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 8
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43310b5b948d0f34f991428c6130312d
+      internalID: -1781169656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_242
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 6
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77c2eb47cf151141922ab4bd3998ecd
+      internalID: -455097076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_243
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 8
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f765bda2fbcadb641a5ac5c9cc3296bb
+      internalID: 1297568789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_244
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 7
+        width: 38
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c48e5a6c0cbf814eb802990c051633b
+      internalID: 1180111596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_245
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 7
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde777efeee41c54ba8b88d5f6a788db
+      internalID: -604509614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_246
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 21
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b4530dd35acbd47afa32bad9352fb7
+      internalID: -1363176826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_247
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 16
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44707805b114684449b33bc64721bf89
+      internalID: -52532289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_248
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 6
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab21ea0b7ab2a04e86de67444ce4075
+      internalID: -1119492531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_249
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 7
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440aa9e1a4fe11a43a4d37261be25e72
+      internalID: 1030180592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_250
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 7
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9efc7a05311a7b478f44971fe93a5ec
+      internalID: 1635015157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_251
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 7
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8175365128f94c244bb752e214e720b7
+      internalID: 1320129871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_252
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 8
+        width: 30
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb2dbb4d4a1c604f99c85f4edc4b8c4
+      internalID: -88237210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papyrus_Spritesheet_Enemy 1_253
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 5
+        width: 41
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc45f018828bce4f801c2aa4f3c8d47
+      internalID: -1859251478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Papyrus_Spritesheet_Enemy 1_0: 15686715
+      Papyrus_Spritesheet_Enemy 1_1: 2018704086
+      Papyrus_Spritesheet_Enemy 1_10: 1349240751
+      Papyrus_Spritesheet_Enemy 1_100: 1562000943
+      Papyrus_Spritesheet_Enemy 1_101: -2107035121
+      Papyrus_Spritesheet_Enemy 1_102: -887680486
+      Papyrus_Spritesheet_Enemy 1_103: 2044665054
+      Papyrus_Spritesheet_Enemy 1_104: 1237337126
+      Papyrus_Spritesheet_Enemy 1_105: -1101218179
+      Papyrus_Spritesheet_Enemy 1_106: -1937011267
+      Papyrus_Spritesheet_Enemy 1_107: 479293018
+      Papyrus_Spritesheet_Enemy 1_108: -1877787785
+      Papyrus_Spritesheet_Enemy 1_109: 792315945
+      Papyrus_Spritesheet_Enemy 1_11: -946227543
+      Papyrus_Spritesheet_Enemy 1_110: 1006535
+      Papyrus_Spritesheet_Enemy 1_111: -1434006891
+      Papyrus_Spritesheet_Enemy 1_112: -379659242
+      Papyrus_Spritesheet_Enemy 1_113: -790043039
+      Papyrus_Spritesheet_Enemy 1_114: 1635848797
+      Papyrus_Spritesheet_Enemy 1_115: 681028810
+      Papyrus_Spritesheet_Enemy 1_116: 1603635675
+      Papyrus_Spritesheet_Enemy 1_117: 2112586503
+      Papyrus_Spritesheet_Enemy 1_118: -1894555219
+      Papyrus_Spritesheet_Enemy 1_119: 298625812
+      Papyrus_Spritesheet_Enemy 1_12: 1005680305
+      Papyrus_Spritesheet_Enemy 1_120: -877718812
+      Papyrus_Spritesheet_Enemy 1_121: 1210536139
+      Papyrus_Spritesheet_Enemy 1_122: -721038667
+      Papyrus_Spritesheet_Enemy 1_123: 1650876906
+      Papyrus_Spritesheet_Enemy 1_124: -1732777871
+      Papyrus_Spritesheet_Enemy 1_125: -1975726270
+      Papyrus_Spritesheet_Enemy 1_126: -1154528403
+      Papyrus_Spritesheet_Enemy 1_127: -1870236189
+      Papyrus_Spritesheet_Enemy 1_128: -1030710033
+      Papyrus_Spritesheet_Enemy 1_129: 1337189239
+      Papyrus_Spritesheet_Enemy 1_13: 214224406
+      Papyrus_Spritesheet_Enemy 1_130: -2058581423
+      Papyrus_Spritesheet_Enemy 1_131: 91384407
+      Papyrus_Spritesheet_Enemy 1_132: 1448331926
+      Papyrus_Spritesheet_Enemy 1_133: 1385510349
+      Papyrus_Spritesheet_Enemy 1_134: -1201815018
+      Papyrus_Spritesheet_Enemy 1_135: 500770473
+      Papyrus_Spritesheet_Enemy 1_136: -1545930378
+      Papyrus_Spritesheet_Enemy 1_137: 278679931
+      Papyrus_Spritesheet_Enemy 1_138: -1335280644
+      Papyrus_Spritesheet_Enemy 1_139: -1125322733
+      Papyrus_Spritesheet_Enemy 1_14: -1567302598
+      Papyrus_Spritesheet_Enemy 1_140: -1061040958
+      Papyrus_Spritesheet_Enemy 1_141: -1447761194
+      Papyrus_Spritesheet_Enemy 1_142: 426743702
+      Papyrus_Spritesheet_Enemy 1_143: 1883478648
+      Papyrus_Spritesheet_Enemy 1_144: 896602563
+      Papyrus_Spritesheet_Enemy 1_145: -1330010067
+      Papyrus_Spritesheet_Enemy 1_146: -83358223
+      Papyrus_Spritesheet_Enemy 1_147: -1284350869
+      Papyrus_Spritesheet_Enemy 1_148: 351605089
+      Papyrus_Spritesheet_Enemy 1_149: 39641622
+      Papyrus_Spritesheet_Enemy 1_15: 305726782
+      Papyrus_Spritesheet_Enemy 1_150: -413653338
+      Papyrus_Spritesheet_Enemy 1_151: -429746958
+      Papyrus_Spritesheet_Enemy 1_152: -963479525
+      Papyrus_Spritesheet_Enemy 1_153: -1369075216
+      Papyrus_Spritesheet_Enemy 1_154: 1854575971
+      Papyrus_Spritesheet_Enemy 1_155: -1173496549
+      Papyrus_Spritesheet_Enemy 1_156: 311819372
+      Papyrus_Spritesheet_Enemy 1_157: -1930171102
+      Papyrus_Spritesheet_Enemy 1_158: -1847210977
+      Papyrus_Spritesheet_Enemy 1_159: -845767567
+      Papyrus_Spritesheet_Enemy 1_16: -1308465575
+      Papyrus_Spritesheet_Enemy 1_160: 1598428552
+      Papyrus_Spritesheet_Enemy 1_161: 2090354874
+      Papyrus_Spritesheet_Enemy 1_162: -1165092213
+      Papyrus_Spritesheet_Enemy 1_163: 2090022502
+      Papyrus_Spritesheet_Enemy 1_164: 306425417
+      Papyrus_Spritesheet_Enemy 1_165: -1699132615
+      Papyrus_Spritesheet_Enemy 1_166: -1816626037
+      Papyrus_Spritesheet_Enemy 1_167: -1357910063
+      Papyrus_Spritesheet_Enemy 1_168: 1446401326
+      Papyrus_Spritesheet_Enemy 1_169: 663287674
+      Papyrus_Spritesheet_Enemy 1_17: -223672853
+      Papyrus_Spritesheet_Enemy 1_170: -1636550811
+      Papyrus_Spritesheet_Enemy 1_171: 852337291
+      Papyrus_Spritesheet_Enemy 1_172: 1780796329
+      Papyrus_Spritesheet_Enemy 1_173: -1312109542
+      Papyrus_Spritesheet_Enemy 1_174: -1119610393
+      Papyrus_Spritesheet_Enemy 1_175: 1583380388
+      Papyrus_Spritesheet_Enemy 1_176: 2106618722
+      Papyrus_Spritesheet_Enemy 1_177: 1257650173
+      Papyrus_Spritesheet_Enemy 1_178: -237008098
+      Papyrus_Spritesheet_Enemy 1_179: 1302789269
+      Papyrus_Spritesheet_Enemy 1_18: -433602042
+      Papyrus_Spritesheet_Enemy 1_180: -1770130371
+      Papyrus_Spritesheet_Enemy 1_181: -201657082
+      Papyrus_Spritesheet_Enemy 1_182: 816689253
+      Papyrus_Spritesheet_Enemy 1_183: -863963895
+      Papyrus_Spritesheet_Enemy 1_184: 1386403541
+      Papyrus_Spritesheet_Enemy 1_185: 377088547
+      Papyrus_Spritesheet_Enemy 1_186: 1604820082
+      Papyrus_Spritesheet_Enemy 1_187: 1475110934
+      Papyrus_Spritesheet_Enemy 1_188: 2073360642
+      Papyrus_Spritesheet_Enemy 1_189: -211788780
+      Papyrus_Spritesheet_Enemy 1_19: -1890338536
+      Papyrus_Spritesheet_Enemy 1_190: -466104059
+      Papyrus_Spritesheet_Enemy 1_191: -1014139412
+      Papyrus_Spritesheet_Enemy 1_192: 1507415719
+      Papyrus_Spritesheet_Enemy 1_193: 402182317
+      Papyrus_Spritesheet_Enemy 1_194: -460452281
+      Papyrus_Spritesheet_Enemy 1_195: -500218367
+      Papyrus_Spritesheet_Enemy 1_196: 796355821
+      Papyrus_Spritesheet_Enemy 1_197: 1167642632
+      Papyrus_Spritesheet_Enemy 1_198: 159698240
+      Papyrus_Spritesheet_Enemy 1_199: -609638828
+      Papyrus_Spritesheet_Enemy 1_2: -1796658106
+      Papyrus_Spritesheet_Enemy 1_20: -24657419
+      Papyrus_Spritesheet_Enemy 1_200: -1778285702
+      Papyrus_Spritesheet_Enemy 1_201: 1466348748
+      Papyrus_Spritesheet_Enemy 1_202: -619038767
+      Papyrus_Spritesheet_Enemy 1_203: 2079776642
+      Papyrus_Spritesheet_Enemy 1_204: -1190456277
+      Papyrus_Spritesheet_Enemy 1_205: 1842570087
+      Papyrus_Spritesheet_Enemy 1_206: 755419107
+      Papyrus_Spritesheet_Enemy 1_207: 235555134
+      Papyrus_Spritesheet_Enemy 1_208: -1863580797
+      Papyrus_Spritesheet_Enemy 1_209: 1177974995
+      Papyrus_Spritesheet_Enemy 1_21: -869137782
+      Papyrus_Spritesheet_Enemy 1_210: -49913688
+      Papyrus_Spritesheet_Enemy 1_211: -1290376550
+      Papyrus_Spritesheet_Enemy 1_212: 384523591
+      Papyrus_Spritesheet_Enemy 1_213: 1742963559
+      Papyrus_Spritesheet_Enemy 1_214: -871398150
+      Papyrus_Spritesheet_Enemy 1_215: 1853793189
+      Papyrus_Spritesheet_Enemy 1_216: 338933902
+      Papyrus_Spritesheet_Enemy 1_217: 1330703764
+      Papyrus_Spritesheet_Enemy 1_218: -163905615
+      Papyrus_Spritesheet_Enemy 1_219: -460693886
+      Papyrus_Spritesheet_Enemy 1_22: 1776232156
+      Papyrus_Spritesheet_Enemy 1_220: 921658719
+      Papyrus_Spritesheet_Enemy 1_221: -1166202799
+      Papyrus_Spritesheet_Enemy 1_222: -47278557
+      Papyrus_Spritesheet_Enemy 1_223: 392937880
+      Papyrus_Spritesheet_Enemy 1_224: -1323197466
+      Papyrus_Spritesheet_Enemy 1_225: -2049186125
+      Papyrus_Spritesheet_Enemy 1_226: 304794359
+      Papyrus_Spritesheet_Enemy 1_227: 582502999
+      Papyrus_Spritesheet_Enemy 1_228: -1759258356
+      Papyrus_Spritesheet_Enemy 1_229: 250797903
+      Papyrus_Spritesheet_Enemy 1_23: -912947785
+      Papyrus_Spritesheet_Enemy 1_230: 766857366
+      Papyrus_Spritesheet_Enemy 1_231: 259088480
+      Papyrus_Spritesheet_Enemy 1_232: 2027099475
+      Papyrus_Spritesheet_Enemy 1_233: -1835054628
+      Papyrus_Spritesheet_Enemy 1_234: 1804062792
+      Papyrus_Spritesheet_Enemy 1_235: 1026857220
+      Papyrus_Spritesheet_Enemy 1_236: -427988648
+      Papyrus_Spritesheet_Enemy 1_237: 917334455
+      Papyrus_Spritesheet_Enemy 1_238: 1073577203
+      Papyrus_Spritesheet_Enemy 1_239: -818027455
+      Papyrus_Spritesheet_Enemy 1_24: -818983294
+      Papyrus_Spritesheet_Enemy 1_240: 383861356
+      Papyrus_Spritesheet_Enemy 1_241: -1781169656
+      Papyrus_Spritesheet_Enemy 1_242: -455097076
+      Papyrus_Spritesheet_Enemy 1_243: 1297568789
+      Papyrus_Spritesheet_Enemy 1_244: 1180111596
+      Papyrus_Spritesheet_Enemy 1_245: -604509614
+      Papyrus_Spritesheet_Enemy 1_246: -1363176826
+      Papyrus_Spritesheet_Enemy 1_247: -52532289
+      Papyrus_Spritesheet_Enemy 1_248: -1119492531
+      Papyrus_Spritesheet_Enemy 1_249: 1030180592
+      Papyrus_Spritesheet_Enemy 1_25: -1017918998
+      Papyrus_Spritesheet_Enemy 1_250: 1635015157
+      Papyrus_Spritesheet_Enemy 1_251: 1320129871
+      Papyrus_Spritesheet_Enemy 1_252: -88237210
+      Papyrus_Spritesheet_Enemy 1_253: -1859251478
+      Papyrus_Spritesheet_Enemy 1_26: 864251440
+      Papyrus_Spritesheet_Enemy 1_27: -1081700560
+      Papyrus_Spritesheet_Enemy 1_28: -427146289
+      Papyrus_Spritesheet_Enemy 1_29: 286784323
+      Papyrus_Spritesheet_Enemy 1_3: -958731761
+      Papyrus_Spritesheet_Enemy 1_30: 1571769212
+      Papyrus_Spritesheet_Enemy 1_31: 496088918
+      Papyrus_Spritesheet_Enemy 1_32: -423096666
+      Papyrus_Spritesheet_Enemy 1_33: 1594429414
+      Papyrus_Spritesheet_Enemy 1_34: -2014634884
+      Papyrus_Spritesheet_Enemy 1_35: 1408818974
+      Papyrus_Spritesheet_Enemy 1_36: 127204557
+      Papyrus_Spritesheet_Enemy 1_37: -489491880
+      Papyrus_Spritesheet_Enemy 1_38: -1683855372
+      Papyrus_Spritesheet_Enemy 1_39: 761773545
+      Papyrus_Spritesheet_Enemy 1_4: 1822354083
+      Papyrus_Spritesheet_Enemy 1_40: -1985597910
+      Papyrus_Spritesheet_Enemy 1_41: -1116672964
+      Papyrus_Spritesheet_Enemy 1_42: -1226405360
+      Papyrus_Spritesheet_Enemy 1_43: 859580015
+      Papyrus_Spritesheet_Enemy 1_44: 1634971152
+      Papyrus_Spritesheet_Enemy 1_45: 790006776
+      Papyrus_Spritesheet_Enemy 1_46: 1400076174
+      Papyrus_Spritesheet_Enemy 1_47: -1045554011
+      Papyrus_Spritesheet_Enemy 1_48: 2100650915
+      Papyrus_Spritesheet_Enemy 1_49: 903482582
+      Papyrus_Spritesheet_Enemy 1_5: 380338726
+      Papyrus_Spritesheet_Enemy 1_50: 635752253
+      Papyrus_Spritesheet_Enemy 1_51: 305429727
+      Papyrus_Spritesheet_Enemy 1_52: -457916802
+      Papyrus_Spritesheet_Enemy 1_53: 442091994
+      Papyrus_Spritesheet_Enemy 1_54: 1646387169
+      Papyrus_Spritesheet_Enemy 1_55: -1035209417
+      Papyrus_Spritesheet_Enemy 1_56: 278667932
+      Papyrus_Spritesheet_Enemy 1_57: -801888464
+      Papyrus_Spritesheet_Enemy 1_58: 599330126
+      Papyrus_Spritesheet_Enemy 1_59: -439283992
+      Papyrus_Spritesheet_Enemy 1_6: -1969172586
+      Papyrus_Spritesheet_Enemy 1_60: -679162196
+      Papyrus_Spritesheet_Enemy 1_61: -1910214335
+      Papyrus_Spritesheet_Enemy 1_62: 803078252
+      Papyrus_Spritesheet_Enemy 1_63: -781117005
+      Papyrus_Spritesheet_Enemy 1_64: 1275251225
+      Papyrus_Spritesheet_Enemy 1_65: 1166714234
+      Papyrus_Spritesheet_Enemy 1_66: -906988164
+      Papyrus_Spritesheet_Enemy 1_67: -1063848517
+      Papyrus_Spritesheet_Enemy 1_68: -654776854
+      Papyrus_Spritesheet_Enemy 1_69: -1205442255
+      Papyrus_Spritesheet_Enemy 1_7: 1833979250
+      Papyrus_Spritesheet_Enemy 1_70: 975036123
+      Papyrus_Spritesheet_Enemy 1_71: 698021111
+      Papyrus_Spritesheet_Enemy 1_72: 579410197
+      Papyrus_Spritesheet_Enemy 1_73: -483681118
+      Papyrus_Spritesheet_Enemy 1_74: 1210614467
+      Papyrus_Spritesheet_Enemy 1_75: 2003869291
+      Papyrus_Spritesheet_Enemy 1_76: 769042596
+      Papyrus_Spritesheet_Enemy 1_77: 1695685751
+      Papyrus_Spritesheet_Enemy 1_78: 569682389
+      Papyrus_Spritesheet_Enemy 1_79: 1049702391
+      Papyrus_Spritesheet_Enemy 1_8: -794547336
+      Papyrus_Spritesheet_Enemy 1_80: -971798904
+      Papyrus_Spritesheet_Enemy 1_81: 847712532
+      Papyrus_Spritesheet_Enemy 1_82: -1063600900
+      Papyrus_Spritesheet_Enemy 1_83: -1813032023
+      Papyrus_Spritesheet_Enemy 1_84: 1469856094
+      Papyrus_Spritesheet_Enemy 1_85: 846115894
+      Papyrus_Spritesheet_Enemy 1_86: 1239712773
+      Papyrus_Spritesheet_Enemy 1_87: 426947378
+      Papyrus_Spritesheet_Enemy 1_88: 312603620
+      Papyrus_Spritesheet_Enemy 1_89: 1465643048
+      Papyrus_Spritesheet_Enemy 1_9: 416493442
+      Papyrus_Spritesheet_Enemy 1_90: 1280910282
+      Papyrus_Spritesheet_Enemy 1_91: 1870566294
+      Papyrus_Spritesheet_Enemy 1_92: -1173038697
+      Papyrus_Spritesheet_Enemy 1_93: 109298202
+      Papyrus_Spritesheet_Enemy 1_94: 1401676176
+      Papyrus_Spritesheet_Enemy 1_95: -94624113
+      Papyrus_Spritesheet_Enemy 1_96: -2088029299
+      Papyrus_Spritesheet_Enemy 1_97: -700554301
+      Papyrus_Spritesheet_Enemy 1_98: -1056805529
+      Papyrus_Spritesheet_Enemy 1_99: -1409089362
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

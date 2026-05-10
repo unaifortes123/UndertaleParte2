@@ -1710,6 +1710,7 @@ MonoBehaviour:
   deathParticles: {fileID: 650621566}
   battleObjects: {fileID: 1404628032}
   gameOverScreen: {fileID: 591519635}
+  returnScene: PruebaEntradaEnCombate
 --- !u!1 &340918860
 GameObject:
   m_ObjectHideFlags: 0
