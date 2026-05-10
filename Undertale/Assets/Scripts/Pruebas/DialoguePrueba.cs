@@ -113,9 +113,9 @@ public class DialoguePrueba : MonoBehaviour
 		}
 	}
 
-	// -----------------------
+	// -------------------------------------------------
 	//  MODO CUTSCENE (las escenas que hay por el mapa)
-	// -----------------------
+	// --------------------------------------------------
 
 	public void StartCutsceneDialogue(string[] lines)
 	{
