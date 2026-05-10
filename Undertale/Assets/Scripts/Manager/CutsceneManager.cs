@@ -27,6 +27,7 @@ public class CutsceneManager : MonoBehaviour
 	public void Play(string cutsceneID)
 	{
 		Debug.Log("Reproduciendo: " + cutsceneID);
+		StartCoroutine(PlayCutscene(cutsceneID));
 	}
 
 	private IEnumerator PlayCutscene(string id)
@@ -39,8 +40,37 @@ public class CutsceneManager : MonoBehaviour
 
 	private IEnumerator SansIntro()
 	{
+		
 		Debug.Log("Empieza SansIntro");
+
+		timelinesSans[0].time = 0;
 		timelinesSans[0].Play();
+		yield return new WaitWhile(() => timelinesSans[0].state == PlayState.Playing);
+
+
+		timelinesPlayer[0].time = 0;
+		timelinesPlayer[0].Play();
+		
+		timelinesSans[1].time = 0;
+		timelinesSans[1].Play();
+
+		yield return new WaitWhile(() => timelinesPlayer[0].state == PlayState.Playing);
+
+		timelinesPlayer[1].time = 0;
+		timelinesPlayer[1].Play();
+
+		yield return new WaitWhile(() => timelinesPlayer[1].state == PlayState.Playing);
+
+		timelinesPapyrus[0].time = 0;
+		timelinesPapyrus[0].Play();
+
+		yield return new WaitWhile(() => timelinesPapyrus[0].state == PlayState.Playing);
+
+		timelinesPapyrus[1].time = 0;
+		timelinesPapyrus[1].Play();
+
+
+
 
 		// 1. Bloquear jugador (si tienes sistema)
 		// player.SetCanMove(false);
@@ -67,8 +97,8 @@ public class CutsceneManager : MonoBehaviour
 
 		// 6. Fin cutscene
 		Debug.Log("Fin SansIntro");
-		return null;
 
+		yield return null;
 		// player.SetCanMove(true);
 	}
 }

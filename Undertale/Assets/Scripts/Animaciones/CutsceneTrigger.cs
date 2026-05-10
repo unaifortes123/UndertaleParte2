@@ -5,12 +5,17 @@ using UnityEngine;
 public class CutsceneTrigger : MonoBehaviour
 {
 	public string cutsceneID;
+	
+
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
+
 		if (other.CompareTag("Player"))
 		{
+			
 			CutsceneManager.Instance.Play(cutsceneID);
+			Destroy(gameObject);
 		}
 	}
 }
