@@ -1,114 +1,164 @@
 ﻿using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DialoguePrueba : MonoBehaviour
 {
-    // Referencias configuradas desde el Inspector.
-    [SerializeField] private GameObject dialoguePanel;
-    [SerializeField] private TMP_Text dialogueText;
-    [SerializeField] private GameObject portrait;
-    [SerializeField, TextArea(4, 6)] private string[] dialogueLines;
+	[SerializeField] private GameObject dialoguePanel;
+	[SerializeField] private TMP_Text dialogueText;
+	[SerializeField] private GameObject portrait;
+	[SerializeField, TextArea(4, 6)] private string[] dialogueLines;
 
-    private bool isPlayerInRange;
-    private bool didDialogueStart;
-    private int lineIndex;
-    private bool isTyping;
+	private bool isPlayerInRange;
+	private bool didDialogueStart;
+	private int lineIndex;
+	private bool isTyping;
 
-    private float typingTime = 0.05f;
+	private float typingTime = 0.05f;
 
-    // Esta funcion se ejecuta cada frame y revisa la entrada o el estado actual.
-    private void Update()
-    {
-        if (!didDialogueStart && isPlayerInRange && Input.GetKeyDown(KeyCode.Space))
-        {
-            StartDialogue();
-        }
-        else if (didDialogueStart && Input.GetKeyDown(KeyCode.Space))
-        {
+	public UnityEvent onFinishDialogue;
 
-            if (isTyping)
-            {
-                StopAllCoroutines();
-                dialogueText.text = dialogueLines[lineIndex];
-                isTyping = false;
-            }
-            else
-            {
-                NextLine();
-            }
-        }
-    }
+	// 🔵 NUEVO: control cutscene
+	private bool isCutsceneMode = false;
 
-    // Esta funcion inicia un dialogo de prueba.
-    private void StartDialogue()
-    {
-        didDialogueStart = true;
-        dialoguePanel.SetActive(true);
-        portrait.SetActive(true );
+	private void Update()
+	{
+		// 🔵 SI ESTAMOS EN CUTSCENE, IGNORAMOS INPUT
+		if (isCutsceneMode) return;
 
-        lineIndex = 0;
-        StartCoroutine(ShowLine());
-    }
+		if (!didDialogueStart && isPlayerInRange && Input.GetKeyDown(KeyCode.Space))
+		{
+			StartDialogue();
+		}
+		else if (didDialogueStart && Input.GetKeyDown(KeyCode.Space))
+		{
+			if (isTyping)
+			{
+				StopAllCoroutines();
+				dialogueText.text = dialogueLines[lineIndex];
+				isTyping = false;
+			}
+			else
+			{
+				NextLine();
+			}
+		}
+	}
 
-    // Esta funcion avanza a la siguiente linea del dialogo.
-    private void NextLine()
-    {
-        if (isTyping == false)
-        {
-            lineIndex++;
+	private void StartDialogue()
+	{
+		didDialogueStart = true;
+		dialoguePanel.SetActive(true);
+		portrait.SetActive(true);
 
-            if (lineIndex < dialogueLines.Length)
-            {
-                StartCoroutine(ShowLine());
-            }
-            else
-            {
-                EndDialogue();
-            }
-        }
-    }
+		lineIndex = 0;
+		StartCoroutine(ShowLine());
+	}
 
-    // Esta funcion muestra una linea escribiendola poco a poco.
-    private IEnumerator ShowLine()
-    {
-        isTyping = true;
+	private void NextLine()
+	{
+		if (isTyping) return;
 
-        dialogueText.text = "";
-        foreach (char ch in dialogueLines[lineIndex])
-        {
-            dialogueText.text += ch;
-            yield return new WaitForSeconds(typingTime);
-        }
+		lineIndex++;
 
-        isTyping = false;
-    }
+		if (lineIndex < dialogueLines.Length)
+		{
+			StartCoroutine(ShowLine());
+		}
+		else
+		{
+			EndDialogue();
+		}
+	}
 
-    // Esta funcion termina el dialogo actual.
-    private void EndDialogue()
-    {
-        didDialogueStart = false;
-        dialoguePanel.SetActive(false);
-        portrait.SetActive(false );
-    }
+	private IEnumerator ShowLine()
+	{
+		isTyping = true;
 
-    // Esta funcion detecta cuando otro objeto entra en el trigger.
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            isPlayerInRange = true;
+		dialogueText.text = "";
 
-            StartDialogue();
-        }
-    }
+		foreach (char ch in dialogueLines[lineIndex])
+		{
+			dialogueText.text += ch;
+			yield return new WaitForSeconds(typingTime);
+		}
 
-    // Esta funcion detecta cuando otro objeto sale del trigger.
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            isPlayerInRange = false;
-        }
-    }
+		isTyping = false;
+	}
+
+	private void EndDialogue()
+	{
+		onFinishDialogue.Invoke();
+
+		didDialogueStart = false;
+		dialoguePanel.SetActive(false);
+		portrait.SetActive(false);
+	}
+
+	// 🟢 MODO MUNDO (trigger)
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.CompareTag("Player"))
+		{
+			isPlayerInRange = true;
+		}
+	}
+
+	private void OnTriggerExit2D(Collider2D collision)
+	{
+		if (collision.CompareTag("Player"))
+		{
+			isPlayerInRange = false;
+		}
+	}
+
+	// -----------------------
+	//  MODO CUTSCENE (las escenas que hay por el mapa)
+	// -----------------------
+
+	public void StartCutsceneDialogue(string[] lines)
+	{
+		isCutsceneMode = true;
+
+		dialogueLines = lines;
+
+		didDialogueStart = true;
+		dialoguePanel.SetActive(true);
+		portrait.SetActive(true);
+
+		lineIndex = 0;
+		StartCoroutine(CutsceneDialogueFlow());
+	}
+
+	private IEnumerator CutsceneDialogueFlow()
+	{
+		while (lineIndex < dialogueLines.Length)
+		{
+			yield return StartCoroutine(ShowLine());
+
+			yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space) || isCutsceneMode);
+
+			lineIndex++;
+		}
+
+		EndCutsceneDialogue();
+	}
+
+	private void EndCutsceneDialogue()
+	{
+		onFinishDialogue.Invoke();
+
+		didDialogueStart = false;
+		isCutsceneMode = false;
+
+		dialoguePanel.SetActive(false);
+		portrait.SetActive(false);
+	}
+
+	// 🔵 Para cutscenes: esperar a que termine
+	public IEnumerator WaitUntilFinished()
+	{
+		yield return new WaitUntil(() => !didDialogueStart);
+	}
 }
