@@ -72,34 +72,21 @@ public class CutsceneManager : MonoBehaviour
 
 
 
-		// 1. Bloquear jugador (si tienes sistema)
-		// player.SetCanMove(false);
-
-		// 2. Sans habla
-		//dialogueManager.Show("Sans: hey kid...");
-
-		//yield return dialogueManager.WaitUntilFinished();
-
-		// 3. Animación Sans
-		//sansAnimator.SetTrigger("Talk");
-
-		//yield return new WaitForSeconds(1f);
-
-		// 4. Papyrus entra
-		//papyrusAnimator.SetTrigger("Enter");
-
-		//yield return new WaitForSeconds(1f);
-
-		// 5. Papyrus habla
-		//dialogueManager.Show("Papyrus: NYEH HEH HEH!");
-
-		//yield return dialogueManager.WaitUntilFinished();
+		
 
 		// 6. Fin cutscene
 		Debug.Log("Fin SansIntro");
 
 		yield return null;
-		// player.SetCanMove(true);
+		
+	}
+	private IEnumerator SansIntro2()
+		{
+		Debug.Log("Empieza SansIntro 2");
+
+		timelinesSans[2].time = 0;
+		timelinesSans[2].Play();
+		yield return new WaitWhile(() => timelinesSans[2].state == PlayState.Playing);
 	}
 }
 
