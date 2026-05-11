@@ -12,6 +12,8 @@ public class CutsceneManager : MonoBehaviour
 	public List<PlayableDirector> timelinesPapyrus; //las timelines de papyrus
 	[SerializeField]
 	public List<PlayableDirector> timelinesPlayer; //las timelines del player
+	[SerializeField]
+	public List<PlayableDirector> timelinesPuente; //las timelines que aparecen en el puente (por ejemplo el perrito dando vueltas)
 
 	void Awake()
 	{

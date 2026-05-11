@@ -7,7 +7,7 @@ TextureImporter:
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
-    sRGBTexture: 1
+    sRGBTexture: 0
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -147,7 +147,217 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PerritoPuente_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 7
+        width: 100
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe14e193c174e24594d8530723db5d8
+      internalID: 1435602563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PerritoPuente_1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 7
+        width: 100
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c04038b5b6d90a44a171fae0e84bdee
+      internalID: -566808011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PerritoPuente_2
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 7
+        width: 105
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6fc095cac8037f48aa50b0c13955cb1
+      internalID: -1075722321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PerritoPuente_3
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 7
+        width: 105
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9cc2a35af375d54ebcdd34900643f1e
+      internalID: -525804854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PerritoPuente_4
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 7
+        width: 105
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068442061e3cd5445ba8fb016edd468a
+      internalID: -1068900034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PerritoPuente_5
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 7
+        width: 105
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad26b8683e3f4bc4d86b3cb6ec38d3a6
+      internalID: -1741597762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PerritoPuente_6
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 7
+        width: 105
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9cbff99fbcd3734796f3901d90a4f0e
+      internalID: -1496549966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PerritoPuente_7
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 7
+        width: 105
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9221a4cef5b905e429f17d8158f5f411
+      internalID: -2110476011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PerritoPuente_8
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 7
+        width: 105
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b67b97651520ffb40b6305a97f99f05c
+      internalID: 1216457193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PerritoPuente_9
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 7
+        width: 100
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f80bd862cf56a4cab9e2b975c3f60f
+      internalID: 1896980800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -158,7 +368,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PerritoPuente_0: 1435602563
+      PerritoPuente_1: -566808011
+      PerritoPuente_2: -1075722321
+      PerritoPuente_3: -525804854
+      PerritoPuente_4: -1068900034
+      PerritoPuente_5: -1741597762
+      PerritoPuente_6: -1496549966
+      PerritoPuente_7: -2110476011
+      PerritoPuente_8: 1216457193
+      PerritoPuente_9: 1896980800
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
