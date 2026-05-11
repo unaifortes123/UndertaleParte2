@@ -5256,6 +5256,7 @@ GameObject:
   - component: {fileID: 1512663960}
   - component: {fileID: 1512663962}
   - component: {fileID: 1512663961}
+  - component: {fileID: 1512663963}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -5304,8 +5305,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e49db14944c2d64193111cd31742397, type: 2}
+  m_sharedMaterial: {fileID: -3512109983634770379, guid: 0e49db14944c2d64193111cd31742397, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5379,6 +5380,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512663959}
   m_CullTransparentMesh: 1
+--- !u!114 &1512663963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512663959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5c29baa02681b84e919166fab14c34b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1533219475
 GameObject:
   m_ObjectHideFlags: 0
