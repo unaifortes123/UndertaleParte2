@@ -4,7 +4,7 @@ public class PuzzleManager : MonoBehaviour
 {
     public GameObject botonFinal;
     public PinchosManager pinchosManejador;
-    public string puzzleTag; // 👈 ID del puzzle
+    public string puzzleTag; // ID del puzzle
 
     private TileXOXO[] tiles;
 
@@ -17,19 +17,25 @@ public class PuzzleManager : MonoBehaviour
             botonFinal.SetActive(false);
     }
 
-    public void ComprobarPuzzle()
+    public bool ComprobarPuzzle()
     {
         foreach (var tile in tiles)
         {
             if (!tile.CompareTag(puzzleTag))
                 continue;
 
+            Debug.Log(tile.name + " -> " + tile.EstaRojo());
+
             if (!tile.EstaRojo())
-                return;
+                return false;
         }
+
+        Debug.Log("PUZZLE COMPLETADO");
 
         if (botonFinal != null)
             botonFinal.SetActive(true);
+
+        return true;
     }
 
     public void PulsarBoton()
@@ -37,8 +43,11 @@ public class PuzzleManager : MonoBehaviour
         foreach (var tile in tiles)
         {
             if (tile.CompareTag(puzzleTag))
+            {
                 tile.PonerVerde();
-            pinchosManejador.BajarTodos();
+            }
         }
+
+        pinchosManejador.BajarTodos();
     }
 }

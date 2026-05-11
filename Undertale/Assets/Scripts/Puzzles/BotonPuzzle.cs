@@ -1,11 +1,12 @@
-﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class BotonFormas : MonoBehaviour
+public class BotonPuzzle : MonoBehaviour
 {
-    public PuzzleManagerFormas manager;
-
+    public PuzzleManager PuzzleManager;
     public Sprite botonNormal;
-    public Sprite botonCorrecto;
+    public Sprite botonBajado;
 
     private SpriteRenderer sr;
 
@@ -21,18 +22,15 @@ public class BotonFormas : MonoBehaviour
     {
         if (!collision.CompareTag("Player")) return;
         if (completado) return;
-
-        bool correcto = manager.Comprobar();
+        Debug.Log(PuzzleManager.name);
+        bool correcto = PuzzleManager.ComprobarPuzzle();
 
         if (correcto)
         {
             completado = true;
-            sr.sprite = botonCorrecto; // ←cambia sprite
-            manager.CompletarPuzzle();
-        }
-        else
-        {
-            manager.ResetearPuzzle();
+            sr.sprite = botonBajado;
+
+            PuzzleManager.PulsarBoton();
         }
     }
 }
