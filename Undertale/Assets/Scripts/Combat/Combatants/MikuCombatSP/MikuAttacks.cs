@@ -5,14 +5,14 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "MikuAttack", menuName = "Attacks/Miku")]
 public class MikuAttacks : Attacks
 {
-    // Devuelve uno de los 3 ataques de Miku al azar (default, micros laterales, foco con micros y puerros).
+    // ataque aleatorio de los 3 que tiene Miku
     public override IEnumerator GetAttack()
     {
         IEnumerator attack;
         int attackNumber;
 
         attackNumber = Random.Range(0, 3);
-        attack = MikuDefault();
+        attack = MikuDefault(); // default por si toca 0
 
         if (attackNumber == 1)
         {
@@ -27,7 +27,7 @@ public class MikuAttacks : Attacks
         return attack;
     }
 
-    // Lluvia de puerros mas densa que se alternan y persiguen al player, no le dejan parar quieto.
+    // 5 puerros cayendo en patron fijo (izq, der, centro, y luego los dos diagonales). Pelletprefab 0 = puerro.
     IEnumerator MikuDefault()
     {
         SpawnPellet(new Vector2(-1.4f, 0.25f), PelletType.FallFollowDirect, 0);
@@ -41,7 +41,7 @@ public class MikuAttacks : Attacks
         yield return Wait(2.8f);
     }
 
-    // Llueven microfonos desde los lados a alturas variables, los ultimos dos vienen a la vez de ambos lados.
+    // microfonos entrando desde los lados a alturas variables, los dos ultimos vienen a la vez (pellet 1 = micro)
     IEnumerator MikuWave()
     {
         SpawnPellet(new Vector2(-1.55f, 0.55f), PelletType.SideRain, 1);
@@ -57,9 +57,10 @@ public class MikuAttacks : Attacks
         yield return Wait(2.4f);
     }
 
-    // Encoge la caja como un foco de escenario y lanza puerros desde arriba y micros desde los lados a la vez.
+    // encoge la caja como un foco de escenario y mezcla puerros cayendo + micros desde los lados
     IEnumerator MikuStars()
     {
+        // caja estrecha y alta, tipo foco de teatro
         if (BattleManager.battleInstance != null)
         {
             BattleManager.battleInstance.ChangeBattleBoxSize(new Vector2(2.5f, 3f));

@@ -162,13 +162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b47de9cf205fb804eb3686f2f6dd500c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalSpeed: 1
-  verticalSpeed: 1
+  speed: 4
   actions: {fileID: -944628639613478452, guid: f333727a3711e9a418600fd6ece96496, type: 3}
-  health: 20
-  playerData:
-    playerName: 
-    hp: 0
 --- !u!95 &9121542129537786579
 Animator:
   serializedVersion: 5

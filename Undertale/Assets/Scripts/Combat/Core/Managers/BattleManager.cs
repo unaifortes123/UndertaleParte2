@@ -70,26 +70,25 @@ public class BattleManager : MonoBehaviour
     private int mercyPressCount;
     private string nextPostTurnText;
 
-    // Singleton del manager del combate, guarda la referencia para que cualquier script lo encuentre.
     void Awake()
     {
         battleInstance = this;
     }
 
-    // Lanza la secuencia de FIGHT al pulsar el boton, bloquea el menu y oculta el texto principal.
+    // se llama al pulsar FIGHT, arranca la secuencia del ataque
     public void Attacking()
     {
         if (!isFighting)
         {
             menuInputLocked = true;
-            actingMgr.actingText.gameObject.SetActive(false);
+            actingMgr.actingText.gameObject.SetActive(false); // oculta el texto principal mientras pega
             AudioManager.instance.Selecting();
             StartCoroutine(AttackSequence());
         }
 
     }
 
-    // Abre el submenu de ACT (acciones especiales segun el enemigo) al pulsar el boton.
+    // abre el submenu de ACT (las acciones especiales tipo "Check", "Talk", etc.)
     public void Acting()
     {
         if (actingMgr != null)
@@ -100,7 +99,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Abre el menu de objetos del jugador para usar uno en el combate.
+    // abre el menu de objetos para que el player use alguno
     public void Item()
     {
         if (ItemManager.instance != null)
@@ -112,7 +111,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Suma una pulsacion de Mercy y, a las 10, perdona al enemigo y termina el combate sin matarle.
+    // suma un Mercy, y a las 10 pulsaciones perdona al enemigo y termina el combate (asi no hace falta matarle)
     public void Mercy()
     {
         bool canFinishByMercy;
@@ -142,7 +141,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Inicializa todo el combate al cargar la escena, busca managers, configura enemigo, colliders y posiciona el alma.
+    // setup inicial del combate: pilla managers, configura enemigo, los colliders de la caja, etc.
     void Start()
     {
         selectionInt = 0;
@@ -170,7 +169,7 @@ public class BattleManager : MonoBehaviour
         Selection();
     }
 
-    // Vuelve a localizar los 4 botones del menu (Fight, Act, Item, Mercy) por si la lista se quedo vacia.
+    // por si la lista de botones esta vacia, los busca por nombre en la escena (Fight, Act, Item, Mercy)
     void GetButtonsFromScene()
     {
         Buttons fightButtons;
@@ -195,7 +194,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Busca un GameObject por nombre y devuelve su componente Buttons, soltando un error si no lo encuentra.
+    // helper que busca un GameObject por nombre y devuelve su script Buttons, o un error si no lo pilla
     Buttons GetButtonFromScene(string buttonName)
     {
         GameObject buttonObject;
@@ -221,7 +220,7 @@ public class BattleManager : MonoBehaviour
         return buttonScript;
     }
 
-    // Lee las flechas para mover la seleccion del menu, refresca la barra de vida y detecta si el enemigo ha muerto.
+    // gestiona el menu (flechas, enter), refresca la vida del player y mira si el enemigo ha muerto
     void Update()
     {
         if (playerVariables == null)
@@ -313,7 +312,7 @@ public class BattleManager : MonoBehaviour
             
     }
 
-    // Si la seleccion del menu se sale por arriba o abajo, le da la vuelta para que vuelva al primero o al ultimo.
+    // si el indice del menu se sale (por arriba o por abajo), le da la vuelta para que ciclee
     void CheckSelectionLimits()
     {
         if (selectionInt > maxSelectionInt)
@@ -327,7 +326,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Apaga el sprite del alma y desactiva su movimiento, util cuando se cambia de fase del combate.
+    // oculta el alma y le quita el movimiento, lo usa al cambiar de fase
     void HideSoul()
     {
         if (soul != null)
@@ -338,7 +337,7 @@ public class BattleManager : MonoBehaviour
         SetSoulMovement(false);
     }
 
-    // Devuelve true solo si no hay menus secundarios abiertos ni dialogos en curso, asi se puede mover la seleccion.
+    // solo deja mover la seleccion si no hay menu secundario abierto ni dialogo escribiendose
     bool CanReadMainMenuInput()
     {
         bool dialogueReady;
@@ -347,19 +346,19 @@ public class BattleManager : MonoBehaviour
         return !menuInputLocked && dialogueReady && !isFighting && !actingMgr.isActing && !ItemManager.instance.isMenu;
     }
 
-    // Activa el flag que bloquea el menu, util mientras se escribe un dialogo o se reproduce una animacion.
+    // bloquea el menu mientras hay un dialogo o animacion en marcha
     public void LockMenuInput()
     {
         menuInputLocked = true;
     }
 
-    // Quita el bloqueo del menu para que el jugador pueda volver a moverse y elegir.
+    // lo desbloquea cuando ya puede volver a elegir
     public void UnlockMenuInput()
     {
         menuInputLocked = false;
     }
 
-    // Coloca el alma en el centro de la caja de batalla y le activa el movimiento para esquivar balas.
+    // mete el alma en el centro de la caja y activa su movimiento para que esquive las balas
     void ShowSoulInBattleBox()
     {
         if (soul != null && battleBox != null)
@@ -372,7 +371,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Pone el alma al lado del boton seleccionado y le quita el movimiento, queda como un puntero.
+    // pone el alma al lado del boton seleccionado pero sin moverse, hace de puntero del menu
     public void ShowSoulInMenu(Vector3 position)
     {
         if (soul != null)
@@ -385,13 +384,13 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Atajo publico para que los menus secundarios puedan ocultar el alma al cerrarse.
+    // atajo publico para que otros menus puedan ocultar el alma al cerrarse
     public void HideSoulForMenu()
     {
         HideSoul();
     }
 
-    // Cachea los componentes de movimiento y rigidbody del alma, evita buscarlos cada vez.
+    // cachea los componentes del alma para no buscarlos cada vez con GetComponent
     void ConfigureSoulReferences()
     {
         if (soul != null)
@@ -410,7 +409,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Apaga el sprite del Frisk del mapa mientras esta en combate, recuerda su estado para restaurarlo despues.
+    // oculta el Frisk del mapa durante el combate y guarda el estado para devolverlo despues
     void HideWorldPlayer()
     {
         SpriteRenderer playerSprite;
@@ -429,7 +428,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Restaura el sprite del Frisk del mapa al estado que tenia antes de empezar el combate.
+    // devuelve el sprite del Frisk al estado que tenia antes del combate
     void ShowWorldPlayer()
     {
         if (worldPlayerHidden && worldPlayerSprite != null)
@@ -440,7 +439,7 @@ public class BattleManager : MonoBehaviour
         worldPlayerHidden = false;
     }
 
-    // Activa o desactiva el script de movimiento del alma y le frena la velocidad si toca pararla.
+    // activa o desactiva el script de movimiento del alma. Si la para, le frena tambien la velocidad
     void SetSoulMovement(bool canMove)
     {
         ConfigureSoulReferences();
@@ -456,7 +455,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Solo la primera vez que estan listos los managers, le pide al enemigo que les pase sus datos.
+    // solo la primera vez que todos los managers estan listos, pide al enemigo que les pase sus datos
     void ConfigureEnemyCombat()
     {
         bool canConfigure;
@@ -483,7 +482,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Saca una frase aleatoria de la lista del enemigo, o un texto generico si la lista esta vacia.
+    // saca una frase random de la lista del enemigo, si la lista esta vacia devuelve un texto generico
     public string GetRandomEnemyDialogue()
     {
         string dialogue;
@@ -498,7 +497,7 @@ public class BattleManager : MonoBehaviour
         return dialogue;
     }
 
-    // Decide que texto sale tras el turno: especial primero, luego mensaje de spare, luego flavor text aleatorio.
+    // decide el texto post-turno: prioridad 1 mensaje especial (alma azul), 2 spare si toca, 3 flavor text random
     public string GetPostTurnText()
     {
         string dialogue;
@@ -529,25 +528,24 @@ public class BattleManager : MonoBehaviour
         return dialogue;
     }
 
-    // Apunta un texto puntual para enseñar al final del turno (lo usa Papyrus para anunciar el alma azul).
+    // deja apuntado un texto especial para mostrar al acabar el turno (lo usa Papyrus para anunciar el alma azul)
     public void SetNextPostTurnText(string text)
     {
         nextPostTurnText = text;
     }
 
-    // Deja marcado que en el siguiente menu hay que cambiar el alma a azul, lo aplica al volver al menu.
+    // marca que en el proximo menu hay que cambiar el alma a azul (lo aplica cuando vuelva al menu)
     public void PrepareSoulBlueForMenu()
     {
         blueSoulPending = true;
     }
 
-    // Devuelve true si el alma ya esta convertida en azul, lo consultan los ataques que dependen de ello.
     public bool IsSoulBlue()
     {
         return soulIsBlue;
     }
 
-    // Si hay cambio a azul pendiente, lo aplica y limpia el flag para no repetirlo.
+    // si hay un cambio a azul pendiente lo aplica y baja el flag para no repetirlo
     void ApplyPendingSoulBlue()
     {
         if (blueSoulPending)
@@ -557,7 +555,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Si el alma ya es azul, vuelve a aplicar el sprite azul, asi no se vuelve roja al reaparecer.
+    // si el alma ya era azul, le vuelve a poner el sprite por si Unity la reseteo al rojo
     void ApplySoulBlueIfNeeded()
     {
         if (soulIsBlue)
@@ -566,7 +564,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Filtra los strings vacios de la lista y devuelve uno al azar de los que quedan.
+    // filtra los strings vacios y devuelve uno random de los que queden
     string GetRandomNotEmptyText(List<string> texts)
     {
         List<string> validTexts;
@@ -599,7 +597,7 @@ public class BattleManager : MonoBehaviour
         return text;
     }
 
-    // Devuelve el nombre del enemigo (o "El enemigo" como fallback) para usarlo en mensajes generados.
+    // devuelve el nombre del enemigo, o "El enemigo" si no esta puesto, para meterlo en frases generadas
     string GetEnemyDisplayName()
     {
         string enemyDisplayName;
@@ -613,7 +611,7 @@ public class BattleManager : MonoBehaviour
         return enemyDisplayName;
     }
 
-    // Marca como seleccionado un boton del menu y mueve el alma a su posicion de puntero.
+    // marca un boton como seleccionado y mueve el alma a su posicion (la usa como puntero)
     void Selecting(int selectedInt)
     {
         if (buttons != null && buttons.Count > selectedInt && buttons[selectedInt] != null)
@@ -627,7 +625,6 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Quita la marca de seleccionado a un boton concreto.
     void Deselecting(int deselectionInt)
     {
         if (buttons != null && buttons.Count > deselectionInt && buttons[deselectionInt] != null)
@@ -636,7 +633,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Recorre los 4 botones, deja seleccionado el de selectionInt y deselecciona el resto.
+    // recorre los 4 botones, deja seleccionado el actual y quita la seleccion al resto
     void Selection()
     {
         int i;
@@ -658,7 +655,7 @@ public class BattleManager : MonoBehaviour
     }
 
 
-    // Lanza la accion del boton actual segun el indice (0=Fight, 1=Act, 2=Item, 3=Mercy).
+    // lanza la accion del boton actual: 0 Fight, 1 Act, 2 Item, 3 Mercy
     void Selected()
     {
         ClearSpecialPostTurnText();
@@ -681,7 +678,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Hace el minijuego de la barra de ataque del player y, al acabar, lanza el ataque del enemigo.
+    // secuencia del FIGHT: minijuego de la barra del player, y al acabar lanza el ataque del enemigo
     IEnumerator AttackSequence()
     {
         isFighting = true;
@@ -701,7 +698,7 @@ public class BattleManager : MonoBehaviour
         attackMgr.StartAttack(attackMgr.GetAttack(), isFinished);
     }
 
-    // Cierra el menu de ACT, devuelve el alma a la caja y arranca el ataque del enemigo en respuesta.
+    // cierra el menu de ACT, devuelve el alma a la caja y arranca el ataque del enemigo
     public IEnumerator ActingSequence()
     {
         HideSoul();
@@ -720,7 +717,7 @@ public class BattleManager : MonoBehaviour
         attackMgr.StartAttack(attackMgr.GetAttack(), isFinished);
     }
 
-    // Cierra el menu de ITEMS, devuelve el alma a la caja y dispara el ataque del enemigo.
+    // cierra el menu de ITEMS, devuelve el alma a la caja y dispara el ataque del enemigo
     public IEnumerator ItemSequence()
     {
         HideSoul();
@@ -740,13 +737,13 @@ public class BattleManager : MonoBehaviour
         attackMgr.StartAttack(attackMgr.GetAttack(), isFinished);
     }
 
-    // Callback que arranca el turno del enemigo cuando termina el dialogo del intento de Mercy.
+    // callback que arranca el turno del enemigo cuando acaba el dialogo del Mercy fallido
     void FinishMercyDialogue()
     {
         StartCoroutine(MercySequence());
     }
 
-    // Limpia el texto del Mercy fallido, devuelve el alma a la caja y lanza el ataque del enemigo.
+    // tras intentar Mercy sin conseguirlo, limpia el texto, devuelve el alma a la caja y el enemigo ataca
     IEnumerator MercySequence()
     {
         HideSoul();
@@ -764,7 +761,7 @@ public class BattleManager : MonoBehaviour
         attackMgr.StartAttack(attackMgr.GetAttack(), isFinished);
     }
 
-    // Vacia el texto principal y el de acting, asi no se ven sobras del turno anterior cuando empieza el ataque.
+    // vacia ambos textos para que no se queden sobras del turno anterior al empezar el ataque
     void ClearMainDialogueText()
     {
         DialogueManager.instance.dialogueTxt = "";
@@ -781,7 +778,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Guarda una copia del sprite rojo original del alma para poder restaurarlo si fue cambiado a azul.
+    // guarda el sprite rojo original del alma para poder volver a el si la convierte en azul y quiere rebajar
     void SaveOriginalSoulSprite()
     {
         if (soul != null && redSoulSprite == null)
@@ -790,7 +787,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Tras un FIGHT, oculta el alma, agranda la caja al tamaño de menu y bloquea inputs hasta el post-turno.
+    // al acabar el FIGHT: oculta el alma, vuelve la caja al tamaño del menu y bloquea inputs hasta el post-turno
     void FinishAttackSequence()
     {
         HideSoul();
@@ -801,7 +798,7 @@ public class BattleManager : MonoBehaviour
         LockMenuInput();
     }
 
-    // Despues de un Mercy fallido, devuelve la caja al tamaño de menu y muestra el texto post-turno.
+    // tras un Mercy fallido, devuelve la caja al tamaño del menu y enseña el texto post-turno
     void FinishMercySequence()
     {
         HideSoul();
@@ -816,7 +813,7 @@ public class BattleManager : MonoBehaviour
         UnlockMenuInput();
     }
 
-    // Despues de un ACT, devuelve la caja al menu y deja todo listo para el siguiente turno del jugador.
+    // tras un ACT, devuelve la caja al menu y deja todo listo para el siguiente turno del player
     void FinishActingSequence()
     {
         HideSoul();
@@ -831,7 +828,7 @@ public class BattleManager : MonoBehaviour
         UnlockMenuInput();
     }
 
-    // Despues de usar un objeto, devuelve la caja al menu y resetea las flags del menu de items.
+    // tras usar un item, devuelve la caja al menu y resetea las flags del menu de items
     void FinishItemSequence()
     {
         ItemManager.instance.time = 0;
@@ -848,20 +845,20 @@ public class BattleManager : MonoBehaviour
         UnlockMenuInput();
     }
 
-    // Reactiva el GameObject del texto principal del combate, que se apaga durante el FIGHT.
+    // reactiva el texto principal que se apaga durante el FIGHT
     void ShowActingText()
     {
         actingMgr.actingText.gameObject.SetActive(true);
     }
 
-    // Callback al terminar el resize tras FIGHT, vuelve a mostrar el texto y arranca el dialogo post-turno.
+    // callback cuando la caja termina de redimensionarse tras el FIGHT
     void FinishAttackResize()
     {
         ShowActingText();
         StartPostTurnText();
     }
 
-    // Pide al DialogueManager el texto post-turno y, cuando termina, desbloquea el menu del jugador.
+    // pide el texto post-turno al DialogueManager y al acabar desbloquea el menu
     void StartPostTurnText()
     {
         if (DialogueManager.instance != null)
@@ -876,7 +873,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Lanza el dialogo post-turno, con callback distinto si hay texto especial pendiente (caso de Papyrus).
+    // arranca el dialogo post-turno. Si hay un texto especial pendiente (Papyrus alma azul) usa otro callback
     void StartPostTurnDialogue()
     {
         bool hasSpecialText;
@@ -899,14 +896,14 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Tras el aviso especial (alma azul de Papyrus), lo aplica y enseña el dialogo normal del turno.
+    // tras el aviso especial del alma azul, lo aplica y muestra el dialogo normal del turno
     void FinishSpecialPostTurnText()
     {
         ApplyPendingSoulBlue();
         ShowNormalPostTurnText();
     }
 
-    // Escribe directamente el texto normal del post-turno en ambos cuadros, sin animacion de mecanografia.
+    // mete el texto normal del post-turno directamente, sin escritura tipo maquina, en ambos cuadros
     void ShowNormalPostTurnText()
     {
         string normalText;
@@ -931,7 +928,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Limpia el texto en pantalla justo antes de elegir nueva opcion, para que no se acumule el mensaje azul.
+    // limpia el texto antes de elegir otra opcion para que no se quede pegado el mensaje del alma azul
     void ClearSpecialPostTurnText()
     {
         if (DialogueManager.instance != null)
@@ -950,19 +947,19 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Mete el texto post-turno en el DialogueManager, callback usado tras secuencias de Acting.
+    // callback que se usa tras un ACT para meter el texto post-turno en el DialogueManager
     void SetPostTurnText()
     {
         DialogueManager.instance.dialogueTxt = GetPostTurnText();
     }
 
-    // Permite a los ataques cambiar el tamaño de la caja al vuelo (lo usan PapyrusColumns, BoneStorm, etc).
+    // metodo publico para que los ataques cambien el tamaño de la caja al vuelo (BoneStorm, MikuStars, etc)
     public void ChangeBattleBoxSize(Vector2 size)
     {
         StartCoroutine(ResizeBattleBox(size, null));
     }
 
-    // Cambia el sprite del alma al azul de Papyrus y avisa a PlayerVars del cambio para que persista.
+    // pone el alma azul (la de Papyrus) y avisa a PlayerVars para que se guarde el cambio
     public void SetSoulBlue()
     {
         Sprite selectedSprite;
@@ -985,7 +982,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Localiza el contenedor "Colliders" hijo del battleBox y guarda los 4 BoxColliders que limitan la caja.
+    // busca el hijo "Colliders" del battleBox y guarda los 4 BoxColliders que limitan la caja
     void ConfigureBattleColliders()
     {
         BoxCollider2D[] colliders;
@@ -1015,7 +1012,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Aplica el nuevo tamaño al sprite blanco de la caja y reposiciona los colliders alrededor.
+    // aplica el tamaño nuevo al sprite blanco de la caja y reajusta los colliders alrededor
     void SetBattleBoxSize(Vector2 size)
     {
         if (battleBox != null)
@@ -1025,7 +1022,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Coloca los 4 colliders (top, bottom, left, right) justo en los bordes de la caja del tamaño indicado.
+    // recoloca los 4 colliders (top, bottom, left, right) en los bordes para el tamaño dado
     void ResizeBattleColliders(Vector2 size)
     {
         if (topBattleCollider == null || bottomBattleCollider == null || leftBattleCollider == null || rightBattleCollider == null)
@@ -1042,7 +1039,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Coloca un BoxCollider concreto en la posicion y tamaño que toca, dejando la rotacion en cero.
+    // helper que mueve un BoxCollider a una posicion y tamaño, sin rotacion
     void SetBattleCollider(BoxCollider2D boxCollider, Vector2 position, Vector2 size)
     {
         if (boxCollider != null)
@@ -1054,7 +1051,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Anima el tamaño de la caja desde el actual hasta targetSize a velocidad constante y llama al callback al acabar.
+    // anima el redimensionado de la caja de tamaño actual a targetSize a velocidad constante
     IEnumerator ResizeBattleBox(Vector2 targetSize, Action onFinish)
     {
         Vector2 startSize = battleBox.size;
@@ -1086,7 +1083,7 @@ public class BattleManager : MonoBehaviour
 
     }
 
-    // Cierra el combate: cura al jugador, da puntos, marca esta pelea como completada, guarda y vuelve al mapa.
+    // termina el combate: cura al player, suma 100 puntos, marca este combate como pasado, guarda y vuelve al mapa
     public void EndBattle()
     {
         bool canEndBattle;
@@ -1142,12 +1139,12 @@ public class BattleManager : MonoBehaviour
             playerVariables.ClearSoulSprite();
 
 
-            SceneManager.LoadScene("PruebaEntradaEnCombate");
+            SceneManager.LoadScene("MainLevel");
         }
 
     }
 
-    // Al destruirse el manager (cambio de escena) restaura el sprite del Frisk del mapa y limpia el alma.
+    // al destruirse (cambio de escena) devuelve el Frisk del mapa a la vista y limpia el alma
     void OnDestroy()
     {
         ShowWorldPlayer();

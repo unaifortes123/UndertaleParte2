@@ -3,20 +3,20 @@ using UnityEngine;
 
 public class PeterCombat : EnemyVars
 {
-    // Aplica los valores por defecto antes de que la base ponga curHP a maxHP.
+    // mete valores por defecto antes de que la clase base ponga curHP = maxHP
     protected override void Awake()
     {
         ApplyDefaultValues();
         base.Awake();
     }
 
-    // Se llama cuando le das al Reset del componente en el inspector, autorrellena campos vacios.
+    // se llama al pulsar Reset en el inspector, autorrellena campos
     void Reset()
     {
         ApplyDefaultValues();
     }
 
-    // Si en la escena faltan stats o dialogos, los rellena con los valores tipicos de Peter.
+    // si en el inspector estan vacios rellena nombre, stats y dialogos con los tipicos de Peter
     void ApplyDefaultValues()
     {
         if (string.IsNullOrWhiteSpace(enemyName))

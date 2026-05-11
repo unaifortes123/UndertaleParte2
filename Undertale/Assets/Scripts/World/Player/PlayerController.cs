@@ -5,11 +5,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField]
-    float horizontalSpeed;
-    [SerializeField]
-    float verticalSpeed;
-    //[SerializeField]
-    //float speed; // segunda manerade hacerlo
+    float speed;
     [SerializeField]
     InputActionAsset actions;
 
@@ -22,6 +18,7 @@ public class PlayerController : MonoBehaviour
 
     private float lastForwardValue = 0f;
     private float lastUpValue = 0f;
+    private bool canMove = true;
 
     // Esta funcion se ejecuta al empezar la escena y deja preparado el componente.
     void Start()
@@ -39,7 +36,8 @@ public class PlayerController : MonoBehaviour
     {
         float forward;
         float up;
-        Vector2 movementForce;
+        Vector2 inputDir;
+        Vector2 movement;
         int animationValueX;
         int animationValueY;
 
@@ -49,8 +47,16 @@ public class PlayerController : MonoBehaviour
 
         CountPlayerMovement(forward, up);
 
-        movementForce = new Vector2(forward * horizontalSpeed, up * verticalSpeed);
-        rb.AddForce(movementForce);
+        if (!canMove)
+        {
+            rb.velocity = Vector2.zero;
+            return;
+        }
+
+        // Normalizamos para que en diagonal no se vaya mas rapido y aplicamos la velocidad.
+        inputDir = new Vector2(forward, up).normalized;
+        movement = inputDir * speed;
+        rb.velocity = movement;
 
         animationValueX = 0;
 
@@ -68,9 +74,12 @@ public class PlayerController : MonoBehaviour
 
         animator.SetInteger("SpeedX", animationValueX);
         animator.SetInteger("SpeedY", animationValueY);
-        // Vector2 moveInput = new Vector2 (foward, up);
-        // rb.MovePosition(rb.position + moveInput * speed * Time.deltaTime
 
+    }
+
+    public void SetCanMove(bool value)
+    {
+        canMove = value;
     }
 
     // Esta funcion suma movimientos cuando el jugador empieza a moverse en horizontal o vertical.

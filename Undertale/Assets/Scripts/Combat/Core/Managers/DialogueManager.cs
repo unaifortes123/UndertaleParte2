@@ -24,13 +24,12 @@ public class DialogueManager : MonoBehaviour
     [HideInInspector]
     public static DialogueManager instance;
 
-    // Singleton del manager de dialogos para que cualquier script pueda mandarle texto.
     void Awake()
     {
         instance = this;
     }
 
-    // Empieza un dialogo nuevo, corta el anterior si seguia activo y ejecuta el callback al terminar.
+    // arranca un dialogo nuevo. Si habia uno en marcha lo corta y limpia los audios viejos
     public void Talking(Action talkAction)
     {
         EnsureReady();
@@ -44,20 +43,20 @@ public class DialogueManager : MonoBehaviour
         talkingRoutine = StartCoroutine(DialogueRoutine(talkAction));
     }
 
-    // Si la escena trae texto inicial en dialogueTxt, lo muestra al arrancar.
     void Start()
     {
         EnsureReady();
         done = true;
         canNarrate = true;
 
+        // si la escena ya trae texto inicial puesto, lo lanza directamente
         if (!string.IsNullOrWhiteSpace(dialogueTxt))
         {
             Talking(null);
         }
     }
 
-    // Escribe primero el texto del player y, si shouldTalk esta activo, despues el del enemigo en su bocadillo.
+    // primero escribe el texto del player y, si shouldTalk esta a true, luego el del enemigo en su bocadillo
     IEnumerator DialogueRoutine(Action action)
     {
         done = false;
@@ -89,7 +88,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    // Activa el bocadillo blanco del enemigo, lo pone delante con sortingOrder y escribe su frase letra a letra.
+    // activa el bocadillo blanco del enemigo, lo pone por delante con sortingOrder y escribe la frase letra a letra
     IEnumerator EnemyTalking()
     {
         Renderer enemyBackgroundRenderer;
@@ -127,7 +126,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    // Va anadiendo letra por letra al text y reproduce un sonidito por cada caracter, estilo Undertale.
+    // animacion clasica de Undertale: añade letra por letra al texto y suena un pitido por cada una
     IEnumerator TypeText(TextMeshPro targetText, string message, AudioClip textClip)
     {
         char[] chars;
@@ -160,7 +159,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    // No avanza hasta que todos los sonidos de las letras hayan terminado de sonar, asi no se solapan dialogos.
+    // espera a que se acaben todos los pitidos antes de pasar a la siguiente fase, asi no se solapan dialogos
     IEnumerator WaitForAudioSources()
     {
         int playingSources;
@@ -192,7 +191,7 @@ public class DialogueManager : MonoBehaviour
         while (playingSources > 0);
     }
 
-    // Borra los AudioSources de la frase anterior para que no se queden acumulados en memoria.
+    // limpia los AudioSources de la frase anterior para que no se acumule en memoria
     void ClearAudioSources()
     {
         if (sources == null)
@@ -213,7 +212,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    // Inicializa la lista de sonidos y el GameObject que los aloja, por si algun dialogo se llama antes de Start.
+    // por si alguien llama Talking() antes de que se ejecute Start, inicializa la lista y el GameObject de audios
     void EnsureReady()
     {
         if (sources == null)

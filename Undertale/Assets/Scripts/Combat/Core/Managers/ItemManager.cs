@@ -9,7 +9,6 @@ public class ItemManager : MonoBehaviour
     public List<ItemButtons> buttons;
     [HideInInspector]
     public static ItemManager instance;
-    // Esta funcion guarda este manager de items para los demas scripts.
     void Awake()
     {
         instance = this;
@@ -26,16 +25,16 @@ public class ItemManager : MonoBehaviour
     public bool canAct = true;
     private PlayerVars playerStats;
 
-    // Esta funcion prepara los limites del menu ITEMS.
     void Start()
     {
         isFighting = BattleManager.battleInstance.isFighting;
+        // limites del menu segun cuantos items haya en la lista
         maxSelectionInt = buttons.Count - 1;
         minSelectionInt = 0;
         playerStats = PlayerVars.instance;
     }
 
-    // Esta funcion mueve el menu ITEMS y detecta Enter.
+    // movimiento por el menu de items, flechas y enter para confirmar
     void Update()
     {
         if (BattleManager.battleInstance != null)
@@ -97,7 +96,7 @@ public class ItemManager : MonoBehaviour
 
     }
 
-    // Esta funcion pone el corazon al lado del item marcado.
+    // mueve el alma al lado del item marcado, pero solo si ese item se puede usar todavia
     void Selecting(int selectedInt)
     {
         Vector3 fallbackPosition;
@@ -112,7 +111,7 @@ public class ItemManager : MonoBehaviour
             ShowSoul(GetSoulPosition(buttons[selectedInt].soulPosition, buttons[selectedInt].transform, fallbackPosition));
         }
     }
-    // Esta funcion quita la marca de un item.
+
     void Deselecting(int deselectionInt)
     {
         if (buttons != null && deselectionInt >= 0 && buttons.Count > deselectionInt && buttons[deselectionInt] != null)
@@ -120,7 +119,8 @@ public class ItemManager : MonoBehaviour
             buttons[deselectionInt].selected = false;
         }
     }
-    // Esta funcion actualiza que item esta marcado.
+
+    // recorre los 4 huecos, deja seleccionado el actual y quita el resto
     void Selection()
     {
 
@@ -162,7 +162,7 @@ public class ItemManager : MonoBehaviour
         }
     }
 
-    // Esta funcion abre el menu de objetos.
+    // abre el menu de items. Si no quedan items usables muestra el mensaje y cancela la apertura
     public void OpenMenu()
     {
         if (buttons != null && buttons.Count > 0)
@@ -201,7 +201,7 @@ public class ItemManager : MonoBehaviour
         }
     }
 
-    // Esta funcion usa el item seleccionado.
+    // usa el item seleccionado: cura al player, lo gasta y dispara el dialogo + turno enemigo
     void Selected()
     {
         ItemButtons selectedButton;
@@ -239,6 +239,7 @@ public class ItemManager : MonoBehaviour
                 {
                     playerStats.playerData.health += selectedButton.itemHeal;
 
+                    // cap a 20 para no curar mas del maximo
                     if (playerStats.playerData.health > 20)
                     {
                         playerStats.playerData.health = 20;
@@ -261,14 +262,14 @@ public class ItemManager : MonoBehaviour
         }
     }
 
-    // Esta funcion pasa de ITEMS al ataque del enemigo.
+    // callback al acabar la frase del item, dispara el turno enemigo
     void FinishItemDialogue()
     {
         DialogueManager.instance.shouldTalk = false;
         StartCoroutine(BattleManager.battleInstance.ItemSequence());
     }
 
-    // Esta funcion crea el texto que sale al usar un item.
+    // texto que sale al usar un item: "You used the X. You healed Y HP."
     string GetItemText(ItemButtons selectedButton)
     {
         string itemName;
@@ -277,7 +278,7 @@ public class ItemManager : MonoBehaviour
         return "*You used the " + itemName + ". You healed " + selectedButton.itemHeal + " HP.";
     }
 
-    // Esta funcion calcula donde va el corazon en ITEMS.
+    // si el boton tiene un Transform para el alma usa ese, si no lo deja a la izquierda del item
     Vector3 GetSoulPosition(Transform soulPosition, Transform optionTransform, Vector3 fallbackPosition)
     {
         if (soulPosition != null && soulPosition.IsChildOf(optionTransform))
@@ -288,7 +289,6 @@ public class ItemManager : MonoBehaviour
         return fallbackPosition;
     }
 
-    // Esta funcion muestra el corazon en la posicion indicada.
     void ShowSoul(Vector3 position)
     {
         if (BattleManager.battleInstance != null)
@@ -302,7 +302,6 @@ public class ItemManager : MonoBehaviour
         }
     }
 
-    // Esta funcion esconde el corazon en ITEMS.
     void HideSoul()
     {
         if (BattleManager.battleInstance != null)
@@ -315,7 +314,6 @@ public class ItemManager : MonoBehaviour
         }
     }
 
-    // Esta funcion recupera el corazon desde el BattleManager.
     void RefreshSoulReference()
     {
         if (soul == null && BattleManager.battleInstance != null)
@@ -324,7 +322,7 @@ public class ItemManager : MonoBehaviour
         }
     }
 
-    // Esta funcion dice si aun queda algun item usable.
+    // mira si queda al menos un item usable, asi sabe si abre el menu o muestra el mensaje
     bool HasAvailableItems()
     {
         bool hasItem;
@@ -346,7 +344,7 @@ public class ItemManager : MonoBehaviour
         return hasItem;
     }
 
-    // Esta funcion dice si este item se puede usar.
+    // un item se puede usar si no ha sido usado todavia y su GameObject sigue activo
     bool CanUseItem(ItemButtons itemButton)
     {
         bool canUse;
@@ -361,7 +359,7 @@ public class ItemManager : MonoBehaviour
         return canUse;
     }
 
-    // Esta funcion desactiva el item usado y los que sean del mismo tipo.
+    // gasta el item usado y tambien los demas del mismo tipo (asi no aparece "Mantequilla x2" duplicado)
     void DisableUsedItem(ItemButtons selectedButton)
     {
         int i;
@@ -387,7 +385,7 @@ public class ItemManager : MonoBehaviour
         }
     }
 
-    // Esta funcion mueve el corazon a un item que exista.
+    // si el item marcado ya esta gastado, va saltando hasta encontrar uno usable
     void MoveSelectionToAvailableItem()
     {
         int tries;

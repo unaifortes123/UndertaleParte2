@@ -22,14 +22,15 @@ public class ActingManager : MonoBehaviour
     public List<string> flavorText;
     public float time;
     public bool canAct = true;
-    // Esta funcion prepara los limites del menu ACT.
+
     void Start()
     {
+        // los limites del menu dependen de cuantas opciones ACT haya
         maxSelectionInt = buttons.Count - 1;
         minSelectionInt = 0;
     }
 
-    // Esta funcion mueve el menu ACT y detecta Enter.
+    // movimiento por el menu ACT con flechas + enter para confirmar
     void Update()
     {
         isFighting = BattleManager.battleInstance.isFighting;
@@ -70,6 +71,7 @@ public class ActingManager : MonoBehaviour
 
             time += Time.deltaTime;
 
+            // pequeño margen para que no se ejecute el ACT en el mismo frame que abres el menu
             if (time > 0.25f)
             {
                 if (canAct && Input.GetKeyDown(KeyCode.Return))
@@ -81,7 +83,7 @@ public class ActingManager : MonoBehaviour
         }
     }
 
-    // Esta funcion pone el corazon al lado de la opcion ACT marcada.
+    // pone el corazon al lado de la opcion ACT marcada
     void Selecting(int selectedInt)
     {
         Vector3 fallbackPosition;
@@ -97,7 +99,6 @@ public class ActingManager : MonoBehaviour
         }
     }
 
-    // Esta funcion quita la marca de una opcion ACT.
     void Deselecting(int deselectionInt)
     {
         if (buttons != null && deselectionInt >= 0 && buttons.Count > deselectionInt && buttons[deselectionInt] != null)
@@ -105,7 +106,8 @@ public class ActingManager : MonoBehaviour
             buttons[deselectionInt].selected = false;
         }
     }
-    // Esta funcion actualiza que opcion ACT esta marcada.
+
+    // recorre las 4 opciones, deja seleccionada la actual y quita el resto
     void Selection()
     {
 
@@ -147,7 +149,7 @@ public class ActingManager : MonoBehaviour
         }
     }
 
-    // Esta funcion ejecuta la opcion ACT elegida.
+    // ejecuta la opcion ACT seleccionada y suma mercy/mercyMax al total
     void Selected()
     {
         if (selectionInt == 0)
@@ -175,7 +177,7 @@ public class ActingManager : MonoBehaviour
         }
     }
 
-    // Esta funcion abre el menu de ACT.
+    // abre el menu de ACT desde fuera (lo llama BattleManager al pulsar ACT)
     public void OpenMenu()
     {
         if (buttons != null && buttons.Count > 0)
@@ -197,7 +199,7 @@ public class ActingManager : MonoBehaviour
             Selection();
         }
     }
-    // Esta funcion muestra el texto de ACT y prepara el turno del enemigo.
+    // se llama al elegir una opcion ACT: muestra el texto, suma mercy y mete el ataque del enemigo en cola
     public void OnActing(int selectedInt)
     {
         isActing = false;
@@ -216,6 +218,7 @@ public class ActingManager : MonoBehaviour
         DialogueManager.instance.Talking(FinishActDialogue);
         actObjects.SetActive(false);
 
+        // rota los textos del ACT: si hay pocos los duplica al final, si hay varios elimina el usado
         if (buttons[selectedInt].actVars.actTxt.Count > 0 && buttons[selectedInt].actVars.mercyValue.Count > 0)
         {
             if (buttons[selectedInt].actVars.actTxt.Count <= 2 || buttons[selectedInt].actVars.mercyValue.Count <= 2)
@@ -231,14 +234,14 @@ public class ActingManager : MonoBehaviour
         }
     }
 
-    // Esta funcion pasa de ACT al ataque del enemigo.
+    // callback al acabar la frase del ACT, pasa al ataque del enemigo
     void FinishActDialogue()
     {
         DialogueManager.instance.shouldTalk = false;
         StartCoroutine(BattleManager.battleInstance.ActingSequence());
     }
 
-    // Esta funcion consigue el texto de la opcion ACT.
+    // saca el texto de la opcion ACT actual, o un generico "You used X" si no esta puesto
     string GetActText(int selectedInt)
     {
         string optionName;
@@ -256,7 +259,7 @@ public class ActingManager : MonoBehaviour
         return "*You used " + optionName + ".";
     }
 
-    // Esta funcion calcula donde va el corazon en el menu ACT.
+    // si el boton tiene un Transform marcado para el alma usa ese, si no lo deja en el fallback (a su izquierda)
     Vector3 GetSoulPosition(Transform soulPosition, Transform optionTransform, Vector3 fallbackPosition)
     {
         if (soulPosition != null && soulPosition.IsChildOf(optionTransform))
@@ -267,7 +270,7 @@ public class ActingManager : MonoBehaviour
         return fallbackPosition;
     }
 
-    // Esta funcion muestra el corazon en la posicion indicada.
+    // mete el alma en la posicion indicada, prefiere delegar en el BattleManager si esta vivo
     void ShowSoul(Vector3 position)
     {
         if (BattleManager.battleInstance != null)
@@ -281,7 +284,6 @@ public class ActingManager : MonoBehaviour
         }
     }
 
-    // Esta funcion esconde el corazon en ACT.
     void HideSoul()
     {
         if (BattleManager.battleInstance != null)
@@ -294,7 +296,7 @@ public class ActingManager : MonoBehaviour
         }
     }
 
-    // Esta funcion recupera el corazon desde el BattleManager.
+    // si se queda sin referencia al alma la pilla del BattleManager
     void RefreshSoulReference()
     {
         if (soul == null && BattleManager.battleInstance != null)

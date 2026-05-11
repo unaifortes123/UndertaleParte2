@@ -4,23 +4,23 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+// se encarga de los ataques del enemigo: ejecuta la corrutina, spawnea balas y las mueve cada frame
 public class AttackManager : MonoBehaviour
 {
     public static AttackManager instance;
-    // Las balas se las pasa el enemigo al empezar el combate desde EnemyVars.pelletPrefabs.
+    // las balas las mete el enemigo desde EnemyVars.pelletPrefabs cuando empieza el combate
     [HideInInspector] public Pellet[] pelletPrefab;
-    public Attacks attacksScriptable;
+    public Attacks attacksScriptable; // scriptable con los ataques del enemigo de turno
     public bool attackFinished;
 
-    List<IFightObject> attackObject = new List<IFightObject>();
+    List<IFightObject> attackObject = new List<IFightObject>(); // todas las balas vivas ahora mismo
 
-    // Guarda la referencia singleton para que cualquier script pueda llamar al manager.
     void Awake()
     {
         instance = this;
     }
 
-    // Pide al ScriptableObject del enemigo el ataque del turno actual, o uno vacio si no hay nada asignado.
+    // pide al scriptable del enemigo el siguiente ataque, si no hay devuelve uno vacio para no petar
     public IEnumerator GetAttack()
     {
         IEnumerator attack;
@@ -39,14 +39,14 @@ public class AttackManager : MonoBehaviour
         return attack;
     }
 
-    // Lanza la corrutina del ataque del enemigo y guarda el callback de cuando termine.
+    // arranca la corrutina del ataque y guarda el callback para cuando acabe
     public void StartAttack(IEnumerator attack, Action onFinish)
     {
         attackFinished = false;
         StartCoroutine(StartAttackEnumerator(attack, onFinish));
     }
 
-    // Cada frame mueve todas las balas activas llamando a su Tick.
+    // cada frame mueve todas las balas vivas llamando a su Tick
     void Update()
     {
         int i;
@@ -68,7 +68,7 @@ public class AttackManager : MonoBehaviour
 
     }
 
-    // Instancia un prefab de bala en la posicion indicada y lo registra para que se mueva cada frame.
+    // instancia una bala del prefab indicado en la posicion dada y la registra para mover cada frame
     public void SpawnPellet(Vector2 position, PelletType type, int pelletType)
     {
         Pellet newPellet;
@@ -83,6 +83,7 @@ public class AttackManager : MonoBehaviour
         }
         else
         {
+            // si el indice se pasa o es negativo usa el primero para que no crashee el combate
             if (safePelletType < 0 || safePelletType >= pelletPrefab.Length)
             {
                 Debug.LogWarning("No existe pelletPrefab " + pelletType + ". Uso el primero para no romper el combate.");
@@ -100,18 +101,18 @@ public class AttackManager : MonoBehaviour
                 newPellet.type = type;
                 pelletAsObj = (IFightObject)newPellet;
                 pelletAsObj.Spawn();
-                attackObject.Add(pelletAsObj);
+                attackObject.Add(pelletAsObj); // la mete en la lista para que la mueva el Update
             }
         }
     }
 
-    // Corrutina vacia que se devuelve cuando un enemigo no tiene ataques configurados, evita nullref.
+    // corrutina vacia que se devuelve cuando un enemigo no tiene ataques configurados, asi evita nullref
     IEnumerator EmptyAttack()
     {
         yield return null;
     }
 
-    // Va ejecutando paso a paso la corrutina del ataque, al terminar llama al callback y borra todas las balas.
+    // ejecuta paso a paso la corrutina del ataque, al final llama al callback y borra todas las balas
     IEnumerator StartAttackEnumerator(IEnumerator attack, Action onFinish)
     {
         int i;
@@ -126,6 +127,7 @@ public class AttackManager : MonoBehaviour
             onFinish();
         }
 
+        // limpia todas las balas que quedaran vivas al acabar el ataque
         for (i = 0; i < attackObject.Count; i++)
         {
             attackObject[i].Remove();

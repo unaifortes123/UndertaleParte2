@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// componente que va en cada opcion del menu ACT, junta el GameObject con sus ActVars
 public class ActingButtons : MonoBehaviour
 {
     [HideInInspector]
     public GameObject instance;
     [HideInInspector]
     public bool selected;
-    public Transform soulPosition;
+    public Transform soulPosition; // donde se pone el alma al marcar esta opcion
     [HideInInspector]
     public ActVars actVars;
-    // Esta funcion guarda las referencias de esta opcion de ACT.
+
     void Awake()
     {
         instance = this.gameObject;

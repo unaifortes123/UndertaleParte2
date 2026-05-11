@@ -13,13 +13,13 @@ public class UIBattle : MonoBehaviour
     private GameObject[] buttons;
     private int selectedIndex = 0;
 
-    // Esta funcion se ejecuta al empezar la escena y deja preparado el componente.
     void Start()
     {
         bool canStart;
 
         canStart = true;
 
+        // si se olvida de asignar algun boton en el inspector, lo canta en consola
         if (!ButtonFight || !ButtonAct || !ButtonItem || !ButtonMercy)
         {
             Debug.LogError("Faltan botones asignados en el Inspector.");
@@ -46,13 +46,12 @@ public class UIBattle : MonoBehaviour
         }
     }
 
-    // Esta funcion se ejecuta cada frame y revisa la entrada o el estado actual.
     void Update()
     {
         HandleInput();
     }
 
-    // Esta funcion lee las teclas del jugador.
+    // flechas para moverse entre botones, enter o tab para confirmar
     void HandleInput()
     {
         if (battle && buttons != null)
@@ -88,25 +87,22 @@ public class UIBattle : MonoBehaviour
         }
     }
 
-    // Esta funcion actualiza la seleccion visual actual.
+    // hace un poco mas grande el boton seleccionado para que se vea cual esta marcado
     void UpdateSelection()
     {
         for (int i = 0; i < buttons.Length; i++)
         {
             if (i == selectedIndex)
             {
-                buttons[i].transform.localScale = Vector3.one * 1.2f; // seleccionado
+                buttons[i].transform.localScale = Vector3.one * 1.2f;
             }
             else
             {
-                buttons[i].transform.localScale = Vector3.one; // normal
+                buttons[i].transform.localScale = Vector3.one;
             }
         }
     }
 
-   
-
-    // Esta funcion activa o desactiva los botones del combate.
     public void EnableButtons(bool active)
     {
         ButtonFight.SetActive(active);
@@ -115,11 +111,11 @@ public class UIBattle : MonoBehaviour
         ButtonMercy.SetActive(active);
     }
 
-    // Esta funcion muestra un texto en pantalla.
+    // placeholder, lo deja vacio porque el texto lo gestiona el DialogueManager
     public void ShowText(string text)
     {
     }
-    // Esta funcion ejecuta la opcion MERCY.
+
     public void OnMercy()
     {
         battle.Mercy();

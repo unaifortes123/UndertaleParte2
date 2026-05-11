@@ -17,17 +17,17 @@ public class GameOverManager : MonoBehaviour
     private SpriteRenderer playerSprite;
     public GameObject gameOverScreen;
     bool initiating;
-    [SerializeField] string returnScene = "PruebaEntradaEnCombate";
+    [SerializeField] string returnScene = "MainLevel";
 
-    // Esta funcion busca el player y su sprite.
     void Start()
     {
         FindPlayerReferences();
     }
 
-    // Esta funcion comprueba si el player ha muerto.
+    // mira cada frame si la vida ha llegado a 0 para disparar la secuencia de muerte
     void Update()
     {
+        // si por lo que sea se pierde la referencia (cambio de escena, etc.) la vuelve a pillar
         if (player == null || playerSprite == null)
         {
             FindPlayerReferences();
@@ -42,7 +42,6 @@ public class GameOverManager : MonoBehaviour
         }
     }
 
-    // Esta funcion vuelve a buscar las referencias del player.
     void FindPlayerReferences()
     {
         player = FindObjectOfType<PlayerMovement>();
@@ -53,7 +52,7 @@ public class GameOverManager : MonoBehaviour
         }
     }
 
-    // Esta funcion reproduce la muerte y vuelve al ultimo guardado.
+    // secuencia de muerte: alma rota, sonido, particulas, pantalla de game over y carga del ultimo save
     IEnumerator DeathSequence()
     {
         Rigidbody2D rb;

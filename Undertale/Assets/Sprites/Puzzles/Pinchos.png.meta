@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c549bbd5bfad8864ab223f842d5105b2
+guid: fe2fb092f8492844d93506d4044d0727
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 170
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -147,91 +147,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Papyrus_LeftWalk_0
-      rect:
-        serializedVersion: 2
-        x: 159
-        y: 74
-        width: 30
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: acc2940e4cc794b40ad447cde9d6c273
-      internalID: -530681336
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Papyrus_LeftWalk_1
-      rect:
-        serializedVersion: 2
-        x: 221
-        y: 74
-        width: 40
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c38879d20f2ce394b862cc5ae8ae84b1
-      internalID: 749986709
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Papyrus_LeftWalk_2
-      rect:
-        serializedVersion: 2
-        x: 287
-        y: 74
-        width: 30
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93609e4661384af4b8acff52771a59e2
-      internalID: 140344155
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Papyrus_LeftWalk_3
-      rect:
-        serializedVersion: 2
-        x: 343
-        y: 74
-        width: 46
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1ca78a8c4bde29438815dddef9fca02
-      internalID: 192048825
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -242,11 +158,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Papyrus_LeftWalk_0: -530681336
-      Papyrus_LeftWalk_1: 749986709
-      Papyrus_LeftWalk_2: 140344155
-      Papyrus_LeftWalk_3: 192048825
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

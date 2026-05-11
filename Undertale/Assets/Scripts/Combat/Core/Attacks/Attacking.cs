@@ -3,53 +3,53 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+// el minijuego de FIGHT: la barra con el puntero que se mueve y das al espacio en el centro para hacer mas daño
 public class Attacking : MonoBehaviour
 {
     public static Attacking instance;
-    // Singleton, deja una referencia para que cualquier script pueda llamar a este componente.
     void Awake()
     {
         instance = this;
     }
     float time;
-    public float maxTime;
-    float progress;
-    float playerDamage;
-    float damageDealt;
+    public float maxTime; // cuanto tarda el puntero en cruzar la barra
+    float progress; // 0 = izquierda, 1 = derecha
+    float playerDamage; // ataque base del player que nos pasa el FightButton
+    float damageDealt; // daño final que se aplica al enemigo
     float curTime;
-    bool flicker;
+    bool flicker; // toggle del parpadeo del puntero cuando aciertas
     bool finished = true;
     public Sprite original;
     public Sprite reverse;
-    public Transform pointerObject;
-    public Vector2 leftPos;
-    public Vector2 rightPos;
+    public Transform pointerObject; // la flecha que se mueve
+    public Vector2 leftPos; // extremo izquierdo de la barra
+    public Vector2 rightPos; // extremo derecho
     EnemyVars enemy;
-    public bool isAttacking;
+    public bool isAttacking; // true mientras la barra esta moviendose
     [SerializeField] private SpriteRenderer attackBg;
-    public GameObject normal;
-    public GameObject damaged;
-    public TextMeshPro damageTxt;
+    public GameObject normal; // sprite del enemigo en estado normal
+    public GameObject damaged; // sprite del enemigo cuando recibe daño
+    public TextMeshPro damageTxt; // texto que sale con el numero de daño o "MISS"
     public Color missColor;
     public Color damageColor;
     private EnemyVars stats;
     private PlayerVars statsPl;
 
-    // Localiza al enemigo de la escena para poder consultar su defensa al calcular el dano.
     void Start()
     {
+        // pilla al enemigo activo para luego poder restarle defensa al calcular daño
         enemy = FindObjectOfType<EnemyVars>();
     }
 
-    // Devuelve el dano segun donde paras el puntero, maximo en el centro y baja a los extremos.
+    // formula del daño segun donde pares el puntero. Maximo en el centro y baja en los extremos (forma triangular)
     float PointerProgressToAttackMultiplier(float progress)
     {
         return Mathf.Min(progress * (playerDamage * 2), (1 - progress) * (playerDamage * 2));
     }
 
-    // Mueve el puntero por la barra y, al pulsar Enter, dispara el calculo de dano y los efectos visuales.
     void Update()
     {
+        // va calculando el daño potencial cada frame segun la posicion actual del puntero
         damageDealt = Mathf.Round(PointerProgressToAttackMultiplier(progress)) - enemy.defendValue;
         if (!finished)
         {
@@ -58,11 +58,12 @@ public class Attacking : MonoBehaviour
 
         if (isAttacking)
         {
+            // mueve el puntero de izquierda a derecha interpolando con el tiempo
             progress = time / maxTime;
             pointerObject.position = Vector2.Lerp(leftPos, rightPos, progress * 1.2f);
 
             time += Time.deltaTime;
-            if (time > 0.1f)
+            if (time > 0.1f) // pequeño margen para que no se pueda atacar antes de que arranque la barra
             {
                 if (Input.GetKeyDown(KeyCode.Return))
                 {
@@ -78,7 +79,7 @@ public class Attacking : MonoBehaviour
 
     }
 
-    // Activa la barra y el puntero del minijuego de FIGHT, llamado al pulsar el boton de ataque.
+    // se llama al pulsar FIGHT, activa la barra y prepara el ataque
     public void StartAttacking(float playerDmg)
     {
         isAttacking = true;
@@ -87,7 +88,7 @@ public class Attacking : MonoBehaviour
         pointerObject.gameObject.SetActive(true);
     }
 
-    // Cambia el sprite del enemigo a la version "golpeado" y muestra el numero de dano (o MISS si fue 0).
+    // cambia el sprite del enemigo al de "golpeado" y muestra el numero de daño (o MISS si fue 0)
     IEnumerator Damage()
     {
         normal.SetActive(false);
@@ -103,13 +104,14 @@ public class Attacking : MonoBehaviour
             damageTxt.text = damageDealt.ToString();
         }
         yield return new WaitForSeconds(0.5f);
+        // vuelve al estado normal
         normal.SetActive(true);
         damaged.SetActive(false);
         damageTxt.text = "";
         damageTxt.color = damageColor;
     }
 
-    // Resta vida al enemigo, espera 1 segundo y oculta la barra invirtiendo los extremos para el siguiente turno.
+    // resta vida al enemigo, oculta la barra y le da la vuelta para el siguiente turno (asi va alternando direccion)
     IEnumerator AfterAttack()
     {
         if (damageDealt > 0)
@@ -121,11 +123,12 @@ public class Attacking : MonoBehaviour
         attackBg.enabled = false;
         pointerObject.gameObject.SetActive(false);
         time = 0;
+        // invierte los extremos para que el proximo turno el puntero vaya al otro lado
         leftPos.x = leftPos.x * -1;
         rightPos.x = rightPos.x * -1;
     }
 
-    // Hace parpadear el sprite del puntero durante 0.75s alternando dos imagenes para el efecto visual.
+    // parpadeo del puntero durante 0.75s alternando dos sprites para que se vea el "golpe"
     IEnumerator Flashing()
     {
         while (curTime < 0.75f)

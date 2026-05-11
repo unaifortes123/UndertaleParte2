@@ -6,17 +6,13 @@ public class MercyTransition : MonoBehaviour
     public GameObject Dialogue;
     public GameObject battleBox;
 
-    // Este método se llamará al pulsar el botón
+    // se llama al pulsar el boton de mercy: oculta el cuadro de dialogo y muestra el battleBox
     public void OnMercyClick()
     {
         if (Dialogue != null && battleBox != null)
         {
-            // 1. Desactivamos el diálogo actual
             Dialogue.SetActive(false);
-
-            // 2. Activamos el nuevo cuadro/interfaz
             battleBox.SetActive(true);
-
         }
     }
 }

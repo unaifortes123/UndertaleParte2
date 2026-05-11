@@ -2,20 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// movimiento del corazon dentro de la caja de combate (flechas WASD)
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed;
+    public float speed; // velocidad del alma esquivando
     float xMovement;
     float yMovement;
     Rigidbody2D rb;
 
-    // Esta funcion guarda el Rigidbody del corazon.
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Esta funcion mueve el corazon con las flechas.
     void Update()
     {
         xMovement = Input.GetAxisRaw("Horizontal");
@@ -25,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    // Esta funcion para el corazon cuando se desactiva el movimiento.
+    // al desactivar el script para la velocidad para que el alma no siga moviendose sola
     void OnDisable()
     {
         if (rb != null)

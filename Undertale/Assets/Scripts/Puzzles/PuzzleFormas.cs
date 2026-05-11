@@ -5,7 +5,7 @@ public class PuzzleFormas : MonoBehaviour
     public Sprite cruz;
     public Sprite circulo;
     public Sprite triangulo;
-    public Sprite circuloVerde;
+    public Sprite trianguloVerde;
 
     private SpriteRenderer sr;
     private int estado = 0;
@@ -60,6 +60,6 @@ public class PuzzleFormas : MonoBehaviour
     public void Completar()
     {
         completado = true;
-        sr.sprite = circuloVerde;
+        sr.sprite = trianguloVerde;
     }
 }

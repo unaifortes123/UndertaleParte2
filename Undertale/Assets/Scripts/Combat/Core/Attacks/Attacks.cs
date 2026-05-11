@@ -1,18 +1,19 @@
 using System.Collections;
 using UnityEngine;
 
+// clase base de los Attacks scriptable. Cada enemigo hereda y mete sus propios ataques
 public abstract class Attacks : ScriptableObject
 {
-    // Cada enemigo define aqui que ataque hace en su turno.
+    // cada enemigo decide aqui que ataque toca en su turno
     public abstract IEnumerator GetAttack();
 
-    // Esta funcion crea un proyectil de combate en la posicion indicada.
+    // helper para spawnear una bala sin tener que escribir AttackManager.instance.SpawnPellet cada vez
     protected void SpawnPellet(Vector2 position, PelletType type, int pelletType)
     {
         AttackManager.instance.SpawnPellet(position, type, pelletType);
     }
 
-    // Esta funcion crea una espera sencilla para las corrutinas de ataque.
+    // helper para hacer "yield return Wait(0.5f)" mas corto que escribir new WaitForSeconds
     protected WaitForSeconds Wait(float seconds)
     {
         return new WaitForSeconds(seconds);

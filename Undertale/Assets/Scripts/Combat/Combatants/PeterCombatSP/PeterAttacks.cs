@@ -5,7 +5,7 @@ using UnityEngine;
 public class PeterAttacks : Attacks
 {
 
-    // Devuelve uno de los 3 ataques de Peter al azar (vomito, salto, presion desde arriba).
+    // ataque aleatorio de los 3 que tiene Peter
     public override IEnumerator GetAttack()
     {
         IEnumerator attack;
@@ -27,7 +27,7 @@ public class PeterAttacks : Attacks
         return attack;
     }
 
-    // Tira 3 vomitos en X aleatoria que caen y persiguen al player, con pausa entre cada uno.
+    // 3 vomitos cayendo en X aleatoria que persiguen al player (pellet 0 = vomito)
     IEnumerator PeterVomit()
     {
         SpawnPellet(new Vector2(Random.Range(-1.3f, 1.3f), 0.25f), PelletType.FallFollowDirect, 0);
@@ -38,7 +38,7 @@ public class PeterAttacks : Attacks
         yield return Wait(3f);
     }
 
-    // Dos balas saltan desde abajo, una en cada esquina, intentando alcanzar al player.
+    // 2 balas saltando desde abajo, una en cada esquina (pellet 1 = bala saltarina)
     IEnumerator PeterJump()
     {
         SpawnPellet(new Vector2(-1.05f, -2.725f), PelletType.JumpDirect, 1);
@@ -47,7 +47,7 @@ public class PeterAttacks : Attacks
         yield return Wait(2f);
     }
 
-    // Tres balas caen al mismo nivel desde izquierda, centro y derecha, presionando al player a moverse.
+    // 3 vomitos cayendo al mismo nivel, izq-centro-der, obligan al player a moverse en horizontal
     IEnumerator PeterPressure()
     {
         SpawnPellet(new Vector2(-1.3f, 0), PelletType.FallFollowDirect, 0);

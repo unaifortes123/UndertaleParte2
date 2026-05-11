@@ -4,32 +4,34 @@ using UnityEngine;
 
 public class PapyrusCombat : EnemyVars
 {
-    // Aplica los valores por defecto si la escena no los trae y luego deja a la base poner curHP a maxHP.
+    // mete los valores por defecto antes de que la clase base ponga curHP = maxHP
     protected override void Awake()
     {
         ApplyDefaultValues();
         base.Awake();
     }
 
-    // Se ejecuta al pulsar Reset en el componente desde Unity, util para autorrellenar campos vacios.
+    // se llama cuando le das Reset al componente en Unity, autorrellena los campos
     void Reset()
     {
         ApplyDefaultValues();
     }
 
-    // Papyrus nunca muere, se queda con 1 de vida, se rie y te deja ir.
+    // papyrus nunca muere, se queda con 1 de vida, se rie y te deja ir
     public void HandleDefeat()
     {
         BattleManager battle;
 
-        curHP = 1;
+        curHP = 1; // lo deja vivo de milagro
         battle = BattleManager.battleInstance;
 
         if (battle != null)
         {
+            // bloquea el menu para que no pueda volver a pegarle mientras se rie
             battle.LockMenuInput();
             battle.StopAllCoroutines();
 
+            // tambien corta los ataques que pudieran estar a medias
             if (AttackManager.instance != null)
             {
                 AttackManager.instance.StopAllCoroutines();
@@ -39,7 +41,7 @@ public class PapyrusCombat : EnemyVars
         }
     }
 
-    // Esta funcion espera un momento, muestra la risa de Papyrus y luego sale del combate.
+    // espera un momento, muestra el "NYEH HEH HEH" y al acabar el dialogo cierra el combate
     IEnumerator PapyrusLaugh()
     {
         BattleManager battle;
@@ -48,7 +50,7 @@ public class PapyrusCombat : EnemyVars
 
         battle = BattleManager.battleInstance;
 
-        // Al pulsar FIGHT se desactiva el texto del combate, lo volvemos a encender para que se vea la risa.
+        // al pulsar FIGHT se desactiva el texto del combate, lo vuelve a encender para que se vea la risa
         if (battle != null && battle.actingMgr != null && battle.actingMgr.actingText != null)
         {
             battle.actingMgr.actingText.gameObject.SetActive(true);
@@ -58,7 +60,7 @@ public class PapyrusCombat : EnemyVars
         {
             DialogueManager.instance.dialogueTxt = "*NYEH HEH HEH HEH HEH! You cannot defeat THE GREAT PAPYRUS!";
             DialogueManager.instance.enemyTxt = "";
-            DialogueManager.instance.Talking(FinishPapyrusDefeat);
+            DialogueManager.instance.Talking(FinishPapyrusDefeat); // callback para cerrar el combate al final
         }
         else
         {
@@ -66,7 +68,7 @@ public class PapyrusCombat : EnemyVars
         }
     }
 
-    // Esta funcion se llama cuando termina el dialogo de la risa y cierra el combate.
+    // callback que se llama cuando termina la frase, sale del combate
     void FinishPapyrusDefeat()
     {
         if (BattleManager.battleInstance != null)
@@ -75,7 +77,7 @@ public class PapyrusCombat : EnemyVars
         }
     }
 
-    // Rellena nombre, stats, dialogos y flavor text con los valores tipicos de Papyrus si estaban vacios.
+    // si en el inspector estan vacios, rellena nombre, stats, dialogos y flavor text con los tipicos de Papyrus
     void ApplyDefaultValues()
     {
         if (string.IsNullOrWhiteSpace(enemyName))
