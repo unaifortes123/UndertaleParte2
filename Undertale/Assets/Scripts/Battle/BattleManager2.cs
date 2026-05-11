@@ -65,7 +65,7 @@ public class BattleManager2 : MonoBehaviour
 
         Debug.Log("Turno enemigo");
 
-        // 👉 aquí luego llamas ataque Snowdrake
+        // aquí luego llamas ataque Snowdrake
         StartCoroutine(EnemyAttackRoutine());
     }
 

@@ -1,18 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Score : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public static int score = 0;
+
+    // Esta funcion pone el nombre del player en pantalla.
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        score = 0;
     }
 }
+
