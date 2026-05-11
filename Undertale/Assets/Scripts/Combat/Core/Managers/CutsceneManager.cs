@@ -255,15 +255,20 @@ public class CutsceneManager : MonoBehaviour
 
         yield return new WaitWhile(() => timelinesPuente[0].state == PlayState.Playing);
 
-
+        yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(puentePapyrus)
+		);
 
         timelinesPuente[1].time = 0;
         timelinesPuente[1].Play();
 
         yield return new WaitWhile(() => timelinesPuente[1].state == PlayState.Playing);
 
+        yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(puenteSans)
+		);
 
-        
+
 
         timelinesPapyrus[11].time = 0;
         timelinesPapyrus[11].Play();

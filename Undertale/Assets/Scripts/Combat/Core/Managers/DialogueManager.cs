@@ -8,9 +8,9 @@ public class DialogueManager : MonoBehaviour
 {
     [HideInInspector]
     public bool shouldTalk;
-    public TextMeshPro text;
+    public TextMeshProUGUI text;
     public GameObject enemyTextBackground;
-    public TextMeshPro textEnemy;
+    public TextMeshProUGUI textEnemy;
     public string dialogueTxt;
     public string enemyTxt;
     public AudioClip clip;
@@ -23,8 +23,15 @@ public class DialogueManager : MonoBehaviour
     public float talkingSpeed = 0.1f;
     [HideInInspector]
     public static DialogueManager instance;
+
     //cutscenes
     public DialogueLine[] lines; // 
+
+    [SerializeField] private GameObject dialoguePanel;
+    [SerializeField] private UnityEngine.UI.Image portraitImage;
+    [SerializeField] private TextMeshProUGUI textCutscene;
+
+
 
     void Awake()
     {
@@ -129,7 +136,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     // animacion clasica de Undertale: añade letra por letra al texto y suena un pitido por cada una
-    IEnumerator TypeText(TextMeshPro targetText, string message, AudioClip textClip)
+    IEnumerator TypeText(TextMeshProUGUI targetText, string message, AudioClip textClip)
     {
         char[] chars;
 
@@ -237,21 +244,30 @@ public class DialogueManager : MonoBehaviour
     {
         done = false;
 
-        lines = newLines;
+        dialoguePanel.SetActive(true);
 
-        text.text = "";
+        lines = newLines;
+        textCutscene.text = "";
 
         for (int i = 0; i < lines.Length; i++)
         {
+            if (portraitImage != null && lines[i].portrait != null)
+            {
+                portraitImage.sprite = lines[i].portrait;
+                portraitImage.enabled = true;
+            }
+
             yield return StartCoroutine(
-                TypeText(text, lines[i].text, lines[i].clip)
+                TypeText(textCutscene, lines[i].text, lines[i].clip)
             );
 
             yield return new WaitUntil(() =>
                 Input.GetKeyDown(KeyCode.Space));
         }
 
-        text.text = "";
+        textCutscene.text = "";
+
+        dialoguePanel.SetActive(false);
 
         done = true;
     }
