@@ -5,160 +5,119 @@ using UnityEngine.Events;
 
 public class DialoguePrueba : MonoBehaviour
 {
-	[SerializeField] private GameObject dialoguePanel;
-	[SerializeField] private TMP_Text dialogueText;
-	[SerializeField] private GameObject portrait;
-	[SerializeField, TextArea(4, 6)] private string[] dialogueLines;
+    //SerializeFields privados de los gameobjects necesarios
+    //donde introduciremos en el editor lo que deseamos que se le aplique
+    [SerializeField] private GameObject dialoguePanel;
+    [SerializeField] private TMP_Text dialogueText;
+    [SerializeField] private GameObject portrait;
+    [SerializeField, TextArea(4, 6)] private string[] dialogueLines;
+    //strings donde pondremos lo que queremos que digan
 
-	private bool isPlayerInRange;
-	private bool didDialogueStart;
-	private int lineIndex;
-	private bool isTyping;
+    private bool isPlayerInRange;
+    //comprobar si esta en rango el jugador
+    private bool didDialogueStart;
+    //comprobar si ha empezado el dialogo
+    private int lineIndex;
+    //la línea x la q va
+    private bool isTyping;
+    //comprobar si esta escribiendo
 
-	private float typingTime = 0.05f;
+    private float typingTime = 0.05f;
 
-	public UnityEvent onFinishDialogue;
+    public UnityEvent onFinishDialogue;
 
-	// 🔵 NUEVO: control cutscene
-	private bool isCutsceneMode = false;
+    private void Update()
+    {
+        if (!didDialogueStart && isPlayerInRange && Input.GetKeyDown(KeyCode.Space))
+        {
+            //comenzamos dialogo en el siguiente frame cuando esté en rango y no haya empezado
+            //el dialogo, también debe cumplirse que se presione el espacio
+            StartDialogue();
+        }
+        else if (didDialogueStart && Input.GetKeyDown(KeyCode.Space))
+        {
 
-	private void Update()
-	{
-		// 🔵 SI ESTAMOS EN CUTSCENE, IGNORAMOS INPUT
-		if (isCutsceneMode) return;
+            if (isTyping)
+            {
+                //sino, se salta la animación y muestra la línea completa
+                StopAllCoroutines();
+                dialogueText.text = dialogueLines[lineIndex];
+                isTyping = false;
+            }
+            else
+            {
+                NextLine();//pasamos a la siguiente línea
+            }
+        }
+    }
 
-		if (!didDialogueStart && isPlayerInRange && Input.GetKeyDown(KeyCode.Space))
-		{
-			StartDialogue();
-		}
-		else if (didDialogueStart && Input.GetKeyDown(KeyCode.Space))
-		{
-			if (isTyping)
-			{
-				StopAllCoroutines();
-				dialogueText.text = dialogueLines[lineIndex];
-				isTyping = false;
-			}
-			else
-			{
-				NextLine();
-			}
-		}
-	}
+    private void StartDialogue()
+    {//método que usaremos donde definimos cuales estan en true cuando comienza el dialogo
+        didDialogueStart = true;
+        dialoguePanel.SetActive(true);
+        portrait.SetActive(true);
 
-	private void StartDialogue()
-	{
-		didDialogueStart = true;
-		dialoguePanel.SetActive(true);
-		portrait.SetActive(true);
+        lineIndex = 0;
+        StartCoroutine(ShowLine());
+    }
 
-		lineIndex = 0;
-		StartCoroutine(ShowLine());
-	}
+    private void NextLine()
+    {
+        //siguiente línea
+        if (isTyping) return;
 
-	private void NextLine()
-	{
-		if (isTyping) return;
+        lineIndex++;
 
-		lineIndex++;
+        if (lineIndex < dialogueLines.Length)
+        {
+            StartCoroutine(ShowLine());
+        }
+        else
+        {
+            EndDialogue();//cuando sea igual o mayor se acaba el diálogo
+        }
+    }
 
-		if (lineIndex < dialogueLines.Length)
-		{
-			StartCoroutine(ShowLine());
-		}
-		else
-		{
-			EndDialogue();
-		}
-	}
+    private IEnumerator ShowLine()
+    {//mostrar línea
+        isTyping = true;
 
-	private IEnumerator ShowLine()
-	{
-		isTyping = true;
+        dialogueText.text = "";
+        //escribir letra x letra
+        foreach (char ch in dialogueLines[lineIndex])
+        {
+            dialogueText.text += ch;
+            yield return new WaitForSeconds(typingTime);
+        }
 
-		dialogueText.text = "";
+        isTyping = false;//terminar de escribir
+    }
 
-		foreach (char ch in dialogueLines[lineIndex])
-		{
-			dialogueText.text += ch;
-			yield return new WaitForSeconds(typingTime);
-		}
+    private void EndDialogue() // Esto le puedo meter lo que quiera, por ejemplo cuando termina la chapa, puedo hacer que arranque la timeline
+    {//método para cuando termine el dialogo, ponemos todo en false
+        onFinishDialogue.Invoke();
+        didDialogueStart = false;
+        dialoguePanel.SetActive(false);
+        portrait.SetActive(false);
+    }
 
-		isTyping = false;
-	}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {//Cuando colisione con el collider y esté en Trigger
+        if (collision.CompareTag("Player"))
+        {
+            //si es con el player estará en rango
+            isPlayerInRange = true;
 
-	private void EndDialogue()
-	{
-		onFinishDialogue.Invoke();
+            StartDialogue(); // AUTO START
+        }
+    }
 
-		didDialogueStart = false;
-		dialoguePanel.SetActive(false);
-		portrait.SetActive(false);
-	}
-
-	// 🟢 MODO MUNDO (trigger)
-	private void OnTriggerEnter2D(Collider2D collision)
-	{
-		if (collision.CompareTag("Player"))
-		{
-			isPlayerInRange = true;
-		}
-	}
-
-	private void OnTriggerExit2D(Collider2D collision)
-	{
-		if (collision.CompareTag("Player"))
-		{
-			isPlayerInRange = false;
-		}
-	}
-
-	// -----------------------
-	//  MODO CUTSCENE (las escenas que hay por el mapa)
-	// -----------------------
-
-	public void StartCutsceneDialogue(string[] lines)
-	{
-		isCutsceneMode = true;
-
-		dialogueLines = lines;
-
-		didDialogueStart = true;
-		dialoguePanel.SetActive(true);
-		portrait.SetActive(true);
-
-		lineIndex = 0;
-		StartCoroutine(CutsceneDialogueFlow());
-	}
-
-	private IEnumerator CutsceneDialogueFlow()
-	{
-		while (lineIndex < dialogueLines.Length)
-		{
-			yield return StartCoroutine(ShowLine());
-
-			yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space) || isCutsceneMode);
-
-			lineIndex++;
-		}
-
-		EndCutsceneDialogue();
-	}
-
-	private void EndCutsceneDialogue()
-	{
-		onFinishDialogue.Invoke();
-
-		didDialogueStart = false;
-		isCutsceneMode = false;
-
-		dialoguePanel.SetActive(false);
-		portrait.SetActive(false);
-	}
-
-	// 🔵 Para cutscenes: esperar a que termine
-	public IEnumerator WaitUntilFinished()
-	{
-		yield return new WaitUntil(() => !didDialogueStart);
-	}
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            //si no colisiona no ta en rango
+            isPlayerInRange = false;
+        }
+    }
 }

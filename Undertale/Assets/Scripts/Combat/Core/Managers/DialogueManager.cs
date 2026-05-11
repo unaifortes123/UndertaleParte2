@@ -23,6 +23,8 @@ public class DialogueManager : MonoBehaviour
     public float talkingSpeed = 0.1f;
     [HideInInspector]
     public static DialogueManager instance;
+    //cutscenes
+    public DialogueLine[] lines; // 
 
     void Awake()
     {
@@ -226,4 +228,33 @@ public class DialogueManager : MonoBehaviour
             audioHolder.transform.parent = transform;
         }
     }
+
+
+
+    //CUTSCENES (los escenario entre animaciones, timelines y charlas)
+
+    public IEnumerator ShowDialogue(DialogueLine[] newLines)
+    {
+        done = false;
+
+        lines = newLines;
+
+        text.text = "";
+
+        for (int i = 0; i < lines.Length; i++)
+        {
+            yield return StartCoroutine(
+                TypeText(text, lines[i].text, lines[i].clip)
+            );
+
+            yield return new WaitUntil(() =>
+                Input.GetKeyDown(KeyCode.Space));
+        }
+
+        text.text = "";
+
+        done = true;
+    }
+
+
 }

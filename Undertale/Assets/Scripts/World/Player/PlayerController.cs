@@ -80,6 +80,13 @@ public class PlayerController : MonoBehaviour
     public void SetCanMove(bool value)
     {
         canMove = value;
+        if (canMove == false)
+        {
+            rb.velocity = Vector2.zero;
+
+            animator.SetInteger("SpeedX", 0);
+            animator.SetInteger("SpeedY", 0);
+        }
     }
 
     // Esta funcion suma movimientos cuando el jugador empieza a moverse en horizontal o vertical.

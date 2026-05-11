@@ -15,7 +15,12 @@ public class CutsceneManager : MonoBehaviour
 	[SerializeField]
 	public List<PlayableDirector> timelinesPuente; //las timelines que aparecen en el puente (por ejemplo el perrito dando vueltas)
 
-	void Awake()
+    [SerializeField] private PlayerController playerController; // esto principalmente es para dejar al usuario paralizado, en e player controller
+                                                                // hay un set para dejar sin movimiento al player
+    [SerializeField] private DialogueLine[] puenteSans;
+    [SerializeField] private DialogueLine[] puentePapyrus;
+
+    void Awake()
 	{
 		if (Instance != null && Instance != this)
 		{
@@ -73,16 +78,21 @@ public class CutsceneManager : MonoBehaviour
 		{
 			yield return StartCoroutine(Colores());
 		}
-	}
+        else if (id == "Puente")
+        {
+            yield return StartCoroutine(Puente());
+        }
+    }
 
 	private IEnumerator SansIntro()
 	{
 		
 		Debug.Log("Empieza SansIntro");
-
-		timelinesSans[0].time = 0;
+        playerController.SetCanMove(false); // bloquear movimiento
+        timelinesSans[0].time = 0;
 		timelinesSans[0].Play();
 		yield return new WaitWhile(() => timelinesSans[0].state == PlayState.Playing);
+
 
 
 		timelinesPlayer[0].time = 0;
@@ -105,6 +115,8 @@ public class CutsceneManager : MonoBehaviour
 
 		timelinesPapyrus[1].time = 0;
 		timelinesPapyrus[1].Play();
+		playerController.SetCanMove(true); // bloquear movimiento
+
 
 		// 6. Fin cutscene
 		Debug.Log("Fin SansIntro");
@@ -113,8 +125,8 @@ public class CutsceneManager : MonoBehaviour
 	private IEnumerator SansIntro2()
 		{
 		Debug.Log("Empieza SansIntro 2");
-
-		timelinesSans[2].time = 0;
+        playerController.SetCanMove(false); // bloquear movimiento
+        timelinesSans[2].time = 0;
 		timelinesSans[2].Play();
 		yield return new WaitWhile(() => timelinesSans[2].state == PlayState.Playing);
 
@@ -126,7 +138,9 @@ public class CutsceneManager : MonoBehaviour
 		timelinesSans[3].time = 0;
 		timelinesSans[3].Play();
 		yield return new WaitWhile(() => timelinesSans[2].state == PlayState.Playing);
-		Debug.Log("Termina SansIntro 2");
+
+        playerController.SetCanMove(true); // bloquear movimiento
+        Debug.Log("Termina SansIntro 2");
 	}
 
 
@@ -220,7 +234,7 @@ public class CutsceneManager : MonoBehaviour
 	private IEnumerator Colores()
 	{
 		Debug.Log("Empieza Colores");
-
+		playerController.SetCanMove(false); // bloquear movimiento
 		timelinesPapyrus[10].time = 0;
 		timelinesPapyrus[10].Play();
 
@@ -231,5 +245,30 @@ public class CutsceneManager : MonoBehaviour
 
 		Debug.Log("Termina Colores");
 	}
+
+	private IEnumerator Puente() {
+        Debug.Log("Empieza Puente");
+        playerController.SetCanMove(false); // bloquear movimiento
+
+        timelinesPuente[0].time = 0;
+		timelinesPuente[0].Play();
+
+        yield return new WaitWhile(() => timelinesPuente[0].state == PlayState.Playing);
+
+
+
+        timelinesPuente[1].time = 0;
+        timelinesPuente[1].Play();
+
+        yield return new WaitWhile(() => timelinesPuente[1].state == PlayState.Playing);
+
+
+        
+
+        timelinesPapyrus[11].time = 0;
+        timelinesPapyrus[11].Play();
+        playerController.SetCanMove(true); // bloquear movimiento
+        Debug.Log("Termina Puente");
+    }
 }
 
