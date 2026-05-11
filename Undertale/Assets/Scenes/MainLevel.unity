@@ -2660,7 +2660,7 @@ PlayableDirector:
   m_GameObject: {fileID: 189552410}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: a2f21ebec82f66b4aa05fdecd09687e0, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 3cab9aabdcee402468f8b5800c62ff08, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -4048,6 +4048,52 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 878aadf4a88b4454cb69f36da27bd7b8, type: 3}
+--- !u!1 &313430701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 313430703}
+  - component: {fileID: 313430702}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &313430702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313430701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24fa3fe86945d154e90cfbd4eb823d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 330283950}
+  player: {fileID: 0}
+--- !u!4 &313430703
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313430701}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &318562242
 GameObject:
   m_ObjectHideFlags: 0
@@ -4331,7 +4377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 330283950}
   m_Layer: 0
-  m_Name: Spawnpoint
+  m_Name: SpawnPointStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7968,7 +8014,7 @@ MonoBehaviour:
   clip: {fileID: 0}
   enemyClip: {fileID: 0}
   done: 1
-  talkingSpeed: 0.1
+  talkingSpeed: 0.05
   lines:
   - text: 
     clip: {fileID: 0}
@@ -7985,6 +8031,8 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1081137613}
   portraitImage: {fileID: 1348966439}
   textCutscene: {fileID: 664652897}
+  dialogueRect: {fileID: 0}
+  topPosition: {x: 0, y: 0}
 --- !u!4 &659474002
 Transform:
   m_ObjectHideFlags: 0
@@ -8120,7 +8168,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 13.83432, z: 0, w: 19.763306}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -20516,37 +20564,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1662664358}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &870475271
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 870475272}
-  m_Layer: 0
-  m_Name: ConversacionesSansIntro
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &870475272
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 870475271}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &880649742
@@ -111039,11 +111056,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4033522721850996708, guid: f673ebdbf8770f540b9a876d5302a8ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 562.1
+      value: 120.2
       objectReference: {fileID: 0}
     - target: {fileID: 4033522721850996708, guid: f673ebdbf8770f540b9a876d5302a8ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -41.7
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4033522721850996708, guid: f673ebdbf8770f540b9a876d5302a8ff, type: 3}
       propertyPath: m_LocalPosition.z
@@ -113714,6 +113731,211 @@ MonoBehaviour:
   - {fileID: 822815038}
   - {fileID: 1706829448}
   playerController: {fileID: 606676829}
+  sansIntro1_1:
+  - text: Human.
+    clip: {fileID: 0}
+    portrait: {fileID: 0}
+  - text: Don't you know how to greet a new pal?
+    clip: {fileID: 0}
+    portrait: {fileID: 0}
+  - text: turn around and shake my hand
+    clip: {fileID: 0}
+    portrait: {fileID: 0}
+  sansIntro1_2:
+  - text: hehehe... the old whoopee cushion in the hand trick.
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  - text: it's ALWAYS funny.
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  - text: "anyways, \nyou're a human, right?"
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  - text: that's hilarious.
+    clip: {fileID: 0}
+    portrait: {fileID: 41168651, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  - text: 'I''m Sans.
+
+      Sans the skeleton.'
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  - text: im actually supposted to be on watch for humans right now.
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  - text: but... y'know...
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  - text: now my brother, is Papyrus...
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  - text: i don't really care about capturing anybody.
+    clip: {fileID: 0}
+    portrait: {fileID: 41168651, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  - text: he's a human-hunting FANATIC
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  - text: hey, actually, I think thats jim over there.
+    clip: {fileID: 0}
+    portrait: {fileID: 41168651, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  - text: 'I have an idea.
+
+      go through this gate thingy.'
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  - text: 'Yeah, go right through.
+
+      my bro made the bars too wide to stop anyone.'
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  sansIntro1_3:
+  - text: quick, behind that conveniently-shaped lamp.
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  sansIntro1_4:
+  - text: sup, bro?
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  sansIntro1_5:
+  - text: 'starting at this lamp.
+
+      it''s really cool.
+
+      do you wanna look?'
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  sansIntro1_6:
+  - text: hmm...
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  - text: maybe this lamp will help you.
+    clip: {fileID: 0}
+    portrait: {fileID: 41168651, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  sansIntro1_7:
+  - text: 'hey, take it easy.
+
+      I''ve gotten a TON of work done today'
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  - text: a skele-TON.
+    clip: {fileID: 0}
+    portrait: {fileID: -1438645988, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  sansIntro1_8:
+  - text: 'come on.
+
+      you''re smiling.'
+    clip: {fileID: 0}
+    portrait: {fileID: 41168651, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  sansIntro1_9:
+  - text: wow, sounds like you're really working yourself...
+    clip: {fileID: 0}
+    portrait: {fileID: 41168651, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  - text: down to the bone.
+    clip: {fileID: 0}
+    portrait: {fileID: -1438645988, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  sansIntro1_10:
+  - text: ok, you can come out now.
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+  papyrusIntro_1:
+  - text: "YOU KNOW WHAT \xB7 SUP, \xB7 BROTHER!"
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+  - text: IT'S BEEN EIGHT DAYS AND YOU STILL HAVEN'T...
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+  - text: 'RECALIBRATED.
+
+      YOUR.
+
+      PUZZLES!'
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+  - text: YOU JUST HANG AROUND OUTSIDE YOUR STATION!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+  - text: WHAT ARE YOU EVEN DOING?!?
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+  papyrusIntro1_2:
+  - text: 'NO!!
+
+      I DON''T HAVE TIME FOR THAT!!'
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+  - text: WHAT IF A HUMAN COMES THROUGH HERE?!?
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+  - text: I WANT TO BE READY!!!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+  - text: 'I WILL BE THE ONE!!
+
+      I MUST  BE THE ONE!!'
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+  - text: I WILL CAPTURE A HUMAN!!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+  - text: WILL GET ALL THE THINGS I UTTERLY DESERVE!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+  - text: 'RESPECT...
+
+      RECOGNITION...'
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+  - text: i WILL FINALY BE ABLE TO JOIN THE ROYAL GUARD!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+  - text: "PEOPLE WILL ASK, TO, BE MY, \xB7FRIEND?\xB7"
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+  - text: I WILL BATHE IN A SHOWER OF KISSES EVERY MORNING
+    clip: {fileID: 0}
+    portrait: {fileID: 1255626573, guid: a88a634ad426aee45a4177a0860be1f0, type: 3}
+  papyrusIntro1_3:
+  - text: ALL YOU DO IS SIT AND BOONDOOGLE!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+  - text: YOU GET LAZIER AND LAZIER EVERY DAY!!!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+  papyrusIntro1_4:
+  - text: SANS!!!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+  papyrusIntro1_5:
+  - text: I AM AND I HATE IT!
+    clip: {fileID: 0}
+    portrait: {fileID: -1800582828, guid: fd74a61972a5bd24bad9101b84429792, type: 3}
+  - text: SIGH...
+    clip: {fileID: 0}
+    portrait: {fileID: -1842715871, guid: c1750a7c9aa5f53498fe29eb0cc4bf35, type: 3}
+  - text: WHY DOES SOMEONE AS GREAT AS ME...
+    clip: {fileID: 0}
+    portrait: {fileID: 1255626573, guid: a88a634ad426aee45a4177a0860be1f0, type: 3}
+  - text: HAVE TO DO SO MUCH JUST TO GET SOME RECOGNITION...
+    clip: {fileID: 0}
+    portrait: {fileID: -1842715871, guid: c1750a7c9aa5f53498fe29eb0cc4bf35, type: 3}
+  papyrusIntro1_6:
+  - text: UGH!!!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+  - text: I WILL ATTEND TO MY PUZZLES...
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+  - text: AS FOR YOUR WORK?
+    clip: {fileID: 0}
+    portrait: {fileID: -1842715871, guid: c1750a7c9aa5f53498fe29eb0cc4bf35, type: 3}
+  - text: PUT A LITTLE MORE...
+    clip: {fileID: 0}
+    portrait: {fileID: -1842715871, guid: c1750a7c9aa5f53498fe29eb0cc4bf35, type: 3}
+  - text: "\xB7BACKBONE\xB7 INTO IT!!!!!"
+    clip: {fileID: 0}
+    portrait: {fileID: -1800582828, guid: fd74a61972a5bd24bad9101b84429792, type: 3}
+  - text: NYEHEHEHEHEHEHEHEHEHEHEHEHEHE!!!
+    clip: {fileID: 0}
+    portrait: {fileID: 1255626573, guid: a88a634ad426aee45a4177a0860be1f0, type: 3}
   puenteSans:
   - text: sans1
     clip: {fileID: 0}
@@ -128118,9 +128340,10 @@ SceneRoots:
   - {fileID: 1770691994}
   - {fileID: 1528648192}
   - {fileID: 1769228023}
+  - {fileID: 313430703}
+  - {fileID: 330283950}
   - {fileID: 1442679837}
   - {fileID: 659474002}
-  - {fileID: 870475272}
   - {fileID: 394939279}
   - {fileID: 1121389232}
   - {fileID: 1225574247}
@@ -128245,4 +128468,3 @@ SceneRoots:
   - {fileID: 1722075013}
   - {fileID: 1167850594}
   - {fileID: 1008009406}
-  - {fileID: 330283950}

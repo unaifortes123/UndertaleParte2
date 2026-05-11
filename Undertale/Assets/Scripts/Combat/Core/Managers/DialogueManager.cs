@@ -30,10 +30,15 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private UnityEngine.UI.Image portraitImage;
     [SerializeField] private TextMeshProUGUI textCutscene;
+    //esto es para poder mover canva hacia arriba   
+	[SerializeField] private RectTransform dialogueRect;
+	[SerializeField] private Vector2 topPosition;
+
+	private Vector2 originalPosition;
 
 
 
-    void Awake()
+	void Awake()
     {
         instance = this;
     }
@@ -58,8 +63,10 @@ public class DialogueManager : MonoBehaviour
         done = true;
         canNarrate = true;
 
-        // si la escena ya trae texto inicial puesto, lo lanza directamente
-        if (!string.IsNullOrWhiteSpace(dialogueTxt))
+		originalPosition = dialogueRect.anchoredPosition; // guardo posicion original del canva
+
+		// si la escena ya trae texto inicial puesto, lo lanza directamente
+		if (!string.IsNullOrWhiteSpace(dialogueTxt))
         {
             Talking(null);
         }
@@ -271,6 +278,15 @@ public class DialogueManager : MonoBehaviour
 
         done = true;
     }
+    // estos setters son para poder mover el canvas, arriba o resetar la posicion, que es abajo de normal 
+	public void SetDialogueTop()
+	{
+		dialogueRect.anchoredPosition = topPosition;
+	}
 
+	public void ResetDialoguePosition()
+	{
+		dialogueRect.anchoredPosition = originalPosition;
+	}
 
 }

@@ -16,8 +16,31 @@ public class CutsceneManager : MonoBehaviour
 	public List<PlayableDirector> timelinesPuente; //las timelines que aparecen en el puente (por ejemplo el perrito dando vueltas)
 
     [SerializeField] private PlayerController playerController; // esto principalmente es para dejar al usuario paralizado, en e player controller
-                                                                // hay un set para dejar sin movimiento al player
-    [SerializeField] private DialogueLine[] puenteSans;
+																// hay un set para dejar sin movimiento al player
+
+
+	// ESTO SON LOS DIALOGOS, LISTAS QUE CONTIENEN LA INFO DE LO QUE DICEN, esta clasificado por las zonas :)
+	[SerializeField] private DialogueLine[] sansIntro1_1;
+	[SerializeField] private DialogueLine[] sansIntro1_2;
+	[SerializeField] private DialogueLine[] sansIntro1_3;
+	[SerializeField] private DialogueLine[] sansIntro1_4;
+	[SerializeField] private DialogueLine[] sansIntro1_5;
+	[SerializeField] private DialogueLine[] sansIntro1_6;
+	[SerializeField] private DialogueLine[] sansIntro1_7;
+	[SerializeField] private DialogueLine[] sansIntro1_8;
+	[SerializeField] private DialogueLine[] sansIntro1_9;
+	[SerializeField] private DialogueLine[] sansIntro1_10;
+
+	[SerializeField] private DialogueLine[] papyrusIntro_1;
+	[SerializeField] private DialogueLine[] papyrusIntro1_2;
+	[SerializeField] private DialogueLine[] papyrusIntro1_3;
+	[SerializeField] private DialogueLine[] papyrusIntro1_4;
+	[SerializeField] private DialogueLine[] papyrusIntro1_5;
+	[SerializeField] private DialogueLine[] papyrusIntro1_6;
+
+
+	// DIALOGOS ZONAPUENTE
+	[SerializeField] private DialogueLine[] puenteSans;
     [SerializeField] private DialogueLine[] puentePapyrus;
 
     void Awake()
@@ -93,7 +116,12 @@ public class CutsceneManager : MonoBehaviour
 		timelinesSans[0].Play();
 		yield return new WaitWhile(() => timelinesSans[0].state == PlayState.Playing);
 
-
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(sansIntro1_1)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(sansIntro1_2)
+		);
 
 		timelinesPlayer[0].time = 0;
 		timelinesPlayer[0].Play();
@@ -103,18 +131,67 @@ public class CutsceneManager : MonoBehaviour
 
 		yield return new WaitWhile(() => timelinesPlayer[0].state == PlayState.Playing);
 
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(sansIntro1_3)
+		);
+
 		timelinesPlayer[1].time = 0;
 		timelinesPlayer[1].Play();
-
 		yield return new WaitWhile(() => timelinesPlayer[1].state == PlayState.Playing);
+
 
 		timelinesPapyrus[0].time = 0;
 		timelinesPapyrus[0].Play();
 
 		yield return new WaitWhile(() => timelinesPapyrus[0].state == PlayState.Playing);
 
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(sansIntro1_4)
+		);
+
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusIntro_1)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(sansIntro1_5)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusIntro1_2)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(sansIntro1_6)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusIntro1_3)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(sansIntro1_7)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusIntro1_4)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(sansIntro1_8)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusIntro1_5)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(sansIntro1_9)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusIntro1_6)
+		);
+
 		timelinesPapyrus[1].time = 0;
 		timelinesPapyrus[1].Play();
+		yield return new WaitWhile(() => timelinesPapyrus[1].state == PlayState.Playing);
+
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(sansIntro1_10)
+		);
+
+		
 		playerController.SetCanMove(true); // bloquear movimiento
 
 
