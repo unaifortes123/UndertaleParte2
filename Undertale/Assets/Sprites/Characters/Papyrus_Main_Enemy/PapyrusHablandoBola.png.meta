@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 16d80fa2ee89ad44a846c571c925aa2e
+guid: 5b4b1eac863615d43b43c36f6768d1bf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,69 +93,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Papyrus_TopWalk_0
+      name: PapyrusHablandoBola_0
       rect:
         serializedVersion: 2
-        x: 148
-        y: 57
-        width: 50
-        height: 84
+        x: 16
+        y: 19
+        width: 105
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1783119831f141a46bb49d97bba984d1
-      internalID: -259332645
+      spriteID: 5d1ecc2aab5705f4b92b8eacf85cb86e
+      internalID: -1981178901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Papyrus_TopWalk_1
+      name: PapyrusHablandoBola_1
       rect:
         serializedVersion: 2
-        x: 212
-        y: 57
-        width: 50
-        height: 82
+        x: 169
+        y: 19
+        width: 105
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,50 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8c37da85fd2d464eaf83c401bed2bbf
-      internalID: 315257771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Papyrus_TopWalk_2
-      rect:
-        serializedVersion: 2
-        x: 276
-        y: 57
-        width: 50
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d21ecf717e3a33429f759c289d4d1b6
-      internalID: 1456107096
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Papyrus_TopWalk_3
-      rect:
-        serializedVersion: 2
-        x: 340
-        y: 57
-        width: 50
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f2ebf1145be9dd41ae5afbaf3bb63f9
-      internalID: 2115372405
+      spriteID: 9571f83b75bf07342a6d8d6c09cabeab
+      internalID: -22366856
       vertices: []
       indices: 
       edges: []
@@ -243,10 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Papyrus_TopWalk_0: -259332645
-      Papyrus_TopWalk_1: 315257771
-      Papyrus_TopWalk_2: 1456107096
-      Papyrus_TopWalk_3: 2115372405
+      PapyrusHablandoBola_0: -1981178901
+      PapyrusHablandoBola_1: -22366856
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

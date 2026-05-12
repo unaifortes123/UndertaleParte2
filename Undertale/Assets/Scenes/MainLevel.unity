@@ -3964,7 +3964,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 384006121, guid: 168867728614c8f42b7393f71faf0051, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3985,7 +3985,7 @@ Transform:
   m_GameObject: {fileID: 306426563}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 188.71016, y: -4.030644, z: 0}
+  m_LocalPosition: {x: 188, y: -5.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6539,6 +6539,112 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b130c105f55178e429b27c79f5aea78d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &533495841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 533495844}
+  - component: {fileID: 533495843}
+  - component: {fileID: 533495842}
+  m_Layer: 0
+  m_Name: Papyrus_TopWalk_0 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &533495842
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533495841}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bb7e37ed06645724bb8b864a701ba1c1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!212 &533495843
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533495841}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -259332645, guid: 16d80fa2ee89ad44a846c571c925aa2e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.25, y: 2.1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &533495844
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533495841}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 255.63303, y: -8.459196, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &550053077
 GameObject:
   m_ObjectHideFlags: 0
@@ -6758,6 +6864,112 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 184.15, y: -3.84, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &561693501
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 561693504}
+  - component: {fileID: 561693503}
+  - component: {fileID: 561693502}
+  m_Layer: 0
+  m_Name: PapyrusHablandoAbajo_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &561693502
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561693501}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 61af9ede7bb058d41b85cc3af24e8b50, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!212 &561693503
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561693501}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 729513136, guid: fce8576c2453f1747af557b33530ec3e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.57, y: 4.3}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &561693504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561693501}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 260.04523, y: -7.0887413, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7617,6 +7829,112 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &634200813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 634200816}
+  - component: {fileID: 634200815}
+  - component: {fileID: 634200814}
+  m_Layer: 0
+  m_Name: PapyrusHablandoBola_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &634200814
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634200813}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dff25d124da46624bbccea6ce024c3c8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!212 &634200815
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634200813}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -1981178901, guid: 5b4b1eac863615d43b43c36f6768d1bf, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.05, y: 2.01}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &634200816
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634200813}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 262.24796, y: -9.945238, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &639790892
 GameObject:
   m_ObjectHideFlags: 0
@@ -8037,7 +8355,7 @@ MonoBehaviour:
   textCutscene: {fileID: 664652897}
   papyrusAnimation: {fileID: 6818329482532474419}
   dialogueRect: {fileID: 1081137614}
-  topPosition: {x: 0, y: 250}
+  topPosition: {x: -100, y: 250}
 --- !u!4 &659474002
 Transform:
   m_ObjectHideFlags: 0
@@ -8514,7 +8832,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -850877932, guid: 2389dadfe1a24b84691120602cb64e02, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8535,7 +8853,7 @@ Transform:
   m_GameObject: {fileID: 684056507}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 264.63, y: -8.08, z: 0}
+  m_LocalPosition: {x: 273.79, y: -4.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -111061,11 +111379,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4033522721850996708, guid: f673ebdbf8770f540b9a876d5302a8ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 120.2
+      value: 255.09
       objectReference: {fileID: 0}
     - target: {fileID: 4033522721850996708, guid: f673ebdbf8770f540b9a876d5302a8ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.1
+      value: 1.72
       objectReference: {fileID: 0}
     - target: {fileID: 4033522721850996708, guid: f673ebdbf8770f540b9a876d5302a8ff, type: 3}
       propertyPath: m_LocalPosition.z
@@ -113736,6 +114054,14 @@ MonoBehaviour:
   - {fileID: 822815038}
   - {fileID: 1706829448}
   playerController: {fileID: 606676829}
+  sansUpSprite: {fileID: -1707456256, guid: ac14b9303eddb2c448d0ed9a348af6cf, type: 3}
+  papyrusUpSprite: {fileID: -259332645, guid: 16d80fa2ee89ad44a846c571c925aa2e, type: 3}
+  sansDownSprite: {fileID: 384006121, guid: e3b46596243673947ac4b5b7164334cb, type: 3}
+  papyrusDownSprite: {fileID: -850877932, guid: 2389dadfe1a24b84691120602cb64e02, type: 3}
+  sansSprite: {fileID: 531737487102177767}
+  papyrusSprite: {fileID: 6818329482532474420}
+  sans: {fileID: 531737487102177768}
+  papyrus: {fileID: 6818329482532474421}
   papyrusAnimation: {fileID: 6818329482532474419}
   sansIntro1_1:
   - text: Human.
@@ -113793,7 +114119,7 @@ MonoBehaviour:
     clip: {fileID: 0}
     portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
     animationName: 
-  - text: hey, actually, I think thats jim over there.
+  - text: hey, actually, I think thats him over there.
     clip: {fileID: 0}
     portrait: {fileID: 41168651, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
     animationName: 
@@ -114001,6 +114327,308 @@ MonoBehaviour:
     clip: {fileID: 0}
     portrait: {fileID: 1255626573, guid: a88a634ad426aee45a4177a0860be1f0, type: 3}
     animationName: PapyrusHablandoEnfadado
+  sansIntro2_1:
+  - text: uhhhhh...
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+    animationName: 
+  - text: actually, i think that's a rock.
+    clip: {fileID: 0}
+    portrait: {fileID: 41168651, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+    animationName: 
+  sansIntro2_2:
+  - text: hey, what's that in front of the rock?
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+    animationName: 
+  sansIntro2_3:
+  - text: (yes)
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+    animationName: 
+  sansIntro2_4:
+  - text: well, that went well.
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+    animationName: 
+  - text: don't sweat it, kid
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+    animationName: 
+  - text: i'll keep an eyesocket out for ya.
+    clip: {fileID: 0}
+    portrait: {fileID: -1438645988, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+    animationName: 
+  papyrusIntro2_1:
+  - text: SO, I  WAS SAYING ABOUT UNDYNE,
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: 
+  papyrusIntro2_2:
+  - text: 'SANS!!
+
+      OH MY GOD!!
+
+      IS THAT...'
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: 'A HUMAN!?!?!?!?!
+
+      !?!?!?!?'
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  papyrusIntro2_3:
+  - text: OH.
+    clip: {fileID: 0}
+    portrait: {fileID: -1842715871, guid: c1750a7c9aa5f53498fe29eb0cc4bf35, type: 3}
+    animationName: 
+  papyrusIntro2_4:
+  - text: OH MY GOD!!!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: (IS... IS THAT A HUMAN)
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  papyrusIntro2_5:
+  - text: OH MY GOD!!!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: 'SANS!
+
+      I FINALLY DID IT!!
+
+'
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: UNDYNE WILL...
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: I'M GONNA...
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: I'LL BE SO...
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: 'POPULAR!!!
+
+      POPULAR!!!
+
+      POPULAR!!!'
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: ... 'AHEM'
+    clip: {fileID: 0}
+    portrait: {fileID: -1842715871, guid: c1750a7c9aa5f53498fe29eb0cc4bf35, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: 'HUMAN!
+
+      SHALL NOT PASS THIS AREA!'
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: PapyrusHablandoEnfadado
+  - text: I, THE GREAT PAPYRUS, WILL STOP YOU!!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: PapyrusHablandoEnfadado
+  - text: I WILL THEN CAPTURE YOU!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: PapyrusHablandoEnfadado
+  - text: YOU WILL BE DELIVERED TO THE CAPITAL!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: PapyrusHablandoEnfadado
+  - text: 'THEN...
+
+      THEN!!!'
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: PapyrusHablandoEnfadado
+  - text: I'M NOT SURE WHAT'S THE NEXT.
+    clip: {fileID: 0}
+    portrait: {fileID: -1842715871, guid: c1750a7c9aa5f53498fe29eb0cc4bf35, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: IN ANY CASE!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: PapyrusHablandoEnfadado
+  - text: 'CONTINUE...
+
+      ONLY IF YOU DARE!!!'
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: PapyrusHablandoEnfadado
+  - text: NYEH HEH HEH HEH HEH HEH HEH HEH HEH HEH !!!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  sansMinijuegoElectrico_1:
+  - text: i think that's called...
+    clip: {fileID: 0}
+    portrait: {fileID: 2147312131, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+    animationName: 
+  - text: sleeping.
+    clip: {fileID: 0}
+    portrait: {fileID: 41168651, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+    animationName: 
+  sansMinijuegoElectrico_2:
+  - text: i think the human has to hold the orb.
+    clip: {fileID: 0}
+    portrait: {fileID: 41168651, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+    animationName: 
+  papyrusMinijuegoElectrico_1:
+  - text: YOU'RE SO LAZY!!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: PapyrusHablandoArriba
+  - text: YOU WERE NAPPING ALL NIGHT!!!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: PapyrusHablandoArriba
+  papyrusMinijuegoElectrico_2:
+  - text: 'EXCUSES,
+
+      EXCUSES!'
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: PapyrusHablandoArriba
+  papyrusMinijuegoElectrico_3:
+  - text: 'OH-HO!
+
+      THE HUMAN ARRIVES!'
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: IN ORDER TO STOP YOU...
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: MY BROTHER AND I HAVE CREATED SOME PUZZLES!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: I THINK YOU WILL FIND THIS ONE...
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: QUITE SHOCKING!!!
+    clip: {fileID: 0}
+    portrait: {fileID: 1255626573, guid: a88a634ad426aee45a4177a0860be1f0, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: FOR YOU SEE, THIS IS THE INVISIBLE...
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: ELECTRICITY MAZE!!!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: WHEN YOU TOUCH THE WALLS OF THIS MAZE,
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: THIS ORB WILL ADMINISTER A HEARTY ZAP!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: AnimationPapyrusHablandoBola
+  - text: SOUNDS LIKE FUN???
+    clip: {fileID: 0}
+    portrait: {fileID: 1255626573, guid: a88a634ad426aee45a4177a0860be1f0, type: 3}
+    animationName: AnimationPapyrusHablandoBola
+  - text: BECAUSE!
+    clip: {fileID: 0}
+    portrait: {fileID: 1255626573, guid: a88a634ad426aee45a4177a0860be1f0, type: 3}
+    animationName: AnimationPapyrusHablandoBola
+  - text: THE AMOUNT OF FUN YOU WILL PROBABLY HAVE,
+    clip: {fileID: 0}
+    portrait: {fileID: 1255626573, guid: a88a634ad426aee45a4177a0860be1f0, type: 3}
+    animationName: AnimationPapyrusHablandoBola
+  - text: IS ACTUALLY RATHER SMALL I THINK.
+    clip: {fileID: 0}
+    portrait: {fileID: -1842715871, guid: c1750a7c9aa5f53498fe29eb0cc4bf35, type: 3}
+    animationName: AnimationPapyrusHablandoBola
+  - text: OK, YOU CAN GO AHEAD NOW.
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: AnimationPapyrusHablandoBola
+  papyrusMinijuegoElectrico_4:
+  - text: '*BZZZZZZZZZZ*'
+    clip: {fileID: 0}
+    portrait: {fileID: -682651313, guid: b9395c11ede053c4e8461e4efb4d28ab, type: 3}
+    animationName: AnimacionPapyrusElectrocutado
+  - text: '*FFFFFFFSSS*'
+    clip: {fileID: 0}
+    portrait: {fileID: -682651313, guid: b9395c11ede053c4e8461e4efb4d28ab, type: 3}
+    animationName: AnimacionPapyrusQuemado
+  papyrusMinijuegoElectrico_5:
+  - text: SANS!!!
+    clip: {fileID: 0}
+    portrait: {fileID: 22450378, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: PapyrusEnfado1
+  papyrusMinijuegoElectrico_6:
+  - text: OH, OKAY,
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: 
+  papyrusMinijuegoElectrico_7:
+  - text: HOLD THIS PLEASE!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: AnimacionPapyrusHablandoBola
+  papyrusMinijuegoElectrico_8:
+  - text: OKAY, TRY NOW!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  papyrusMinijuegoElectrico_9:
+  - text: 'INCREDIBLE!!
+
+      YOU SLIPPERY SNAIL!!
+
+'
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: PapyrusHablandoAbajo
+  - text: 'YOU SOLVED IT SO EASILY...
+
+      TO EASILY!'
+    clip: {fileID: 0}
+    portrait: {fileID: -1842715871, guid: c1750a7c9aa5f53498fe29eb0cc4bf35, type: 3}
+    animationName: PapyrusHablandoAbajo
+  - text: HOWEVER!!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: PapyrusHablandoAbajo
+  - text: THE NEXT PUZZLE WILL NOT BE EASY!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: PapyrusHablandoAbajo
+  - text: IT IS DESIGNED BY MY BROTHER, SANS!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: PapyrusHablandoAbajo
+  - text: YOU WILL SURELY BE CONFOUNDED!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: PapyrusHablandoAbajo
+  - text: I KNOW I AM!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: PapyrusHablandoAbajo
+  - text: NYEH HEH HEH HEH HEH HEH!!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: PapyrusHablandoAbajo
   puenteSans:
   - text: sans1
     clip: {fileID: 0}
@@ -115600,6 +116228,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9071382332662847861, guid: 504ec7d8d7c653c41b7fd7604a2e8030, type: 3}
   m_PrefabInstance: {fileID: 1577283705}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1584699818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1584699820}
+  - component: {fileID: 1584699819}
+  m_Layer: 0
+  m_Name: Papyrus_TopWalk_0 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1584699819
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584699818}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: -259332645, guid: 16d80fa2ee89ad44a846c571c925aa2e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.25, y: 2.1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1584699820
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584699818}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 188.021, y: -11.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1594080045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -128149,11 +128861,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2367895919847230956, guid: a4800459d38279a4cbc0414e0b321c6e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 577.75
+      value: 283.17
       objectReference: {fileID: 0}
     - target: {fileID: 2367895919847230956, guid: a4800459d38279a4cbc0414e0b321c6e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -38.81
+      value: 5.07
       objectReference: {fileID: 0}
     - target: {fileID: 2367895919847230956, guid: a4800459d38279a4cbc0414e0b321c6e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -128199,6 +128911,16 @@ PrefabInstance:
 --- !u!95 &531737487102177766 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: -9133734148461217031, guid: a4800459d38279a4cbc0414e0b321c6e, type: 3}
+  m_PrefabInstance: {fileID: 531737487102177765}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &531737487102177767 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8825434769244364425, guid: a4800459d38279a4cbc0414e0b321c6e, type: 3}
+  m_PrefabInstance: {fileID: 531737487102177765}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &531737487102177768 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2367895919847230956, guid: a4800459d38279a4cbc0414e0b321c6e, type: 3}
   m_PrefabInstance: {fileID: 531737487102177765}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &689903372698993020
@@ -128348,6 +129070,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dd7ef86f76ac9642961d1ec40a379ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!212 &6818329482532474420 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5582889273897394276, guid: 2a129638974b7f84a90be4499a4557d3, type: 3}
+  m_PrefabInstance: {fileID: 6818329482532474417}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6818329482532474421 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2127177726804533016, guid: 2a129638974b7f84a90be4499a4557d3, type: 3}
+  m_PrefabInstance: {fileID: 6818329482532474417}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8691367320163359183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -128557,3 +129289,7 @@ SceneRoots:
   - {fileID: 1722075013}
   - {fileID: 1167850594}
   - {fileID: 1008009406}
+  - {fileID: 1584699820}
+  - {fileID: 634200816}
+  - {fileID: 561693504}
+  - {fileID: 533495844}

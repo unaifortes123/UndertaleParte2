@@ -18,9 +18,25 @@ public class CutsceneManager : MonoBehaviour
     [SerializeField] private PlayerController playerController; // esto principalmente es para dejar al usuario paralizado, en e player controller
 																// hay un set para dejar sin movimiento al player
 
+	// Guardar sprites para la escena
+
+	[SerializeField] private Sprite sansUpSprite;
+	[SerializeField] private Sprite papyrusUpSprite;
+
+	[SerializeField] private Sprite sansDownSprite;
+	[SerializeField] private Sprite papyrusDownSprite;
+
+	[SerializeField] private SpriteRenderer sansSprite;
+	[SerializeField] private SpriteRenderer papyrusSprite;
+
+	//Posicion de sans y papyrus
+	[SerializeField] private Transform sans;
+	[SerializeField] private Transform papyrus;
+
 
 	[SerializeField] private PapyrusAnimationController papyrusAnimation; //vincular el cdigo para coger las animaciones de papyrus
-																		  // ESTO SON LOS DIALOGOS, LISTAS QUE CONTIENEN LA INFO DE LO QUE DICEN, esta clasificado por las zonas :)
+															  // ESTO SON LOS DIALOGOS, LISTAS QUE CONTIENEN LA INFO DE LO QUE DICEN, esta clasificado por las zonas :)
+	// zona intro 1
 	[SerializeField] private DialogueLine[] sansIntro1_1;
 	[SerializeField] private DialogueLine[] sansIntro1_2;
 	[SerializeField] private DialogueLine[] sansIntro1_3;
@@ -38,6 +54,35 @@ public class CutsceneManager : MonoBehaviour
 	[SerializeField] private DialogueLine[] papyrusIntro1_4;
 	[SerializeField] private DialogueLine[] papyrusIntro1_5;
 	[SerializeField] private DialogueLine[] papyrusIntro1_6;
+
+
+	//zona intro 2
+	[SerializeField] private DialogueLine[] sansIntro2_1;
+	[SerializeField] private DialogueLine[] sansIntro2_2;
+	[SerializeField] private DialogueLine[] sansIntro2_3;
+	[SerializeField] private DialogueLine[] sansIntro2_4;
+
+	[SerializeField] private DialogueLine[] papyrusIntro2_1;
+	[SerializeField] private DialogueLine[] papyrusIntro2_2;
+	[SerializeField] private DialogueLine[] papyrusIntro2_3;
+	[SerializeField] private DialogueLine[] papyrusIntro2_4;
+	[SerializeField] private DialogueLine[] papyrusIntro2_5;
+
+	//Zona MinijuegoElectrico
+	[SerializeField] private DialogueLine[] sansMinijuegoElectrico_1;
+	[SerializeField] private DialogueLine[] sansMinijuegoElectrico_2;
+
+
+	[SerializeField] private DialogueLine[] papyrusMinijuegoElectrico_1;
+	[SerializeField] private DialogueLine[] papyrusMinijuegoElectrico_2;
+	[SerializeField] private DialogueLine[] papyrusMinijuegoElectrico_3;
+	[SerializeField] private DialogueLine[] papyrusMinijuegoElectrico_4;
+	[SerializeField] private DialogueLine[] papyrusMinijuegoElectrico_5;
+	[SerializeField] private DialogueLine[] papyrusMinijuegoElectrico_6;
+	[SerializeField] private DialogueLine[] papyrusMinijuegoElectrico_7;
+	[SerializeField] private DialogueLine[] papyrusMinijuegoElectrico_8;
+	[SerializeField] private DialogueLine[] papyrusMinijuegoElectrico_9;
+
 
 
 	// DIALOGOS ZONAPUENTE
@@ -108,6 +153,9 @@ public class CutsceneManager : MonoBehaviour
         }
     }
 
+
+
+
 	private IEnumerator SansIntro()
 	{
 		
@@ -125,7 +173,7 @@ public class CutsceneManager : MonoBehaviour
 		yield return StartCoroutine(
 			DialogueManager.instance.ShowDialogue(sansIntro1_2)
 		);
-
+		
 		timelinesPlayer[0].time = 0;
 		timelinesPlayer[0].Play();
 		
@@ -156,7 +204,7 @@ public class CutsceneManager : MonoBehaviour
 		yield return StartCoroutine(
 			DialogueManager.instance.ShowDialogue(papyrusIntro_1)
 		);
-		// papyrusAnimation.PlayAnimation("Papyrus_Idle");
+		
 
 		yield return StartCoroutine(
 			DialogueManager.instance.ShowDialogue(sansIntro1_5)
@@ -199,7 +247,7 @@ public class CutsceneManager : MonoBehaviour
 			DialogueManager.instance.ShowDialogue(sansIntro1_10)
 		);
 
-		
+		DialogueManager.instance.ResetDialoguePosition();
 		playerController.SetCanMove(true); // bloquear movimiento
 
 
@@ -207,24 +255,63 @@ public class CutsceneManager : MonoBehaviour
 		Debug.Log("Fin SansIntro");
 		
 	}
+
+
+
 	private IEnumerator SansIntro2()
 		{
 		Debug.Log("Empieza SansIntro 2");
         playerController.SetCanMove(false); // bloquear movimiento
-        timelinesSans[2].time = 0;
+		sansSprite.sprite = sansDownSprite;
+		papyrusSprite.sprite = papyrusUpSprite;
+		sans.position = new Vector3(188f, 2.37f, 0f);
+		papyrus.position = new Vector3(188.021f, 1.4f, 0f);
+		DialogueManager.instance.SetDialogueTop();
+
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusIntro2_1)
+		);
+
+		timelinesSans[2].time = 0;
 		timelinesSans[2].Play();
 		yield return new WaitWhile(() => timelinesSans[2].state == PlayState.Playing);
 
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusIntro2_2)
+		);
+
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(sansIntro2_1)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusIntro2_3)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(sansIntro2_2)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusIntro2_4)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(sansIntro2_3)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusIntro2_5)
+		);
 		timelinesPapyrus[2].time = 0;
 		timelinesPapyrus[2].Play();
 
 		yield return new WaitWhile(() => timelinesPapyrus[2].state == PlayState.Playing);
 
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(sansIntro2_4)
+		);
+
 		timelinesSans[3].time = 0;
 		timelinesSans[3].Play();
 		yield return new WaitWhile(() => timelinesSans[2].state == PlayState.Playing);
-
-        playerController.SetCanMove(true); // bloquear movimiento
+		DialogueManager.instance.ResetDialoguePosition();
+		playerController.SetCanMove(true); // desblooquear movimiento
         Debug.Log("Termina SansIntro 2");
 	}
 
@@ -232,31 +319,76 @@ public class CutsceneManager : MonoBehaviour
 	private IEnumerator MinijuegoElectrico(){
 		Debug.Log("Empieza MinijuegoElectrico");
 
+		playerController.SetCanMove(false); // bloquear movimiento
+		papyrusSprite.sprite = papyrusUpSprite;
+		sansSprite.sprite = sansDownSprite;
+		sans.position = new Vector3(273.73f, 5.07f, 0f);
+		papyrus.position = new Vector3(273.79f, 3.09f, 0f);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusMinijuegoElectrico_1)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(sansMinijuegoElectrico_1)
+		);
+		papyrusSprite.sprite = papyrusUpSprite;
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusMinijuegoElectrico_2)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusMinijuegoElectrico_3)
+		);
+
 		timelinesPlayer[2].time = 0;
 		timelinesPlayer[2].Play();
 
 		yield return new WaitWhile(() => timelinesPlayer[2].state == PlayState.Playing);
+
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusMinijuegoElectrico_4)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusMinijuegoElectrico_5)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(sansMinijuegoElectrico_1)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusMinijuegoElectrico_6)
+		);
 
 		timelinesPapyrus[3].time = 0;
 		timelinesPapyrus[3].Play();
 
 		yield return new WaitWhile(() => timelinesPapyrus[3].state == PlayState.Playing);
 
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusMinijuegoElectrico_7)
+		);
+
 		timelinesPapyrus[4].time = 0;
 		timelinesPapyrus[4].Play();
 
 		yield return new WaitWhile(() => timelinesPapyrus[4].state == PlayState.Playing);
+
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusMinijuegoElectrico_8)
+		);
 
 		timelinesPlayer[3].time = 0;
 		timelinesPlayer[3].Play();
 
 		yield return new WaitWhile(() => timelinesPlayer[3].state == PlayState.Playing);
 
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusMinijuegoElectrico_9)
+		);
+
 		timelinesPapyrus[5].time = 0;
 		timelinesPapyrus[5].Play();
 
 		yield return new WaitWhile(() => timelinesPapyrus[5].state == PlayState.Playing);
 
+		playerController.SetCanMove(true); // desbloquear movimiento
 		Debug.Log("Termina MinijuegoElectrico");
 	}
 
