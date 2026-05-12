@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Undertale/Assets/Animations/Player/timelineAnimations/PhysicsBall.physicsMaterial2D.meta
 guid: e66484a927599744d86813d7655d7b46
+=======
+guid: d21702d94ae242b43abd25b672680eb4
+>>>>>>> Aitor3:Undertale/Assets/Animations/Papyrus/TimelinePapyrus8.playable.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 6200000
