@@ -26,9 +26,11 @@ public class CutsceneManager : MonoBehaviour
 
 	[SerializeField] private Sprite sansDownSprite;
 	[SerializeField] private Sprite papyrusDownSprite;
+    
 
-	[SerializeField] private SpriteRenderer sansSprite;
+    [SerializeField] private SpriteRenderer sansSprite;
 	[SerializeField] private SpriteRenderer papyrusSprite;
+	[SerializeField] private SpriteRenderer palyerSprite;
 
 	//Posicion de sans y papyrus
 	[SerializeField] private Transform sans;
@@ -36,9 +38,12 @@ public class CutsceneManager : MonoBehaviour
 
 
 	[SerializeField] private PapyrusAnimationController papyrusAnimation; //vincular el cdigo para coger las animaciones de papyrus
-															  // ESTO SON LOS DIALOGOS, LISTAS QUE CONTIENEN LA INFO DE LO QUE DICEN, esta clasificado por las zonas :)
-	// zona intro 1
-	[SerializeField] private DialogueLine[] sansIntro1_1;
+    [SerializeField] private AniamtionPlayerController palyerAnimator;
+    // ESTO SON LOS DIALOGOS, LISTAS QUE CONTIENEN LA INFO DE LO QUE DICEN, esta clasificado por las zonas :)
+
+
+    // zona intro 1
+    [SerializeField] private DialogueLine[] sansIntro1_1;
 	[SerializeField] private DialogueLine[] sansIntro1_2;
 	[SerializeField] private DialogueLine[] sansIntro1_3;
 	[SerializeField] private DialogueLine[] sansIntro1_4;
@@ -209,7 +214,9 @@ public class CutsceneManager : MonoBehaviour
 		yield return StartCoroutine(
 			DialogueManager.instance.ShowDialogue(sansIntro1_1)
 		);
-		yield return StartCoroutine(
+		palyerAnimator.PlayAnimation("IdleLeft");
+        Debug.Log(palyerSprite.sprite);
+        yield return StartCoroutine(
 			DialogueManager.instance.ShowDialogue(sansIntro1_2)
 		);
 		
@@ -571,25 +578,45 @@ public class CutsceneManager : MonoBehaviour
         Debug.Log("Empieza Puente");
         playerController.SetCanMove(false); // bloquear movimiento
 
+
+        yield return StartCoroutine(
+           DialogueManager.instance.ShowDialogue(puentePapyrus1)
+        );
         timelinesPuente[0].time = 0;
 		timelinesPuente[0].Play();
 
         yield return new WaitWhile(() => timelinesPuente[0].state == PlayState.Playing);
 
-        
+        yield return StartCoroutine(
+           DialogueManager.instance.ShowDialogue(puentePapyrus2)
+        );
+        yield return StartCoroutine(
+           DialogueManager.instance.ShowDialogue(puenteSans1)
+        );
+        yield return StartCoroutine(
+           DialogueManager.instance.ShowDialogue(puentePapyrus3)
+        );
+        yield return StartCoroutine(
+           DialogueManager.instance.ShowDialogue(puenteSans2)
+        );
+        yield return StartCoroutine(
+           DialogueManager.instance.ShowDialogue(puentePapyrus4)
+        );
 
         timelinesPuente[1].time = 0;
         timelinesPuente[1].Play();
 
         yield return new WaitWhile(() => timelinesPuente[1].state == PlayState.Playing);
 
-      
-
+        yield return StartCoroutine(
+           DialogueManager.instance.ShowDialogue(puentePapyrus5)
+        );
 
 
         timelinesPapyrus[11].time = 0;
         timelinesPapyrus[11].Play();
         playerController.SetCanMove(true); // bloquear movimiento
+
         Debug.Log("Termina Puente");
     }
 }
