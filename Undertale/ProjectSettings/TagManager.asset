@@ -10,15 +10,16 @@ TagManager:
   - PuzzleCruz2
   - PuzzleFormas
   - Wall
+  - snowball
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Snowball
   - Water
   - UI
-  - limiteCamara
-  - 
+  - wall
+  - Player
   - 
   - 
   - 

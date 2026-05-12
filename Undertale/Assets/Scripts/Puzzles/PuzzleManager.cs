@@ -17,7 +17,7 @@ public class PuzzleManager : MonoBehaviour
             botonFinal.SetActive(false);
     }
 
-    public void ComprobarPuzzle()
+    public bool ComprobarPuzzle()
     {
         foreach (var tile in tiles)
         {
@@ -25,13 +25,14 @@ public class PuzzleManager : MonoBehaviour
                 continue;
 
             if (!tile.EstaRojo())
-                return;
+                return false;
         }
 
         if (botonFinal != null)
             botonFinal.SetActive(true);
-    }
 
+        return true;
+    }
     public void PulsarBoton()
     {
         foreach (var tile in tiles)

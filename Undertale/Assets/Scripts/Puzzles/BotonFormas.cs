@@ -8,7 +8,6 @@ public class BotonFormas : MonoBehaviour
     public Sprite botonCorrecto;
 
     private SpriteRenderer sr;
-
     private bool completado = false;
 
     void Start()
@@ -27,7 +26,8 @@ public class BotonFormas : MonoBehaviour
         if (correcto)
         {
             completado = true;
-            sr.sprite = botonCorrecto; // ← cambia sprite
+            sr.sprite = botonCorrecto;
+
             manager.CompletarPuzzle();
         }
         else
