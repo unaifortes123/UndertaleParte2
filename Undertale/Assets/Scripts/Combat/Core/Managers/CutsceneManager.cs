@@ -19,7 +19,8 @@ public class CutsceneManager : MonoBehaviour
 																// hay un set para dejar sin movimiento al player
 
 
-	// ESTO SON LOS DIALOGOS, LISTAS QUE CONTIENEN LA INFO DE LO QUE DICEN, esta clasificado por las zonas :)
+	[SerializeField] private PapyrusAnimationController papyrusAnimation; //vincular el cdigo para coger las animaciones de papyrus
+																		  // ESTO SON LOS DIALOGOS, LISTAS QUE CONTIENEN LA INFO DE LO QUE DICEN, esta clasificado por las zonas :)
 	[SerializeField] private DialogueLine[] sansIntro1_1;
 	[SerializeField] private DialogueLine[] sansIntro1_2;
 	[SerializeField] private DialogueLine[] sansIntro1_3;
@@ -112,7 +113,9 @@ public class CutsceneManager : MonoBehaviour
 		
 		Debug.Log("Empieza SansIntro");
         playerController.SetCanMove(false); // bloquear movimiento
-        timelinesSans[0].time = 0;
+		DialogueManager.instance.SetDialogueTop();
+
+		timelinesSans[0].time = 0;
 		timelinesSans[0].Play();
 		yield return new WaitWhile(() => timelinesSans[0].state == PlayState.Playing);
 
@@ -149,15 +152,20 @@ public class CutsceneManager : MonoBehaviour
 			DialogueManager.instance.ShowDialogue(sansIntro1_4)
 		);
 
+		
 		yield return StartCoroutine(
 			DialogueManager.instance.ShowDialogue(papyrusIntro_1)
 		);
+		// papyrusAnimation.PlayAnimation("Papyrus_Idle");
+
 		yield return StartCoroutine(
 			DialogueManager.instance.ShowDialogue(sansIntro1_5)
 		);
+
 		yield return StartCoroutine(
 			DialogueManager.instance.ShowDialogue(papyrusIntro1_2)
 		);
+
 		yield return StartCoroutine(
 			DialogueManager.instance.ShowDialogue(sansIntro1_6)
 		);
@@ -195,7 +203,7 @@ public class CutsceneManager : MonoBehaviour
 		playerController.SetCanMove(true); // bloquear movimiento
 
 
-		// 6. Fin cutscene
+		// Fin cutscene
 		Debug.Log("Fin SansIntro");
 		
 	}

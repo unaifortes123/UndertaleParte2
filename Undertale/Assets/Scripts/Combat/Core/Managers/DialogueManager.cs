@@ -30,7 +30,10 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private UnityEngine.UI.Image portraitImage;
     [SerializeField] private TextMeshProUGUI textCutscene;
-    //esto es para poder mover canva hacia arriba   
+
+	[SerializeField] private PapyrusAnimationController papyrusAnimation;
+
+	//esto es para poder mover canva hacia arriba   
 	[SerializeField] private RectTransform dialogueRect;
 	[SerializeField] private Vector2 topPosition;
 
@@ -258,7 +261,14 @@ public class DialogueManager : MonoBehaviour
 
         for (int i = 0; i < lines.Length; i++)
         {
-            if (portraitImage != null && lines[i].portrait != null)
+			if (papyrusAnimation != null &&
+	            !string.IsNullOrEmpty(lines[i].animationName))
+			{
+				Debug.Log("Animación pedida: " + lines[i].animationName);
+				papyrusAnimation.PlayAnimation(lines[i].animationName);
+			}
+
+			if (portraitImage != null && lines[i].portrait != null)
             {
                 portraitImage.sprite = lines[i].portrait;
                 portraitImage.enabled = true;
@@ -289,4 +299,5 @@ public class DialogueManager : MonoBehaviour
 		dialogueRect.anchoredPosition = originalPosition;
 	}
 
+	
 }

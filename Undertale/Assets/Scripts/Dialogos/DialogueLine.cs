@@ -10,5 +10,7 @@ public class DialogueLine
 
     public AudioClip clip;
 
-    public Sprite portrait;   
+    public Sprite portrait;
+
+	public string animationName;
 }

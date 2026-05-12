@@ -98,7 +98,7 @@ AnimatorStateMachine:
     m_Position: {x: 340, y: 60, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -202722458007306916}
-    m_Position: {x: 1090, y: 60, z: 0}
+    m_Position: {x: 560, y: 60, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 144796622952943022}
     m_Position: {x: 570, y: 120, z: 0}
@@ -112,9 +112,6 @@ AnimatorStateMachine:
     m_State: {fileID: -7951224247290336868}
     m_Position: {x: 470, y: 270, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -1980443592821953762}
-    m_Position: {x: 570, y: 60, z: 0}
-  - serializedVersion: 1
     m_State: {fileID: -1393985541554134829}
     m_Position: {x: 120, y: 130, z: 0}
   m_ChildStateMachines: []
@@ -127,32 +124,6 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 180, y: -70, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: -7951224247290336868}
---- !u!1102 &-1980443592821953762
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: PapyrusEnfado1 0
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 1f6626a546543134b8f2f2e7eaef25a1, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1102 &-1393985541554134829
 AnimatorState:
   serializedVersion: 6
