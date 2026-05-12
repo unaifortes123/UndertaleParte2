@@ -1,26 +1,35 @@
-
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField]
-    float speed;
+    float speed; //Velocidad del personaje
+
+
+
+    // este vector es el de movimiento, tenemos foward (derecha izquierda) y up (arriba y abajo)
+    float foward;
+    float up;
+    Vector2 movement; //vector del movimiento
+
+
+    //[SerializeField]
+    //float speed; // segunda manerade hacerlo
     [SerializeField]
     InputActionAsset actions;
 
     InputAction up_action;
     InputAction forward_action;
 
-    Rigidbody2D rb;
+    Rigidbody2D rb; //pillamos el rigidbody del personaje
 
     Animator animator;
 
-    private float lastForwardValue = 0f;
-    private float lastUpValue = 0f;
     private bool canMove = true;
 
-    // Esta funcion se ejecuta al empezar la escena y deja preparado el componente.
     void Start()
     {
         actions.Enable();
@@ -31,42 +40,37 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    // Esta funcion se ejecuta cada frame y revisa la entrada o el estado actual.
     void Update()
     {
-        float forward;
-        float up;
-        Vector2 inputDir;
-        Vector2 movement;
-        int animationValueX;
-        int animationValueY;
+        //Debug.Log("forwardddd " + forward_action.ReadValue<float>());
+        //Debug.Log("forwardddd " + up_action.ReadValue<float>());
 
-
-        forward = forward_action.ReadValue<float>();
+        //Movimiento
+        foward = forward_action.ReadValue<float>();
         up = up_action.ReadValue<float>();
+        movement = new Vector2(foward, up);
+        movement = movement.normalized; //esto es para que cuando vas en diagonal el personaje no corra mas
 
-        CountPlayerMovement(forward, up);
 
-        if (!canMove)
+        if (canMove == true)
+        {
+            rb.velocity = movement * speed;
+
+        }
+        else
         {
             rb.velocity = Vector2.zero;
-            return;
         }
 
-        // Normalizamos para que en diagonal no se vaya mas rapido y aplicamos la velocidad.
-        inputDir = new Vector2(forward, up).normalized;
-        movement = inputDir * speed;
-        rb.velocity = movement;
+        // Animación
+        int animationValueX = 0;
 
-        animationValueX = 0;
-
-        if (forward != 0)
+        if (foward != 0)
         {
-            animationValueX = (int)forward;
+            animationValueX = (int)foward;
         }
 
-        animationValueY = 0;
-
+        int animationValueY = 0;
         if (up != 0)
         {
             animationValueY = (int)up;
@@ -74,36 +78,27 @@ public class PlayerController : MonoBehaviour
 
         animator.SetInteger("SpeedX", animationValueX);
         animator.SetInteger("SpeedY", animationValueY);
+        // Vector2 moveInput = new Vector2 (foward, up);
+        // rb.MovePosition(rb.position + moveInput * speed * Time.deltaTime
 
     }
 
-    public void SetCanMove(bool value)
+    public float GetUp() // Funcion que devuelve el valor que coge del input del movimiento vertical.
     {
-        canMove = value;
-        if (canMove == false)
-        {
-            rb.velocity = Vector2.zero;
-
-            animator.SetInteger("SpeedX", 0);
-            animator.SetInteger("SpeedY", 0);
-        }
+        Debug.Log("Valor UP :" + up_action.ReadValue<float>());
+        return up_action.ReadValue<float>();
     }
 
-    // Esta funcion suma movimientos cuando el jugador empieza a moverse en horizontal o vertical.
-    private void CountPlayerMovement(float currentForwardValue, float currentUpValue)
+    public float GetForward() // Funcion que devuelve el valor que coge del input del movimiento horizontal.
     {
-        if (Mathf.Abs(currentForwardValue) > 0.01f && Mathf.Abs(lastForwardValue) <= 0.01f)
-        {
-            CountMovement.AddMovement();
-        }
-
-        if (Mathf.Abs(currentUpValue) > 0.01f && Mathf.Abs(lastUpValue) <= 0.01f)
-        {
-            CountMovement.AddMovement();
-        }
-
-        lastForwardValue = currentForwardValue;
-        lastUpValue = currentUpValue;
+        Debug.Log("Valor FORWARD :" + forward_action.ReadValue<float>());
+        return forward_action.ReadValue<float>();
     }
+    public void SetCanMove(bool newCanMove)
+    {
+        canMove = newCanMove;
+    }
+
+
 
 }
