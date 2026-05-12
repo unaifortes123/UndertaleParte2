@@ -1,10 +1,11 @@
-using System.Collections;
+	using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 
 public class CutsceneManager : MonoBehaviour
 {
+	public GameObject sueloRojoMinijuego;
 	public static CutsceneManager Instance;
 	[SerializeField]
 	public List<PlayableDirector> timelinesSans; //las timelines de sans
@@ -106,10 +107,29 @@ public class CutsceneManager : MonoBehaviour
 
 	//Zona Pinchos 1
 	[SerializeField] private DialogueLine[] papyrusPinchos1_1;
+    [SerializeField] private DialogueLine[] papyrusPinchos1_2;
 
-	// DIALOGOS ZONAPUENTE
-	[SerializeField] private DialogueLine[] puenteSans;
-    [SerializeField] private DialogueLine[] puentePapyrus;
+    [SerializeField] private DialogueLine[] playerPinchos1_1;
+
+
+    //zona pinchos 2
+    [SerializeField] private DialogueLine[] papyrusPinchos2_1;
+
+    //zona minijuegoColores
+    [SerializeField] private DialogueLine[] papyrusColores_1;
+    [SerializeField] private DialogueLine[] papyrusColores_2;
+
+    // DIALOGOS ZONAPUENTE
+    [SerializeField] private DialogueLine[] puenteSans1;
+    [SerializeField] private DialogueLine[] puenteSans2;
+    [SerializeField] private DialogueLine[] puentePapyrus1;
+    [SerializeField] private DialogueLine[] puentePapyrus2;
+    [SerializeField] private DialogueLine[] puentePapyrus3;
+    [SerializeField] private DialogueLine[] puentePapyrus4;
+    [SerializeField] private DialogueLine[] puentePapyrus5;
+   
+
+
 
     void Awake()
 	{
@@ -161,10 +181,7 @@ public class CutsceneManager : MonoBehaviour
 		{
 			yield return StartCoroutine(Pinchos2());
 		}
-		else if (id == "Pinchos3")
-		{
-			yield return StartCoroutine(Pinchos3());
-		}
+		
 		else if (id == "Colores")
 		{
 			yield return StartCoroutine(Colores());
@@ -475,51 +492,79 @@ public class CutsceneManager : MonoBehaviour
 	private IEnumerator Pinchos1()
 	{
 		Debug.Log("Empieza Pinchos1");
+        papyrusSprite.sprite = papyrusUpSprite;
+        papyrus.position = new Vector3(388.6f, -40.56f, 0f); 
 
-		timelinesPapyrus[7].time = 0;
+
+        playerController.SetCanMove(false); // bloquear movimiento
+
+        yield return StartCoroutine(
+            DialogueManager.instance.ShowDialogue(papyrusPinchos1_1)
+        );
+
+        yield return StartCoroutine(
+           DialogueManager.instance.ShowDialogue(playerPinchos1_1)
+        );
+        yield return StartCoroutine(
+          DialogueManager.instance.ShowDialogue(papyrusPinchos1_2)
+       );
+
+        timelinesPapyrus[7].time = 0;
 		timelinesPapyrus[7].Play();
 
 		yield return new WaitWhile(() => timelinesPapyrus[7].state == PlayState.Playing);
 
-		Debug.Log("Termina Pinchos1");
+        papyrus.position = new Vector3(0f, 0f, 0f);
+        playerController.SetCanMove(true); // desbloquear movimiento
+        Debug.Log("Termina Pinchos1");
 	}
 
 	private IEnumerator Pinchos2()
 	{
 		Debug.Log("Empieza Pinchos2");
+        playerController.SetCanMove(false); // desbloquear movimiento
 
-		timelinesPapyrus[8].time = 0;
+
+        timelinesPapyrus[8].time = 0;
 		timelinesPapyrus[8].Play();
 
 		yield return new WaitWhile(() => timelinesPapyrus[8].state == PlayState.Playing);
 
-		Debug.Log("Termina Pinchos2");
-	}
-	private IEnumerator Pinchos3()
-	{
-		Debug.Log("Empieza Pinchos3");
+        yield return StartCoroutine(
+           DialogueManager.instance.ShowDialogue(papyrusPinchos2_1)
+        );
 
-		timelinesPapyrus[9].time = 0;
-		timelinesPapyrus[9].Play();
+        timelinesPapyrus[9].time = 0;
+        timelinesPapyrus[9].Play();
 
-		yield return new WaitWhile(() => timelinesPapyrus[9].state == PlayState.Playing);
-
-		Debug.Log("Termina Pinchos3");
+        yield return new WaitWhile(() => timelinesPapyrus[9].state == PlayState.Playing);
+        papyrus.position = new Vector3(446.14f, -40.08f, 0f);
+        playerController.SetCanMove(true); // desbloquear movimiento
+        Debug.Log("Termina Pinchos2");
 	}
 
 	private IEnumerator Colores()
 	{
 		Debug.Log("Empieza Colores");
 		playerController.SetCanMove(false); // bloquear movimiento
-		timelinesPapyrus[10].time = 0;
+
+        yield return StartCoroutine(
+           DialogueManager.instance.ShowDialogue(papyrusColores_1)
+        );
+
+        sueloRojoMinijuego.SetActive(true);
+
+        timelinesPapyrus[10].time = 0;
 		timelinesPapyrus[10].Play();
 
 		timelinesSans[4].time = 0;
 		timelinesSans[4].Play();
 
 		yield return new WaitWhile(() => timelinesPapyrus[10].state == PlayState.Playing);
+        
 
-		Debug.Log("Termina Colores");
+
+        Debug.Log("Termina Colores");
 	}
 
 	private IEnumerator Puente() {
@@ -531,18 +576,14 @@ public class CutsceneManager : MonoBehaviour
 
         yield return new WaitWhile(() => timelinesPuente[0].state == PlayState.Playing);
 
-        yield return StartCoroutine(
-			DialogueManager.instance.ShowDialogue(puentePapyrus)
-		);
+        
 
         timelinesPuente[1].time = 0;
         timelinesPuente[1].Play();
 
         yield return new WaitWhile(() => timelinesPuente[1].state == PlayState.Playing);
 
-        yield return StartCoroutine(
-			DialogueManager.instance.ShowDialogue(puenteSans)
-		);
+      
 
 
 

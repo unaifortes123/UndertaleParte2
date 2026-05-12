@@ -285,97 +285,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &32215386
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 32215387}
-  - component: {fileID: 32215389}
-  - component: {fileID: 32215388}
-  m_Layer: 0
-  m_Name: TriggerZonaPinchos3 (test)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &32215387
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 32215386}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 408.55, y: -41.35, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1121389232}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &32215388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 32215386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d69a9248bd9a54d4680ccb601f9fdde3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cutsceneID: Pinchos3
---- !u!61 &32215389
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 32215386}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.3404312, y: 0.43532228}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.31913757, y: 5.918132}
-  m_EdgeRadius: 0
 --- !u!1 &33447262
 GameObject:
   m_ObjectHideFlags: 0
@@ -1912,6 +1821,90 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &129313267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 129313268}
+  - component: {fileID: 129313269}
+  m_Layer: 0
+  m_Name: fondoRojoMinijuego
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &129313268
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129313267}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 441.51, y: -42.24, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 380290097}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &129313269
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129313267}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 3d4fac5d74d764b4d914395b009aa511, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.85, y: 1.98}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &140776344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4740,6 +4733,39 @@ PolygonCollider2D:
       - {x: 332, y: -18}
       - {x: 332, y: -6}
   m_UseDelaunayMesh: 0
+--- !u!1 &380290096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 380290097}
+  m_Layer: 0
+  m_Name: MinijuegoColores
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &380290097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380290096}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1637439382}
+  - {fileID: 129313268}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &391633871
 GameObject:
   m_ObjectHideFlags: 0
@@ -6371,8 +6397,8 @@ Transform:
   m_GameObject: {fileID: 567412608}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 455.5, y: -35.5, z: 0}
-  m_LocalScale: {x: 11.310557, y: -144.87102, z: 1}
+  m_LocalPosition: {x: 455.5, y: -39.2, z: 0}
+  m_LocalScale: {x: 26.155664, y: -144.87102, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -20811,97 +20837,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9071382332662847861, guid: 504ec7d8d7c653c41b7fd7604a2e8030, type: 3}
   m_PrefabInstance: {fileID: 948206836}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &963525061
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 963525062}
-  - component: {fileID: 963525064}
-  - component: {fileID: 963525063}
-  m_Layer: 0
-  m_Name: TriggerZonaSansIntro2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &963525062
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963525061}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 182.31, y: 0.22, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1121389232}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &963525063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963525061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d69a9248bd9a54d4680ccb601f9fdde3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cutsceneID: SansIntro2
---- !u!61 &963525064
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963525061}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.3404312, y: 0.1042254}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.31913757, y: 4.204217}
-  m_EdgeRadius: 0
 --- !u!1 &963983975
 GameObject:
   m_ObjectHideFlags: 0
@@ -110246,13 +110181,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1004333090}
-  - {fileID: 963525062}
   - {fileID: 1091248855}
   - {fileID: 984893440}
   - {fileID: 1483405551}
   - {fileID: 1712685428}
   - {fileID: 1215934953}
-  - {fileID: 32215387}
   - {fileID: 1872325915}
   - {fileID: 1728877057}
   m_Father: {fileID: 0}
@@ -110425,11 +110358,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4033522721850996708, guid: f673ebdbf8770f540b9a876d5302a8ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 299.46
+      value: 427.8
       objectReference: {fileID: 0}
     - target: {fileID: 4033522721850996708, guid: f673ebdbf8770f540b9a876d5302a8ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -12.89
+      value: -40.47
       objectReference: {fileID: 0}
     - target: {fileID: 4033522721850996708, guid: f673ebdbf8770f540b9a876d5302a8ff, type: 3}
       propertyPath: m_LocalPosition.z
@@ -113011,6 +112944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b14c8e5e742822045a643b16e20e6a3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sueloRojoMinijuego: {fileID: 129313267}
   timelinesSans:
   - {fileID: 2060753852}
   - {fileID: 205088643}
@@ -113720,25 +113654,386 @@ MonoBehaviour:
     clip: {fileID: 0}
     portrait: {fileID: -682651313, guid: b9395c11ede053c4e8461e4efb4d28ab, type: 3}
     animationName: 
-  papyrusPinchos1_1: []
-  puenteSans:
-  - text: sans1
+  papyrusPinchos1_1:
+  - text: 'WHAT!?
+
+      HOW DID YOU AVOID MY TRAP?'
     clip: {fileID: 0}
-    portrait: {fileID: 384006121, guid: 168867728614c8f42b7393f71faf0051, type: 3}
-    animationName: 
-  - text: Sans2
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: AND, MORE IMPORTANTLY
     clip: {fileID: 0}
-    portrait: {fileID: 1306055441, guid: c9f1a4d9e9e4b4749bb98d434b41a10e, type: 3}
-    animationName: 
-  puentePapyrus:
-  - text: Papyrus1
+    portrait: {fileID: -1842715871, guid: c1750a7c9aa5f53498fe29eb0cc4bf35, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: IS THERE ANY LEFT FOR ME???
     clip: {fileID: 0}
     portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
-    animationName: 
-  - text: Papyrus2
+    animationName: papyrusHablandoNormal
+  papyrusPinchos1_2:
+  - text: REALLY!?
     clip: {fileID: 0}
-    portrait: {fileID: 22450378, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: WOWIE...
+    clip: {fileID: 0}
+    portrait: {fileID: 1255626573, guid: a88a634ad426aee45a4177a0860be1f0, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: NO ONE'S  EVER ENJOYED MY COOKING BEFORE...
+    clip: {fileID: 0}
+    portrait: {fileID: 1255626573, guid: a88a634ad426aee45a4177a0860be1f0, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: WELL THEN!!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: "FRET \tNOT HUMAN!\nI, MASTER CHEF PAPYRUS..."
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: WILL MAKE YOU ALL THE PASTA YOU COULD EVER WANT!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: NYEH HEH HEH HEH HEH HEH HEH HEH HEH!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  playerPinchos1_1:
+  - text: Yes
+    clip: {fileID: 0}
+    portrait: {fileID: -682651313, guid: b9395c11ede053c4e8461e4efb4d28ab, type: 3}
     animationName: 
+  papyrusPinchos2_1:
+  - text: HUMAN!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: PapyrusHablandoAbajo
+  - text: 'HMMMM...
+
+      HOW DO I SAY THIS...'
+    clip: {fileID: 0}
+    portrait: {fileID: -1842715871, guid: c1750a7c9aa5f53498fe29eb0cc4bf35, type: 3}
+    animationName: PapyrusHablandoAbajo
+  - text: YOU WERE TAKING A LONG TIME TO ARRIVE, SO...
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: PapyrusHablandoAbajo
+  - text: I DECIDED TO  IMROVE THIS PUZZLE
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: PapyrusHablandoAbajo
+  - text: BY ARRANGING THE SNOW TO LOOK MORE LIKE MY FACE
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: PapyrusHablandoAbajo
+  - text: 'UNFORTUNATELY, THE SNOW FROZE TO THE GROUND. '
+    clip: {fileID: 0}
+    portrait: {fileID: -1842715871, guid: c1750a7c9aa5f53498fe29eb0cc4bf35, type: 3}
+    animationName: PapyrusHablandoAbajo
+  - text: NOW THE SOLUTION IS DIFERENT!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: PapyrusHablandoAbajo
+  - text: AND, AS USUAL, MY LAZY BROTHER IS NOWHERE AROUND.
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: PapyrusHablandoAbajo
+  - text: U SUPPOSE WHAT I AM SAYING IS...
+    clip: {fileID: 0}
+    portrait: {fileID: -1842715871, guid: c1750a7c9aa5f53498fe29eb0cc4bf35, type: 3}
+    animationName: PapyrusHablandoAbajo
+  - text: WORRY NOT, HUMAN!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: AnimacionPapyrusOrgulloso
+  - text: I, THE GREAT PAPYRUS, WILL SOLVE THIS CONUNDRUM
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: AnimacionPapyrusOrgulloso
+  - text: THEN WE CAN BOTH PROCEED!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: AnimacionPapyrusOrgulloso
+  - text: MEANWHILE, FEEL FREE TO TRY THE PUZZLE YOURSELF!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: PapyrusHablandoAbajo
+  papyrusColores_1:
+  - text: 'HEY! '
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: IT'S THE HUMAN!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: "YOU'RE GONNA LOVE THIS \tPUZZLE!"
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: IT WAS MADE BY THE GREAT DR. ALPHYS!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: YOU SEE THESE TILES!?
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: ONCE I THROW THIS SWITCH...
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: THEY WILL BEGIN TO CHANGE COLOR
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: EACH COLOR HAS A DIFFERENT FUNCTION!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: RED TILES ARE IMPASSABLE!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: 'YOU CANNOT WALK ON THEM '
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: YELLOW TILES ARE ELECTRIC!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: THEY WILL ELECTROCUTE YOU!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: GREEN TILES ARE ALARM TILES!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: IF YOU STEP ON THEM...
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: YOU WILL HAVE TO FIGHT A MONSTER!!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: ORANGE TILES ARE ORANGE-SCENTED.
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: THEY WILL MAKE YOU SMELL DELICIUS!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: BLUE TIRES ARE WATER TILES
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: SWIN THROUGH IF YOU LIKE, BUT...
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: IF YOU SMELL LIKE ORANGES!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: THE PIRANHAS WILL BITE YOU
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: ALSO, IF A BLUE TILE IS NEXT TO A,
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: YELLOW TILE, THE WATER WILL ALSO ZAP YOU!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: "GREAT!! \nTHEN THERE'S ONE LAST THING..."
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: THIS PUZZLE...
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: IS ENTIRELY RANDOM!!!!!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: WHEN I PULL THIS SWITCH, IT WILL MAKE A PUZZLE
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: THAT HAS NEVER BEEN SEEN BEFORE!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: NOT EVEN I WILL  KNOW THE SOLUTION
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: 'NYEH HEH  HEH
+
+      GET READY.'
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  papyrusColores_2: []
+  puenteSans1:
+  - text: 'well?
+
+      what''s the holdup?'
+    clip: {fileID: 0}
+    portrait: {fileID: 41168651, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+    animationName: 
+  puenteSans2:
+  - text: that, uh, doesn't look very activated.
+    clip: {fileID: 0}
+    portrait: {fileID: 41168651, guid: 3c87464fee2f90d43b338a3a7b4a15da, type: 3}
+    animationName: 
+  puentePapyrus1:
+  - text: HUMAN!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: THIS IS YOUR FINAL AND MOST DANGEROUS CHALLENGE!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: "BEHOLD!\nTHE GAUNTLET OF DEADLY TERROR!\t"
+    clip: {fileID: 0}
+    portrait: {fileID: -1800582828, guid: fd74a61972a5bd24bad9101b84429792, type: 3}
+    animationName: papyrusHablandoNormal
+  puentePapyrus2:
+  - text: WHEN I SAY THE WORD, IT WILL FULLY ACTIVATE!!!
+    clip: {fileID: 0}
+    portrait: {fileID: -1800582828, guid: fd74a61972a5bd24bad9101b84429792, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: 'CANNONS WILL FIRE!
+
+      SPIKES WILL SWING!
+
+      BLADES WILL SLICE!'
+    clip: {fileID: 0}
+    portrait: {fileID: -1800582828, guid: fd74a61972a5bd24bad9101b84429792, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: EACH PART WILL SWING VIOLENTLY UP AND DOWN!
+    clip: {fileID: 0}
+    portrait: {fileID: -1800582828, guid: fd74a61972a5bd24bad9101b84429792, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: ONLY THE TINIEST CHANGE OF VICTORY WILL REMAIN!!
+    clip: {fileID: 0}
+    portrait: {fileID: -1800582828, guid: fd74a61972a5bd24bad9101b84429792, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: ARE YOU READY!?
+    clip: {fileID: 0}
+    portrait: {fileID: -1800582828, guid: fd74a61972a5bd24bad9101b84429792, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: BECAUSE!
+    clip: {fileID: 0}
+    portrait: {fileID: -1800582828, guid: fd74a61972a5bd24bad9101b84429792, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: I!
+    clip: {fileID: 0}
+    portrait: {fileID: -1800582828, guid: fd74a61972a5bd24bad9101b84429792, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: AM!
+    clip: {fileID: 0}
+    portrait: {fileID: -1800582828, guid: fd74a61972a5bd24bad9101b84429792, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: ABOUT!
+    clip: {fileID: 0}
+    portrait: {fileID: -1800582828, guid: fd74a61972a5bd24bad9101b84429792, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: TO DO IT!
+    clip: {fileID: 0}
+    portrait: {fileID: -1800582828, guid: fd74a61972a5bd24bad9101b84429792, type: 3}
+    animationName: papyrusHablandoNormal
+  puentePapyrus3:
+  - text: 'HOLDUP?!
+
+      WHAT HOLDUP!?'
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: 'I''M...
+
+      I''M ABOUT TO ACTIVATE IT NOW...'
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: papyrusHablandoNormal
+  puentePapyrus4:
+  - text: WELL!!!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: THIS CHALLENGE!!!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: IT SEEMS...
+    clip: {fileID: 0}
+    portrait: {fileID: -1842715871, guid: c1750a7c9aa5f53498fe29eb0cc4bf35, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: MAYBE... TOO EASY TO DEFEAT THE HUMAN WITH.
+    clip: {fileID: 0}
+    portrait: {fileID: -1842715871, guid: c1750a7c9aa5f53498fe29eb0cc4bf35, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: 'YEAH!
+
+      WE CAN''T USE THIS ONE!!'
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: I AM A SKELETON WITH STANDARS!!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: MY PUZZLES ARE VERY FAIR!!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: AND MY TRAPS ARE EXPRETLY COOKED!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: BUT THIS METHOD IS TOO DIRECT! NO CLASS AT ALL!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: AWAY IT GOES!
+    clip: {fileID: 0}
+    portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}
+    animationName: papyrusHablandoNormal
+  puentePapyrus5:
+  - text: WHAT ARE YOU LOOKING AT!?
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: THIS WAS ANOTHER  DECSIVE VICTORY FOR PAPYRUS!!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: NYEH!!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: HEH!!
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: ...
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: papyrusHablandoNormal
+  - text: HEH???
+    clip: {fileID: 0}
+    portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
+    animationName: papyrusHablandoNormal
+  puentePapyrus6: []
 --- !u!4 &1442679837
 Transform:
   m_ObjectHideFlags: 0
@@ -115887,6 +116182,90 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1598427537}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1637439381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1637439382}
+  - component: {fileID: 1637439383}
+  m_Layer: 0
+  m_Name: MaquinaMinijeugoColores
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1637439382
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637439381}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 446.14, y: -38.89, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 380290097}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1637439383
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637439381}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 0fc0ced8916fbaa4ab165864a3f050e8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.45, y: 4.22}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1641617161
 GameObject:
   m_ObjectHideFlags: 0
@@ -119743,11 +120122,191 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 436, y: -45, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 33
+      m_TileSpriteIndex: 33
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 437, y: -45, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 32
+      m_TileSpriteIndex: 32
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 438, y: -45, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 34
+      m_TileSpriteIndex: 34
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 439, y: -45, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 33
+      m_TileSpriteIndex: 33
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 440, y: -45, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 32
+      m_TileSpriteIndex: 32
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 441, y: -45, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 34
+      m_TileSpriteIndex: 34
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 442, y: -45, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 33
+      m_TileSpriteIndex: 33
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 443, y: -45, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 32
+      m_TileSpriteIndex: 32
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 444, y: -45, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 34
+      m_TileSpriteIndex: 34
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 365, y: -44, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 8
       m_TileSpriteIndex: 8
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 436, y: -44, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 32
+      m_TileSpriteIndex: 32
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 437, y: -44, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 34
+      m_TileSpriteIndex: 34
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 438, y: -44, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 33
+      m_TileSpriteIndex: 33
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 439, y: -44, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 32
+      m_TileSpriteIndex: 32
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 440, y: -44, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 34
+      m_TileSpriteIndex: 34
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 441, y: -44, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 33
+      m_TileSpriteIndex: 33
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 442, y: -44, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 32
+      m_TileSpriteIndex: 32
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 443, y: -44, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 34
+      m_TileSpriteIndex: 34
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 444, y: -44, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 33
+      m_TileSpriteIndex: 33
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -119783,6 +120342,96 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 436, y: -43, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 34
+      m_TileSpriteIndex: 34
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 437, y: -43, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 33
+      m_TileSpriteIndex: 33
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 438, y: -43, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 32
+      m_TileSpriteIndex: 32
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 439, y: -43, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 34
+      m_TileSpriteIndex: 34
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 440, y: -43, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 33
+      m_TileSpriteIndex: 33
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 441, y: -43, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 32
+      m_TileSpriteIndex: 32
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 442, y: -43, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 34
+      m_TileSpriteIndex: 34
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 443, y: -43, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 33
+      m_TileSpriteIndex: 33
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 444, y: -43, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 32
+      m_TileSpriteIndex: 32
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 409, y: -42, z: 0}
     second:
       serializedVersion: 2
@@ -119798,6 +120447,96 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 436, y: -42, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 33
+      m_TileSpriteIndex: 33
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 437, y: -42, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 32
+      m_TileSpriteIndex: 32
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 438, y: -42, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 34
+      m_TileSpriteIndex: 34
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 439, y: -42, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 33
+      m_TileSpriteIndex: 33
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 440, y: -42, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 32
+      m_TileSpriteIndex: 32
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 441, y: -42, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 34
+      m_TileSpriteIndex: 34
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 442, y: -42, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 33
+      m_TileSpriteIndex: 33
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 443, y: -42, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 32
+      m_TileSpriteIndex: 32
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 444, y: -42, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 34
+      m_TileSpriteIndex: 34
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -119858,6 +120597,96 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 436, y: -41, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 32
+      m_TileSpriteIndex: 32
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 437, y: -41, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 34
+      m_TileSpriteIndex: 34
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 438, y: -41, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 33
+      m_TileSpriteIndex: 33
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 439, y: -41, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 32
+      m_TileSpriteIndex: 32
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 440, y: -41, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 34
+      m_TileSpriteIndex: 34
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 441, y: -41, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 33
+      m_TileSpriteIndex: 33
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 442, y: -41, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 32
+      m_TileSpriteIndex: 32
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 443, y: -41, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 34
+      m_TileSpriteIndex: 34
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 444, y: -41, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 33
+      m_TileSpriteIndex: 33
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -124299,6 +125128,12 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 0aa30e7beb91f784f90e91a81b6ae4b2, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: bf84f601b23af6b4b8a6885709cc817e, type: 2}
+  - m_RefCount: 15
+    m_Data: {fileID: 11400000, guid: 5d16d8ab2f834f84db7a89900b894d99, type: 2}
+  - m_RefCount: 15
+    m_Data: {fileID: 11400000, guid: c31b4817b1e74c142aea7ddb7bb3e873, type: 2}
+  - m_RefCount: 15
+    m_Data: {fileID: 11400000, guid: 122862f522396a349a0061f5e38061d1, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 53
     m_Data: {fileID: 21300000, guid: 83f9ae792e7d6d24f8c246281e01fed3, type: 3}
@@ -124364,8 +125199,14 @@ Tilemap:
     m_Data: {fileID: -491126729, guid: e845e0cb0c207bf42a314d9765b91973, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 1221300585, guid: 0892cd58a745ea544a7f6767a0ead768, type: 3}
+  - m_RefCount: 15
+    m_Data: {fileID: -1684775787, guid: a31579f7f9f654e4fa45d76b951f0174, type: 3}
+  - m_RefCount: 15
+    m_Data: {fileID: -1390885046, guid: a31579f7f9f654e4fa45d76b951f0174, type: 3}
+  - m_RefCount: 15
+    m_Data: {fileID: -1882319553, guid: a31579f7f9f654e4fa45d76b951f0174, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 477
+  - m_RefCount: 522
     m_Data:
       e00: 1
       e01: 0
@@ -124402,13 +125243,13 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 479
+  - m_RefCount: 524
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -3, y: -47, z: -1}
-  m_Size: {x: 431, y: 64, z: 3}
+  m_Size: {x: 448, y: 64, z: 3}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -127790,11 +128631,11 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 84eef657d39e6e443aa2725edeefe0ce, type: 2}
     - target: {fileID: 2127177726804533016, guid: 2a129638974b7f84a90be4499a4557d3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 577.88
+      value: 446.14
       objectReference: {fileID: 0}
     - target: {fileID: 2127177726804533016, guid: 2a129638974b7f84a90be4499a4557d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -40.51
+      value: -40.08
       objectReference: {fileID: 0}
     - target: {fileID: 2127177726804533016, guid: 2a129638974b7f84a90be4499a4557d3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -128076,3 +128917,4 @@ SceneRoots:
   - {fileID: 1266409693}
   - {fileID: 391633873}
   - {fileID: 1008009406}
+  - {fileID: 380290097}
