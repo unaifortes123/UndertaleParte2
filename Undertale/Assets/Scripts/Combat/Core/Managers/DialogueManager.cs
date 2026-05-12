@@ -285,8 +285,12 @@ public class DialogueManager : MonoBehaviour
         textCutscene.text = "";
 
         dialoguePanel.SetActive(false);
+		if (papyrusAnimation != null)
+		{
+			papyrusAnimation.SetIdle();
+		}
 
-        done = true;
+		done = true;
     }
     // estos setters son para poder mover el canvas, arriba o resetar la posicion, que es abajo de normal 
 	public void SetDialogueTop()

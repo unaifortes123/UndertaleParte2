@@ -113900,25 +113900,25 @@ MonoBehaviour:
       I DON''T HAVE TIME FOR THAT!!'
     clip: {fileID: 0}
     portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
-    animationName: PapyrusEnfado1 0
+    animationName: PapyrusEnfado1
   - text: WHAT IF A HUMAN COMES THROUGH HERE?!?
     clip: {fileID: 0}
     portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
-    animationName: PapyrusEnfado1 0
+    animationName: PapyrusEnfado1
   - text: I WANT TO BE READY!!!
     clip: {fileID: 0}
     portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
-    animationName: PapyrusEnfado1 0
+    animationName: PapyrusEnfado1
   - text: 'I WILL BE THE ONE!!
 
       I MUST  BE THE ONE!!'
     clip: {fileID: 0}
     portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
-    animationName: PapyrusEnfado1 0
+    animationName: PapyrusEnfado1
   - text: I WILL CAPTURE A HUMAN!!
     clip: {fileID: 0}
     portrait: {fileID: -1042371682, guid: c1e72e466ba9ad44eb254eac508dc0c1, type: 3}
-    animationName: PapyrusEnfado1 0
+    animationName: PapyrusEnfado1
   - text: WILL GET ALL THE THINGS I UTTERLY DESERVE!
     clip: {fileID: 0}
     portrait: {fileID: 1468981403, guid: f93252a3263f6b349a1f3c0875226227, type: 3}

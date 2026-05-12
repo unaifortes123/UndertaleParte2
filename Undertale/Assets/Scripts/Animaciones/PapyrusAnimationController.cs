@@ -17,4 +17,9 @@ public class PapyrusAnimationController : MonoBehaviour
 		Debug.Log("Reproduciendo animación: " + animationName);
 		animator.Play(animationName);
 	}
+	public void SetIdle()
+	{
+		Debug.Log("Papyrus vuelve a Idle");
+		animator.Play("Papyrus_Idle");
+	}
 }
