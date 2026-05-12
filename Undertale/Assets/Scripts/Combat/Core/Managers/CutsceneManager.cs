@@ -84,6 +84,28 @@ public class CutsceneManager : MonoBehaviour
 	[SerializeField] private DialogueLine[] papyrusMinijuegoElectrico_9;
 
 
+	//Zona sopa de letras 1
+	[SerializeField] private DialogueLine[] sansSopaDeLetras1_1;
+
+	[SerializeField] private DialogueLine[] papyrusSopaDeLetras1_1;
+	[SerializeField] private DialogueLine[] papyrusSopaDeLetras1_2;
+
+	//Zona sopa de letras 2
+	[SerializeField] private DialogueLine[] sansSopaDeLetras2_1;
+	[SerializeField] private DialogueLine[] sansSopaDeLetras2_2;
+	
+
+	[SerializeField] private DialogueLine[] papyrusSopaDeLetras2_1;
+	[SerializeField] private DialogueLine[] papyrusSopaDeLetras2_2;
+	[SerializeField] private DialogueLine[] papyrusSopaDeLetras2_3;
+	[SerializeField] private DialogueLine[] papyrusSopaDeLetras2_4;
+
+	[SerializeField] private DialogueLine[] palyerSopaDeLetras2_1;
+
+
+
+	//Zona Pinchos 1
+	[SerializeField] private DialogueLine[] papyrusPinchos1_1;
 
 	// DIALOGOS ZONAPUENTE
 	[SerializeField] private DialogueLine[] puenteSans;
@@ -394,9 +416,22 @@ public class CutsceneManager : MonoBehaviour
 
 	private IEnumerator SopaDeLetras1(){
 		Debug.Log("Empieza SopaDeLetras1");
-
-
-		return null;
+		papyrusSprite.sprite = papyrusUpSprite;
+		sansSprite.sprite = sansDownSprite;
+		sans.position = new Vector3(328f, -11.46f, 0f);
+		papyrus.position = new Vector3(328f, -13.28f, 0f);
+		playerController.SetCanMove(false); // bloquear movimiento
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusSopaDeLetras1_1)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusSopaDeLetras1_2)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(sansSopaDeLetras1_1)
+		);
+		playerController.SetCanMove(true); // desbloquear movimiento
+		
 		Debug.Log("Termina SopaDeLetras1");
 	}
 
@@ -404,12 +439,36 @@ public class CutsceneManager : MonoBehaviour
 	private IEnumerator SopaDeLetras2()
 	{
 		Debug.Log("Empieza SopaDeLetras2");
+		playerController.SetCanMove(false); // bloquear movimiento
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusSopaDeLetras2_1)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(sansSopaDeLetras2_1)
+		);
+
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusSopaDeLetras2_2)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(sansSopaDeLetras2_2)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusSopaDeLetras2_3)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(palyerSopaDeLetras2_1)
+		);
+		yield return StartCoroutine(
+			DialogueManager.instance.ShowDialogue(papyrusSopaDeLetras2_4)
+		);
 
 		timelinesPapyrus[6].time = 0;
 		timelinesPapyrus[6].Play();
 
 		yield return new WaitWhile(() => timelinesPapyrus[6].state == PlayState.Playing);
 
+		playerController.SetCanMove(true); // desbloquear movimiento
 		Debug.Log("Termina SopaDeLetras2");
 	}
 
